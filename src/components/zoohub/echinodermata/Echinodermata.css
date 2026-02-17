@@ -1,0 +1,243 @@
+:root {
+  --color-bg-primary: #f8f7f4;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-border: #e0dcd8;
+  --color-card-bg: #ffffff;
+  --color-accent: #2d8b8f;
+  --color-accent-light: #e8f4f5;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.echi-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+}
+
+.echi-container header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.echi-container header h1 {
+  color: rgb(6, 123, 6)
+}
+
+.echi-logo {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+}
+
+.echi-container h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.5px;
+  margin-bottom: var(--space-md);
+}
+
+.echi-subtitle {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.echi-class-section {
+  margin-bottom: var(--space-xl);
+}
+
+.echi-class-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.echi-class-badge {
+  display: inline-block;
+  background-color: var(--color-accent-light);
+  color: rgb(11, 133, 11);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.echi-bord {
+  width: 10px;
+  height: 20px;
+  background-color:rgb(11, 133, 11) ;
+  border-radius: var(--radius-sm);
+}
+
+.echi-species-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.echi-species-card {
+  border-radius: var(--radius-md);
+  /* Removed overflow:hidden so the 3D shadow works */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.echi-species-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+  /* Maja: Bouncy Transition */
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
+  /* Prevent image from being dragged/selected */
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  pointer-events: none;
+}
+
+.echi-species-card:hover .echi-species-image {
+  /* Maja: Scale up + Drop Shadow */
+  transform: scale(1.15);
+  filter: drop-shadow(0 10px 15px rgba(45, 139, 143, 0.3));
+}
+
+.echi-species-info {
+  padding: var(--space-md);
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Allow text selection */
+  user-select: text;
+  cursor: text;
+}
+
+.echi-species-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  word-break: break-word;
+  user-select: text;
+}
+
+.echi-species-name-scientific {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  margin-top: 4px;
+  user-select: text;
+}
+
+.echi-container footer {
+  text-align: center;
+  padding-top: var(--space-xl);
+  margin-top: var(--space-xl);
+  border-top: 2px solid var(--color-border);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+/* --- RESPONSIVE STYLES --- */
+
+/* Tablets (iPad, larger phones) */
+@media (max-width: 768px) {
+  .echi-container {
+    padding: var(--space-md);
+    /* Reduced container padding */
+  }
+
+  .echi-container h1 {
+    font-size: 36px;
+    /* Slightly smaller header */
+  }
+
+  .echi-class-heading {
+    font-size: 20px;
+  }
+
+  .echi-species-grid {
+    /* Keep standard grid behavior but adjust gap */
+    gap: var(--space-md);
+  }
+
+  .echi-species-image {
+    height: 180px;
+    /* Slightly smaller images */
+  }
+}
+
+/* Mobile Devices (Phones) */
+@media (max-width: 480px) {
+  .echi-container header {
+    margin-bottom: var(--space-lg);
+  }
+
+  .echi-container h1 {
+    font-size: 28px;
+    /* Mobile friendly header */
+  }
+
+  .echi-subtitle {
+    font-size: 14px;
+  }
+
+  .echi-class-heading {
+    font-size: 18px;
+    margin-bottom: var(--space-md);
+  }
+
+  .echi-species-grid {
+    /* Force 2 columns side-by-side for "App Gallery" feel */
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+  }
+
+  .echi-species-image {
+    height: 140px;
+    /* Reduce height to fit 2 columns nicely */
+  }
+
+  .echi-species-info {
+    padding: var(--space-sm);
+    /* Reduce padding inside card */
+  }
+
+  .echi-species-name {
+    font-size: 14px;
+    /* Compact text */
+  }
+
+  .echi-species-name-scientific {
+    font-size: 11px;
+  }
+}

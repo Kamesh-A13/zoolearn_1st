@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Wildlife, Ecology & Environmental Careers</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{
+  margin:0;
+  padding:30px;
+  font-family:'Poppins',sans-serif;
+  background:#f5fdf8;
+  color:#0f172a;
+}
+.page{max-width:1500px;margin:auto}
+h1{text-align:center;color:#14532d;margin-bottom:40px}
+.category-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:20px}
+.category{background:#fff;border-radius:18px;padding:20px;box-shadow:0 10px 25px rgba(0,0,0,.06)}
+.category-title{text-align:center;font-weight:600;color:#1faa59;margin-bottom:20px}
+.career-list{display:flex;flex-direction:column;gap:14px}
+.box{background:#f8fffb;border:1px solid #d1fae5;border-radius:14px;padding:14px;cursor:pointer;transition:.25s}
+.box:hover{background:#ecfdf5;transform:translateY(-2px)}
+.box-title{font-weight:600;color:#2563eb}
+.overlay{position:fixed;inset:0;background:rgba(15,23,42,.7);display:flex;justify-content:center;align-items:center;opacity:0;pointer-events:none;transition:.3s;z-index:1000}
+.overlay.active{opacity:1;pointer-events:auto}
+.modal{background:#fff;width:900px;border-radius:22px;padding:34px;transition:transform .45s ease}
+.modal.shift-left{transform:translateX(-260px)}
+.modal h2{text-align:center;color:#14532d}
+.content{text-align:center;margin-bottom:24px}
+.pathway-title{text-align:center;color:#1faa59;font-weight:700}
+.level-label{text-align:center;margin:16px 0;color:#065f46}
+.level-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.step-box{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:12px;padding:8px 14px;font-weight:600;cursor:pointer}
+.step-box:hover{background:#d1fae5}
+.down-arrow{text-align:center;font-size:22px;color:#1faa59}
+.salary{text-align:center;font-weight:700;color:#15803d;margin-top:20px}
+.course-panel{position:fixed;top:0;right:0;width:480px;height:100%;background:#fff;box-shadow:-8px 0 30px rgba(0,0,0,.15);padding:28px;z-index:1200;display:none;opacity:0;transform:translateX(100%);transition:transform .6s cubic-bezier(.22,.61,.36,1),opacity .4s ease}
+.course-panel.active{display:block;opacity:1;transform:translateX(0)}
+.course-panel h3{color:#14532d}
+.course-section{margin-bottom:18px}
+.course-section strong{color:#1faa59}
+.back-btn{display:inline-block;margin:20px;padding:10px 20px;background:#1faa59;color:white;text-decoration:none;border-radius:8px;font-weight:600}
+.back-btn:hover{background:#15803d}
+</style>
+</head>
+<body>
+<div class="page">
+  <a href="index.html" class="back-btn">← Back to Categories</a>
+  <h1>Wildlife, Ecology & Environmental Careers</h1>
+  <div class="category-grid" id="app"></div>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeCoursePanel()">
+  <div class="modal" id="careerModal" onclick="event.stopPropagation()">
+    <h2 id="modalTitle"></h2>
+    <div class="content" id="modalDesc"></div>
+    <div class="pathway-title">Pathway</div>
+    <div class="level-label">Bachelor's Degree (B.Sc)</div>
+    <div class="level-row" id="bscRow"></div>
+    <div class="down-arrow">↓</div>
+    <div class="level-label">Master's Degree (M.Sc)</div>
+    <div class="level-row" id="mscRow"></div>
+    <div class="down-arrow">↓</div>
+    <div class="level-label">Doctoral Degree (Ph.D)</div>
+    <div class="level-row" id="phdRow"></div>
+    <div class="salary" id="modalSalary"></div>
+  </div>
+</div>
+
+<div class="course-panel" id="coursePanel" onclick="event.stopPropagation()">
+  <h3 id="courseName"></h3>
+  <div class="course-section"><strong>Explanation:</strong><p id="courseExp"></p></div>
+  <div class="course-section"><strong>Duration:</strong><p id="courseDur"></p></div>
+  <div class="course-section"><strong>Importance:</strong><p id="courseImp"></p></div>
+</div>
+
+<script>
+const courseDetails = {
+"B.Sc. Zoology":{exp:"Scientific study of animals covering structure, physiology, behaviour, evolution, genetics and ecology.",dur:"3 years",imp:"This course forms the foundation of animal sciences. It prepares students for higher studies and careers in wildlife biology, ecology, conservation, veterinary research, zoological studies and teaching."},
+"B.Sc. Biotechnology":{exp:"Integration of biology with modern technology including genetics, molecular biology and bioinformatics.",dur:"3 years",imp:"This course is central to modern science and industry. It enables careers in biotechnology firms, pharmaceuticals, diagnostics, agriculture and advanced molecular research."},
+"B.Sc. Life Sciences":{exp:"Interdisciplinary study of biology at molecular, cellular, organismal and ecological levels.",dur:"3 years",imp:"It provides academic flexibility and a broad base, allowing students to specialize later in diverse biological fields such as ecology, genetics or biotechnology."},
+"B.Sc. Environmental Science":{exp:"Study of environmental systems, conservation, pollution control, and sustainable development.",dur:"3 years",imp:"Essential for careers in environmental consulting, conservation, policy-making, and sustainability management."},
+"B.Sc. Forestry":{exp:"Study of forest management, conservation, silviculture, and wildlife habitat management.",dur:"4 years",imp:"Prepares for forest services, conservation organizations, and sustainable forest management careers."},
+"B.Sc. Political Science":{exp:"Study of political systems, governance, and public policy.",dur:"3 years",imp:"Useful for policy-making, environmental law, and governance careers."},
+"B.V.Sc & AH":{exp:"Bachelor of Veterinary Science and Animal Husbandry - professional degree for veterinarians.",dur:"5 years",imp:"Mandatory for practicing veterinary medicine and surgery in India."},
+"M.Sc. Wildlife Biology":{exp:"Advanced study of wildlife species, behavior, and conservation.",dur:"2 years",imp:"Essential for wildlife research, conservation projects, and doctoral studies."},
+"M.Sc. Wildlife Science":{exp:"Applied wildlife management, conservation techniques, and field research.",dur:"2 years",imp:"Important for forest services, NGOs, and conservation management roles."},
+"M.Sc. Conservation Biology":{exp:"Study of biodiversity conservation, endangered species, and habitat protection.",dur:"2 years",imp:"Critical for global and national conservation strategy development."},
+"M.Sc. Ecology":{exp:"Study of ecosystems, species interactions, and environmental relationships.",dur:"2 years",imp:"Backbone of environmental research, conservation, and sustainability studies."},
+"M.Sc. Environmental Science":{exp:"Interdisciplinary environmental studies including pollution, conservation, and sustainability.",dur:"2 years",imp:"Key for environmental consulting, impact assessment, and policy development."},
+"M.Sc. Wildlife Ecology":{exp:"Study of wildlife interactions with ecosystems and habitats.",dur:"2 years",imp:"Important for conservation planning and wildlife management."},
+"M.Sc. Wildlife Management":{exp:"Applied techniques for wildlife population and habitat management.",dur:"2 years",imp:"Crucial for protected area management and conservation programs."},
+"M.Sc. Forestry":{exp:"Advanced forest management, conservation, and silviculture.",dur:"2 years",imp:"Essential for forest department careers and sustainable forestry."},
+"M.Sc. Biodiversity":{exp:"Study of biological diversity, conservation, and sustainable use.",dur:"2 years",imp:"Critical for conservation planning and environmental policy."},
+"M.Sc. Conservation Science":{exp:"Scientific approaches to biodiversity conservation and management.",dur:"2 years",imp:"Important for conservation organizations and environmental agencies."},
+"M.Sc. Restoration Ecology":{exp:"Study of ecosystem restoration and rehabilitation techniques.",dur:"2 years",imp:"Vital for habitat restoration projects and environmental recovery."},
+"M.Sc. Environmental Management":{exp:"Management of environmental resources and sustainable development.",dur:"2 years",imp:"Key for environmental consulting and corporate sustainability roles."},
+"M.Sc. EIA":{exp:"Environmental Impact Assessment methodologies and applications.",dur:"2 years",imp:"Essential for development project planning and regulatory compliance."},
+"M.Sc. Environmental Policy":{exp:"Study of environmental laws, regulations, and governance.",dur:"2 years",imp:"Essential for policy-making and environmental advocacy."},
+"M.Sc. Conflict Resolution":{exp:"Study of conflict management and resolution strategies.",dur:"2 years",imp:"Important for managing human-wildlife conflicts."},
+"Ph.D. Wildlife Biology":{exp:"Doctoral research on wildlife species, behavior, and conservation.",dur:"3–5 years",imp:"Leadership roles in wildlife research, conservation, and policy-making."},
+"Ph.D. Wildlife Conservation":{exp:"Advanced research on conservation strategies and protected area management.",dur:"3–5 years",imp:"Senior positions in conservation organizations and government agencies."},
+"Ph.D. Conservation Biology":{exp:"Doctoral research on biodiversity conservation and ecosystem management.",dur:"3–5 years",imp:"Global conservation impact through research and policy development."},
+"Ph.D. Ecology":{exp:"Advanced ecosystem research and ecological theory development.",dur:"3–5 years",imp:"Climate change research, conservation planning, and sustainability science leadership."},
+"Ph.D. Environmental Science":{exp:"Doctoral research on environmental systems, pollution, and sustainability.",dur:"3–6 years",imp:"Environmental governance, policy development, and research leadership."},
+"Ph.D. Wildlife Ecology":{exp:"Doctoral research on wildlife-ecosystem interactions.",dur:"3–5 years",imp:"Wildlife conservation research and ecosystem management leadership."},
+"Ph.D. Wildlife Management":{exp:"Advanced research on wildlife population and habitat management.",dur:"3–5 years",imp:"Protected area management and conservation policy leadership."},
+"Ph.D. Biodiversity":{exp:"Advanced research on biological diversity and conservation.",dur:"3–5 years",imp:"Global biodiversity conservation and policy leadership."},
+"Ph.D. Conservation Science":{exp:"Doctoral research on conservation strategies and techniques.",dur:"3–5 years",imp:"Conservation science innovation and implementation leadership."},
+"Ph.D. Restoration Ecology":{exp:"Advanced research on ecosystem restoration techniques.",dur:"3–5 years",imp:"Habitat restoration research and environmental recovery leadership."},
+"Ph.D. Environmental Management":{exp:"Doctoral research on environmental resource management.",dur:"3–6 years",imp:"Environmental governance and sustainability leadership."},
+"Ph.D. Environmental Policy":{exp:"Advanced research on environmental governance and policy.",dur:"3–5 years",imp:"Environmental law and policy development leadership."},
+"Ph.D. Human-Wildlife Conflict":{exp:"Research on conflicts between humans and wildlife and mitigation strategies.",dur:"3–5 years",imp:"Conflict resolution and conservation management leadership."}
+};
+
+const categories = [{
+name:"Wildlife, Ecology & Environmental Careers",
+items:[
+{title:"Wildlife Biologist / Wildlife Conservationist",desc:"Study wild animals and protect endangered species.",bsc:["B.Sc. Zoology","B.Sc. Biotechnology","B.Sc. Life Sciences"],msc:["M.Sc. Wildlife Biology","M.Sc. Wildlife Science","M.Sc. Conservation Biology"],phd:["Ph.D. Wildlife Biology","Ph.D. Wildlife Conservation"],salary:"3–6 LPA"},
+{title:"Ecologist / Environmental Consultant",desc:"Study ecosystems and biodiversity impacts.",bsc:["B.Sc. Zoology","B.Sc. Biotechnology","B.Sc. Life Sciences"],msc:["M.Sc. Ecology","M.Sc. Environmental Science"],phd:["Ph.D. Ecology"],salary:"4–7 LPA"},
+{title:"Wildlife Ecologist",desc:"Studies interactions between wildlife and their ecosystems, focusing on ecological relationships.",bsc:["B.Sc. Zoology","B.Sc. Environmental Science","B.Sc. Life Sciences"],msc:["M.Sc. Wildlife Ecology","M.Sc. Ecology"],phd:["Ph.D. Wildlife Ecology","Ph.D. Ecology"],salary:"4–7 LPA"},
+{title:"Wildlife Research Scientist",desc:"Conducts scientific research on wildlife species, behavior, and conservation.",bsc:["B.Sc. Zoology","B.Sc. Life Sciences","B.Sc. Environmental Science"],msc:["M.Sc. Wildlife Science","M.Sc. Conservation Biology"],phd:["Ph.D. Wildlife Biology","Ph.D. Conservation Biology"],salary:"4–8 LPA"},
+{title:"Wildlife Manager",desc:"Manages wildlife populations and habitats in protected areas and reserves.",bsc:["B.Sc. Zoology","B.Sc. Forestry","B.Sc. Environmental Science"],msc:["M.Sc. Wildlife Management","M.Sc. Forestry"],phd:["Ph.D. Wildlife Management"],salary:"4–7 LPA"},
+{title:"Forest Officer (IFS / State Forest Services)",desc:"Government officer managing forests, wildlife, and natural resources.",bsc:["B.Sc. Forestry","B.Sc. Zoology","B.Sc. Environmental Science"],msc:["M.Sc. Forestry","M.Sc. Wildlife Science"],phd:["Optional for specialization"],salary:"7–15 LPA"},
+{title:"Range Forest Officer (RFO)",desc:"Manages forest ranges, implements conservation programs, prevents illegal activities.",bsc:["B.Sc. Forestry","B.Sc. Zoology","B.Sc. Environmental Science"],msc:["M.Sc. Forestry","Diploma in Forest Management"],phd:["Not required"],salary:"5–9 LPA"},
+{title:"Wildlife Inspector",desc:"Enforces wildlife protection laws, prevents smuggling and illegal trade.",bsc:["B.Sc. Zoology","B.Sc. Environmental Science","B.Sc. Life Sciences"],msc:["M.Sc. Wildlife Science","M.Sc. Environmental Law"],phd:["Not required"],salary:"4–7 LPA"},
+{title:"Biodiversity Officer",desc:"Monitors and conserves biodiversity in regions, implements conservation plans.",bsc:["B.Sc. Zoology","B.Sc. Environmental Science","B.Sc. Life Sciences"],msc:["M.Sc. Biodiversity","M.Sc. Conservation Biology"],phd:["Ph.D. Biodiversity Studies"],salary:"4–8 LPA"},
+{title:"Conservation Scientist",desc:"Develops and implements strategies to protect ecosystems and species.",bsc:["B.Sc. Environmental Science","B.Sc. Zoology","B.Sc. Life Sciences"],msc:["M.Sc. Conservation Science","M.Sc. Environmental Science"],phd:["Ph.D. Conservation Science","Ph.D. Conservation Biology"],salary:"4–8 LPA"},
+{title:"Habitat Restoration Specialist",desc:"Restores degraded ecosystems and wildlife habitats to natural conditions.",bsc:["B.Sc. Environmental Science","B.Sc. Zoology","B.Sc. Forestry"],msc:["M.Sc. Restoration Ecology","M.Sc. Environmental Management"],phd:["Ph.D. Restoration Ecology"],salary:"4–7 LPA"},
+{title:"Wildlife Rehabilitator",desc:"Cares for injured, orphaned, or sick wildlife for release back to wild.",bsc:["B.Sc. Zoology","B.Sc. Veterinary Science","B.Sc. Life Sciences"],msc:["M.Sc. Wildlife Rehabilitation","Certification courses"],phd:["Not typically required"],salary:"3–5 LPA"},
+{title:"Anti-Poaching Officer",desc:"Prevents poaching and illegal wildlife trade through patrols and investigations.",bsc:["B.Sc. Zoology","B.Sc. Forestry","B.Sc. Environmental Science"],msc:["M.Sc. Wildlife Protection","Law enforcement training"],phd:["Not required"],salary:"4–6 LPA"},
+{title:"Environmental Impact Assessment (EIA) Specialist",desc:"Assesses environmental impacts of development projects on wildlife.",bsc:["B.Sc. Environmental Science","B.Sc. Zoology","B.Sc. Life Sciences"],msc:["M.Sc. Environmental Science","M.Sc. EIA"],phd:["Ph.D. Environmental Impact Assessment"],salary:"5–9 LPA"},
+{title:"Human–Wildlife Conflict Specialist",desc:"Manages conflicts between humans and wildlife, develops mitigation strategies.",bsc:["B.Sc. Zoology","B.Sc. Environmental Science","B.Sc. Forestry"],msc:["M.Sc. Wildlife Management","M.Sc. Conflict Resolution"],phd:["Ph.D. Human-Wildlife Conflict"],salary:"4–7 LPA"},
+{title:"Wildlife Policy Advisor",desc:"Advises governments and organizations on wildlife conservation policies.",bsc:["B.Sc. Zoology","B.Sc. Environmental Science","B.Sc. Political Science"],msc:["M.Sc. Environmental Policy","M.Sc. Wildlife Management"],phd:["Ph.D. Environmental Policy"],salary:"6–11 LPA"}
+]}];
+
+const app=document.getElementById("app");
+categories.forEach(cat=>{
+  const col=document.createElement("div");
+  col.className="category";
+  col.innerHTML=`<div class="category-title">${cat.name}</div><div class="career-list"></div>`;
+  const list=col.querySelector(".career-list");
+  cat.items.forEach(c=>{
+    const box=document.createElement("div");
+    box.className="box";
+    box.innerHTML=`<div class="box-title">${c.title}</div>`;
+    box.onclick=()=>openCareer(c);
+    list.appendChild(box);
+  });
+  app.appendChild(col);
+});
+function openCareer(c){
+  modalTitle.innerText=c.title;
+  modalDesc.innerText=c.desc;
+  modalSalary.innerText="The average salary outcome for the following course is: "+c.salary;
+  fillRow("bscRow",c.bsc);
+  fillRow("mscRow",c.msc);
+  fillRow("phdRow",c.phd);
+  overlay.classList.add("active");
+}
+function fillRow(id,arr){
+  const row=document.getElementById(id);
+  row.innerHTML="";
+  arr.forEach(name=>{
+    const d=document.createElement("div");
+    d.className="step-box";
+    d.innerText=name;
+    d.onclick=()=>openCourse(name);
+    row.appendChild(d);
+  });
+}
+function openCourse(name){
+  const data = courseDetails[name];
+  if(!data) {
+    courseName.innerText=name;
+    courseExp.innerText="Detailed information about this course.";
+    courseDur.innerText="2-3 years";
+    courseImp.innerText="Important course for specialization in this field.";
+  } else {
+    courseName.innerText=name;
+    courseExp.innerText=data.exp;
+    courseDur.innerText=data.dur;
+    courseImp.innerText=data.imp;
+  }
+  coursePanel.classList.add("active");
+  careerModal.classList.add("shift-left");
+}
+function closeCoursePanel(){
+  coursePanel.classList.remove("active");
+  careerModal.classList.remove("shift-left");
+  overlay.classList.remove("active");
+}
+</script>
+</body>
+</html>

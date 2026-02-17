@@ -1,0 +1,1 @@
+export default function CoelomFormation(){return <section><h2>Coelom Formation</h2></section>;}

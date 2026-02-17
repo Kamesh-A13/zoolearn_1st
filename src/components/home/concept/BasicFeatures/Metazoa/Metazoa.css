@@ -1,0 +1,176 @@
+/* =====================================================
+   METAZOA – TIGHT, BALANCED & SCREEN-UTILIZED
+===================================================== */
+
+:root {
+  /* Scoped Variables */
+  --meta-bg-color: #ffffff;
+  --meta-card-bg: #f8fafc; /* Slate 50 */
+  --meta-border: #e2e8f0;  /* Slate 200 */
+  
+  --meta-text-primary: #0f172a;   /* Slate 900 */
+  --meta-text-secondary: #475569; /* Slate 600 */
+  --meta-accent: #059669;         /* Emerald 600 */
+  --meta-accent-light: #ecfdf5;   /* Emerald 50 */
+  
+  --meta-font: "Inter", system-ui, -apple-system, sans-serif;
+  --meta-radius: 8px; /* Slightly sharper radius for a 'tighter' feel */
+}
+
+/* SECTION RESET */
+.metazoa-section {
+  width: 100%;
+  background-color: var(--meta-bg-color);
+  font-family: var(--meta-font);
+  /* Reduced vertical padding for density */
+  padding: 64px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+/* WIDE CONTAINER */
+.metazoa-container {
+  width: 100%;
+  /* Increased from 1000px to 1280px to fill the screen better */
+  max-width: 1280px; 
+  /* Minimal safety gutters */
+  padding-inline: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Reduced gap from 56px */
+}
+
+/* HEADER SECTION - Left Aligned & Efficient */
+.metazoa-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-left: 4px solid var(--meta-accent);
+  padding-left: 16px;
+}
+
+.metazoa-title {
+  font-size: 2rem; /* ~32px */
+  font-weight: 700;
+  color: var(--meta-text-primary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.metazoa-description {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.5;
+  color: var(--meta-text-secondary);
+  margin: 0;
+  max-width: 900px; /* Prevents text lines from becoming unreadably long */
+}
+
+/* CONTENT AREA */
+.metazoa-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.metazoa-subkingdoms-label {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: var(--meta-accent);
+  margin: 0;
+}
+
+/* SPLIT GRID (50/50) */
+.metazoa-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px; /* Tighter gap for better relation between items */
+  width: 100%;
+}
+
+/* INFO CARDS */
+.metazoa-info-card {
+  background-color: var(--meta-card-bg);
+  border: 1px solid var(--meta-border);
+  border-radius: var(--meta-radius);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.2s ease-in-out;
+  height: 100%; /* Ensures both cards are equal height */
+  box-sizing: border-box;
+}
+
+.metazoa-info-card:hover {
+  border-color: var(--meta-accent);
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.metazoa-card-header {
+  display: flex;
+  /* align-items: center; */
+  gap: 12px;
+}
+
+.metazoa-card-badge {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--meta-accent);
+  border-radius: 50%;
+}
+
+.metazoa-card-title {
+  text-align:right;
+  font-size: 1.5rem; /* 24px */
+  font-weight: 700;
+  color: var(--meta-text-primary);
+  margin: 0;
+}
+
+.metazoa-card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--meta-text-secondary);
+  margin: 0;
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+@media (max-width: 900px) {
+  /* Switch to stack earlier for tablet readability if text gets squeezed */
+  .metazoa-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .metazoa-section {
+    padding: 40px 0;
+  }
+
+  .metazoa-container {
+    padding-inline: 16px; /* Standard mobile gutter */
+    gap: 32px;
+  }
+
+  .metazoa-title {
+    font-size: 1.75rem;
+  }
+
+  .metazoa-description {
+    font-size: 1rem;
+  }
+
+  .metazoa-info-card {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,712 @@
+/* =========================================
+   CONTAINER & LAYOUT
+   ========================================= */
+.proto-comparison-wrapper {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 10px;
+  perspective: 1000px; /* Enables 3D effects */
+}
+
+/* Flex Rows */
+.proto-header-row {
+  display: flex;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.proto-content-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  min-height: 300px;
+}
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+/* 1. Enhanced Slide Up Entrance with Fade */
+@keyframes proto-slideUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(40px) scale(0.95); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0) scale(1); 
+  }
+}
+
+/* 2. Enhanced Floating Icons */
+@keyframes proto-float {
+  0%, 100% { 
+    transform: translateY(0) rotate(0deg); 
+  }
+  33% { 
+    transform: translateY(-8px) rotate(5deg); 
+  }
+  66% { 
+    transform: translateY(-4px) rotate(-5deg); 
+  }
+}
+
+.proto-floating-icon {
+  font-size: 2rem;
+  margin-top: 10px;
+  animation: proto-float 4s ease-in-out infinite;
+  display: inline-block;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+/* 3. Enhanced Pulse Animation with Color */
+@keyframes proto-pulse {
+  0% { 
+    transform: scale(1); 
+    box-shadow: 0 0 0 0 rgba(0, 128, 128, 0.7); 
+  }
+  70% { 
+    transform: scale(1.05); 
+    box-shadow: 0 0 0 15px rgba(0, 128, 128, 0); 
+  }
+  100% { 
+    transform: scale(1); 
+    box-shadow: 0 0 0 0 rgba(0, 128, 128, 0); 
+  }
+}
+
+.proto-pulse-anim {
+  position: relative;
+  overflow: hidden;
+}
+
+.proto-pulse-anim::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(0,128,128,0.2) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.proto-pulse-anim:hover::after {
+  opacity: 1;
+}
+
+.proto-pulse-anim:hover .proto-visual-frame {
+  animation: proto-pulse 2s infinite;
+}
+
+/* 4. Enhanced Hover Card Lift with Glow */
+.proto-hover-card {
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.proto-hover-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.6s;
+}
+
+.proto-hover-card:hover::before {
+  left: 100%;
+}
+
+.proto-hover-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* 5. Badge Animation */
+@keyframes proto-badgeGlow {
+  0%, 100% { 
+    box-shadow: 0 0 5px rgba(30, 41, 59, 0.5); 
+  }
+  50% { 
+    box-shadow: 0 0 15px rgba(30, 41, 59, 0.8); 
+  }
+}
+
+.proto-badge-pill {
+  animation: proto-badgeGlow 3s infinite;
+}
+
+/* 6. Image Reveal Animation */
+@keyframes proto-imageReveal {
+  from { 
+    opacity: 0; 
+    transform: scale(0.8) rotate(-5deg); 
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1) rotate(0deg); 
+  }
+}
+
+.proto-visual-frame {
+  animation: proto-imageReveal 1s ease-out;
+}
+
+/* 7. Text Highlight Animation */
+@keyframes proto-textHighlight {
+  from { 
+    background-position: -200% center; 
+  }
+  to { 
+    background-position: 200% center; 
+  }
+}
+
+.proto-highlight-text {
+  background: linear-gradient(90deg, 
+    #fbc02d 0%, 
+    #fff176 25%, 
+    #fbc02d 50%, 
+    #fff176 75%, 
+    #fbc02d 100%);
+  background-size: 200% auto;
+  animation: proto-textHighlight 3s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 8. Border Animation on Hover */
+.proto-row-content {
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+}
+
+.proto-row-content:hover {
+  border-image: linear-gradient(45deg, rgba(0,150,136,0.5), rgba(76,175,80,0.5)) 1;
+}
+
+/* Slide In Classes */
+.proto-slide-in {
+  opacity: 0;
+  animation: proto-slideUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.proto-delay-1 { animation-delay: 0.2s; }
+.proto-delay-2 { animation-delay: 0.4s; }
+.proto-delay-3 { animation-delay: 0.6s; }
+
+/* =========================================
+   HEADERS
+   ========================================= */
+.proto-header-col {
+  flex: 1;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.proto-header-col::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.proto-header-col:hover::before {
+  opacity: 1;
+}
+
+.proto-header-protostome {
+  background: linear-gradient(135deg, #009688 0%, #004d40 100%);
+  border-right: 2px solid rgba(255,255,255,0.1);
+}
+
+.proto-header-deuterostome {
+  background: linear-gradient(135deg, #4caf50 0%, #1b5e20 100%);
+}
+
+.proto-header-col h2 {
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.proto-header-col p {
+  margin: 5px 0 0;
+  opacity: 0.9;
+  font-style: italic;
+  font-size: 0.95rem;
+  position: relative;
+  z-index: 1;
+  color:white;
+}
+
+/* =========================================
+   ROW CONTENT
+   ========================================= */
+.proto-row-content {
+  flex: 1;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.05);
+  background: white;
+}
+
+.proto-bg-protostome { 
+  background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+}
+
+.proto-bg-deuterostome { 
+  background: linear-gradient(135deg, #f1f8e9 0%, #ffffff 100%);
+}
+
+/* Badges (a, b, c) */
+.proto-badge-pill {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+.proto-stage-title {
+  font-weight: 700;
+  color: #37474f;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* =========================================
+   IMAGE SPRITE SYSTEM
+   ========================================= */
+.proto-visual-frame {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: white;
+  border: 4px solid white;
+  box-shadow: 
+    0 8px 16px rgba(0,0,0,0.1),
+    0 0 0 3px rgba(0,150,136,0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.proto-hover-card:hover .proto-visual-frame {
+  transform: scale(1.15) rotate(5deg);
+  border-color: #fff;
+  box-shadow: 
+    0 15px 30px rgba(0,0,0,0.2),
+    0 0 0 5px rgba(0,150,136,0.2);
+}
+
+.proto-sprite-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+
+.proto-hover-card:hover .proto-sprite-img {
+  transform: scale(1.1);
+}
+
+/* =========================================
+   TEXT DESCRIPTIONS
+   ========================================= */
+.proto-row-desc {
+  font-weight: 600;
+  color: #546e7a;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.proto-info-box {
+  background: rgba(255,255,255,0.85);
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  color: #263238;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.proto-hover-card:hover .proto-info-box {
+  background: rgba(255,255,255,0.95);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+}
+
+.proto-info-box strong {
+  display: block;
+  color: #000;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* COMPACT EXAMPLES SECTION */
+.proto-compact-examples .proto-row-content {
+  padding: 20px 15px;
+  min-height: 160px;
+  justify-content: center;
+}
+
+.proto-compact-examples .proto-info-box {
+  margin-top: 0;
+  padding: 12px 15px;
+}
+
+.proto-compact-examples .proto-info-box strong {
+  margin-bottom: 5px;
+}
+
+/* =========================================
+   RESPONSIVE - SIDE-BY-SIDE ON ALL SCREENS
+   ========================================= */
+@media (max-width: 768px) {
+  .proto-comparison-wrapper {
+    margin: 10px auto;
+    padding: 5px;
+    perspective: none;
+  }
+  
+  /* Keep everything side-by-side */
+  .proto-header-row {
+    flex-direction: row !important;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .proto-content-row {
+    flex-direction: row !important;
+    gap: 10px;
+    margin-bottom: 10px;
+    min-height: auto;
+  }
+  
+  .proto-header-col {
+    padding: 12px 8px;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .proto-header-col h2 {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    margin: 0;
+  }
+  
+  .proto-header-col p {
+    font-size: 0.65rem;
+    margin: 2px 0 0 0;
+    opacity: 0.9;
+  }
+  
+  .proto-row-content {
+    padding: 50px 10px 15px 10px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Badge adjustments */
+  .proto-badge-pill {
+    top: 8px;
+    padding: 5px 12px;
+    font-size: 0.65rem;
+  }
+  
+  /* Visual elements */
+  .proto-visual-frame {
+    width: 100px;
+    height: 100px;
+    margin: 5px auto 10px auto;
+    border-width: 3px;
+  }
+  
+  .proto-stage-title {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .proto-row-desc {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    line-height: 1.3;
+  }
+  
+  /* Info boxes */
+  .proto-info-box {
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+  
+  .proto-info-box strong {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+  }
+  
+  .proto-highlight-text {
+    font-size: 0.8rem;
+    padding: 5px 0;
+  }
+  
+  /* Mobile labels for definition row */
+  .proto-row-content::before {
+    content: attr(data-label);
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: inherit;
+  }
+  
+  .proto-bg-protostome::before {
+    color: #004d40;
+  }
+  
+  .proto-bg-deuterostome::before {
+    color: #1b5e20;
+  }
+  
+  /* Hide label when badge is present */
+  .proto-row-content:has(.proto-badge-pill)::before {
+    display: none;
+  }
+  
+  /* Adjust definition row */
+  .proto-content-row:first-of-type .proto-row-content {
+    padding-top: 40px;
+  }
+  
+  .proto-content-row:first-of-type .proto-visual-frame {
+    width: 110px;
+    height: 110px;
+  }
+  
+  /* COMPACT EXAMPLES ON MOBILE */
+  .proto-compact-examples .proto-row-content {
+    padding: 15px 10px;
+    min-height: 140px;
+  }
+  
+  .proto-compact-examples .proto-info-box {
+    padding: 10px;
+    font-size: 0.75rem;
+    margin-top: 0;
+  }
+  
+  .proto-compact-examples .proto-info-box strong {
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+  }
+  
+  /* Animation adjustments */
+  .proto-slide-in {
+    animation-duration: 0.6s;
+  }
+  
+  .proto-delay-1 { animation-delay: 0.1s; }
+  .proto-delay-2 { animation-delay: 0.2s; }
+  .proto-delay-3 { animation-delay: 0.3s; }
+  
+  /* Disable hover effects on mobile */
+  @media (hover: none) {
+    .proto-hover-card:hover {
+      transform: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+    
+    .proto-hover-card:hover .proto-visual-frame {
+      transform: none;
+      animation: none;
+    }
+    
+    .proto-hover-card:hover .proto-sprite-img {
+      transform: none;
+    }
+    
+    .proto-hover-card:hover .proto-info-box {
+      transform: none;
+    }
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .proto-comparison-wrapper {
+    padding: 3px;
+  }
+  
+  .proto-content-row {
+    gap: 6px;
+  }
+  
+  .proto-header-col {
+    padding: 10px 5px;
+  }
+  
+  .proto-header-col h2 {
+    font-size: 0.8rem;
+  }
+  
+  .proto-header-col p {
+    font-size: 0.6rem;
+  }
+  
+  .proto-row-content {
+    padding: 45px 8px 12px 8px;
+    min-height: 300px;
+  }
+  
+  .proto-badge-pill {
+    padding: 4px 10px;
+    font-size: 0.6rem;
+  }
+  
+  .proto-visual-frame {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .proto-stage-title {
+    font-size: 0.85rem;
+  }
+  
+  .proto-row-desc {
+    font-size: 0.75rem;
+  }
+  
+  .proto-info-box {
+    padding: 8px;
+    font-size: 0.75rem;
+  }
+  
+  .proto-info-box strong {
+    font-size: 0.8rem;
+  }
+  
+  .proto-row-content::before {
+    font-size: 0.7rem;
+  }
+  
+  /* COMPACT EXAMPLES ON SMALL PHONES */
+  .proto-compact-examples .proto-row-content {
+    padding: 12px 8px;
+    min-height: 120px;
+  }
+  
+  .proto-compact-examples .proto-info-box {
+    padding: 8px;
+    font-size: 0.7rem;
+  }
+  
+  .proto-compact-examples .proto-info-box strong {
+    font-size: 0.75rem;
+  }
+}
+
+/* Horizontal adjustments for landscape */
+@media (max-width: 768px) and (orientation: landscape) {
+  .proto-content-row {
+    min-height: 280px;
+  }
+  
+  .proto-row-content {
+    min-height: 280px;
+  }
+  
+  .proto-visual-frame {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .proto-compact-examples .proto-row-content {
+    min-height: 110px;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .proto-comparison-wrapper {
+    max-width: 95%;
+  }
+  
+  .proto-header-col h2 {
+    font-size: 1.4rem;
+  }
+  
+  .proto-visual-frame {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .proto-content-row {
+    gap: 12px;
+    min-height: 280px;
+  }
+  
+  .proto-row-content {
+    padding: 25px 15px;
+  }
+  
+  .proto-compact-examples .proto-row-content {
+    min-height: 140px;
+    padding: 20px 15px;
+  }
+}

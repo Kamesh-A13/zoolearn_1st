@@ -1,0 +1,375 @@
+/* =====================================================
+   ZOOLOGY HERO BANNER
+   Green → Blue Gradient (Restored)
+   Fully Scoped | No Collisions
+===================================================== */
+
+.banner-hero {
+  /* ===== BRAND COLORS ===== */
+  --banner-green: #2f7d46;
+  /* Zoo green */
+  --banner-green-soft: #e6f4ec;
+  --banner-blue-light: #bfe8f2;
+  --banner-blue: #47bee5;
+  --banner-blue-dark: #2b6f86;
+
+  /* ===== TEXT ===== */
+  --banner-text-main: #0f172a;
+  --banner-text-sub: #334155;
+
+  /* Updated to match new header height */
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  align-items: center;
+  /* Removed padding-top to eliminate gap */
+  padding: 0;
+
+  /* 🌿➡️🌊 Green to Blue Gradient */
+  background: linear-gradient(120deg,
+      #d1f7dc 0%,
+      #d9eef7 100%);
+}
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+.banner-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
+}
+
+/* =====================================================
+   LEFT CONTENT
+===================================================== */
+.banner-left {
+  animation: bannerFadeUp 1s ease;
+}
+
+/* Audience badge */
+.banner-badge {
+  display: inline-block;
+  background: rgba(47, 143, 179, 0.22);
+  color: #0b3a4a;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+/* Title */
+.banner-title {
+  font-size: 3.4rem;
+  font-weight: 800;
+  color: var(--banner-text-main);
+  line-height: 1.15;
+  margin: 0 0 0.5rem 0;
+}
+
+.banner-highlight {
+  color: var(--banner-green);
+}
+
+/* Description */
+.banner-desc {
+  font-size: 1.15rem;
+  color: var(--banner-text-sub);
+  line-height: 1.75;
+  margin: 1.6rem 0;
+  max-width: 540px;
+}
+
+/* =====================================================
+   NEW: STATS SECTION (Replaces Buttons)
+===================================================== */
+.banner-stats {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+.banner-stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-stat-number {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.2rem;
+  /* Use gradient text for numbers */
+  background: linear-gradient(135deg, var(--banner-green), var(--banner-blue-dark));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-stat-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--banner-text-sub);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Vertical Divider between stats */
+.banner-stat-divider {
+  width: 2px;
+  height: 50px;
+  background-color: rgba(43, 111, 134, 0.15);
+  border-radius: 2px;
+}
+
+/* Focus states for accessibility */
+.banner-nav:focus {
+  outline: 3px solid var(--banner-blue);
+  outline-offset: 2px;
+}
+
+/* =====================================================
+   RIGHT IMAGE / SLIDER
+===================================================== */
+.banner-right {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  perspective: 1200px;
+}
+
+/* Image */
+.banner-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow:
+    0 30px 60px rgba(27, 95, 120, 0.45),
+    0 12px 28px rgba(27, 95, 120, 0.25);
+  backface-visibility: hidden;
+  animation: bannerFlip 0.9s ease;
+  transition: opacity 0.3s ease;
+}
+
+.banner-image.loading {
+  opacity: 0.7;
+  filter: blur(2px);
+}
+
+.banner-image.loaded {
+  opacity: 1;
+  filter: blur(0);
+}
+
+/* =====================================================
+   IMAGE FLIP ANIMATION
+===================================================== */
+@keyframes bannerFlip {
+  from {
+    transform: rotateY(90deg) scale(0.95);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+/* =====================================================
+   SLIDER NAV BUTTONS
+===================================================== */
+.banner-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff;
+  color: var(--banner-blue-dark);
+  font-size: 1.6rem;
+  cursor: pointer;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.22);
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.banner-nav:hover {
+  background: var(--banner-green);
+  color: #ffffff;
+  transform: translateY(-50%) scale(1.08);
+}
+
+.banner-prev {
+  left: -22px;
+}
+
+.banner-next {
+  right: -22px;
+}
+
+/* Slider indicators */
+.banner-slider-indicators {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.banner-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(43, 111, 134, 0.3);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.banner-indicator.active {
+  background: var(--banner-blue-dark);
+  transform: scale(1.2);
+}
+
+.banner-indicator:hover {
+  background: var(--banner-blue);
+}
+
+/* =====================================================
+   ENTRY ANIMATION
+===================================================== */
+@keyframes bannerFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+@media (max-width: 900px) {
+  .banner-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .banner-title {
+    font-size: 2.2rem;
+    word-wrap: break-word;
+    /* Ensure hydration */
+  }
+
+  .banner-desc {
+    margin: auto;
+  }
+
+  /* Updated responsive styles for Stats */
+  .banner-stats {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto 0;
+  }
+
+  .banner-image {
+    height: 300px;
+    margin-top: 2rem;
+  }
+
+  .banner-nav {
+    display: none;
+  }
+
+  .banner-slider-indicators {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-container {
+    padding: 2rem 0;
+  }
+
+  .banner-title {
+    font-size: 1.5rem;
+    /* Reduced to fit */
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .banner-desc {
+    font-size: 1rem;
+  }
+
+  .banner-badge {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .banner-stat-number {
+    font-size: 2rem;
+  }
+
+  .banner-stat-label {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .banner-hero {
+    min-height: 70vh;
+    padding: 1rem 0.75rem;
+  }
+
+  .banner-title {
+    font-size: 1.3rem;
+  }
+
+  .banner-desc {
+    font-size: 0.85rem;
+  }
+
+  .banner-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .banner-stat-number {
+    font-size: 1.6rem;
+  }
+
+  .banner-image {
+    height: 200px;
+  }
+}

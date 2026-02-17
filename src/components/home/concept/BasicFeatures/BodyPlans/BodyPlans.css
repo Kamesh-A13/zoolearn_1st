@@ -1,0 +1,317 @@
+/* BodyPlansPage.css */
+.bodyplans-body-plans-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  background: #f8fafc;
+}
+
+/* ============================
+   BODY PLANS GALLERY
+   ============================ */
+.bodyplans-bodyplans-section {
+  margin: 60px 0;
+}
+
+.bodyplans-section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.bodyplans-section-title {
+  font-size: 3rem;
+  color: #2c3e50; /* Darker color for better contrast */
+  margin-bottom: 15px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.bodyplans-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #2ecc71);
+  border-radius: 2px;
+}
+
+.bodyplans-section-subtitle {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --- LAYOUT FIX: FLEXBOX FOR BETTER CENTERING & SIZING --- */
+.bodyplans-bodyplans-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the cards */
+  gap: 30px;
+  align-items: stretch; /* Makes cards equal height */
+}
+
+/* --- CARD SIZING FIX --- */
+.bodyplans-bodyplan-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  border: 1px solid #e1e8ed;
+  
+  /* Flexbox logic for internal content */
+  display: flex;
+  flex-direction: column; 
+  
+  /* SIZE CONTROLS */
+  width: 100%;
+  max-width: 360px; /* Prevents cards from getting too wide */
+  min-width: 300px; /* Prevents cards from getting too squished */
+}
+
+.bodyplans-bodyplan-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+}
+
+.bodyplans-card-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0.05;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.bodyplans-card-header {
+  padding: 25px;
+  color: white;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.bodyplans-plan-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.bodyplans-plan-title {
+  font-size: 1.6rem; /* Slightly adjusted for fit */
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.bodyplans-complexity-tag {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.bodyplans-complexity-dot {
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+}
+
+.bodyplans-card-body {
+  padding: 25px;
+  position: relative;
+  z-index: 2;
+  flex: 1; /* Pushes footer to bottom */
+  display: flex;
+  flex-direction: column;
+}
+
+.bodyplans-plan-description {
+  color: #5a6c7d;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  text-align: center;
+  min-height: 50px; /* Aligns content visually */
+}
+
+/* Diagram Styles */
+.bodyplans-diagram {
+  height: 100px;
+  margin: 15px 0 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bodyplans-cells-diagram {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.bodyplans-cell {
+  width: 25px;
+  height: 25px;
+  background: #3498db;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: bodyplans-pulse 2s infinite;
+}
+
+@keyframes bodyplans-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
+
+.bodyplans-sac-diagram {
+  position: relative;
+  width: 100px;
+  height: 70px;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  border-radius: 50% 50% 0 0;
+}
+
+.bodyplans-sac-opening {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+  color: white;
+}
+
+.bodyplans-sac-cavity {
+  position: absolute;
+  top: 15px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 40% 40% 0 0;
+}
+
+.bodyplans-tube-diagram {
+  position: relative;
+  width: 160px;
+  height: 70px;
+}
+
+.bodyplans-outer-tube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid #e74c3c;
+  border-radius: 10px;
+}
+
+.bodyplans-inner-tube {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  background: linear-gradient(90deg, #ff6b6b, #ee5a52);
+  border-radius: 5px;
+}
+
+.bodyplans-mouth-label, .bodyplans-anus-label {
+  position: absolute;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #2c3e50;
+  background: rgba(255,255,255,0.8);
+  padding: 0 4px;
+}
+
+.bodyplans-mouth-label { top: -20px; left: 5px; }
+.bodyplans-anus-label { top: -20px; right: 5px; }
+
+.bodyplans-features-list {
+  margin: 10px 0 20px;
+  margin-bottom: auto;
+}
+
+.bodyplans-features-title {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.bodyplans-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+  color: #5a6c7d;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.bodyplans-feature-marker {
+  color: #2ecc71;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.bodyplans-example-box {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 15px;
+  border-left: 4px solid #3498db;
+}
+
+.bodyplans-example-label {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-right: 5px;
+  font-size: 0.9rem;
+}
+
+.bodyplans-example-text {
+  color: #3498db;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.bodyplans-card-footer {
+  padding: 15px;
+  text-align: center;
+  border-top: 1px solid #e1e8ed;
+  background: #f8fafc;
+  margin-top: auto;
+}
+
+.bodyplans-plan-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #bdc3c7;
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bodyplans-section-title { font-size: 2rem; }
+  .bodyplans-bodyplan-card { max-width: 100%; } /* Allow full width on mobile */
+  .bodyplans-card-body { padding: 20px; }
+}

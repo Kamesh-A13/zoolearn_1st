@@ -1,0 +1,68 @@
+[
+  {
+    "id": "turbellaria",
+    "className": "Turbellaria",
+    "species": [
+      {
+        "id": 1,
+        "slug": "dugesia",
+        "name": "Dugesia",
+        "scientificName": "Planarian",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767595669/Dugesia_hpaibv.png",
+        "path": "/zoohub/platyhelminthes/dugesia"
+      }
+    ]
+  },
+  {
+    "id": "trematoda",
+    "className": "Trematoda",
+    "species": [
+      {
+        "id": 2,
+        "slug": "fasciola",
+        "name": "Fasciola hepatica",
+        "scientificName": "Sheep liver fluke",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767595716/Fasciola_hepatica_wso3xw.png",
+        "path": "/zoohub/platyhelminthes/fasciola"
+      },
+      {
+        "id": 3,
+        "slug": "schistosoma",
+        "name": "Schistosoma",
+        "scientificName": "Blood Fluke",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767595732/Schistosoma_ru8kzg.png",
+        "path": "/zoohub/platyhelminthes/schistosoma"
+      }
+    ]
+  },
+  {
+    "id": "cestoda",
+    "className": "Cestoda",
+    "species": [
+      {
+        "id": 4,
+        "slug": "taenia-solium",
+        "name": "Taenia solium",
+        "scientificName": "Pork tapeworm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767595750/Taenia_solium_oew5qm.png",
+        "path": "/zoohub/platyhelminthes/taenia-solium"
+      },
+      {
+        "id": 5,
+        "slug": "taenia-saginata",
+        "name": "Taenia saginata",
+        "scientificName": "Beef tapeworm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767595743/Taenia_saginata_xaxmpq.png",
+        "path": "/zoohub/platyhelminthes/taenia-saginata"
+      },
+      {
+        "id": 6,
+        "slug": "echinococcus",
+        "name": "Echinococcus",
+        "scientificName": "Dog tapeworm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767595702/Echinococcus_pi8lv5.png",
+        "path": "/zoohub/platyhelminthes/echinococcus"
+      }
+    ]
+  }
+]

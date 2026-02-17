@@ -1,0 +1,108 @@
+[
+  {
+    "id": "polychaeta",
+    "className": "Polychaeta",
+    "species": [
+      {
+        "id": 1,
+        "slug": "neanthes",
+        "name": "Neanthes",
+        "scientificName": "Sand worm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984042/Neanthes_bsotgt.png",
+        "path": "/zoohub/annelida/neanthes"
+      },
+      {
+        "id": 2,
+        "slug": "chaetopterus",
+        "name": "Chaetopterus",
+        "scientificName": "Parchment worm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984020/Chaetopterus_lwyfzd.png",
+        "path": "/zoohub/annelida/chaetopterus"
+      },
+      {
+        "id": 3,
+        "slug": "aphrodita",
+        "name": "Aphrodita",
+        "scientificName": "Sea mouse",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768983997/Aphrodita_ljkqci.png",
+        "path": "/zoohub/annelida/aphrodita"
+      },
+      {
+        "id": 4,
+        "slug": "arenicola",
+        "name": "Arenicola",
+        "scientificName": "Lugworm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984016/Arenicola_gpugoh.png",
+        "path": "/zoohub/annelida/arenicola"
+      }
+    ]
+  },
+  {
+    "id": "oligochaeta",
+    "className": "Oligochaeta",
+    "species": [
+      {
+        "id": 5,
+        "slug": "lampito-mauritii",
+        "name": "Lampito mauritii",
+        "scientificName": "Indian earthworm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984033/Lampito_mauritii_ttkkue.png",
+        "path": "/zoohub/annelida/lampito-mauritii"
+      },
+      {
+        "id": 6,
+        "slug": "pheretima-posthuma",
+        "name": "Pheretima posthuma",
+        "scientificName": "Earthworm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984044/Pheretima_posthuma_lj6y2z.png",
+        "path": "/zoohub/annelida/pheretima-posthuma"
+      },
+      {
+        "id": 7,
+        "slug": "megascolex",
+        "name": "Megascolex",
+        "scientificName": "Giant earthworm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984099/Megascolex_qckucb.png",
+        "path": "/zoohub/annelida/megascolex"
+      },
+      {
+        "id": 8,
+        "slug": "tubifex",
+        "name": "Tubifex",
+        "scientificName": "Sludge worm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984047/Tubifex_nafvip.png",
+        "path": "/zoohub/annelida/tubifex"
+      },
+      {
+        "id": 9,
+        "slug": "lumbricus",
+        "name": "Lumbricus",
+        "scientificName": "Earthworm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984035/Lumbricus_wfhpyb.png",
+        "path": "/zoohub/annelida/lumbricus"
+      }
+    ]
+  },
+  {
+    "id": "hirudinea",
+    "className": "Hirudinea",
+    "species": [
+      {
+        "id": 10,
+        "slug": "hirudinaria-granulosa",
+        "name": "Hirudinaria granulosa",
+        "scientificName": "Cattle leech",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984024/Hirudinaria_granulosa_bpsrjd.png",
+        "path": "/zoohub/annelida/hirudinaria-granulosa"
+      },
+      {
+        "id": 11,
+        "slug": "hirudo",
+        "name": "Hirudo",
+        "scientificName": "Medicinal leech",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768984030/Hirudo_rrbynu.png",
+        "path": "/zoohub/annelida/hirudo"
+      }
+    ]
+  }
+]

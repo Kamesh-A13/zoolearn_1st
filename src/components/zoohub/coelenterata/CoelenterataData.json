@@ -1,0 +1,108 @@
+[
+  {
+    "id": "hydrozoa",
+    "className": "Hydrozoa",
+    "species": [
+      {
+        "id": 1,
+        "slug": "hydra",
+        "name": "Hydra",
+        "scientificName": "Freshwater polyp",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892096/Hydra_ljhbjv.png",
+        "path": "/zoohub/coelenterata/hydra"
+      },
+      {
+        "id": 2,
+        "slug": "obelia",
+        "name": "Obelia",
+        "scientificName": "Sea fur / Sea moss",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892152/Obelia_ovbvj3.png",
+        "path": "/zoohub/coelenterata/obelia"
+      },
+      {
+        "id": 3,
+        "slug": "physalia",
+        "name": "Physalia",
+        "scientificName": "Portuguese man-of-war",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892218/Physalia_d0xxsl.png",
+        "path": "/zoohub/coelenterata/physalia"
+      }
+    ]
+  },
+  {
+    "id": "scyphozoa",
+    "className": "Scyphozoa",
+    "species": [
+      {
+        "id": 4,
+        "slug": "aurelia",
+        "name": "Aurelia",
+        "scientificName": "Moon jellyfish",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892060/Aurelia_y0ii6v.png",
+        "path": "/zoohub/coelenterata/aurelia"
+      }
+    ]
+  },
+  {
+    "id": "anthozoa",
+    "className": "Anthozoa",
+    "species": [
+      {
+        "id": 5,
+        "slug": "adamsia",
+        "name": "Adamsia",
+        "scientificName": "Sea anemone",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892009/Adamsia_orkdvo.png",
+        "path": "/zoohub/coelenterata/adamsia"
+      },
+      {
+        "id": 6,
+        "slug": "pennatula",
+        "name": "Pennatula",
+        "scientificName": "Sea pen",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892197/Pennatula_fx3glt.png",
+        "path": "/zoohub/coelenterata/pennatula"
+      },
+      {
+        "id": 7,
+        "slug": "gorgonia",
+        "name": "Gorgonia",
+        "scientificName": "Sea fan",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892082/Gorgonia_vyf78r.png",
+        "path": "/zoohub/coelenterata/gorgonia"
+      },
+      {
+        "id": 8,
+        "slug": "meandrina",
+        "name": "Meandrina",
+        "scientificName": "Brain coral",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767891973/Meandrina_pqw88x.png",
+        "path": "/zoohub/coelenterata/meandrina"
+      },
+      {
+        "id": 9,
+        "slug": "metridium",
+        "name": "Metridium",
+        "scientificName": "Plumose anemone",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892113/Metridium_czmjde.png",
+        "path": "/zoohub/coelenterata/metridium"
+      },
+      {
+        "id": 10,
+        "slug": "corallium",
+        "name": "Corallium",
+        "scientificName": "Red coral",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892072/Corallium_x9awvc.png",
+        "path": "/zoohub/coelenterata/corallium"
+      },
+      {
+        "id": 11,
+        "slug": "antipatharia",
+        "name": "Antipatharia",
+        "scientificName": "Black corals",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892029/Antipatharia_txlpbb.png",
+        "path": "/zoohub/coelenterata/antipatharia"
+      }
+    ]
+  }
+]

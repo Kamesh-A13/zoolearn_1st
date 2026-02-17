@@ -1,0 +1,201 @@
+/* Parasitic Adaptations - Premium Styling */
+
+.para-section {
+  padding: 0;
+}
+
+.para-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.para-header {
+  margin-bottom: 0.5rem;
+}
+
+.para-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--leech-primary-dark, #14280a);
+  margin: 0 0 0.75rem;
+}
+
+.para-intro {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--leech-text-secondary, #2d3b29);
+  max-width: 700px;
+}
+
+/* Adaptation Grid */
+.para-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.para-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.25rem;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  box-shadow: var(--leech-shadow-soft);
+  transition: all 0.3s ease;
+  animation: leechCardEnter 0.4s ease-out forwards;
+  opacity: 0;
+}
+
+.para-card:hover {
+  box-shadow: var(--leech-shadow-medium);
+  transform: translateY(-3px);
+}
+
+.para-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.para-card-icon {
+  font-size: 1.5rem;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--leech-primary-light, #f0fdf4);
+  border-radius: 12px;
+}
+
+.para-card-badge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: rgba(61, 107, 10, 0.06);
+  color: var(--leech-primary, #3d6b0a);
+}
+
+.para-card-title {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--leech-primary-dark, #14280a);
+  margin-bottom: 0.35rem;
+}
+
+.para-card-desc {
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--leech-text-secondary, #2d3b29);
+  margin: 0;
+}
+
+/* Medical Card */
+.para-medical-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.75rem;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  box-shadow: var(--leech-shadow-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.para-medical-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ef4444, #f97316, #eab308);
+}
+
+.para-medical-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--leech-primary-dark, #14280a);
+  margin: 0 0 0.5rem;
+}
+
+.para-medical-text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--leech-text-secondary, #2d3b29);
+  margin: 0 0 1rem;
+}
+
+.para-medical-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.para-medical-item {
+  padding: 1rem;
+  background: var(--leech-bg-app, #f6faf4);
+  border-radius: 12px;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+}
+
+.para-medical-item strong {
+  font-size: 0.88rem;
+  color: var(--leech-primary-dark, #14280a);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.para-medical-item p {
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--leech-text-secondary, #2d3b29);
+  margin: 0;
+}
+
+/* Revision Card */
+.para-revision-card {
+  background: var(--leech-primary-light, #f0fdf4);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+}
+
+.para-revision-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--leech-primary-dark, #14280a);
+  margin: 0 0 0.75rem;
+}
+
+.para-revision-list {
+  column-count: 2;
+  column-gap: 2rem;
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.para-revision-list li {
+  font-size: 0.78rem;
+  color: var(--leech-text-secondary, #2d3b29);
+  line-height: 1.6;
+  margin-bottom: 6px;
+  break-inside: avoid;
+}
+
+.para-revision-list li strong {
+  color: var(--leech-primary-dark, #14280a);
+}
+
+@media (max-width: 768px) {
+  .para-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .para-revision-list {
+    column-count: 1;
+  }
+}

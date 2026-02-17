@@ -1,0 +1,112 @@
+[
+  {
+    "id": "Asteroidea",
+    "className": "Asteroidea",
+    "species": [
+      {
+        "id": 1,
+        "slug": "asterias",
+        "name": "Asterias",
+        "scientificName": "Common starfish",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360493/Asterias_habged.png",
+        "path": "/zoohub/echinodermata/asterias"
+      },
+      {
+        "id": 2,
+        "slug": "astropecten",
+        "name": "Astropecten",
+        "scientificName": "Sand star",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360496/Astropecten_bnftwd.png",
+        "path": "/zoohub/echinodermata/astropecten"
+      },
+      {
+        "id": 3,
+        "slug": "pentaceros",
+        "name": "Pentaceros",
+        "scientificName": "Horned starfish",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360537/Pentaceros_tv8ynk.png",
+        "path": "/zoohub/echinodermata/pentaceros"
+      }
+    ]
+  },
+  {
+    "id": "Ophiuroidea",
+    "className": "Ophiuroidea",
+    "species": [
+      {
+        "id": 4,
+        "slug": "ophiothrix",
+        "name": "Ophiothrix",
+        "scientificName": "Brittle star",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360528/Ophiothrix_bc2hdg.png",
+        "path": "/zoohub/echinodermata/ophiothrix"
+      },
+      {
+        "id": 5,
+        "slug": "ophiura",
+        "name": "Ophiura",
+        "scientificName": "Brittle star",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360532/Ophiura_ym6abk.png",
+        "path": "/zoohub/echinodermata/ophiura"
+      }
+    ]
+  },
+  {
+    "id": "Echinoidea",
+    "className": "Echinoidea",
+    "species": [
+      {
+        "id": 6,
+        "slug": "echinus",
+        "name": "Echinus",
+        "scientificName": "Sea urchin",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360511/Echinus_eotis0.png",
+        "path": "/zoohub/echinodermata/echinus"
+      },
+      {
+        "id": 7,
+        "slug": "echinocardium",
+        "name": "Echinocardium",
+        "scientificName": "Heart urchin",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360508/Echinocardium_ohmfl0.png",
+        "path": "/zoohub/echinodermata/echinocardium"
+      }
+    ]
+  },
+  {
+    "id": "Holothuroidea",
+    "className": "Holothuroidea",
+    "species": [
+      {
+        "id": 8,
+        "slug": "cucumaria",
+        "name": "Cucumaria",
+        "scientificName": "Sea cucumber",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360504/Cucumaria_fmxlmu.png",
+        "path": "/zoohub/echinodermata/cucumaria"
+      },
+      {
+        "id": 9,
+        "slug": "holothuria",
+        "name": "Holothuria",
+        "scientificName": "Sea cucumber",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360522/Holothuria_ddp7k9.png",
+        "path": "/zoohub/echinodermata/holothuria"
+      }
+    ]
+  },
+  {
+    "id": "Crinoidea",
+    "className": "Crinoidea",
+    "species": [
+      {
+        "id": 10,
+        "slug": "antedon",
+        "name": "Antedon",
+        "scientificName": "Feather star",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1769360490/Antedon_fmu9ps.png",
+        "path": "/zoohub/echinodermata/antedon"
+      }
+    ]
+  }
+]

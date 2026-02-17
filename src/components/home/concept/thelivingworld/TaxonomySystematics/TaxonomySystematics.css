@@ -1,0 +1,283 @@
+
+/* ============================
+   VARIABLES & FONTS
+============================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-teal: #0f766e;
+  --bg-teal: #f0fdfa;
+  --border-teal: #2dd4bf;
+
+  --primary-purple: #7c3aed;
+  --bg-purple: #f5f3ff;
+  --border-purple: #a78bfa;
+
+  --text-main: #1e293b;
+  --text-light: #64748b;
+
+  --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 20px 40px -10px rgba(0, 0, 0, 0.12);
+}
+
+.ts-section {
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+  color: var(--text-main);
+  min-height: 100vh;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.ts-container {
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* ============================
+   HEADER ANIMATION
+============================ */
+.ts-header {
+  text-align: center;
+  margin-bottom: 50px;
+  opacity: 0;
+  animation: ts-fadeDown 0.8s ease-out forwards;
+}
+
+.ts-section-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--primary-teal);
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.ts-title-underline {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--border-teal), var(--primary-purple));
+  margin: 0 auto;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.ts-header:hover .ts-title-underline {
+  width: 120px;
+  /* Expands on hover */
+}
+
+/* ============================
+   CONCEPT CARDS (GRID)
+============================ */
+.ts-concept-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.ts-concept-card {
+  padding: 30px;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+
+  /* Initial State for Animation */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: ts-fadeUp 0.8s ease-out forwards;
+}
+
+/* Stagger the second card */
+.ts-card-systematics {
+  animation-delay: 0.2s;
+}
+
+/* Specific Card Styles */
+.ts-card-taxonomy {
+  border-bottom: 4px solid var(--border-teal);
+}
+
+.ts-card-taxonomy:hover {
+  background: var(--bg-teal);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary-teal);
+}
+
+.ts-card-systematics {
+  border-bottom: 4px solid var(--border-purple);
+}
+
+.ts-card-systematics:hover {
+  background: var(--bg-purple);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary-purple);
+}
+
+.ts-concept-card h3 {
+  font-size: 22px;
+  margin: 15px 0 10px;
+  font-weight: 700;
+}
+
+.ts-card-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ts-card-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+/* ============================
+   PILLS SECTION
+============================ */
+.ts-aspects-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ts-purpose-line {
+  font-size: 18px;
+  color: var(--text-main);
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.ts-pill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.ts-pill {
+  background: transparent;
+  padding: 4px 12px;
+  border-radius: 0;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #475569;
+  cursor: default;
+  position: relative;
+
+  /* Pop In Animation */
+  opacity: 0;
+  transform: scale(0.8);
+  animation: ts-popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  animation-delay: var(--delay);
+  /* Uses the inline style delay */
+}
+
+/* Add separators between words */
+.ts-pill:not(:last-child)::after {
+  content: "•";
+  position: absolute;
+  right: -4px;
+  color: #94a3b8;
+}
+
+/* ============================
+   SUMMARY FOOTER
+============================ */
+.ts-summary-banner {
+  background: linear-gradient(135deg, #f0fdfa 0%, #f5f3ff 100%);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+
+
+opacity: 0;
+  animation: ts-fadeUp 0.8s ease-out forwards 0.6s;
+  /* Delayed entrance */
+}
+
+.ts-summary-content {
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--text-main);
+}
+
+.ts-highlight-green {
+  color: var(--primary-teal);
+  font-weight: 800;
+}
+
+.ts-highlight-purple {
+  color: var(--primary-purple);
+  font-weight: 800;
+}
+
+/* ============================
+   KEYFRAMES
+============================ */
+@keyframes ts-fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ts-fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ts-popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ============================
+   MOBILE RESPONSIVE
+============================ */
+@media (max-width: 768px) {
+  .ts-concept-grid {
+    grid-template-columns: 1fr;
+    /* Stack cards */
+  }
+
+  .ts-section-title {
+    font-size: 28px;
+  }
+
+  .ts-pill {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

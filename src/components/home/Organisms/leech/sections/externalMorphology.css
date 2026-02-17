@@ -1,0 +1,154 @@
+/* External Morphology Section - Premium Styling */
+
+.em-image-card {
+  background: var(--leech-primary-light, #f0fdf4) !important;
+}
+
+.em-image-container {
+  border-radius: var(--leech-radius-lg, 1.25rem);
+  overflow: hidden;
+  text-align: center;
+}
+
+.em-main-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--leech-shadow-soft, 0 1px 3px rgba(0, 0, 0, 0.04));
+  transition: transform 0.4s ease;
+}
+
+.em-image-card:hover .em-main-img {
+  transform: scale(1.02);
+}
+
+.em-img-caption {
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--leech-text-muted, #5c6e56);
+}
+
+.em-text-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Sucker Cards */
+.em-sucker-card {
+  background: var(--leech-primary-light, #f0fdf4);
+  padding: 1.5rem;
+  border-radius: 14px;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  transition: all 0.3s ease;
+}
+
+.em-sucker-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--leech-shadow-soft);
+}
+
+.em-sucker-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0.75rem;
+}
+
+.em-sucker-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--leech-primary, #3d6b0a), var(--leech-primary-vivid, #65a30d));
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.em-sucker-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--leech-primary-dark, #14280a);
+  margin: 0;
+}
+
+/* Aperture Cards */
+.em-apertures-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.em-aperture-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--leech-bg-app, #f6faf4);
+  border-radius: 14px;
+  border-left: 4px solid var(--leech-primary, #3d6b0a);
+  transition: all 0.3s ease;
+  animation: leechCardEnter 0.4s ease-out forwards;
+}
+
+.em-aperture-card:hover {
+  transform: translateX(4px);
+  box-shadow: var(--leech-shadow-soft);
+}
+
+.em-aperture-icon {
+  font-size: 1.3rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 10px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.em-aperture-info {
+  flex: 1;
+}
+
+.em-aperture-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.em-aperture-name {
+  font-size: 0.92rem;
+  color: var(--leech-primary-dark, #14280a);
+}
+
+.em-aperture-seg {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--leech-primary, #3d6b0a);
+  background: rgba(61, 107, 10, 0.08);
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.em-aperture-desc {
+  font-size: 0.85rem;
+  color: var(--leech-text-secondary, #2d3b29);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .em-sucker-header {
+    flex-direction: row;
+  }
+}

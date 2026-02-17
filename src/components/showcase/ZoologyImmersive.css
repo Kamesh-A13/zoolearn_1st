@@ -1,0 +1,533 @@
+/* =========================================
+   ZOOLOGY IMMERSIVE SHOWCASE
+   Theme: Bioluminescent Forest / Deep Ocean
+   ========================================= */
+
+/* --- SCOPED VARIABLES --- */
+.zoo-immersive-page {
+    /* Branding Colors */
+    --bio-bg-deep: #022c22;
+    /* Very dark jungle green */
+    --bio-bg-surface: #064e3b;
+    /* Lighter jungle green */
+    --bio-accent-neon: #2dd4bf;
+    /* Teal bioluminescence */
+    --bio-accent-glow: #34d399;
+    /* Green glow */
+    --bio-text-primary: #ecfdf5;
+    /* Off-white mint */
+    --bio-text-secondary: #a7f3d0;
+    /* Soft green-grey */
+
+    /* Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-highlight: rgba(255, 255, 255, 0.15);
+    --glass-blur: 16px;
+
+    /* Typography */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Spacing */
+    --space-unit: 8px;
+    --container-width: 1200px;
+}
+
+/* =========================================
+   BASE LAYOUT & TYPOGRAPHY
+   ========================================= */
+.zoo-immersive-page {
+    background-color: var(--bio-bg-deep);
+    color: var(--bio-text-primary);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    /* Overlay for showcase purposes */
+}
+
+/* Cinematice Intro Animation Wrapper */
+.zoo-cinematic-intro {
+    animation: zooRevealPage 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    opacity: 0;
+}
+
+.zoo-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+.zoo-hero-section {
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dynamic Background Elements */
+.zoo-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.zoo-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    animation: zooFloatOrganic 20s infinite alternate ease-in-out;
+}
+
+.zoo-orb-1 {
+    top: -10%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, var(--bio-accent-neon) 0%, transparent 70%);
+}
+
+.zoo-orb-2 {
+    bottom: -20%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, var(--bio-accent-glow) 0%, transparent 70%);
+    animation-delay: -5s;
+}
+
+/* Hero Content */
+.zoo-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.zoo-eyebrow {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--bio-accent-neon);
+    margin-bottom: 1.5rem;
+    display: block;
+    opacity: 0;
+    animation: zooFadeUp 0.8s ease-out 0.5s forwards;
+}
+
+.zoo-display-title {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #fff 0%, var(--bio-text-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(20px);
+    animation: zooCinematicTitle 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.6s forwards;
+}
+
+.zoo-hero-text {
+    font-size: 1.25rem;
+    color: var(--bio-text-secondary);
+    max-width: 600px;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: zooFadeUp 0.8s ease-out 0.8s forwards;
+}
+
+/* CTA Button */
+.zoo-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: rgba(45, 212, 191, 0.1);
+    border: 1px solid var(--bio-accent-neon);
+    border-radius: 100px;
+    color: var(--bio-accent-neon);
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    animation: zooFadeUp 0.8s ease-out 1s forwards;
+}
+
+.zoo-cta-btn:hover {
+    background: var(--bio-accent-neon);
+    color: var(--bio-bg-deep);
+    box-shadow: 0 0 30px rgba(45, 212, 191, 0.4);
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   SCROLL SECTIONS
+   ========================================= */
+.zoo-scroll-reveal-section {
+    padding: 8rem 0;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.zoo-scroll-reveal-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Concepts Grid */
+.zoo-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+/* Glass Card */
+.zoo-glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.zoo-glass-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: var(--bio-accent-neon);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Glow Effect on Hover */
+.zoo-glass-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(45, 212, 191, 0.2), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.zoo-glass-card:hover::after {
+    opacity: 1;
+}
+
+.zoo-card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.zoo-card-title {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.zoo-card-desc {
+    color: var(--bio-text-secondary);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.zoo-card-link {
+    color: var(--bio-accent-neon);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0.8;
+    transition: gap 0.3s ease;
+}
+
+.zoo-glass-card:hover .zoo-card-link {
+    gap: 0.75rem;
+    opacity: 1;
+}
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+@keyframes zooRevealPage {
+    0% {
+        opacity: 0;
+        filter: blur(20px);
+        transform: scale(0.98);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1);
+    }
+}
+
+@keyframes zooCinematicTitle {
+    0% {
+        opacity: 0;
+        filter: blur(15px);
+        transform: translateY(30px) rotateX(20deg);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0) rotateX(0);
+    }
+}
+
+@keyframes zooFadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zooFloatOrganic {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    33% {
+        transform: translate(30px, -20px) rotate(5deg);
+    }
+
+    66% {
+        transform: translate(-20px, 40px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+/* Scroll indicator */
+.zoo-scroll-mouse {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 26px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    animation: zooFadeUp 1s ease-out 1.5s forwards;
+    opacity: 0;
+}
+
+.zoo-scroll-wheel {
+    width: 4px;
+    height: 8px;
+    background: #fff;
+    border-radius: 2px;
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: zooScrollBounce 2s infinite;
+}
+
+@keyframes zooScrollBounce {
+
+    0%,
+    100% {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-50%, 10px);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .zoo-hero-section {
+        padding-top: 80px;
+        min-height: 80vh;
+    }
+
+    .zoo-display-title {
+        font-size: 3rem;
+    }
+
+    .zoo-hero-text {
+        font-size: 1.05rem;
+    }
+
+    .zoo-scroll-reveal-section {
+        padding: 4rem 0;
+    }
+
+    .zoo-container {
+        padding: 0 1.25rem;
+    }
+
+    .zoo-card-grid {
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+    }
+
+    .zoo-glass-card {
+        padding: 2rem;
+    }
+
+    .zoo-card-title {
+        font-size: 1.4rem;
+    }
+
+    .zoo-cta-btn {
+        padding: 0.85rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .zoo-orb-1 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .zoo-orb-2 {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .zoo-hero-section {
+        min-height: 70vh;
+        padding-top: 60px;
+    }
+
+    .zoo-display-title {
+        font-size: 2.2rem;
+    }
+
+    .zoo-hero-text {
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+    }
+
+    .zoo-eyebrow {
+        font-size: 0.75rem;
+        letter-spacing: 0.12em;
+    }
+
+    .zoo-scroll-reveal-section {
+        padding: 3rem 0;
+    }
+
+    .zoo-container {
+        padding: 0 1rem;
+    }
+
+    .zoo-glass-card {
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+
+    .zoo-card-title {
+        font-size: 1.2rem;
+    }
+
+    .zoo-card-desc {
+        font-size: 0.9rem;
+    }
+
+    .zoo-card-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .zoo-cta-btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.85rem;
+    }
+
+    .zoo-orb-1 {
+        width: 280px;
+        height: 280px;
+    }
+
+    .zoo-orb-2 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .zoo-scroll-mouse {
+        bottom: 24px;
+    }
+}
+
+@media (max-width: 359px) {
+    .zoo-hero-section {
+        min-height: auto;
+        padding-top: 50px;
+    }
+
+    .zoo-display-title {
+        font-size: 1.8rem;
+    }
+
+    .zoo-hero-text {
+        font-size: 0.88rem;
+    }
+
+    .zoo-glass-card {
+        padding: 1.25rem;
+    }
+
+    .zoo-card-title {
+        font-size: 1.1rem;
+    }
+
+    .zoo-container {
+        padding: 0 0.75rem;
+    }
+
+    .zoo-orb-1,
+    .zoo-orb-2 {
+        width: 200px;
+        height: 200px;
+        opacity: 0.25;
+    }
+}

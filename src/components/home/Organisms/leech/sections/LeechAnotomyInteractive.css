@@ -1,0 +1,362 @@
+/* --- Fonts & Base --- */
+.leech-container {
+  font-family: 'Poppins', 'Inter', sans-serif; /* Modern Font Preference */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f0fdfa; /* Minty fresh background */
+  color: #334155;
+}
+
+/* --- Header Section --- */
+.leech-header {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeInDown 0.8s ease;
+}
+
+.leech-badge-pill {
+  display: inline-block;
+  background: #ccfbf1;
+  color: #0f766e;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 6px 16px;
+  border-radius: 99px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.leech-header h1 {
+  font-size: 2.5rem;
+  color: #115e59;
+  margin: 0 0 10px;
+  font-weight: 800;
+}
+
+.leech-header p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+/* --- Main Grid --- */
+.leech-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Laptop: 50/50 Split */
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* --- Visual Panel (Left) --- */
+.leech-visual-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leech-visual-stage {
+  display: flex;
+  gap: 16px;
+  align-items: stretch; /* CRITICAL: Keeps Ruler Height = Image Height */
+  position: relative;
+}
+
+/* RULER Styling */
+.leech-ruler {
+  width: 50px;
+  position: relative;
+  padding: 4px 0; /* Matches Image Box padding */
+  display: flex;
+  flex-direction: column;
+}
+
+.leech-tick {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: all 0.2s;
+}
+
+.leech-tick-mark {
+  width: 8px;
+  height: 1px;
+  background: #cbd5e1;
+  margin-left: 8px;
+}
+
+.leech-tick-num {
+  font-size: 10px;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+/* Active Ruler State */
+.leech-tick.active .leech-tick-num {
+  color: #0f766e;
+  font-size: 16px;
+  font-weight: 800;
+  transform: scale(1.2);
+}
+.leech-tick.active .leech-tick-mark {
+  width: 12px;
+  background: #0f766e;
+  height: 2px;
+}
+
+/* IMAGE Styling */
+.leech-image-wrapper {
+  position: relative;
+  background: white;
+  padding: 4px; /* White Frame */
+  border-radius: 32px;
+  box-shadow: 
+    0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+    0 8px 10px -6px rgba(0, 0, 0, 0.01);
+  width: fit-content;
+  user-select: none;
+}
+
+.leech-image-wrapper img {
+  display: block;
+  width: 240px; /* Laptop Size */
+  height: auto;
+  border-radius: 28px;
+}
+
+/* OVERLAYS */
+.leech-overlays-container {
+  position: absolute;
+  top: 4px; left: 4px; right: 4px; bottom: 4px;
+  border-radius: 28px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.leech-segment-hitbox {
+  position: absolute;
+  left: 0; width: 100%;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  transition: background-color 0.15s ease;
+}
+
+.leech-segment-hitbox.region {
+  background-color: rgba(45, 212, 191, 0.2); /* Soft Teal Hover */
+}
+
+.leech-segment-hitbox.exact {
+  background-color: rgba(13, 148, 136, 0.5); /* Dark Teal Focus */
+}
+
+.leech-segment-hitbox.locked {
+  background-color: rgba(220, 38, 38, 0.4); /* Red tint for locked */
+  border: 2px solid rgba(255,255,255,0.8);
+}
+
+.leech-instruction {
+  margin-top: 20px;
+  background: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #64748b;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* --- Info Panel (Right) --- */
+.leech-info-panel {
+  position: sticky;
+  top: 40px;
+}
+
+.leech-learn-card {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0,0,0,0.02);
+  min-height: 320px;
+  transition: transform 0.3s ease;
+}
+
+/* Card Active State */
+.leech-learn-card.active {
+  animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.leech-card-hero {
+  padding: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.leech-card-icon-circle {
+  font-size: 2.5rem;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(4px);
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.leech-card-badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.badge-translucent {
+  background: rgba(0,0,0,0.2);
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-white {
+  background: white;
+  color: #334155;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.leech-card-body {
+  padding: 30px;
+}
+
+.leech-card-body h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #1e293b;
+}
+
+.leech-card-body p {
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+/* Stats Grid */
+.leech-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.leech-stat-box {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.leech-stat-box label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #94a3b8;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.leech-stat-box .value {
+  font-weight: 600;
+  color: #334155;
+}
+
+/* Button */
+.leech-btn-reset {
+  width: 100%;
+  padding: 14px;
+  background: #f1f5f9;
+  color: #475569;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.95rem;
+}
+
+.leech-btn-reset:hover {
+  background: #e2e8f0;
+  color: #1e293b;
+  transform: translateY(-2px);
+}
+
+/* Idle State */
+.leech-idle-state {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #94a3b8;
+}
+
+.leech-idle-graphic {
+  font-size: 4rem;
+  margin-bottom: 16px;
+  opacity: 0.4;
+  animation: pulse 2s infinite;
+}
+
+/* --- ANIMATIONS --- */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.1); opacity: 0.6; }
+}
+
+/* --- RESPONSIVE (Mobile) --- */
+@media (max-width: 900px) {
+  .leech-grid {
+    grid-template-columns: 1fr; /* Stack */
+    gap: 40px;
+  }
+  
+  .leech-image-wrapper img {
+    width: 180px; /* Slightly smaller for mobile */
+  }
+  
+  .leech-header h1 {
+    font-size: 2rem;
+  }
+  
+  .leech-info-panel {
+    position: relative;
+    top: 0;
+  }
+}

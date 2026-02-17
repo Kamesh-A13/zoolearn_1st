@@ -1,0 +1,235 @@
+{
+    "taxonomy": {
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Lagomorpha",
+        "scientificName": "Oryctolagus cuniculus",
+        "tag": "Mammalia | Lagomorpha"
+    },
+    "hero": {
+        "title": "Rabbit",
+        "subtitle": "Oryctolagus cuniculus",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771313870/WhatsApp_Image_2026-02-17_at_12.58.31_plyvnf.jpg"
+    },
+    "models": {
+        "morphology": "https://sketchfab.com/models/fc277f6e42464afeafc67716c9f77d33/embed?autostart=1",
+        "digestive": "https://sketchfab.com/models/6e7e453d001a4a5fb63315c97bdf6793/embed?autostart=1",
+        "respiratory": "https://sketchfab.com/models/f36876bd8e82467fbfaa005f8fed3d15/embed?autostart=1",
+        "circulatory": "https://sketchfab.com/models/24ab555c6b3d4b66a906f17572f15773/embed?autostart=1",
+        "reproFemale": "https://sketchfab.com/models/49704303b5374c42b948ea6e755628af/embed?autostart=1",
+        "reproMale": "https://sketchfab.com/models/5f740041da5d40fd8e52189cddd1c9a0/embed?autostart=1"
+    },
+    "sections": [
+        {
+            "id": "habit",
+            "label": "Habit & Habitat",
+            "icon": "🌿",
+            "overview": [
+                {
+                    "text": "Gentle and timid animals living in burrows.",
+                    "highlight": false
+                },
+                {
+                    "text": "Shows leaping movement (saltatory).",
+                    "highlight": true,
+                    "strong": "leaping movement"
+                },
+                {
+                    "text": "Herbivorous (plant eaters).",
+                    "highlight": true,
+                    "strong": "Herbivorous"
+                },
+                {
+                    "text": "Gregarious (live in groups).",
+                    "highlight": true,
+                    "strong": "Gregarious"
+                }
+            ],
+            "facts": [
+                {
+                    "icon": "🦘",
+                    "label": "Movement",
+                    "value": "Leaping"
+                },
+                {
+                    "icon": "🌱",
+                    "label": "Diet",
+                    "value": "Herbivore"
+                },
+                {
+                    "icon": "👥",
+                    "label": "Social",
+                    "value": "Gregarious"
+                }
+            ]
+        },
+        {
+            "id": "morphology",
+            "label": "External Morphology",
+            "icon": "🐰",
+            "content": {
+                "shapeSize": [
+                    "Elongated, cylindrical body.",
+                    "Length: ~45 cm, Weight: ~2.25 kg.",
+                    "Body Division: Head, Neck, Trunk, Tail."
+                ],
+                "head": [
+                    "Ovoid, flattened with truncate snout.",
+                    "Large movable pinnae (ears).",
+                    "Vibrissae (whiskers) for sensing."
+                ],
+                "integument": "Covered with fur. Contains sweat, sebaceous, and mammary glands. Claws and nails present."
+            }
+        },
+        {
+            "id": "digestive",
+            "label": "Digestive System",
+            "icon": "🥕",
+            "content": {
+                "alimentaryCanal": [
+                    "Mouth",
+                    "Pharynx",
+                    "Oesophagus",
+                    "Stomach",
+                    "Small Intestine",
+                    "Caecum",
+                    "Large Intestine",
+                    "Anus"
+                ],
+                "caecum": "Large sac at junction of small/large intestine. Contains bacteria for cellulose digestion.",
+                "dentition": {
+                    "formula": "2033/1023",
+                    "description": "Diastema present (gap due to absent canines).",
+                    "visual": [
+                        {
+                            "label": "I",
+                            "top": "2",
+                            "bottom": "1"
+                        },
+                        {
+                            "label": "C",
+                            "top": "0",
+                            "bottom": "0"
+                        },
+                        {
+                            "label": "PM",
+                            "top": "3",
+                            "bottom": "2"
+                        },
+                        {
+                            "label": "M",
+                            "top": "3",
+                            "bottom": "3"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "respiratory",
+            "label": "Respiratory System",
+            "icon": "🫁",
+            "content": {
+                "pathway": [
+                    "Nostrils",
+                    "Nasal Passage",
+                    "Pharynx",
+                    "Larynx",
+                    "Trachea",
+                    "Bronchi",
+                    "Lungs"
+                ],
+                "lungs": [
+                    {
+                        "label": "Right Lung",
+                        "value": "4 Lobes"
+                    },
+                    {
+                        "label": "Left Lung",
+                        "value": "2 Lobes"
+                    }
+                ],
+                "note": "Obligate nose breathers due to epiglottis position."
+            }
+        },
+        {
+            "id": "circulatory",
+            "label": "Circulatory System",
+            "icon": "❤️",
+            "content": {
+                "heart": [
+                    "4-Chambered Heart.",
+                    "Double Circulation.",
+                    "Enclosed in Pericardium."
+                ],
+                "valves": [
+                    "Right: Tricuspid Valve.",
+                    "Left: Bicuspid (Mitral) Valve."
+                ]
+            }
+        },
+        {
+            "id": "nervous",
+            "label": "Nervous System",
+            "icon": "🧠",
+            "facts": [
+                {
+                    "label": "CNS",
+                    "value": "Brain & Spinal Cord"
+                },
+                {
+                    "label": "PNS",
+                    "value": "12 Cranial Nerves"
+                },
+                {
+                    "label": "ANS",
+                    "value": "Sympathetic & Para."
+                }
+            ],
+            "brainRegions": [
+                {
+                    "text": "Forebrain: Olfactory lobes, Cerebrum, Diencephalon.",
+                    "strong": "Forebrain:"
+                },
+                {
+                    "text": "Midbrain: Optic lobes.",
+                    "strong": "Midbrain:"
+                },
+                {
+                    "text": "Hindbrain: Cerebellum, Pons, Medulla.",
+                    "strong": "Hindbrain:"
+                }
+            ]
+        },
+        {
+            "id": "urinogenital",
+            "label": "Urinogenital System",
+            "icon": "🧬",
+            "content": {
+                "excretory": "Kidneys (Metanephric) filter blood. Urea is the main nitrogenous waste (Ureotelic).",
+                "reproductive": {
+                    "male": [
+                        {
+                            "text": "Testes: In scrotal sacs.",
+                            "strong": "Testes:"
+                        },
+                        {
+                            "text": "Path: Epididymis → Vas Deferens → Urethra.",
+                            "strong": "Path:"
+                        }
+                    ],
+                    "female": [
+                        {
+                            "text": "Ovaries: Located behind kidneys.",
+                            "strong": "Ovaries:"
+                        },
+                        {
+                            "text": "Uterus: Double uterus (duplex).",
+                            "strong": "Uterus:"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

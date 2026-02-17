@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Animal Health & Medical Sciences Careers</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{
+  margin:0;
+  padding:30px;
+  font-family:'Poppins',sans-serif;
+  background:#f5fdf8;
+  color:#0f172a;
+}
+.page{max-width:1500px;margin:auto}
+h1{text-align:center;color:#14532d;margin-bottom:40px}
+.category-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:20px}
+.category{background:#fff;border-radius:18px;padding:20px;box-shadow:0 10px 25px rgba(0,0,0,.06)}
+.category-title{text-align:center;font-weight:600;color:#1faa59;margin-bottom:20px}
+.career-list{display:flex;flex-direction:column;gap:14px}
+.box{background:#f8fffb;border:1px solid #d1fae5;border-radius:14px;padding:14px;cursor:pointer;transition:.25s}
+.box:hover{background:#ecfdf5;transform:translateY(-2px)}
+.box-title{font-weight:600;color:#2563eb}
+.overlay{position:fixed;inset:0;background:rgba(15,23,42,.7);display:flex;justify-content:center;align-items:center;opacity:0;pointer-events:none;transition:.3s;z-index:1000}
+.overlay.active{opacity:1;pointer-events:auto}
+.modal{background:#fff;width:900px;border-radius:22px;padding:34px;transition:transform .45s ease}
+.modal.shift-left{transform:translateX(-260px)}
+.modal h2{text-align:center;color:#14532d}
+.content{text-align:center;margin-bottom:24px}
+.pathway-title{text-align:center;color:#1faa59;font-weight:700}
+.level-label{text-align:center;margin:16px 0;color:#065f46}
+.level-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.step-box{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:12px;padding:8px 14px;font-weight:600;cursor:pointer}
+.step-box:hover{background:#d1fae5}
+.down-arrow{text-align:center;font-size:22px;color:#1faa59}
+.salary{text-align:center;font-weight:700;color:#15803d;margin-top:20px}
+.course-panel{position:fixed;top:0;right:0;width:480px;height:100%;background:#fff;box-shadow:-8px 0 30px rgba(0,0,0,.15);padding:28px;z-index:1200;display:none;opacity:0;transform:translateX(100%);transition:transform .6s cubic-bezier(.22,.61,.36,1),opacity .4s ease}
+.course-panel.active{display:block;opacity:1;transform:translateX(0)}
+.course-panel h3{color:#14532d}
+.course-section{margin-bottom:18px}
+.course-section strong{color:#1faa59}
+.back-btn{display:inline-block;margin:20px;padding:10px 20px;background:#1faa59;color:white;text-decoration:none;border-radius:8px;font-weight:600}
+.back-btn:hover{background:#15803d}
+</style>
+</head>
+<body>
+<div class="page">
+  <a href="index.html" class="back-btn">← Back to Categories</a>
+  <h1>Animal Health & Medical Sciences Careers</h1>
+  <div class="category-grid" id="app"></div>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeCoursePanel()">
+  <div class="modal" id="careerModal" onclick="event.stopPropagation()">
+    <h2 id="modalTitle"></h2>
+    <div class="content" id="modalDesc"></div>
+    <div class="pathway-title">Pathway</div>
+    <div class="level-label">Bachelor's Degree (B.Sc)</div>
+    <div class="level-row" id="bscRow"></div>
+    <div class="down-arrow">↓</div>
+    <div class="level-label">Master's Degree (M.Sc)</div>
+    <div class="level-row" id="mscRow"></div>
+    <div class="down-arrow">↓</div>
+    <div class="level-label">Doctoral Degree (Ph.D)</div>
+    <div class="level-row" id="phdRow"></div>
+    <div class="salary" id="modalSalary"></div>
+  </div>
+</div>
+
+<div class="course-panel" id="coursePanel" onclick="event.stopPropagation()">
+  <h3 id="courseName"></h3>
+  <div class="course-section"><strong>Explanation:</strong><p id="courseExp"></p></div>
+  <div class="course-section"><strong>Duration:</strong><p id="courseDur"></p></div>
+  <div class="course-section"><strong>Importance:</strong><p id="courseImp"></p></div>
+</div>
+
+</style>
+</head>
+<!-- Same overlay, modal, and course panel HTML as previous files -->
+
+<script>
+const courseDetails = {
+"B.V.Sc & AH":{exp:"Bachelor of Veterinary Science and Animal Husbandry - professional degree for veterinarians.",dur:"5 years",imp:"Mandatory for practicing veterinary medicine and surgery in India."},
+"B.Sc. Zoology":{exp:"Scientific study of animals covering structure, physiology, behaviour, evolution, genetics and ecology.",dur:"3 years",imp:"This course forms the foundation of animal sciences. It prepares students for higher studies and careers in wildlife biology, ecology, conservation, veterinary research, zoological studies and teaching."},
+"B.Sc. Life Sciences":{exp:"Interdisciplinary study of biology at molecular, cellular, organismal and ecological levels.",dur:"3 years",imp:"It provides academic flexibility and a broad base, allowing students to specialize later in diverse biological fields such as ecology, genetics or biotechnology."},
+"B.Sc. Animal Science":{exp:"Study of animal nutrition, breeding, physiology, and management.",dur:"4 years",imp:"Prepares for careers in livestock management, animal research, and agriculture."},
+"B.Sc. Microbiology":{exp:"Study of microorganisms including bacteria, viruses, fungi, and their applications.",dur:"3 years",imp:"Important for healthcare, pharmaceutical, food, and environmental industries."},
+"B.Sc. Pharmacology":{exp:"Study of drugs, their composition, effects, and therapeutic uses.",dur:"4 years",imp:"Important for pharmaceutical research, drug development, and healthcare."},
+"B.Sc. Toxicology":{exp:"Study of chemical effects on living organisms and ecosystems.",dur:"3 years",imp:"Critical for environmental safety, pharmaceutical testing, and forensic science."},
+"B.Sc. Medical Lab Technology":{exp:"Training in laboratory techniques for medical diagnosis and research.",dur:"3 years",imp:"Prepares for careers in diagnostic laboratories and healthcare facilities."},
+"B.Sc. Pharmacy":{exp:"Study of drugs, their composition, effects, and therapeutic uses.",dur:"4 years",imp:"Important for pharmaceutical research, drug development, and healthcare."},
+"B.Sc. Clinical Research":{exp:"Study of clinical trial design, management, and regulatory affairs.",dur:"3 years",imp:"Prepares for careers in pharmaceutical research and clinical trial management."},
+"B.Sc. Biomedical Science":{exp:"Study of human biology, diseases, and medical laboratory techniques.",dur:"3 years",imp:"Prepares for careers in medical laboratories, research institutions, and healthcare."},
+"M.V.Sc Pathology":{exp:"Veterinary pathology specialization for disease diagnosis.",dur:"2 years",imp:"Essential for veterinary diagnostic laboratories and research."},
+"M.V.Sc Microbiology":{exp:"Veterinary microbiology for animal pathogen studies.",dur:"2 years",imp:"Important for animal disease research and control."},
+"M.V.Sc Parasitology":{exp:"Veterinary parasitology for parasite studies.",dur:"2 years",imp:"Crucial for livestock health and parasite control."},
+"M.V.Sc Epidemiology":{exp:"Veterinary epidemiology for disease pattern studies.",dur:"2 years",imp:"Important for disease surveillance in animal populations."},
+"M.Sc. Veterinary Science":{exp:"Advanced animal health studies, diseases, and treatment methods.",dur:"2 years",imp:"Essential for veterinary research, specialization, and advanced practice."},
+"M.Sc. Pathology":{exp:"Study of diseases through tissue examination and diagnosis.",dur:"2 years",imp:"Important for medical and veterinary diagnostics."},
+"M.Sc. Pharmacology":{exp:"Study of drug actions, effects, and development.",dur:"2 years",imp:"Important for pharmaceutical research and drug development."},
+"M.Sc. Toxicology":{exp:"Advanced study of chemical toxicity, risk assessment, and safety evaluation.",dur:"2 years",imp:"Key for environmental safety, pharmaceutical testing, and forensic applications."},
+"M.Sc. Clinical Research":{exp:"Design and management of clinical trials and research studies.",dur:"2 years",imp:"Crucial for pharmaceutical industry and medical research."},
+"M.Sc. Biomedical Science":{exp:"Advanced study of human biology and disease mechanisms.",dur:"2 years",imp:"Important for medical research and diagnostic laboratories."},
+"M.Sc. Medical Lab Science":{exp:"Advanced laboratory techniques for medical diagnosis.",dur:"2 years",imp:"Essential for hospital laboratories and diagnostic centers."},
+"M.Sc. Laboratory Animal Science":{exp:"Management and care of laboratory animals in research.",dur:"2 years",imp:"Essential for biomedical research institutions and pharmaceutical companies."},
+"Ph.D. Veterinary Sciences":{exp:"Doctoral research on animal health, diseases, and treatments.",dur:"3–6 years",imp:"Animal health advancement and veterinary research leadership."},
+"Ph.D. Veterinary Pathology":{exp:"Advanced research on animal diseases and diagnostics.",dur:"3–6 years",imp:"Veterinary diagnostic science and disease research leadership."},
+"Ph.D. Veterinary Microbiology":{exp:"Doctoral research on animal pathogens and diseases.",dur:"3–6 years",imp:"Animal disease control and vaccine research leadership."},
+"Ph.D. Veterinary Parasitology":{exp:"Advanced research on animal parasites and control.",dur:"3–6 years",imp:"Parasitic disease research and control leadership."},
+"Ph.D. Veterinary Epidemiology":{exp:"Doctoral research on animal disease patterns and outbreaks.",dur:"3–6 years",imp:"Disease surveillance and control program leadership."},
+"Ph.D. Pharmacology":{exp:"Doctoral research on drug actions and development.",dur:"3–6 years",imp:"Pharmaceutical research and drug development leadership."},
+"Ph.D. Biomedical Science":{exp:"Advanced research on human biology and diseases.",dur:"3–6 years",imp:"Medical research and diagnostic science leadership."},
+"Ph.D. Animal Toxicology":{exp:"Advanced research on chemical effects on animals.",dur:"3–5 years",imp:"Environmental safety and toxicology research leadership."},
+"Ph.D. Laboratory Animal Science":{exp:"Advanced research on laboratory animal care and science.",dur:"3–5 years",imp:"Biomedical research animal science leadership."}
+};
+
+const categories = [{
+name:"Animal Health & Medical Sciences",
+items:[
+{title:"Veterinarian (with further qualification)",desc:"Diagnoses and treats animal diseases, performs surgeries, advises on animal care.",bsc:["B.V.Sc & AH","B.Sc. Zoology","B.Sc. Animal Science"],msc:["M.V.Sc in specialization","M.Sc. Veterinary Science"],phd:["Ph.D. Veterinary Sciences"],salary:"6–12 LPA"},
+{title:"Veterinary Pathologist",desc:"Studies animal diseases through tissue examination and lab analysis.",bsc:["B.V.Sc & AH","B.Sc. Zoology"],msc:["M.V.Sc Pathology","M.Sc. Pathology"],phd:["Ph.D. Veterinary Pathology"],salary:"6–10 LPA"},
+{title:"Veterinary Microbiologist",desc:"Studies microorganisms affecting animal health, develops diagnostics and vaccines.",bsc:["B.V.Sc & AH","B.Sc. Microbiology"],msc:["M.V.Sc Microbiology","M.Sc. Veterinary Microbiology"],phd:["Ph.D. Veterinary Microbiology"],salary:"5–9 LPA"},
+{title:"Veterinary Parasitologist",desc:"Studies parasites affecting animals and develops control measures.",bsc:["B.V.Sc & AH","B.Sc. Zoology"],msc:["M.V.Sc Parasitology","M.Sc. Parasitology"],phd:["Ph.D. Veterinary Parasitology"],salary:"5–9 LPA"},
+{title:"Veterinary Epidemiologist",desc:"Studies disease patterns and outbreaks in animal populations.",bsc:["B.V.Sc & AH","B.Sc. Zoology"],msc:["M.V.Sc Epidemiology","M.Sc. Epidemiology"],phd:["Ph.D. Veterinary Epidemiology"],salary:"6–11 LPA"},
+{title:"Laboratory Animal Scientist",desc:"Manages and cares for laboratory animals used in biomedical research.",bsc:["B.Sc. Zoology","B.Sc. Life Sciences","B.V.Sc"],msc:["M.Sc. Laboratory Animal Science"],phd:["Ph.D. Laboratory Animal Science"],salary:"4–8 LPA"},
+{title:"Animal Toxicologist",desc:"Studies effects of chemicals and toxins on animals and ecosystems.",bsc:["B.Sc. Zoology","B.Sc. Toxicology","B.Sc. Life Sciences"],msc:["M.Sc. Toxicology","M.Sc. Environmental Toxicology"],phd:["Ph.D. Animal Toxicology","Ph.D. Toxicology"],salary:"5–9 LPA"},
+{title:"Pharmacologist (Animal-based research)",desc:"Studies drug effects and develops medications for animal use.",bsc:["B.Sc. Zoology","B.Sc. Pharmacology","B.Sc. Life Sciences"],msc:["M.Sc. Pharmacology","M.Sc. Veterinary Pharmacology"],phd:["Ph.D. Pharmacology"],salary:"5–10 LPA"},
+{title:"Clinical Research Associate (CRA)",desc:"Manages clinical trials of veterinary drugs and treatments.",bsc:["B.Sc. Zoology","B.Sc. Life Sciences","B.Sc. Pharmacy"],msc:["M.Sc. Clinical Research","Certification in Clinical Research"],phd:["Optional"],salary:"5–10 LPA"},
+{title:"Clinical Trial Coordinator",desc:"Coordinates all aspects of veterinary clinical trials.",bsc:["B.Sc. Zoology","B.Sc. Life Sciences"],msc:["M.Sc. Clinical Research Management"],phd:["Not required"],salary:"4–8 LPA"},
+{title:"Biomedical Scientist",desc:"Conducts research to understand diseases and develop treatments.",bsc:["B.Sc. Zoology","B.Sc. Biotechnology","B.Sc. Biomedical Science"],msc:["M.Sc. Biomedical Science","M.Sc. Medical Biotechnology"],phd:["Ph.D. Biomedical Science"],salary:"5–10 LPA"},
+{title:"Medical Laboratory Scientist",desc:"Performs diagnostic tests on animal samples in medical labs.",bsc:["B.Sc. Medical Lab Technology","B.Sc. Zoology"],msc:["M.Sc. Medical Lab Science"],phd:["Optional for research roles"],salary:"4–7 LPA"},
+{title:"Diagnostic Lab Scientist",desc:"Works in diagnostic labs analyzing animal samples for diseases.",bsc:["B.Sc. Zoology","B.Sc. Microbiology","B.Sc. Medical Lab Tech"],msc:["M.Sc. Diagnostic Microbiology","M.Sc. Pathology"],phd:["Optional"],salary:"4–7 LPA"}
+]}];
+
+// Same JavaScript functions as previous files
+const app=document.getElementById("app");
+categories.forEach(cat=>{
+  const col=document.createElement("div");
+  col.className="category";
+  col.innerHTML=`<div class="category-title">${cat.name}</div><div class="career-list"></div>`;
+  const list=col.querySelector(".career-list");
+  cat.items.forEach(c=>{
+    const box=document.createElement("div");
+    box.className="box";
+    box.innerHTML=`<div class="box-title">${c.title}</div>`;
+    box.onclick=()=>openCareer(c);
+    list.appendChild(box);
+  });
+  app.appendChild(col);
+});
+function openCareer(c){
+  modalTitle.innerText=c.title;
+  modalDesc.innerText=c.desc;
+  modalSalary.innerText="The average salary outcome for the following course is: "+c.salary;
+  fillRow("bscRow",c.bsc);
+  fillRow("mscRow",c.msc);
+  fillRow("phdRow",c.phd);
+  overlay.classList.add("active");
+}
+function fillRow(id,arr){
+  const row=document.getElementById(id);
+  row.innerHTML="";
+  arr.forEach(name=>{
+    const d=document.createElement("div");
+    d.className="step-box";
+    d.innerText=name;
+    d.onclick=()=>openCourse(name);
+    row.appendChild(d);
+  });
+}
+function openCourse(name){
+  const data = courseDetails[name];
+  if(!data) {
+    courseName.innerText=name;
+    courseExp.innerText="Detailed information about this course.";
+    courseDur.innerText="2-3 years";
+    courseImp.innerText="Important course for specialization in this field.";
+  } else {
+    courseName.innerText=name;
+    courseExp.innerText=data.exp;
+    courseDur.innerText=data.dur;
+    courseImp.innerText=data.imp;
+  }
+  coursePanel.classList.add("active");
+  careerModal.classList.add("shift-left");
+}
+function closeCoursePanel(){
+  coursePanel.classList.remove("active");
+  careerModal.classList.remove("shift-left");
+  overlay.classList.remove("active");
+}
+</script>
+</body>
+</html>

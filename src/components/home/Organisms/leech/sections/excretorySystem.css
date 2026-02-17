@@ -1,0 +1,231 @@
+/* Excretory System - Premium Styling */
+
+.excr-section {
+  padding: 0;
+}
+
+.excr-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.excr-header {
+  margin-bottom: 0.5rem;
+}
+
+.excr-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--leech-primary-dark, #14280a);
+  margin: 0;
+}
+
+.excr-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Cards */
+.excr-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  box-shadow: var(--leech-shadow-soft);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.excr-card:hover {
+  box-shadow: var(--leech-shadow-medium);
+  transform: translateY(-2px);
+}
+
+.excr-card-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #06b6d4, var(--leech-primary, #3d6b0a));
+}
+
+.excr-card-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--leech-primary-dark, #14280a);
+  margin: 0 0 0.5rem;
+}
+
+.excr-card-text {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--leech-text-secondary, #2d3b29);
+  margin: 0 0 0.75rem;
+}
+
+/* Parts List */
+.excr-parts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.excr-part-card {
+  display: flex;
+  gap: 12px;
+  padding: 1rem;
+  background: var(--leech-bg-app, #f6faf4);
+  border-radius: 12px;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  transition: all 0.3s ease;
+}
+
+.excr-part-card:hover {
+  transform: translateX(4px);
+  box-shadow: var(--leech-shadow-soft);
+}
+
+.excr-part-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--leech-primary, #3d6b0a), var(--leech-primary-vivid, #65a30d));
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.excr-part-info {
+  flex: 1;
+}
+
+.excr-part-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.excr-part-name {
+  font-size: 0.88rem;
+  color: var(--leech-primary-dark, #14280a);
+}
+
+.excr-part-badge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: rgba(61, 107, 10, 0.08);
+  color: var(--leech-primary, #3d6b0a);
+}
+
+.excr-part-desc {
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--leech-text-secondary, #2d3b29);
+  margin: 0;
+}
+
+/* Image */
+.excr-image-col {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.excr-image-frame {
+  background: var(--leech-primary-light, #f0fdf4);
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  text-align: center;
+}
+
+.excr-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--leech-shadow-soft);
+  transition: transform 0.4s ease;
+}
+
+.excr-image-frame:hover .excr-img {
+  transform: scale(1.02);
+}
+
+.excr-img-caption {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--leech-text-muted, #5c6e56);
+}
+
+/* Summary Card */
+.excr-summary-card {
+  background: white;
+  border-radius: 14px;
+  padding: 1.25rem;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  box-shadow: var(--leech-shadow-soft);
+}
+
+.excr-summary-title {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--leech-primary, #3d6b0a);
+  margin: 0 0 0.75rem;
+}
+
+.excr-summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  font-size: 0.8rem;
+}
+
+.excr-summary-row:last-child {
+  border-bottom: none;
+}
+
+.excr-summary-label {
+  color: var(--leech-text-muted, #5c6e56);
+  font-weight: 600;
+}
+
+.excr-summary-value {
+  color: var(--leech-text-main, #0c1a0a);
+  font-weight: 700;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .excr-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .excr-image-col {
+    position: static;
+  }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Education & Science Communication</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{
+  margin:0;
+  padding:30px;
+  font-family:'Poppins',sans-serif;
+  background:#f5fdf8;
+  color:#0f172a;
+}
+.page{max-width:1500px;margin:auto}
+h1{text-align:center;color:#14532d;margin-bottom:40px}
+.category-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:20px}
+.category{background:#fff;border-radius:18px;padding:20px;box-shadow:0 10px 25px rgba(0,0,0,.06)}
+.category-title{text-align:center;font-weight:600;color:#1faa59;margin-bottom:20px}
+.career-list{display:flex;flex-direction:column;gap:14px}
+.box{background:#f8fffb;border:1px solid #d1fae5;border-radius:14px;padding:14px;cursor:pointer;transition:.25s}
+.box:hover{background:#ecfdf5;transform:translateY(-2px)}
+.box-title{font-weight:600;color:#2563eb}
+.overlay{position:fixed;inset:0;background:rgba(15,23,42,.7);display:flex;justify-content:center;align-items:center;opacity:0;pointer-events:none;transition:.3s;z-index:1000}
+.overlay.active{opacity:1;pointer-events:auto}
+.modal{background:#fff;width:900px;border-radius:22px;padding:34px;transition:transform .45s ease}
+.modal.shift-left{transform:translateX(-260px)}
+.modal h2{text-align:center;color:#14532d}
+.content{text-align:center;margin-bottom:24px}
+.pathway-title{text-align:center;color:#1faa59;font-weight:700}
+.level-label{text-align:center;margin:16px 0;color:#065f46}
+.level-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.step-box{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:12px;padding:8px 14px;font-weight:600;cursor:pointer}
+.step-box:hover{background:#d1fae5}
+.down-arrow{text-align:center;font-size:22px;color:#1faa59}
+.salary{text-align:center;font-weight:700;color:#15803d;margin-top:20px}
+.course-panel{position:fixed;top:0;right:0;width:480px;height:100%;background:#fff;box-shadow:-8px 0 30px rgba(0,0,0,.15);padding:28px;z-index:1200;display:none;opacity:0;transform:translateX(100%);transition:transform .6s cubic-bezier(.22,.61,.36,1),opacity .4s ease}
+.course-panel.active{display:block;opacity:1;transform:translateX(0)}
+.course-panel h3{color:#14532d}
+.course-section{margin-bottom:18px}
+.course-section strong{color:#1faa59}
+.back-btn{display:inline-block;margin:20px;padding:10px 20px;background:#1faa59;color:white;text-decoration:none;border-radius:8px;font-weight:600}
+.back-btn:hover{background:#15803d}
+</style>
+</head>
+<body>
+<div class="page">
+  <a href="index.html" class="back-btn">← Back to Categories</a>
+  <h1>Education & Science Communication</h1>
+  <div class="category-grid" id="app"></div>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeCoursePanel()">
+  <div class="modal" id="careerModal" onclick="event.stopPropagation()">
+    <h2 id="modalTitle"></h2>
+    <div class="content" id="modalDesc"></div>
+    <div class="pathway-title">Pathway</div>
+    <div class="level-label">Bachelor's Degree (B.Sc)</div>
+    <div class="level-row" id="bscRow"></div>
+    <div class="down-arrow">↓</div>
+    <div class="level-label">Master's Degree (M.Sc)</div>
+    <div class="level-row" id="mscRow"></div>
+    <div class="down-arrow">↓</div>
+    <div class="level-label">Doctoral Degree (Ph.D)</div>
+    <div class="level-row" id="phdRow"></div>
+    <div class="salary" id="modalSalary"></div>
+  </div>
+</div>
+
+<div class="course-panel" id="coursePanel" onclick="event.stopPropagation()">
+  <h3 id="courseName"></h3>
+  <div class="course-section"><strong>Explanation:</strong><p id="courseExp"></p></div>
+  <div class="course-section"><strong>Duration:</strong><p id="courseDur"></p></div>
+  <div class="course-section"><strong>Importance:</strong><p id="courseImp"></p></div>
+</div>
+
+<script>
+const courseDetails = {
+"B.Sc. Zoology":{exp:"Scientific study of animals covering structure, physiology, behaviour, evolution, genetics and ecology.",dur:"3 years",imp:"This course forms the foundation of animal sciences. It prepares students for higher studies and careers in wildlife biology, ecology, conservation, veterinary research, zoological studies and teaching."},
+"B.Sc. Biotechnology":{exp:"Integration of biology with modern technology including genetics, molecular biology and bioinformatics.",dur:"3 years",imp:"This course is central to modern science and industry. It enables careers in biotechnology firms, pharmaceuticals, diagnostics, agriculture and advanced molecular research."},
+"B.Sc. Life Sciences":{exp:"Interdisciplinary study of biology at molecular, cellular, organismal and ecological levels.",dur:"3 years",imp:"It provides academic flexibility and a broad base, allowing students to specialize later in diverse biological fields such as ecology, genetics or biotechnology."},
+"B.Sc. Animal Science":{exp:"Study of animal nutrition, breeding, physiology, and management.",dur:"4 years",imp:"Prepares for careers in livestock management, animal research, and agriculture."},
+"B.Sc. Genetics":{exp:"Study of genes, heredity, genetic variation, and molecular genetics.",dur:"3 years",imp:"Foundation for careers in genetic counseling, research, biotechnology, and medicine."},
+"B.Sc. Bioinformatics":{exp:"Integration of biology, computer science, and information technology.",dur:"3 years",imp:"Crucial for genomic research, drug discovery, and biological data analysis."},
+"B.Sc. Environmental Science":{exp:"Study of environmental systems, conservation, pollution control, and sustainable development.",dur:"3 years",imp:"Essential for careers in environmental consulting, conservation, policy-making, and sustainability management."},
+"B.Sc. Physiology":{exp:"Study of biological functions and processes in living organisms.",dur:"3 years",imp:"Important for understanding how organisms function at cellular and systemic levels."},
+"B.Sc. Botany":{exp:"Study of plant biology, classification, and ecology.",dur:"3 years",imp:"Foundation for plant sciences and botanical research."},
+"B.Sc. Medical Lab Tech":{exp:"Training in laboratory techniques for medical diagnosis and research.",dur:"3 years",imp:"Prepares for careers in diagnostic laboratories and healthcare facilities."},
+"M.Sc. Zoology":{exp:"Advanced animal biology covering physiology, ecology, evolution, and genetics.",dur:"2 years",imp:"Strong foundation for research, teaching, and specialized biological careers."},
+"M.Sc. Animal Science":{exp:"Advanced animal physiology, nutrition, breeding, and management.",dur:"2 years",imp:"Supports livestock industry, animal welfare, and agricultural research."},
+"M.Sc. Wildlife Biology":{exp:"Advanced study of wildlife species, behavior, and conservation.",dur:"2 years",imp:"Essential for wildlife research, conservation projects, and doctoral studies."},
+"M.Sc. Experimental Biology":{exp:"Design and execution of biological experiments and research methodologies.",dur:"2 years",imp:"Important for research-oriented careers in biological sciences."},
+"M.Sc. Research Methodology":{exp:"Scientific research methods, experimental design, and statistical analysis.",dur:"2 years",imp:"Fundamental for all scientific research careers."},
+"M.Sc. Systems Biology":{exp:"Study of complex biological systems using computational models.",dur:"2 years",imp:"Cutting-edge field for understanding biological networks and interactions."},
+"M.Sc. Evolutionary Biology":{exp:"Study of evolutionary processes, adaptation, and speciation.",dur:"2 years",imp:"Fundamental for understanding biodiversity and biological relationships."},
+"M.Sc. Comparative Anatomy":{exp:"Comparative study of anatomical structures across different species.",dur:"2 years",imp:"Important for evolutionary studies and medical research."},
+"M.Sc. Animal Physiology":{exp:"Advanced study of animal functions and biological processes.",dur:"2 years",imp:"Essential for medical research, pharmacology, and animal science."},
+"M.Sc. Taxonomy":{exp:"Scientific classification and naming of organisms.",dur:"2 years",imp:"Crucial for biodiversity documentation and conservation planning."},
+"M.Sc. Systematics":{exp:"Study of evolutionary relationships and classification systems.",dur:"2 years",imp:"Important for understanding biodiversity and evolutionary patterns."},
+"M.Sc. Morphology":{exp:"Study of form and structure of organisms.",dur:"2 years",imp:"Fundamental for anatomical and evolutionary research."},
+"M.Sc. Histology":{exp:"Microscopic study of tissues and cellular organization.",dur:"2 years",imp:"Essential for medical diagnosis and biological research."},
+"M.Sc. Cytology":{exp:"Study of cell structure, function, and chemistry.",dur:"2 years",imp:"Foundation for cell biology, genetics, and medical research."},
+"M.Sc. Developmental Biology":{exp:"Study of growth and development from embryo to adult.",dur:"2 years",imp:"Important for medical research, genetics, and biotechnology."},
+"M.Sc. Cell Biology":{exp:"Advanced study of cell structure, function, and interactions.",dur:"2 years",imp:"Essential for biomedical research and understanding disease mechanisms."},
+"M.Sc. Epigenetics":{exp:"Study of heritable changes in gene expression without DNA sequence changes.",dur:"2 years",imp:"Cutting-edge field for understanding disease, development, and evolution."},
+"Ph.D. Zoology":{exp:"Doctoral research in animal biology, ecology, physiology, or evolution.",dur:"3–6 years",imp:"Academic leadership and advanced research positions in animal sciences."},
+"Ph.D. Animal Biology":{exp:"Doctoral research focusing specifically on animal biology.",dur:"3–6 years",imp:"Advanced animal science research and academic leadership."},
+"Ph.D. Ecology":{exp:"Advanced ecosystem research and ecological theory development.",dur:"3–5 years",imp:"Climate change research, conservation planning, and sustainability science leadership."},
+"Ph.D. Wildlife Biology":{exp:"Doctoral research on wildlife species, behavior, and conservation.",dur:"3–5 years",imp:"Leadership roles in wildlife research, conservation, and policy-making."},
+"Ph.D. Experimental Biology":{exp:"Advanced research on experimental methods and biological investigations.",dur:"3–5 years",imp:"Research methodology development and experimental science leadership."},
+"Ph.D. Systems Biology":{exp:"Doctoral research on complex biological systems modeling.",dur:"3–6 years",imp:"Biological systems research and computational biology leadership."},
+"Ph.D. Evolutionary Biology":{exp:"Advanced research on evolutionary processes and mechanisms.",dur:"3–6 years",imp:"Evolutionary theory development and biodiversity research leadership."},
+"Ph.D. Comparative Anatomy":{exp:"Doctoral research comparing anatomical structures across species.",dur:"3–5 years",imp:"Evolutionary anatomy research and medical comparative studies."},
+"Ph.D. Animal Physiology":{exp:"Advanced research on animal biological functions and processes.",dur:"3–6 years",imp:"Physiological research leadership and medical applications."},
+"Ph.D. Taxonomy":{exp:"Doctoral research on organism classification and systematics.",dur:"3–5 years",imp:"Biodiversity documentation and conservation planning leadership."},
+"Ph.D. Systematics":{exp:"Advanced research on evolutionary relationships and classification.",dur:"3–5 years",imp:"Evolutionary biology and biodiversity research leadership."},
+"Ph.D. Morphology":{exp:"Doctoral research on organism form and structure.",dur:"3–5 years",imp:"Anatomical research and evolutionary morphology leadership."},
+"Ph.D. Histology":{exp:"Advanced tissue research and microscopic anatomy studies.",dur:"3–5 years",imp:"Medical research and diagnostic science leadership."},
+"Ph.D. Cytology":{exp:"Doctoral research on cell structure, function, and biology.",dur:"3–5 years",imp:"Cell biology research and medical cytology leadership."},
+"Ph.D. Developmental Biology":{exp:"Advanced research on organism growth and development.",dur:"3–6 years",imp:"Developmental genetics and regenerative medicine leadership."},
+"Ph.D. Cell Biology":{exp:"Doctoral research on cellular processes and mechanisms.",dur:"3–6 years",imp:"Cellular research and disease mechanism leadership."},
+"Ph.D. Epigenetics":{exp:"Advanced research on heritable gene expression changes.",dur:"3–6 years",imp:"Cutting-edge genetic research and disease mechanism leadership."}
+};
+const categories = [{
+name:"Education & Science Communication",
+items:[
+{title:"Academician / Professor / Research Scientist",desc:"Teaching and research.",bsc:["B.Sc. Zoology","B.Sc. Biotechnology","B.Sc. Life Sciences"],msc:["M.Sc. Zoology","M.Sc. Specialization"],phd:["Ph.D. Zoology","Ph.D. Life Sciences"],salary:"6–10 LPA"},
+{title:"School Biology Teacher",desc:"Teaches biology at school level with specialization in life sciences.",bsc:["B.Sc. Zoology","B.Sc. Life Sciences","B.Sc. Education"],msc:["M.Ed.","M.Sc. Education","M.Sc. Zoology"],phd:["Optional"],salary:"3–6 LPA"},
+{title:"Science Communicator",desc:"Communicates scientific concepts to public through various media.",bsc:["B.Sc. Zoology","B.Sc. Life Sciences","B.Sc. Journalism"],msc:["M.Sc. Science Communication","M.Sc. Journalism"],phd:["Optional","Ph.D. Science Communication"],salary:"4–8 LPA"},
+{title:"Science Writer",desc:"Writes articles, books, and content about biological sciences.",bsc:["B.Sc. Zoology","B.Sc. Life Sciences","B.Sc. English"],msc:["M.Sc. Science Writing","M.A. English"],phd:["Optional"],salary:"4–9 LPA"},
+{title:"Scientific Editor",desc:"Edits scientific manuscripts, journals, and publications.",bsc:["B.Sc. Zoology","B.Sc. Life Sciences","B.Sc. English"],msc:["M.Sc. Scientific Editing","M.Sc. Specialization"],phd:["Ph.D. in specialization"],salary:"5–10 LPA"},
+{title:"Journal Reviewer",desc:"Peer-reviews scientific papers for academic journals.",bsc:["B.Sc. Zoology","B.Sc. Life Sciences"],msc:["M.Sc. Specialization"],phd:["Ph.D. in specialization"],salary:"Additional income 1-3 LPA"},
+{title:"Educational Content Developer",desc:"Develops educational materials and curricula for biology education.",bsc:["B.Sc. Zoology","B.Sc. Education","B.Sc. Life Sciences"],msc:["M.Sc. Education Technology","M.Ed."],phd:["Optional"],salary:"4–8 LPA"},
+{title:"EdTech Biology Specialist",desc:"Develops biology content for educational technology platforms.",bsc:["B.Sc. Zoology","B.Sc. Life Sciences","B.Sc. Computer Science"],msc:["M.Sc. Educational Technology","M.Sc. Zoology"],phd:["Optional"],salary:"5–11 LPA"},
+{title:"Wildlife Documentary Researcher",desc:"Researches content for wildlife documentaries and nature films.",bsc:["B.Sc. Zoology","B.Sc. Wildlife Science","B.Sc. Mass Communication"],msc:["M.Sc. Wildlife Science","M.Sc. Film Studies"],phd:["Optional"],salary:"4–9 LPA"}
+]}];
+const app=document.getElementById("app");
+categories.forEach(cat=>{
+  const col=document.createElement("div");
+  col.className="category";
+  col.innerHTML=`<div class="category-title">${cat.name}</div><div class="career-list"></div>`;
+  const list=col.querySelector(".career-list");
+  cat.items.forEach(c=>{
+    const box=document.createElement("div");
+    box.className="box";
+    box.innerHTML=`<div class="box-title">${c.title}</div>`;
+    box.onclick=()=>openCareer(c);
+    list.appendChild(box);
+  });
+  app.appendChild(col);
+});
+function openCareer(c){
+  modalTitle.innerText=c.title;
+  modalDesc.innerText=c.desc;
+  modalSalary.innerText="The average salary outcome for the following course is: "+c.salary;
+  fillRow("bscRow",c.bsc);
+  fillRow("mscRow",c.msc);
+  fillRow("phdRow",c.phd);
+  overlay.classList.add("active");
+}
+function fillRow(id,arr){
+  const row=document.getElementById(id);
+  row.innerHTML="";
+  arr.forEach(name=>{
+    const d=document.createElement("div");
+    d.className="step-box";
+    d.innerText=name;
+    d.onclick=()=>openCourse(name);
+    row.appendChild(d);
+  });
+}
+function openCourse(name){
+  const data = courseDetails[name];
+  if(!data) {
+    courseName.innerText=name;
+    courseExp.innerText="Detailed information about this course.";
+    courseDur.innerText="2-3 years";
+    courseImp.innerText="Important course for specialization in this field.";
+  } else {
+    courseName.innerText=name;
+    courseExp.innerText=data.exp;
+    courseDur.innerText=data.dur;
+    courseImp.innerText=data.imp;
+  }
+  coursePanel.classList.add("active");
+  careerModal.classList.add("shift-left");
+}
+function closeCoursePanel(){
+  coursePanel.classList.remove("active");
+  careerModal.classList.remove("shift-left");
+  overlay.classList.remove("active");
+}
+</script>
+</body>
+</html>

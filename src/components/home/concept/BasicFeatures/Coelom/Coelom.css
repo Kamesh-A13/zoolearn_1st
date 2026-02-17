@@ -1,0 +1,345 @@
+/* =====================================================
+   COELOM COMPONENT - STYLE SHEET
+   Prefix: coelom-
+===================================================== */
+
+:root {
+  --coelom-primary: #0f172a;    /* Dark Navy */
+  --coelom-accent: #2563eb;     /* Science Blue */
+  --coelom-bg-card: #ffffff;
+  --coelom-bg-offset: #f8fafc;
+  --coelom-border: #e2e8f0;
+  --coelom-text: #334155;
+  --coelom-radius: 12px;
+}
+
+.coelom-section {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  box-sizing: border-box;
+}
+
+/* CONTAINER */
+.coelom-container {
+  max-width: 1300px;
+  width: 94%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.coelom-header {
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coelom-main-title {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--coelom-primary);
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+}
+
+.coelom-underline {
+  width: 70px;
+  height: 4px;
+  background: var(--coelom-accent);
+  margin: 0 auto 24px auto;
+  border-radius: 2px;
+}
+
+.coelom-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--coelom-text);
+  margin: 0;
+}
+
+.coelom-intro strong {
+  color: var(--coelom-accent);
+  font-weight: 700;
+}
+
+/* --- GRID 1: TYPES (3 Columns) --- */
+.coelom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.coelom-card {
+  background: var(--coelom-bg-card);
+  border: 1px solid var(--coelom-border);
+  border-radius: var(--coelom-radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.coelom-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -6px rgba(0,0,0,0.1);
+  border-color: #cbd5e1;
+}
+
+.coelom-visual-box {
+  width: 100%;
+  height: 220px;
+  background: var(--coelom-bg-offset);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--coelom-border);
+  box-sizing: border-box;
+}
+
+.coelom-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.coelom-content {
+  padding: 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.coelom-card-title {
+  margin: 0 0 12px 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--coelom-primary);
+}
+
+.coelom-text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--coelom-text);
+}
+
+/* --- SECTION 2: FORMATION (Improved Process Layout) --- */
+.coelom-formation-section {
+  width: 100%;
+}
+
+.coelom-formation-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.coelom-formation-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%; left: 0; right: 0;
+  height: 1px;
+  background: #e2e8f0;
+  z-index: 0;
+}
+
+.coelom-formation-divider span {
+  background: #fff;
+  padding: 0 24px;
+  z-index: 1;
+  color: #64748b;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+.coelom-formation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.coelom-formation-card {
+  background: #fff;
+  border: 1px solid var(--coelom-border);
+  border-top: 4px solid var(--coelom-accent);
+  border-radius: var(--coelom-radius);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  transition: all 0.2s ease;
+}
+
+.coelom-formation-card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+}
+
+.coelom-formation-header {
+  padding: 20px 24px;
+  background: var(--coelom-bg-offset);
+  border-bottom: 1px solid var(--coelom-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.coelom-formation-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--coelom-primary);
+}
+
+.coelom-formation-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--coelom-accent);
+  background: rgba(37, 99, 235, 0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+.coelom-formation-body {
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* Updated Visual Side - Larger */
+.coelom-formation-visual {
+  flex: 0 0 45%; /* Increased to 45% width */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.coelom-formation-figure {
+  margin: 0;
+  width: 100%;
+  border: 1px solid #f1f5f9;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+}
+
+.coelom-formation-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Details Side */
+.coelom-formation-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Numbered Steps List */
+.coelom-formation-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  counter-reset: step-counter; /* Initialize counter */
+}
+
+.coelom-step-item {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--coelom-text);
+}
+
+.coelom-step-item::before {
+  counter-increment: step-counter;
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--coelom-accent);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Haemocoel Note */
+.coelom-formation-note {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-left: 4px solid #f97316;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: auto; /* Push to bottom */
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.coelom-note-icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.coelom-note-content {
+  font-size: 0.9rem;
+  color: #9a3412;
+  line-height: 1.5;
+}
+
+.coelom-note-content strong {
+  color: #ea580c;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-right: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .coelom-formation-body {
+    flex-direction: column;
+  }
+  .coelom-formation-visual {
+    flex: none;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .coelom-formation-figure {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .coelom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coelom-formation-grid {
+    grid-template-columns: 1fr;
+  }
+}

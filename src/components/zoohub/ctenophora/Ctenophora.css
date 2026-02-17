@@ -1,0 +1,243 @@
+:root {
+  --color-bg-primary: #f8f7f4;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-border: #e0dcd8;
+  --color-card-bg: #ffffff;
+  --color-accent: #2d8b8f;
+  --color-accent-light: #e8f4f5;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.cten-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+}
+
+.cten-container header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.cten-container header h1 {
+  color: rgb(6, 123, 6)
+}
+
+.cten-logo {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+}
+
+.cten-container h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.5px;
+  margin-bottom: var(--space-md);
+}
+
+.cten-subtitle {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.cten-class-section {
+  margin-bottom: var(--space-xl);
+}
+
+.cten-class-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.cten-class-badge {
+  display: inline-block;
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cten-bord {
+  width: 10px;
+  height: 20px;
+  background-color: var(--color-accent);
+  border-radius: var(--radius-sm);
+}
+
+.cten-species-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.cten-species-card {
+  border-radius: var(--radius-md);
+  /* Removed overflow:hidden so the 3D shadow works */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.cten-species-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+  /* Maja: Bouncy Transition */
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
+  /* Prevent image from being dragged/selected */
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  pointer-events: none;
+}
+
+.cten-species-card:hover .cten-species-image {
+  /* Maja: Scale up + Drop Shadow */
+  transform: scale(1.15);
+  filter: drop-shadow(0 10px 15px rgba(45, 139, 143, 0.3));
+}
+
+.cten-species-info {
+  padding: var(--space-md);
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Allow text selection */
+  user-select: text;
+  cursor: text;
+}
+
+.cten-species-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  word-break: break-word;
+  user-select: text;
+}
+
+.cten-species-name-scientific {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  margin-top: 4px;
+  user-select: text;
+}
+
+.cten-container footer {
+  text-align: center;
+  padding-top: var(--space-xl);
+  margin-top: var(--space-xl);
+  border-top: 2px solid var(--color-border);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+/* --- RESPONSIVE STYLES --- */
+
+/* Tablets (iPad, larger phones) */
+@media (max-width: 768px) {
+  .cten-container {
+    padding: var(--space-md);
+    /* Reduced container padding */
+  }
+
+  .cten-container h1 {
+    font-size: 36px;
+    /* Slightly smaller header */
+  }
+
+  .cten-class-heading {
+    font-size: 20px;
+  }
+
+  .cten-species-grid {
+    /* Keep standard grid behavior but adjust gap */
+    gap: var(--space-md);
+  }
+
+  .cten-species-image {
+    height: 180px;
+    /* Slightly smaller images */
+  }
+}
+
+/* Mobile Devices (Phones) */
+@media (max-width: 480px) {
+  .cten-container header {
+    margin-bottom: var(--space-lg);
+  }
+
+  .cten-container h1 {
+    font-size: 28px;
+    /* Mobile friendly header */
+  }
+
+  .cten-subtitle {
+    font-size: 14px;
+  }
+
+  .cten-class-heading {
+    font-size: 18px;
+    margin-bottom: var(--space-md);
+  }
+
+  .cten-species-grid {
+    /* Force 2 columns side-by-side for "App Gallery" feel */
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+  }
+
+  .cten-species-image {
+    height: 140px;
+    /* Reduce height to fit 2 columns nicely */
+  }
+
+  .cten-species-info {
+    padding: var(--space-sm);
+    /* Reduce padding inside card */
+  }
+
+  .cten-species-name {
+    font-size: 14px;
+    /* Compact text */
+  }
+
+  .cten-species-name-scientific {
+    font-size: 11px;
+  }
+}

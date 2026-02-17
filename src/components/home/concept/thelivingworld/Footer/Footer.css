@@ -1,0 +1,223 @@
+/* 1. IMPORT A PROFESSIONAL FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   MAIN SECTION
+========================= */
+.foo-main-section {
+  width: 100%;
+  min-height: 50vh; 
+  background-color: #051905; 
+  /* Gradient overlay for readability */
+  background-image: 
+    linear-gradient(to bottom, rgba(12, 43, 12, 0.85), rgba(5, 20, 5, 0.95)),
+    url('https://res.cloudinary.com/duibfmcw1/image/upload/v1766503448/footer_back_fmy0nc.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* =========================
+   FOOTER SECTION
+========================= */
+.foo-footer-section {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 5%;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* =========================
+   LEFT SIDE (Brand Only)
+========================= */
+.foo-head {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  /* Centers logo vertically relative to links if needed, or use 'flex-start' for top alignment */
+  justify-content: flex-start; 
+  width:50%;
+}
+
+.foo-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.foo-logo-container img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(112, 224, 0, 0.3)); 
+  animation: foo-float 6s ease-in-out infinite;
+}
+
+.foo-logo-container h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  background: linear-gradient(to right, #ffffff, #70e000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =========================
+   RIGHT SIDE (Links)
+========================= */
+.foo-footer-content {
+  flex: 2 1 500px;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.foo-content-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.foo-about, .foo-resources, .foo-legal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.foo-about h1, .foo-resources h1, .foo-legal h1 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.foo-about h1::after, .foo-resources h1::after, .foo-legal h1::after {
+  content: '';
+  width: 40px;
+  height: 3px;
+  background: #70e000;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 2px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+ul li {
+  color: #b0c4b0;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+ul li:hover {
+  color: #70e000;
+  transform: translateX(5px);
+}
+.foo-tagline {
+  color:#b0c4b0;
+  width:100%;
+  text-align: justify;
+}
+
+/* =========================
+   COPYRIGHT
+========================= */
+.foo-copyright {
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  color: #6a8a6a;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes foo-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+  .foo-footer-section {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .foo-footer-content {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .foo-footer-section {
+    padding: 60px 25px;
+    gap: 40px;
+  }
+
+  .foo-logo-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .foo-logo-container img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .foo-content-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px 20px; 
+    width: 100%;
+  }
+  
+  .foo-about h1::after, .foo-resources h1::after, .foo-legal h1::after {
+    width: 30px;
+  }
+  .foo-tagline {
+    display:none;
+  }
+}
+
+@media (max-width: 450px) {
+  .foo-content-options {
+    grid-template-columns: 1fr; 
+    gap: 40px;
+  }
+  .foo-tagline {
+    display:none;
+  }
+}

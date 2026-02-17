@@ -1,0 +1,218 @@
+/* =====================================================
+   BODY SYMMETRY - PROFESSIONAL & SEAMLESS
+   Prefix: bs-
+===================================================== */
+
+:root {
+  --bs-primary: #0f172a;    /* Dark Navy */
+  --bs-accent: #2a6b6e;     /* Deep Teal for text/borders */
+  --bs-teal-bg: #3899ab;    /* MATCHING IMAGE BACKGROUND COLOR */
+  --bs-bg-card: #f8fafc;    /* Light Grey Surface for back */
+  --bs-border: #cbd5e1;     /* Subtle Border */
+  --bs-text-main: #334155;
+  --bs-radius: 16px;        /* Smooth rounded corners */
+}
+
+.bs-section {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  box-sizing: border-box;
+}
+
+/* CONTAINER */
+.bs-container {
+  max-width: 1200px; 
+  width: 94%; 
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.bs-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.bs-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--bs-primary);
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+}
+
+.bs-underline {
+  width: 60px;
+  height: 4px;
+  background: var(--bs-teal-bg); /* Use the teal for accent */
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* =========================================
+   3D FLIP CARD STYLES
+========================================= */
+
+/* The main container */
+.bs-flip-card {
+  background-color: transparent;
+  width: 100%;
+  /* Restrict width to create a vertical "Phone Screen" shape */
+  max-width: 320px; 
+  height: 480px; /* Tall height for elegant proportions */
+  perspective: 1000px;
+  cursor: pointer;
+  margin: 0 auto; /* Center the card in its grid cell */
+}
+
+/* The moving part */
+.bs-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.15); /* Soft premium shadow */
+  border-radius: var(--bs-radius);
+}
+
+/* TRIGGER: Hover */
+@media (min-width: 1024px) {
+  .bs-flip-card:hover .bs-card-inner {
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.25); /* Lift effect */
+  }
+}
+
+/* TRIGGER: Click class */
+.bs-card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+/* Common Face Styles */
+.bs-card-front, .bs-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: var(--bs-radius);
+  overflow: hidden; /* Ensures image doesn't bleed out */
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- FRONT SIDE (IMAGE) --- */
+.bs-card-front {
+  /* This color blends with your image background to hide gaps */
+  background-color: var(--bs-teal-bg); 
+  z-index: 2;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.bs-card-img {
+  width: 100%;
+  height: 100%;
+  /* Contain ensures whole illustration is seen. 
+     The background color fills the rest. */
+  object-fit: contain; 
+  display: block;
+  /* NO PADDING - makes it seamless */
+  padding: 0; 
+}
+
+.bs-card-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* Glassmorphism effect for a modern look */
+  background: rgba(15, 23, 42, 0.85); 
+  backdrop-filter: blur(4px);
+  color: white;
+  padding: 18px 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* --- BACK SIDE (TEXT) --- */
+.bs-card-back {
+  background-color: var(--bs-bg-card);
+  transform: rotateY(180deg);
+  padding: 30px;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--bs-border);
+  border-top: 8px solid var(--bs-accent);
+}
+
+.bs-card-title {
+  color: var(--bs-accent);
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.bs-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--bs-text-main);
+  margin-bottom: 25px;
+}
+
+.bs-extra-info {
+  background-color: #eff6ff;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #1e40af;
+  border-left: 4px solid #60a5fa;
+  margin-top: auto;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* LAYOUT GRID */
+.bs-content-grid {
+  display: grid;
+  /* Auto-fit creates a responsive grid without media queries */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 50px;
+  justify-items: center; /* Centers the cards in their columns */
+}
+
+/* ANIMATIONS */
+.bs-flip-card {
+  animation: fadeInUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.bs-flip-card:nth-child(1) { animation-delay: 0s; }
+.bs-flip-card:nth-child(2) { animation-delay: 0.1s; }
+.bs-flip-card:nth-child(3) { animation-delay: 0.2s; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .bs-flip-card {
+    height: 420px; /* Slightly shorter on mobile */
+    max-width: 100%; /* Allow full width on small screens */
+  }
+  
+  .bs-title {
+    font-size: 1.8rem;
+  }
+}

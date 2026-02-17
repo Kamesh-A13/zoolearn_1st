@@ -1,0 +1,162 @@
+/* =====================================
+   LEGAL PAGE – PROFESSIONAL & ACADEMIC
+   ===================================== */
+
+.legal-container {
+  padding-top: 0;
+  /* Handled globally by .main-content */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-bottom: 3.5rem;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #0f172a;
+  line-height: 1.8;
+  background-color: #ffffff;
+}
+
+/* ===== HEADER ===== */
+.legal-header {
+  margin-bottom: 3rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.legal-header h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.legal-header p {
+  font-size: 1.05rem;
+  color: #475569;
+  max-width: 900px;
+}
+
+/* ===== SECTIONS ===== */
+.legal-section {
+  margin-bottom: 3.5rem;
+}
+
+.legal-section h2 {
+  font-size: 1.55rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+/* green accent */
+.legal-section h2::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 6px;
+  width: 4px;
+  height: 1.2em;
+  background-color: #2f7d46;
+  border-radius: 2px;
+}
+
+/* Sub headings */
+.legal-section h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 1.6rem;
+  margin-bottom: 0.4rem;
+  color: #1e293b;
+}
+
+.legal-section p {
+  font-size: 1.02rem;
+  margin-bottom: 0.8rem;
+  color: #1e293b;
+  max-width: 1000px;
+}
+
+/* Lists */
+.legal-section ul {
+  padding-left: 1.4rem;
+  margin-top: 0.4rem;
+}
+
+.legal-section li {
+  margin-bottom: 0.45rem;
+  font-size: 1.01rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .legal-container {
+    padding-top: 90px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .legal-header h1 {
+    font-size: 1.85rem;
+  }
+
+  .legal-section h2 {
+    font-size: 1.35rem;
+  }
+
+  .legal-section h2::before {
+    left: -10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .legal-container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .legal-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .legal-header p {
+    font-size: 0.9rem;
+  }
+
+  .legal-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .legal-section h3 {
+    font-size: 1.05rem;
+  }
+
+  .legal-section p {
+    font-size: 0.92rem;
+  }
+
+  .legal-section li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .legal-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .legal-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .legal-section h2 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Explicit divider */
+.legal-divider {
+  margin: 3.5rem 0;
+  border-top: 1px solid #e5e7eb;
+}

@@ -1,0 +1,220 @@
+/* Reproductive System - Premium Styling */
+
+.repro-section {
+  padding: 0;
+}
+
+.repro-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.repro-header {
+  margin-bottom: 0.5rem;
+}
+
+.repro-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--leech-primary-dark, #14280a);
+  margin: 0;
+}
+
+/* Cards */
+.repro-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  box-shadow: var(--leech-shadow-soft);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.repro-card:hover {
+  box-shadow: var(--leech-shadow-medium);
+  transform: translateY(-2px);
+}
+
+.repro-card-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ec4899, #8b5cf6, var(--leech-primary, #3d6b0a));
+}
+
+.repro-card-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--leech-primary-dark, #14280a);
+  margin: 0 0 0.5rem;
+}
+
+.repro-card-text {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--leech-text-secondary, #2d3b29);
+  margin: 0 0 0.75rem;
+}
+
+/* System Cards */
+.repro-system-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  box-shadow: var(--leech-shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.repro-system-card:hover {
+  box-shadow: var(--leech-shadow-medium);
+  transform: translateY(-2px);
+}
+
+.repro-system-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+}
+
+.repro-system-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.repro-male-card .repro-system-icon {
+  background: rgba(59, 130, 246, 0.1);
+  color: #2563eb;
+}
+
+.repro-female-card .repro-system-icon {
+  background: rgba(236, 72, 153, 0.1);
+  color: #db2777;
+}
+
+.repro-system-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--leech-primary-dark, #14280a);
+  margin: 0;
+}
+
+.repro-organ-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.repro-organ-list li {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--leech-text-secondary, #2d3b29);
+  padding-left: 20px;
+  position: relative;
+}
+
+.repro-organ-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--leech-primary-vivid, #65a30d);
+  font-weight: 700;
+}
+
+/* Process Grid */
+.repro-process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.repro-process-card {
+  text-align: center;
+  padding: 1.25rem 1rem;
+  background: var(--leech-bg-app, #f6faf4);
+  border-radius: 14px;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  transition: all 0.3s ease;
+}
+
+.repro-process-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--leech-shadow-medium);
+}
+
+.repro-process-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--leech-primary, #3d6b0a), var(--leech-primary-vivid, #65a30d));
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.repro-process-title {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--leech-primary-dark, #14280a);
+  margin-bottom: 0.35rem;
+}
+
+.repro-process-desc {
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--leech-text-secondary, #2d3b29);
+  margin: 0;
+}
+
+/* Image */
+.repro-image-frame {
+  background: var(--leech-primary-light, #f0fdf4);
+  border-radius: 16px;
+  padding: 1.25rem;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  text-align: center;
+}
+
+.repro-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--leech-shadow-soft);
+  transition: transform 0.4s ease;
+}
+
+.repro-image-frame:hover .repro-img {
+  transform: scale(1.02);
+}
+
+.repro-img-caption {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--leech-text-muted, #5c6e56);
+}

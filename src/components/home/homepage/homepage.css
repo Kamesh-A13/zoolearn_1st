@@ -1,0 +1,389 @@
+/* =========================================
+   ZOOLEARN LEARNING SECTION STYLES
+   Uses design tokens from design-tokens.css
+========================================= */
+
+/* Component-scoped variables */
+.learn-learning-page {
+  /* Map to global tokens with fallbacks */
+  --zl-green: var(--color-primary, #2f7d46);
+  --zl-green-dark: var(--color-primary-dark, #246336);
+  --zl-green-light: var(--color-primary-light, #f0fdf4);
+  --text-dark: var(--color-text, #1e293b);
+  --text-muted: var(--color-text-muted, #64748b);
+  --bg-white: var(--color-bg, #ffffff);
+  --bg-offset: var(--color-bg-secondary, #f8fafc);
+  --border: var(--color-border, #e2e8f0);
+  --radius: var(--radius-lg, 12px);
+  --shadow-sm: var(--shadow-xs, 0 1px 3px rgba(0, 0, 0, 0.05));
+  --shadow-md: var(--shadow-md, 0 4px 6px -1px rgba(0, 0, 0, 0.1));
+  --shadow-hover: var(--shadow-primary, 0 12px 24px -6px rgba(47, 125, 70, 0.15));
+
+  box-sizing: border-box;
+  margin: 0;
+  font-family: var(--font-sans, 'Inter', -apple-system, BlinkMacSystemFont, sans-serif);
+  color: var(--text-dark);
+  background-color: var(--bg-white);
+  line-height: var(--line-height-normal, 1.6);
+}
+
+.learn-learning-page * {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   LAYOUT UTILITIES
+========================================= */
+.learn-section-wrapper {
+  padding: 4rem 0;
+}
+
+.learn-bg-light {
+  background-color: var(--bg-offset);
+}
+
+.learn-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 24px;
+}
+
+/* =========================================
+   HEADERS (FIXED LAYOUT)
+========================================= */
+.learn-section-header {
+  /* Flex Column fixes the overlapping/side-by-side issue */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  max-width: 700px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.learn-section-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--zl-green);
+  background: var(--zl-green-light);
+  padding: 6px 14px;
+  border-radius: 99px;
+  margin-bottom: 1rem;
+  /* Ensures space between tag and title */
+  border: 1px solid rgba(47, 125, 70, 0.2);
+}
+
+.learn-section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+  width: 100%;
+  /* Ensures title takes full width */
+}
+
+.learn-section-subtitle {
+  color: var(--text-muted);
+  font-size: 1.125rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* =========================================
+   CONCEPTUAL GRID (Cards)
+========================================= */
+.learn-conceptual-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
+  gap: 2rem;
+}
+
+.learn-conceptual-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.learn-conceptual-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--zl-green);
+}
+
+/* Hover decoration line at top */
+.learn-conceptual-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--zl-green);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.learn-conceptual-card:hover::before {
+  opacity: 1;
+}
+
+.learn-icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.learn-icon-box img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.learn-conceptual-card h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
+  color: var(--text-dark);
+}
+
+.learn-conceptual-card p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin: 0 0 2rem 0;
+  flex-grow: 1;
+}
+
+/* Button Link Styling */
+.learn-btn-text {
+  background: none;
+  border: none;
+  color: var(--zl-green);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.learn-btn-text:hover {
+  gap: 10px;
+  color: var(--zl-green-dark);
+}
+
+/* =========================================
+   ORGANISMS GRID
+========================================= */
+.learn-organisms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: 1.5rem;
+}
+
+.learn-organism-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.learn-organism-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--zl-green);
+}
+
+.learn-organism-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.learn-org-icon {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  background: var(--bg-offset);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+}
+
+.learn-org-icon img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.learn-org-title-group h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.learn-scientific-name {
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.learn-card-details {
+  flex-grow: 1;
+}
+
+.learn-classification-badge {
+  display: inline-block;
+  background: var(--bg-offset);
+  color: var(--text-dark);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--border);
+}
+
+.learn-stats-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.learn-time-pill {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.learn-time-pill::before {
+  content: '⏱';
+  color: var(--zl-green);
+  font-size: 0.9rem;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+.learn-btn-primary {
+  width: 100%;
+  padding: 0.85rem;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--zl-green);
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  margin-top: auto;
+}
+
+.learn-btn-primary:hover {
+  background-color: var(--zl-green-dark);
+}
+
+.learn-btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 640px) {
+  .learn-section-title {
+    font-size: 2rem;
+  }
+
+  .learn-section-wrapper {
+    padding: 3rem 0;
+  }
+
+  .learn-conceptual-grid,
+  .learn-organisms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learn-conceptual-card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .learn-section-title {
+    font-size: 1.6rem;
+  }
+
+  .learn-section-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .learn-section-wrapper {
+    padding: 2rem 0;
+  }
+
+  .learn-conceptual-card {
+    padding: 1.25rem;
+  }
+
+  .learn-card-icon {
+    font-size: 1.6rem;
+    width: 48px;
+    height: 48px;
+  }
+
+  .learn-conceptual-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .learn-btn-primary {
+    padding: 0.7rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .learn-section-title {
+    font-size: 1.4rem;
+  }
+
+  .learn-conceptual-card {
+    padding: 1rem;
+  }
+
+  .learn-organisms-card img {
+    height: 160px;
+  }
+}

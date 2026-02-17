@@ -1,0 +1,261 @@
+/* Body Divisions - Premium Timeline Styling */
+
+.bd-divisions-section {
+  padding: 0;
+}
+
+.bd-divisions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bd-divisions-header {
+  margin-bottom: 0.5rem;
+}
+
+.bd-divisions-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--leech-primary-dark, #14280a);
+  margin: 0 0 0.75rem;
+}
+
+.bd-divisions-intro {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--leech-text-secondary, #2d3b29);
+  max-width: 700px;
+}
+
+/* Segment Summary Bar */
+.bd-segment-bar {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 32px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.bd-segment-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: default;
+  position: relative;
+  min-width: 30px;
+}
+
+.bd-segment-block:hover {
+  filter: brightness(1.1);
+  transform: scaleY(1.15);
+}
+
+.bd-segment-block-label {
+  font-size: 0.62rem;
+  font-weight: 800;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+}
+
+/* Timeline Layout */
+.bd-divisions-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  padding-left: 28px;
+}
+
+.bd-divisions-timeline::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg,
+      #e11d48 0%,
+      #f59e0b 20%,
+      #ea580c 35%,
+      #16a34a 55%,
+      #0d9488 75%,
+      #4f46e5 100%);
+  border-radius: 2px;
+}
+
+.bd-timeline-card {
+  position: relative;
+  padding: 1rem 0 1rem 1.5rem;
+  animation: leechCardEnter 0.4s ease-out forwards;
+  opacity: 0;
+}
+
+.bd-timeline-marker {
+  position: absolute;
+  left: -22px;
+  top: 1.3rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+}
+
+.bd-timeline-content {
+  background: white;
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  box-shadow: var(--leech-shadow-soft, 0 1px 3px rgba(0, 0, 0, 0.04));
+  transition: all 0.3s ease;
+}
+
+.bd-timeline-content:hover {
+  box-shadow: var(--leech-shadow-medium, 0 4px 14px rgba(0, 0, 0, 0.06));
+  transform: translateX(4px);
+}
+
+.bd-card-top-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.bd-segment-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 6px;
+  border: 1px solid;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.bd-organs-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--leech-text-muted, #5c6e56);
+  background: var(--leech-bg-app, #f6faf4);
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+.bd-region-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--leech-text-main, #0c1a0a);
+  margin: 0 0 0.4rem;
+}
+
+.bd-region-desc {
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--leech-text-secondary, #2d3b29);
+  margin: 0;
+}
+
+/* Footer */
+.bd-divisions-footer-box {
+  background: var(--leech-primary-light, #f0fdf4);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+}
+
+.bd-footer-text {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--leech-text-secondary, #2d3b29);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .bd-divisions-timeline {
+    padding-left: 24px;
+  }
+
+  .bd-timeline-marker {
+    left: -18px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .bd-segment-bar {
+    height: 24px;
+  }
+
+  .bd-segment-block-label {
+    font-size: 0.55rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bd-divisions-title {
+    font-size: 1.3rem;
+  }
+
+  .bd-divisions-intro {
+    font-size: 0.85rem;
+  }
+
+  .bd-timeline-content {
+    padding: 1rem 1.15rem;
+    border-radius: 10px;
+  }
+
+  .bd-region-name {
+    font-size: 0.95rem;
+  }
+
+  .bd-region-desc {
+    font-size: 0.8rem;
+  }
+
+  .bd-divisions-footer-box {
+    padding: 1rem 1.15rem;
+    border-radius: 10px;
+  }
+
+  .bd-footer-text {
+    font-size: 0.82rem;
+  }
+
+  .bd-segment-bar {
+    height: 20px;
+  }
+
+  .bd-segment-block-label {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .bd-divisions-title {
+    font-size: 1.15rem;
+  }
+
+  .bd-divisions-timeline {
+    padding-left: 20px;
+  }
+
+  .bd-timeline-marker {
+    left: -15px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .bd-timeline-content {
+    padding: 0.75rem;
+  }
+
+  .bd-segment-bar {
+    height: 16px;
+  }
+}

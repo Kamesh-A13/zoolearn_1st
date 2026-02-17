@@ -1,0 +1,37 @@
+// STDERR:
+// [31m✗[39m Build failed in 454ms
+// [31merror during build:
+// [31mBuild failed with 2 errors:
+// 
+// [31m[builtin:transform] Error:[0m Unterminated string
+//     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/zoohub/chordata/chondrichthyes/carcharodon-carcharias/CarcharodonCarcharias.jsx:1:3 [38;5;246m][0m
+//     [38;5;246m│[0m
+//  [38;5;246m 1 │[0m ╭─▶ [38;5;249m`[0m[38;5;249m`[0m`
+//  [38;5;240m   ┆[0m ┆   
+//  [38;5;246m41 │[0m ├─▶ export default Grantia;
+//  [38;5;240m   │[0m │                            
+//  [38;5;240m   │[0m ╰──────────────────────────── 
+// [38;5;246m────╯[0m
+// 
+// [31m[builtin:transform] Error:[0m Expected a semicolon or an implicit semicolon after a statement, but found none
+//    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/zoohub/chordata/chondrichthyes/carcharodon-carcharias/CarcharodonCarcharias.jsx:1:3 [38;5;246m][0m
+//    [38;5;246m│[0m
+//  [38;5;246m1 │[0m [38;5;249m`[0m[38;5;249m`[0m[38;5;249m`[0m
+//  [38;5;240m  │[0m   │ 
+//  [38;5;240m  │[0m   ╰─ 
+//  [38;5;240m  │[0m 
+//  [38;5;240m  │[0m [38;5;115mHelp[0m: Try inserting a semicolon here
+// [38;5;246m───╯[0m
+// [31m
+//     at aggregateBindingErrorsIntoJsError (file:///d:/zoolearn/ongoing/my-react-app/node_modules/rolldown/dist/shared/src-CYkh2Ybc.mjs:2659:18)
+//     at unwrapBindingResult (file:///d:/zoolearn/ongoing/my-react-app/node_modules/rolldown/dist/shared/src-CYkh2Ybc.mjs:2634:128)
+//     at #build (file:///d:/zoolearn/ongoing/my-react-app/node_modules/rolldown/dist/shared/src-CYkh2Ybc.mjs:4433:34)
+//     at async buildEnvironment (file:///d:/zoolearn/ongoing/my-react-app/node_modules/vite/dist/node/chunks/node.js:33468:64)
+//     at async Object.build (file:///d:/zoolearn/ongoing/my-react-app/node_modules/vite/dist/node/chunks/node.js:33871:19)
+//     at async Object.buildApp (file:///d:/zoolearn/ongoing/my-react-app/node_modules/vite/dist/node/chunks/node.js:33868:153)
+//     at async CAC.<anonymous> (file:///d:/zoolearn/ongoing/my-react-app/node_modules/vite/dist/node/cli.js:629:3)[39m
+// 
+// STDOUT:
+// [36mrolldown-vite v7.2.5 [32mbuilding client environment for production...[36m[39m
+// [2Ktransforming...✓ 2627 modules transformed.
+// 

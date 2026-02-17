@@ -1,0 +1,54 @@
+[
+  {
+    "id": "tentaculata",
+    "className": "Tentaculata",
+    "species": [
+      {
+        "id": 1,
+        "slug": "ctenoplana",
+        "name": "Ctenoplana",
+        "scientificName": "Creeping comb jelly",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767893538/Ctenoplana_hbzyki.png",
+        "path": "/zoohub/ctenophora/ctenoplana"
+      },
+      {
+        "id": 2,
+        "slug": "pleurobrachia",
+        "name": "Pleurobrachia",
+        "scientificName": "Sea gooseberry",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767893553/Pleurobrachia_ffya5t.png",
+        "path": "/zoohub/ctenophora/pleurobrachia"
+      },
+      {
+        "id": 3,
+        "slug": "hormiphora",
+        "name": "Hormiphora",
+        "scientificName": "Comb jelly",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767893551/Hormiphora_jmfpun.png",
+        "path": "/zoohub/ctenophora/hormiphora"
+      },
+      {
+        "id": 4,
+        "slug": "cestum",
+        "name": "Cestum",
+        "scientificName": "Venus girdle",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767893548/Cestum_imikzw.png",
+        "path": "/zoohub/ctenophora/cestum"
+      }
+    ]
+  },
+  {
+    "id": "nuda",
+    "className": "Nuda",
+    "species": [
+      {
+        "id": 5,
+        "slug": "beroe",
+        "name": "Beroe",
+        "scientificName": "Comb jelly",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767893545/Beroe_cke3tj.png",
+        "path": "/zoohub/ctenophora/beroe"
+      }
+    ]
+  }
+]

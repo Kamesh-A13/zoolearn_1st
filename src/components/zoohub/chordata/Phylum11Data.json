@@ -1,0 +1,5835 @@
+{
+  "ascidia": {
+    "id": 1,
+    "slug": "ascidia",
+    "name": "Ascidia",
+    "scientificName": "Sea squirt",
+    "description": "Ascidia is a simple marine tunicate. Adult is sessile, larva is free-swimming. Shows chordate features in larval stage.",
+    "image": "media/image1.png",
+    "3d": "",
+    "introduction": [
+      "Ascidia lives attached to rocks in shallow seas.",
+      "It is filter-feeding and sac-like.",
+      "Important for understanding chordate evolution."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral (larva), asymmetrical (adult)",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan, Deuterostomous",
+      "Digestion type: Complete",
+      "Respiratory type: Pharyngeal respiration",
+      "Circulatory type: Open, single",
+      "Circulation system: Open",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Neural gland",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Absent",
+      "Nervous system: Dorsal nerve cord in larva, reduced in adult",
+      "Metamerism: Absent",
+      "Fertilization: External",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Sac-like unsegmented body",
+      "Covered by tunic made of tunicin",
+      "Two siphons: incurrent and excurrent",
+      "Usually translucent or yellowish"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Urochordata (Tunicata)",
+      "Class: Ascidiacea",
+      "Order: Phlebobranchia",
+      "Family: Ascidiidae",
+      "Genus: Ascidia"
+    ],
+    "ecology": [
+      "Efficient filter feeder",
+      "Cleans marine water",
+      "Part of benthic community"
+    ],
+    "economy": [
+      "Evolutionary biology studies",
+      "Biofouling research relevance",
+      "Educational specimen"
+    ]
+  },
+
+  "herdmania": {
+    "id": 2,
+    "slug": "herdmania",
+    "name": "Herdmania",
+    "scientificName": "Red sea squirt",
+    "description": "Herdmania is a solitary ascidian. Body is tough and brightly coloured. Adult lacks notochord.",
+    "image": "media/image2.png",
+    "3d": "",
+    "introduction": [
+      "Herdmania inhabits shallow marine waters.",
+      "Sessile and filter-feeding.",
+      "Commonly studied urochordate."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pharyngeal respiration through gill slits",
+      "Circulatory type: Open circulation",
+      "Circulation system: Open",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Renal vesicles",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Absent",
+      "Nervous system: Reduced nerve ganglion in adult",
+      "Metamerism: Absent",
+      "Fertilization: External",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Oval or globular body",
+      "Hard leathery tunic",
+      "Red or orange colour",
+      "Two short siphons"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Urochordata",
+      "Class: Ascidiacea",
+      "Order: Stolidobranchia",
+      "Family: Pyuridae",
+      "Genus: Herdmania"
+    ],
+    "ecology": [
+      "Filter feeder",
+      "Removes suspended particles",
+      "Marine ecosystem balance"
+    ],
+    "economy": [
+      "Zoology practical specimen",
+      "Research on chordate ancestry",
+      "Educational importance"
+    ]
+  },
+
+  "salpa": {
+    "id": 3,
+    "slug": "salpa",
+    "name": "Salpa",
+    "scientificName": "Salp",
+    "description": "Salpa is a free-swimming pelagic urochordate. Body is transparent and barrel-shaped. Shows alternation of generations.",
+    "image": "media/image1.png",
+    "3d": "",
+    "introduction": [
+      "Salpa lives in open marine waters.",
+      "It is pelagic and filter-feeding.",
+      "Important planktonic tunicate."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pharyngeal respiration through gill slits",
+      "Circulatory type: Open circulation",
+      "Circulation system: Open",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Renal vesicles",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Absent",
+      "Nervous system: Reduced nerve ganglion",
+      "Metamerism: Absent",
+      "Fertilization: External",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Barrel-shaped transparent body",
+      "Two siphons at opposite ends",
+      "Muscular bands present",
+      "Free-swimming form"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Urochordata",
+      "Class: Thaliacea",
+      "Order: Salpida",
+      "Family: Salpidae",
+      "Genus: Salpa"
+    ],
+    "ecology": [
+      "Major planktonic filter feeder",
+      "Transfers carbon to deep sea",
+      "Important in marine food web"
+    ],
+    "economy": [
+      "Indicator of ocean productivity",
+      "Marine ecological studies",
+      "Carbon cycle research"
+    ]
+  },
+
+  "doliolum": {
+    "id": 4,
+    "slug": "doliolum",
+    "name": "Doliolum",
+    "scientificName": "Doliolid",
+    "description": "Doliolum is a small pelagic tunicate. Shows complex polymorphism. Common in plankton.",
+    "image": "media/image2.png",
+    "3d": "",
+    "introduction": [
+      "Doliolum inhabits open seas.",
+      "Pelagic and filter-feeding.",
+      "Important for studying life cycles."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pharyngeal respiration through gill slits",
+      "Circulatory type: Open circulation",
+      "Circulation system: Open",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Renal vesicles",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Absent",
+      "Nervous system: Reduced nerve ganglion",
+      "Metamerism: Absent",
+      "Fertilization: External",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Small barrel-shaped body",
+      "Transparent tunic",
+      "Muscular rings present",
+      "Free-swimming"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Urochordata",
+      "Class: Thaliacea",
+      "Order: Doliolida",
+      "Family: Doliolidae",
+      "Genus: Doliolum"
+    ],
+    "ecology": [
+      "Planktonic filter feeder",
+      "Nutrient cycling",
+      "Part of marine plankton"
+    ],
+    "economy": [
+      "Ocean productivity indicator",
+      "Research on polymorphism",
+      "Marine biology studies"
+    ]
+  },
+
+  "pyrosoma": {
+    "id": 5,
+    "slug": "pyrosoma",
+    "name": "Pyrosoma",
+    "scientificName": "Fire body",
+    "description": "Pyrosoma is a colonial pelagic tunicate. Colony is tubular and luminous. Shows bioluminescence.",
+    "image": "media/image3.png",
+    "3d": "",
+    "introduction": [
+      "Pyrosoma inhabits warm open oceans.",
+      "Pelagic and filter-feeding.",
+      "Known for glowing colonies."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pharyngeal respiration through gill slits",
+      "Circulatory type: Open circulation",
+      "Circulation system: Open",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Renal vesicles",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Absent",
+      "Nervous system: Reduced nerve ganglion",
+      "Metamerism: Absent",
+      "Fertilization: External",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Hollow tubular colony",
+      "Numerous zooids embedded",
+      "Transparent body",
+      "Emits blue-green light"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Urochordata",
+      "Class: Thaliacea",
+      "Order: Pyrosomida",
+      "Family: Pyrosomatidae",
+      "Genus: Pyrosoma"
+    ],
+    "ecology": [
+      "Large-scale plankton filtration",
+      "Carbon transport to deep sea",
+      "Pelagic ecosystem role"
+    ],
+    "economy": [
+      "Bioluminescence research",
+      "Marine ecological importance",
+      "Oceanographic studies"
+    ]
+  },
+
+  "branchiostoma": {
+    "id": 6,
+    "slug": "branchiostoma",
+    "name": "Branchiostoma",
+    "scientificName": "Lancelet / Amphioxus",
+    "description": "Branchiostoma lanceolatum is a primitive chordate. It retains chordate characters throughout life. Widely used to study chordate evolution.",
+    "image": "media/image4.png",
+    "3d": "",
+    "introduction": [
+      "Branchiostoma lanceolatum lives buried in sandy marine bottoms.",
+      "It is free-living and filter-feeding.",
+      "Acts as a connecting link between invertebrates and vertebrates."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pharyngeal respiration through gill slits",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Solenocytes",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Endoskeleton absent (notochord present throughout life)",
+      "Nervous system: Dorsal hollow nerve cord without brain",
+      "Metamerism: Present",
+      "Fertilization: External",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Small, fish-like body",
+      "Pointed ends at both sides",
+      "Transparent and laterally compressed",
+      "Myotomes clearly visible"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Cephalochordata",
+      "Class: Leptocardii",
+      "Order: Amphioxiformes",
+      "Family: Branchiostomatidae",
+      "Genus: Branchiostoma",
+      "Species: Branchiostoma lanceolatum"
+    ],
+    "ecology": [
+      "Filter feeder of plankton",
+      "Part of marine benthic food web",
+      "Maintains nutrient cycling"
+    ],
+    "economy": [
+      "Key organism in evolutionary biology",
+      "Used in comparative anatomy studies",
+      "Important zoology teaching specimen"
+    ]
+  },
+
+  "petromyzon": {
+    "id": 7,
+    "slug": "petromyzon",
+    "name": "Petromyzon",
+    "scientificName": "Sea lamprey",
+    "description": "Petromyzon marinus is a jawless vertebrate. It is ectoparasitic in adult stage. Belongs to primitive cyclostomes.",
+    "image": "media/image1.png",
+    "3d": "",
+    "introduction": [
+      "Petromyzon marinus lives in marine and freshwater.",
+      "Adult is parasitic on fishes.",
+      "Larva (ammocoetes) is free-living."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration through gill pouches",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Endoskeleton (cartilaginous)",
+      "Nervous system: Well developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: External",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic, euryhaline"
+    ],
+    "sizeStructure": [
+      "Eel-like elongated body",
+      "Circular suctorial mouth",
+      "No jaws or paired fins",
+      "Smooth scaleless skin"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Cyclostomata",
+      "Order: Petromyzontiformes",
+      "Family: Petromyzontidae",
+      "Genus: Petromyzon",
+      "Species: Petromyzon marinus"
+    ],
+    "ecology": [
+      "Regulates fish populations",
+      "Part of aquatic food web",
+      "Indicator of ecosystem balance"
+    ],
+    "economy": [
+      "Fishery impact species",
+      "Research on vertebrate evolution",
+      "Ecological management importance"
+    ]
+  },
+
+  "myxine": {
+    "id": 8,
+    "slug": "myxine",
+    "name": "Myxine",
+    "scientificName": "Hagfish",
+    "description": "Myxine glutinosa is a jawless marine vertebrate. Produces copious slime. Scavenger in deep seas.",
+    "image": "media/image2.png",
+    "3d": "",
+    "introduction": [
+      "Myxine glutinosa lives in marine environments.",
+      "It is burrowing and scavenging.",
+      "Considered the most primitive vertebrate."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration through gill pouches",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Endoskeleton (cartilaginous, skull present)",
+      "Nervous system: Brain present, reduced sense organs",
+      "Metamerism: Absent",
+      "Fertilization: External",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Elongated eel-like body",
+      "Slime-secreting glands",
+      "No jaws or paired fins",
+      "Single median nostril"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Cyclostomata",
+      "Order: Myxiniformes",
+      "Family: Myxinidae",
+      "Genus: Myxine",
+      "Species: Myxine glutinosa"
+    ],
+    "ecology": [
+      "Scavenger of dead animals",
+      "Nutrient recycling",
+      "Maintains seabed cleanliness"
+    ],
+    "economy": [
+      "Used in leather industry",
+      "Research on primitive vertebrates",
+      "Marine biology studies"
+    ]
+  },
+
+  "scoliodon": {
+    "id": 9,
+    "slug": "scoliodon",
+    "name": "Scoliodon",
+    "scientificName": "Dogfish / Spadenose shark",
+    "description": "Scoliodon laticaudus is a small marine shark. Body is spindle-shaped. Commonly used as a cartilaginous fish example.",
+    "image": "media/image1.png",
+    "3d": "",
+    "introduction": [
+      "Scoliodon lives in coastal marine waters.",
+      "It is carnivorous and active.",
+      "Economically important edible fish."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration through gills",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism",
+      "Skeleton structure: Endoskeleton (cartilaginous)",
+      "Nervous system: Well developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Viviparous",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Streamlined body",
+      "Five gill slits",
+      "Heterocercal tail",
+      "Grey dorsal surface"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Chondrichthyes",
+      "Subclass: Elasmobranchii",
+      "Order: Carcharhiniformes",
+      "Family: Carcharhinidae",
+      "Genus: Scoliodon",
+      "Species: Scoliodon laticaudus"
+    ],
+    "ecology": [
+      "Marine predator",
+      "Controls fish population",
+      "Part of marine food web"
+    ],
+    "economy": [
+      "Edible fish",
+      "Fisheries importance",
+      "Zoology practical specimen"
+    ]
+  },
+
+  "carcharodon": {
+    "id": 10,
+    "slug": "carcharodon",
+    "name": "Carcharodon",
+    "scientificName": "Great white shark",
+    "description": "Carcharodon carcharias includes the largest predatory sharks. Body is powerful and fast-swimming. Top marine carnivore.",
+    "image": "media/image2.png",
+    "3d": "",
+    "introduction": [
+      "Carcharodon inhabits open oceans.",
+      "Carnivorous and aggressive.",
+      "Apex predator of marine ecosystems."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism",
+      "Skeleton structure: Endoskeleton (cartilaginous)",
+      "Nervous system: Highly developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Viviparous",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Large torpedo-shaped body",
+      "Powerful jaws",
+      "Sharp triangular teeth",
+      "Grey and white colour"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Chondrichthyes",
+      "Subclass: Elasmobranchii",
+      "Order: Lamniformes",
+      "Family: Lamnidae",
+      "Genus: Carcharodon"
+    ],
+    "ecology": [
+      "Apex predator",
+      "Maintains marine balance",
+      "Controls weak prey"
+    ],
+    "economy": [
+      "Marine research importance",
+      "Ecotourism value",
+      "Conservation relevance"
+    ]
+  },
+
+  "pristis": {
+    "id": 11,
+    "slug": "pristis",
+    "name": "Pristis",
+    "scientificName": "Sawfish",
+    "description": "Pristis is a shark-like ray. Snout is elongated into a saw. Lives in coastal waters.",
+    "image": "media/image3.png",
+    "3d": "",
+    "introduction": [
+      "Pristis inhabits shallow marine waters.",
+      "Carnivorous and bottom-dwelling.",
+      "Critically endangered fish."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism",
+      "Skeleton structure: Endoskeleton (cartilaginous)",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Viviparous",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Long saw-like rostrum",
+      "Flattened body",
+      "Ventral mouth",
+      "Brownish colour"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Chondrichthyes",
+      "Subclass: Elasmobranchii",
+      "Order: Pristiformes",
+      "Family: Pristidae",
+      "Genus: Pristis"
+    ],
+    "ecology": [
+      "Predator of fishes",
+      "Bottom ecosystem role",
+      "Marine biodiversity indicator"
+    ],
+    "economy": [
+      "Museum specimens",
+      "Conservation importance",
+      "Scientific studies"
+    ]
+  },
+
+  "trygon": {
+    "id": 12,
+    "slug": "trygon",
+    "name": "Trygon",
+    "scientificName": "Stingray",
+    "description": "Trygon is a bottom-dwelling ray. Tail bears venomous spine. Body is dorsoventrally flattened.",
+    "image": "media/image4.png",
+    "3d": "",
+    "introduction": [
+      "Trygon lives on sea floor.",
+      "Carnivorous and sluggish.",
+      "Important elasmobranch example."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism",
+      "Skeleton structure: Endoskeleton (cartilaginous)",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Viviparous",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Disc-shaped body",
+      "Long whip-like tail",
+      "Poisonous spine",
+      "Eyes on dorsal side"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Chondrichthyes",
+      "Subclass: Elasmobranchii",
+      "Order: Myliobatiformes",
+      "Family: Dasyatidae",
+      "Genus: Trygon"
+    ],
+    "ecology": [
+      "Benthic predator",
+      "Controls invertebrates",
+      "Sea floor balance"
+    ],
+    "economy": [
+      "Medical importance (venom)",
+      "Research value",
+      "Fisheries relevance"
+    ]
+  },
+
+  "torpedo": {
+    "id": 13,
+    "slug": "torpedo",
+    "name": "Torpedo",
+    "scientificName": "Electric ray",
+    "description": "Torpedo produces electric shocks. Body is flattened and soft. Specialized marine fish.",
+    "image": "media/image5.png",
+    "3d": "",
+    "introduction": [
+      "Torpedo lives on sandy sea bottoms.",
+      "Carnivorous and sluggish.",
+      "Uses electricity for defense."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism",
+      "Skeleton structure: Endoskeleton (cartilaginous)",
+      "Nervous system: Highly developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Viviparous",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Circular disc-shaped body",
+      "Electric organs present",
+      "Short tail",
+      "Smooth skin"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Chondrichthyes",
+      "Subclass: Elasmobranchii",
+      "Order: Torpediniformes",
+      "Family: Torpedinidae",
+      "Genus: Torpedo"
+    ],
+    "ecology": [
+      "Predator of fishes",
+      "Defense using electricity",
+      "Marine food web role"
+    ],
+    "economy": [
+      "Medical research (bioelectricity)",
+      "Educational importance",
+      "Scientific studies"
+    ]
+  },
+
+  "exocoetus": {
+    "id": 14,
+    "slug": "exocoetus",
+    "name": "Exocoetus",
+    "scientificName": "Flying fish",
+    "description": "Exocoetus is a marine bony fish. It glides above water using enlarged fins. Not capable of true flight.",
+    "image": "media/image1.png",
+    "3d": "",
+    "introduction": [
+      "Exocoetus inhabits tropical seas.",
+      "It escapes predators by gliding.",
+      "Pelagic surface-dwelling fish."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Endoskeleton (bony)",
+      "Nervous system: Well developed",
+      "Metamerism: Present (myotomes)",
+      "Fertilization: External",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Streamlined body",
+      "Very large pectoral fins",
+      "Forked tail",
+      "Silvery colour"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Actinopterygii",
+      "Order: Beloniformes",
+      "Family: Exocoetidae",
+      "Genus: Exocoetus"
+    ],
+    "ecology": [
+      "Prey for marine predators",
+      "Pelagic food chain link",
+      "Predator escape specialist"
+    ],
+    "economy": [
+      "Fishery value",
+      "Ecological studies",
+      "Educational importance"
+    ]
+  },
+
+  "hippocampus": {
+    "id": 15,
+    "slug": "hippocampus",
+    "name": "Hippocampus",
+    "scientificName": "Seahorse",
+    "description": "Hippocampus has an upright posture. Male carries eggs in brood pouch. Unique among fishes.",
+    "image": "media/image2.png",
+    "3d": "",
+    "introduction": [
+      "Hippocampus lives in shallow seas.",
+      "Slow-swimming and carnivorous.",
+      "Found among sea grasses."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Endoskeleton (bony rings)",
+      "Nervous system: Well developed",
+      "Metamerism: Present",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Horse-like head",
+      "Prehensile tail",
+      "Upright body",
+      "Bony body rings"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Actinopterygii",
+      "Order: Syngnathiformes",
+      "Family: Syngnathidae",
+      "Genus: Hippocampus"
+    ],
+    "ecology": [
+      "Predator of small crustaceans",
+      "Seagrass ecosystem member",
+      "Indicator of healthy coasts"
+    ],
+    "economy": [
+      "Medicinal trade concern",
+      "Aquarium trade",
+      "Conservation importance"
+    ]
+  },
+
+  "labeo": {
+    "id": 16,
+    "slug": "labeo",
+    "name": "Labeo",
+    "scientificName": "Rohu",
+    "description": "Labeo rohita is a major Indian carp. Freshwater edible fish. Widely cultured.",
+    "image": "media/image3.png",
+    "3d": "",
+    "introduction": [
+      "Labeo rohita lives in rivers and ponds.",
+      "Herbivorous or omnivorous.",
+      "Economically very important."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Endoskeleton (bony)",
+      "Nervous system: Well developed",
+      "Metamerism: Present",
+      "Fertilization: External",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Laterally compressed body",
+      "Small terminal mouth",
+      "Silvery body",
+      "Forked tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Actinopterygii",
+      "Order: Cypriniformes",
+      "Family: Cyprinidae",
+      "Genus: Labeo",
+      "Species: Labeo rohita"
+    ],
+    "ecology": [
+      "Grazes aquatic plants",
+      "Freshwater food web",
+      "Nutrient cycling"
+    ],
+    "economy": [
+      "Major food fish",
+      "Aquaculture backbone",
+      "High market value"
+    ]
+  },
+
+  "catla": {
+    "id": 17,
+    "slug": "catla",
+    "name": "Catla",
+    "scientificName": "Catla",
+    "description": "Catla catla is a surface-feeding carp. Large head and mouth. Fast growing fish.",
+    "image": "media/image4.png",
+    "3d": "",
+    "introduction": [
+      "Catla catla inhabits freshwater bodies.",
+      "Planktivorous.",
+      "Important cultured fish."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Present",
+      "Fertilization: External",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Very large head",
+      "Upturned mouth",
+      "Deep body",
+      "Silvery colour"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Actinopterygii",
+      "Order: Cypriniformes",
+      "Family: Cyprinidae",
+      "Genus: Catla",
+      "Species: Catla catla"
+    ],
+    "ecology": [
+      "Surface plankton feeder",
+      "Freshwater ecosystem role",
+      "Nutrient transfer"
+    ],
+    "economy": [
+      "Major aquaculture species",
+      "Food value",
+      "Commercial fisheries"
+    ]
+  },
+
+  "clarias": {
+    "id": 18,
+    "slug": "clarias",
+    "name": "Clarias",
+    "scientificName": "Magur",
+    "description": "Clarias batrachus is an air-breathing fish. Can survive out of water. Moves short distances on land.",
+    "image": "media/image5.png",
+    "3d": "",
+    "introduction": [
+      "Clarias batrachus lives in freshwater.",
+      "Omnivorous and hardy.",
+      "Adapted to low oxygen."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial and accessory respiration",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Present",
+      "Fertilization: External",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Elongated body",
+      "Four pairs of barbels",
+      "Smooth skin",
+      "Dorsal fin long"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Actinopterygii",
+      "Order: Siluriformes",
+      "Family: Clariidae",
+      "Genus: Clarias",
+      "Species: Clarias batrachus"
+    ],
+    "ecology": [
+      "Scavenger and predator",
+      "Controls insects",
+      "Hardy freshwater species"
+    ],
+    "economy": [
+      "High-protein food fish",
+      "Aquaculture value",
+      "Medicinal importance"
+    ]
+  },
+
+  "echeneis": {
+    "id": 19,
+    "slug": "echeneis",
+    "name": "Echeneis",
+    "scientificName": "Sucker fish / Remora",
+    "description": "Echeneis attaches to large animals. Has adhesive disc on head. Commensal fish.",
+    "image": "media/image6.png",
+    "3d": "",
+    "introduction": [
+      "Echeneis lives in marine waters.",
+      "Attaches to sharks and whales.",
+      "Feeds on leftovers."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Present",
+      "Fertilization: External",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Flattened head disc",
+      "Elongated body",
+      "Dark colour",
+      "Forked tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Actinopterygii",
+      "Order: Carangiformes",
+      "Family: Echeneidae",
+      "Genus: Echeneis"
+    ],
+    "ecology": [
+      "Commensal association",
+      "Cleans hosts",
+      "Marine food web link"
+    ],
+    "economy": [
+      "Biological studies",
+      "Cultural references",
+      "Educational importance"
+    ]
+  },
+
+  "betta": {
+    "id": 20,
+    "slug": "betta",
+    "name": "Betta",
+    "scientificName": "Fighter fish",
+    "description": "Betta splendens is a territorial fish. Males fight aggressively. Labyrinth organ present.",
+    "image": "media/image7.png",
+    "3d": "",
+    "introduction": [
+      "Betta splendens lives in freshwater.",
+      "Can breathe atmospheric air.",
+      "Popular aquarium fish."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial and aerial respiration",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Present",
+      "Fertilization: External",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Bright coloured fins",
+      "Laterally compressed body",
+      "Labyrinth organ",
+      "Long flowing fins"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Actinopterygii",
+      "Order: Anabantiformes",
+      "Family: Osphronemidae",
+      "Genus: Betta",
+      "Species: Betta splendens"
+    ],
+    "ecology": [
+      "Predator of insects",
+      "Freshwater ecosystem role",
+      "Controls mosquito larvae"
+    ],
+    "economy": [
+      "Aquarium trade",
+      "Ornamental fish industry",
+      "Research value"
+    ]
+  },
+
+  "pterophyllum": {
+    "id": 21,
+    "slug": "pterophyllum",
+    "name": "Pterophyllum",
+    "scientificName": "Angel fish",
+    "description": "Pterophyllum scalare is a graceful aquarium fish. Body is laterally compressed. Freshwater cichlid.",
+    "image": "media/image8.png",
+    "3d": "",
+    "introduction": [
+      "Pterophyllum scalare lives in rivers.",
+      "Omnivorous and calm.",
+      "Popular ornamental fish."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Present",
+      "Fertilization: External",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Disc-shaped body",
+      "Long dorsal and anal fins",
+      "Vertical black bands",
+      "Silver body"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Actinopterygii",
+      "Order: Cichliformes",
+      "Family: Cichlidae",
+      "Genus: Pterophyllum",
+      "Species: Pterophyllum scalare"
+    ],
+    "ecology": [
+      "Predator of small invertebrates",
+      "River ecosystem role",
+      "Food web component"
+    ],
+    "economy": [
+      "Ornamental fish trade",
+      "Aquarium industry",
+      "Educational importance"
+    ]
+  },
+
+  "latimeria": {
+    "id": 22,
+    "slug": "latimeria",
+    "name": "Latimeria",
+    "scientificName": "Coelacanth",
+    "description": "Latimeria chalumnae is a living fossil. Lobe-finned fish. Once thought extinct.",
+    "image": "media/image9.png",
+    "3d": "",
+    "introduction": [
+      "Latimeria chalumnae lives in deep sea.",
+      "Carnivorous and slow moving.",
+      "Link between fishes and amphibians."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration",
+      "Circulatory type: Closed circulation, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism",
+      "Skeleton structure: Endoskeleton (partly cartilaginous)",
+      "Nervous system: Well developed",
+      "Metamerism: Present",
+      "Fertilization: Internal",
+      "Development type: Viviparous",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Lobed paired fins",
+      "Thick scales",
+      "Blue mottled body",
+      "Three-lobed tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Sarcopterygii",
+      "Order: Coelacanthiformes",
+      "Family: Latimeriidae",
+      "Genus: Latimeria",
+      "Species: Latimeria chalumnae"
+    ],
+    "ecology": [
+      "Deep-sea predator",
+      "Evolutionary relic",
+      "Marine biodiversity importance"
+    ],
+    "economy": [
+      "Evolutionary research",
+      "Conservation importance",
+      "Museum and academic value"
+    ]
+  },
+
+  "protopterus": {
+    "id": 23,
+    "slug": "protopterus",
+    "name": "Protopterus",
+    "scientificName": "African lungfish",
+    "description": "Protopterus annectens is a lungfish. It can breathe air using lungs. Acts as a connecting link between fishes and amphibians.",
+    "image": "media/image10.png",
+    "3d": "",
+    "introduction": [
+      "Protopterus annectens lives in freshwater swamps and rivers.",
+      "It survives dry seasons by aestivation.",
+      "Important example of air-breathing fish."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial and pulmonary respiration",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism",
+      "Skeleton structure: Endoskeleton (partly cartilaginous)",
+      "Nervous system: Well developed brain and spinal cord",
+      "Metamerism: Present (myotomes)",
+      "Fertilization: External",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Elongated eel-like body",
+      "Paired fins reduced to filaments",
+      "Thick mucus covering during aestivation",
+      "Brown or grey colour"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Sarcopterygii",
+      "Order: Dipnoi",
+      "Family: Protopteridae",
+      "Genus: Protopterus",
+      "Species: Protopterus annectens"
+    ],
+    "ecology": [
+      "Predator of small aquatic animals",
+      "Maintains freshwater food web",
+      "Survives extreme drought conditions"
+    ],
+    "economy": [
+      "Evolutionary biology studies",
+      "Educational importance",
+      "Research on lung development"
+    ]
+  },
+
+  "bufo": {
+    "id": 24,
+    "slug": "bufo",
+    "name": "Bufo",
+    "scientificName": "Toad",
+    "description": "Bufo is a terrestrial amphibian. Skin is dry and warty. Poison glands present.",
+    "image": "media/image1.png",
+    "3d": "",
+    "introduction": [
+      "Bufo lives on land near water bodies.",
+      "Nocturnal and insectivorous.",
+      "Common example of Anura."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary, cutaneous and buccopharyngeal",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism (adult), ammonotelism (larva)",
+      "Skeleton structure: Endoskeleton (bony)",
+      "Nervous system: Well developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: External",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Short hind limbs",
+      "Dry warty skin",
+      "Parotid glands present",
+      "Brown or grey colour"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Amphibia",
+      "Order: Anura",
+      "Family: Bufonidae",
+      "Genus: Bufo"
+    ],
+    "ecology": [
+      "Controls insect population",
+      "Terrestrial food web member",
+      "Prey for reptiles"
+    ],
+    "economy": [
+      "Natural pest control",
+      "Teaching specimen",
+      "Ecological importance"
+    ]
+  },
+
+  "alytes": {
+    "id": 25,
+    "slug": "alytes",
+    "name": "Alytes",
+    "scientificName": "Midwife toad",
+    "description": "Alytes shows male parental care. Eggs are carried by male. Small terrestrial toad.",
+    "image": "media/image2.png",
+    "3d": "",
+    "introduction": [
+      "Alytes lives in moist terrestrial habitats.",
+      "Nocturnal and insectivorous.",
+      "Unique reproductive behaviour."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary and cutaneous",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism (adult)",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: External",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Small stout body",
+      "Smooth skin",
+      "Short limbs",
+      "Greyish colour"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Amphibia",
+      "Order: Anura",
+      "Family: Alytidae",
+      "Genus: Alytes"
+    ],
+    "ecology": [
+      "Insect predator",
+      "Moist habitat indicator",
+      "Amphibian diversity role"
+    ],
+    "economy": [
+      "Reproductive biology studies",
+      "Educational value",
+      "Biodiversity conservation"
+    ]
+  },
+
+  "hyla": {
+    "id": 26,
+    "slug": "hyla",
+    "name": "Hyla",
+    "scientificName": "Tree frog",
+    "description": "Hyla is an arboreal frog. Toe pads present. Good climber.",
+    "image": "media/image3.png",
+    "3d": "",
+    "introduction": [
+      "Hyla lives on trees near water.",
+      "Insectivorous and nocturnal.",
+      "Adapted for climbing."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary and cutaneous",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism (adult)",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: External",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Slender body",
+      "Expanded toe pads",
+      "Smooth skin",
+      "Green colour"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Amphibia",
+      "Order: Anura",
+      "Family: Hylidae",
+      "Genus: Hyla"
+    ],
+    "ecology": [
+      "Controls insect population",
+      "Arboreal ecosystem role",
+      "Indicator of clean habitat"
+    ],
+    "economy": [
+      "Pest control",
+      "Ecological studies",
+      "Educational use"
+    ]
+  },
+
+  "rhacophorus": {
+    "id": 27,
+    "slug": "rhacophorus",
+    "name": "Rhacophorus",
+    "scientificName": "Flying frog",
+    "description": "Rhacophorus glides using webbed feet. Arboreal frog. Known for foam nests.",
+    "image": "media/image4.png",
+    "3d": "",
+    "introduction": [
+      "Rhacophorus inhabits tropical forests.",
+      "Insectivorous and nocturnal.",
+      "Highly adapted tree frog."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary and cutaneous",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism (adult)",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: External",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Large webbed feet",
+      "Adhesive toe pads",
+      "Green body",
+      "Slender limbs"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Amphibia",
+      "Order: Anura",
+      "Family: Rhacophoridae",
+      "Genus: Rhacophorus"
+    ],
+    "ecology": [
+      "Insect predator",
+      "Forest canopy role",
+      "Amphibian diversity"
+    ],
+    "economy": [
+      "Ecological research",
+      "Biodiversity conservation",
+      "Educational importance"
+    ]
+  },
+
+  "rana": {
+    "id": 28,
+    "slug": "rana",
+    "name": "Rana",
+    "scientificName": "Frog",
+    "description": "Rana is a semi-aquatic frog. Smooth moist skin present. Good jumper.",
+    "image": "media/image5.png",
+    "3d": "",
+    "introduction": [
+      "Rana lives near freshwater bodies.",
+      "Insectivorous and amphibious.",
+      "Common frog example."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary, cutaneous and buccopharyngeal",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism (adult), ammonotelism (larva)",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: External",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Smooth moist skin",
+      "Long hind limbs",
+      "Webbed toes",
+      "Green or brown"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Amphibia",
+      "Order: Anura",
+      "Family: Ranidae",
+      "Genus: Rana"
+    ],
+    "ecology": [
+      "Controls insects",
+      "Freshwater food web",
+      "Indicator species"
+    ],
+    "economy": [
+      "Biological research",
+      "Pest control",
+      "Educational importance"
+    ]
+  },
+
+  "necturus": {
+    "id": 29,
+    "slug": "necturus",
+    "name": "Necturus",
+    "scientificName": "Mudpuppy",
+    "description": "Necturus maculosus retains larval characters. External gills present in adult. Aquatic salamander.",
+    "image": "media/image6.png",
+    "3d": "",
+    "introduction": [
+      "Necturus lives in freshwater lakes and streams.",
+      "Carnivorous and nocturnal.",
+      "Example of neoteny."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: External gills and skin",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Present",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Elongated body",
+      "External red gills",
+      "Short limbs",
+      "Spotted skin"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Amphibia",
+      "Order: Urodela",
+      "Family: Proteidae",
+      "Genus: Necturus",
+      "Species: Necturus maculosus"
+    ],
+    "ecology": [
+      "Aquatic predator",
+      "Freshwater ecosystem role",
+      "Indicator of water quality"
+    ],
+    "economy": [
+      "Developmental biology studies",
+      "Educational specimen",
+      "Ecological research"
+    ]
+  },
+
+  "ambystoma": {
+    "id": 30,
+    "slug": "ambystoma",
+    "name": "Ambystoma",
+    "scientificName": "Tiger salamander",
+    "description": "Ambystoma tigrinum is a large salamander. Shows metamorphosis. Terrestrial adult.",
+    "image": "media/image7.png",
+    "3d": "",
+    "introduction": [
+      "Ambystoma lives in moist land habitats.",
+      "Carnivorous and burrowing.",
+      "Common urodelen amphibian."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary and cutaneous",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism (adult)",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Present",
+      "Fertilization: Internal",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Stout body",
+      "Yellow stripes or spots",
+      "Short limbs",
+      "Long tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Amphibia",
+      "Order: Urodela",
+      "Family: Ambystomatidae",
+      "Genus: Ambystoma",
+      "Species: Ambystoma tigrinum"
+    ],
+    "ecology": [
+      "Predator of invertebrates",
+      "Soil ecosystem role",
+      "Amphibian food web"
+    ],
+    "economy": [
+      "Research on metamorphosis",
+      "Educational importance",
+      "Biodiversity studies"
+    ]
+  },
+
+  "salamandra": {
+    "id": 31,
+    "slug": "salamandra",
+    "name": "Salamandra",
+    "scientificName": "Fire salamander",
+    "description": "Salamandra has warning coloration. Skin glands secrete toxins. Terrestrial salamander.",
+    "image": "media/image8.png",
+    "3d": "",
+    "introduction": [
+      "Salamandra inhabits moist forests.",
+      "Carnivorous and nocturnal.",
+      "Brightly coloured amphibian."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary and cutaneous",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism (adult)",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Present",
+      "Fertilization: Internal",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Black body with yellow patches",
+      "Smooth moist skin",
+      "Short limbs",
+      "Rounded tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Amphibia",
+      "Order: Urodela",
+      "Family: Salamandridae",
+      "Genus: Salamandra"
+    ],
+    "ecology": [
+      "Predator of insects",
+      "Forest floor ecosystem role",
+      "Warning coloration example"
+    ],
+    "economy": [
+      "Toxicology studies",
+      "Educational value",
+      "Conservation relevance"
+    ]
+  },
+
+  "ichthyophis": {
+    "id": 32,
+    "slug": "ichthyophis",
+    "name": "Ichthyophis",
+    "scientificName": "Caecilian",
+    "description": "Ichthyophis is a limbless amphibian. Body resembles earthworm. Burrowing habit.",
+    "image": "media/image9.png",
+    "3d": "",
+    "introduction": [
+      "Ichthyophis lives in moist soil.",
+      "Carnivorous and fossorial.",
+      "Rarely seen amphibian."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary and cutaneous",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Present",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Long cylindrical body",
+      "Ring-like annuli",
+      "No limbs",
+      "Reduced eyes"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Amphibia",
+      "Order: Apoda",
+      "Family: Ichthyophiidae",
+      "Genus: Ichthyophis"
+    ],
+    "ecology": [
+      "Soil aeration",
+      "Predator of soil invertebrates",
+      "Underground ecosystem role"
+    ],
+    "economy": [
+      "Biodiversity importance",
+      "Educational relevance",
+      "Evolutionary studies"
+    ]
+  },
+  "hemidactylus": {
+    "id": 33,
+    "slug": "hemidactylus",
+    "name": "Hemidactylus",
+    "scientificName": "House lizard / Gecko",
+    "description": "Hemidactylus is a small arboreal lizard. It is nocturnal and insectivorous. Commonly found in human dwellings.",
+    "image": "media/image1.png",
+    "3d": "",
+    "introduction": [
+      "Hemidactylus lives in warm terrestrial habitats.",
+      "It is agile and climbs vertical surfaces.",
+      "Important insect-controlling reptile."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton (bony)",
+      "Nervous system: Well developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Small flattened body",
+      "Adhesive toe pads",
+      "Scaly skin",
+      "Brown or grey colour"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Squamata",
+      "Family: Gekkonidae",
+      "Genus: Hemidactylus"
+    ],
+    "ecology": [
+      "Controls insect population",
+      "Part of terrestrial food web",
+      "Prey for birds and snakes"
+    ],
+    "economy": [
+      "Natural pest control",
+      "Educational importance",
+      "Urban ecological balance"
+    ]
+  },
+
+  "calotes": {
+    "id": 34,
+    "slug": "calotes",
+    "name": "Calotes",
+    "scientificName": "Garden lizard",
+    "description": "Calotes is a diurnal arboreal lizard. Males show colour change during breeding. Common in gardens and forests.",
+    "image": "media/image2.png",
+    "3d": "",
+    "introduction": [
+      "Calotes inhabits tropical terrestrial habitats.",
+      "It is insectivorous and active by day.",
+      "Important agamid reptile."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton (bony)",
+      "Nervous system: Well developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Slender body",
+      "Crest on neck and back",
+      "Green turning red in males",
+      "Long tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Squamata",
+      "Family: Agamidae",
+      "Genus: Calotes"
+    ],
+    "ecology": [
+      "Predator of insects",
+      "Maintains garden ecosystems",
+      "Prey for birds"
+    ],
+    "economy": [
+      "Pest control",
+      "Zoology teaching specimen",
+      "Ecological indicator"
+    ]
+  },
+
+  "draco": {
+    "id": 35,
+    "slug": "draco",
+    "name": "Draco",
+    "scientificName": "Flying lizard",
+    "description": "Draco is a gliding arboreal lizard. Has wing-like patagia. Not capable of true flight.",
+    "image": "media/image3.png",
+    "3d": "",
+    "introduction": [
+      "Draco lives in tropical forests.",
+      "It glides between trees.",
+      "Highly adapted arboreal reptile."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton (bony)",
+      "Nervous system: Well developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Lateral patagia",
+      "Elongated ribs",
+      "Bright coloured membranes",
+      "Long tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Squamata",
+      "Family: Agamidae",
+      "Genus: Draco"
+    ],
+    "ecology": [
+      "Arboreal insect predator",
+      "Forest food web role",
+      "Prevents insect overpopulation"
+    ],
+    "economy": [
+      "Evolutionary adaptation studies",
+      "Educational importance",
+      "Biodiversity value"
+    ]
+  },
+
+  "chamaeleon": {
+    "id": 36,
+    "slug": "chamaeleon",
+    "name": "Chamaeleon",
+    "scientificName": "Chameleon",
+    "description": "Chamaeleon is a colour-changing lizard. Eyes move independently. Specialized for arboreal life.",
+    "image": "media/image4.png",
+    "3d": "",
+    "introduction": [
+      "Chamaeleon lives in trees and shrubs.",
+      "It is insectivorous and slow-moving.",
+      "Well known for camouflage."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton (bony)",
+      "Nervous system: Well developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Laterally compressed body",
+      "Prehensile tail",
+      "Colour-changing skin",
+      "Long sticky tongue"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Squamata",
+      "Family: Chamaeleonidae",
+      "Genus: Chamaeleon"
+    ],
+    "ecology": [
+      "Controls insect population",
+      "Arboreal food web member",
+      "Predator-prey balance"
+    ],
+    "economy": [
+      "Research on colour change",
+      "Educational importance",
+      "Wildlife tourism"
+    ]
+  },
+
+  "phrynosoma": {
+    "id": 37,
+    "slug": "phrynosoma",
+    "name": "Phrynosoma",
+    "scientificName": "Horned lizard",
+    "description": "Phrynosoma is a desert lizard. Body is flattened with horns. Feeds mainly on ants.",
+    "image": "media/image5.png",
+    "3d": "",
+    "introduction": [
+      "Phrynosoma inhabits arid regions.",
+      "Terrestrial and insectivorous.",
+      "Highly adapted to desert life."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton (bony)",
+      "Nervous system: Well developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Broad flattened body",
+      "Horn-like projections",
+      "Sandy brown colour",
+      "Short tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Squamata",
+      "Family: Phrynosomatidae",
+      "Genus: Phrynosoma"
+    ],
+    "ecology": [
+      "Controls ant population",
+      "Desert ecosystem role",
+      "Prey for birds"
+    ],
+    "economy": [
+      "Ecological studies",
+      "Adaptation research",
+      "Biodiversity conservation"
+    ]
+  },
+
+  "varanus": {
+    "id": 38,
+    "slug": "varanus",
+    "name": "Varanus",
+    "scientificName": "Monitor lizard",
+    "description": "Varanus is a large predatory lizard. Highly intelligent reptile. Found in terrestrial and aquatic habitats.",
+    "image": "media/image6.png",
+    "3d": "",
+    "introduction": [
+      "Varanus inhabits forests, deserts, and wetlands.",
+      "Carnivorous and active.",
+      "Top reptilian predator."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton (bony)",
+      "Nervous system: Highly developed brain",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Large elongated body",
+      "Forked tongue",
+      "Strong limbs",
+      "Long muscular tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Squamata",
+      "Family: Varanidae",
+      "Genus: Varanus"
+    ],
+    "ecology": [
+      "Top predator",
+      "Controls prey populations",
+      "Scavenger role"
+    ],
+    "economy": [
+      "Ecological importance",
+      "Research on reptile intelligence",
+      "Wildlife tourism"
+    ]
+  },
+
+  "sphenodon_punctatum": {
+    "id": 39,
+    "slug": "sphenodon_punctatum",
+    "name": "Sphenodon punctatum",
+    "scientificName": "Tuatara",
+    "description": "Sphenodon punctatum is a living fossil. Only surviving member of Rhynchocephalia. Endemic to New Zealand.",
+    "image": "media/image7.png",
+    "3d": "",
+    "introduction": [
+      "Sphenodon punctatum lives in burrows.",
+      "Nocturnal and carnivorous.",
+      "Represents primitive reptiles."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton (bony)",
+      "Nervous system: Well developed brain",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Lizard-like body",
+      "Spiny crest on back",
+      "Parietal (third) eye",
+      "Greenish-brown colour"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Rhynchocephalia",
+      "Family: Sphenodontidae",
+      "Genus: Sphenodon",
+      "Species: Sphenodon punctatum"
+    ],
+    "ecology": [
+      "Predator of insects and reptiles",
+      "Maintains island ecosystems",
+      "Evolutionary relic"
+    ],
+    "economy": [
+      "Evolutionary biology importance",
+      "Conservation value",
+      "Educational significance"
+    ]
+  },
+
+  "chelone": {
+    "id": 40,
+    "slug": "chelone",
+    "name": "Chelone",
+    "scientificName": "Sea turtle",
+    "description": "Chelone is a large marine reptile. Body is adapted for swimming. Shell is hard and protective.",
+    "image": "media/image8.png",
+    "3d": "",
+    "introduction": [
+      "Chelone lives in marine environments.",
+      "It is aquatic and herbivorous or omnivorous.",
+      "Important marine reptile."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton with exoskeletal shell",
+      "Nervous system: Well developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Streamlined body",
+      "Paddle-like limbs",
+      "Hard shell",
+      "Olive or brown colour"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Testudines",
+      "Family: Cheloniidae",
+      "Genus: Chelone"
+    ],
+    "ecology": [
+      "Maintains marine vegetation",
+      "Part of marine food web",
+      "Nutrient cycling"
+    ],
+    "economy": [
+      "Ecotourism importance",
+      "Conservation significance",
+      "Scientific research value"
+    ]
+  },
+
+  "testudo": {
+    "id": 41,
+    "slug": "testudo",
+    "name": "Testudo",
+    "scientificName": "Tortoise",
+    "description": "Testudo is a terrestrial reptile. It has a heavy domed shell. Slow-moving herbivore.",
+    "image": "media/image9.png",
+    "3d": "",
+    "introduction": [
+      "Testudo inhabits dry land habitats.",
+      "It is herbivorous and long-lived.",
+      "Common land turtle."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton with exoskeletal shell",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Dome-shaped shell",
+      "Stout limbs",
+      "Rough scaly skin",
+      "Brown or yellow shell"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Testudines",
+      "Family: Testudinidae",
+      "Genus: Testudo"
+    ],
+    "ecology": [
+      "Seed dispersal",
+      "Herbivore in ecosystem",
+      "Soil aeration"
+    ],
+    "economy": [
+      "Pet trade importance",
+      "Conservation value",
+      "Educational use"
+    ]
+  },
+
+  "naja_naja": {
+    "id": 42,
+    "slug": "naja_naja",
+    "name": "Naja naja",
+    "scientificName": "Indian cobra",
+    "description": "Naja naja is a venomous snake. Has expandable hood. Highly poisonous.",
+    "image": "media/image10.png",
+    "3d": "",
+    "introduction": [
+      "Naja naja inhabits terrestrial habitats.",
+      "Carnivorous and nocturnal.",
+      "Common in Indian subcontinent."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton (bony)",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Hood with spectacle mark",
+      "Long cylindrical body",
+      "Smooth scales",
+      "Brown or black colour"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Squamata",
+      "Family: Elapidae",
+      "Genus: Naja",
+      "Species: Naja naja"
+    ],
+    "ecology": [
+      "Controls rodent population",
+      "Predator in food chain",
+      "Maintains balance"
+    ],
+    "economy": [
+      "Antivenom production",
+      "Medical importance",
+      "Cultural significance"
+    ]
+  },
+
+  "vipera_russelli": {
+    "id": 43,
+    "slug": "vipera_russelli",
+    "name": "Vipera russelli",
+    "scientificName": "Russell's viper",
+    "description": "Vipera russelli is a highly venomous snake. Aggressive in nature. Causes severe snakebite cases.",
+    "image": "media/image11.png",
+    "3d": "",
+    "introduction": [
+      "Vipera russelli lives in dry land and fields.",
+      "Carnivorous and nocturnal.",
+      "One of the most dangerous snakes."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Stout body",
+      "Chain-like markings",
+      "Large triangular head",
+      "Rough scales"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Squamata",
+      "Family: Viperidae",
+      "Genus: Vipera",
+      "Species: Vipera russelli"
+    ],
+    "ecology": [
+      "Controls rodent population",
+      "Predator in ecosystem",
+      "Food chain balance"
+    ],
+    "economy": [
+      "Antivenom research",
+      "Medical importance",
+      "Public health concern"
+    ]
+  },
+
+  "bungarus": {
+    "id": 44,
+    "slug": "bungarus",
+    "name": "Bungarus",
+    "scientificName": "Krait",
+    "description": "Bungarus is a venomous snake genus. Mostly nocturnal. Highly poisonous neurotoxic venom.",
+    "image": "media/image12.png",
+    "3d": "",
+    "introduction": [
+      "Bungarus lives in terrestrial habitats.",
+      "Carnivorous and secretive.",
+      "Found in South Asia."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Glossy black body",
+      "White cross bands",
+      "Smooth scales",
+      "Rounded head"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Squamata",
+      "Family: Elapidae",
+      "Genus: Bungarus"
+    ],
+    "ecology": [
+      "Predator of snakes and rodents",
+      "Maintains ecological balance",
+      "Food web role"
+    ],
+    "economy": [
+      "Antivenom production",
+      "Medical significance",
+      "Public health relevance"
+    ]
+  },
+
+  "hydrophis": {
+    "id": 45,
+    "slug": "hydrophis",
+    "name": "Hydrophis",
+    "scientificName": "Sea snake",
+    "description": "Hydrophis is a marine snake genus. Highly venomous. Adapted for aquatic life.",
+    "image": "media/image13.png",
+    "3d": "",
+    "introduction": [
+      "Hydrophis inhabits marine waters.",
+      "Carnivorous and fully aquatic.",
+      "Cannot survive long on land."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, euryhaline"
+    ],
+    "sizeStructure": [
+      "Laterally compressed tail",
+      "Valved nostrils",
+      "Smooth scales",
+      "Blue-grey colour"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Squamata",
+      "Family: Elapidae",
+      "Genus: Hydrophis"
+    ],
+    "ecology": [
+      "Predator of fishes",
+      "Marine food web role",
+      "Controls fish population"
+    ],
+    "economy": [
+      "Marine toxin research",
+      "Medical importance",
+      "Fisheries awareness"
+    ]
+  },
+
+  "typhlops": {
+    "id": 46,
+    "slug": "typhlops",
+    "name": "Typhlops",
+    "scientificName": "Blind snake",
+    "description": "Typhlops is a small burrowing snake. Eyes are reduced. Non-venomous.",
+    "image": "media/image14.png",
+    "3d": "",
+    "introduction": [
+      "Typhlops lives underground.",
+      "Feeds on ants and termites.",
+      "Fossorial reptile."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Worm-like body",
+      "Smooth shiny scales",
+      "Reduced eyes",
+      "Pinkish or brown colour"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Squamata",
+      "Family: Typhlopidae",
+      "Genus: Typhlops"
+    ],
+    "ecology": [
+      "Controls termites",
+      "Soil ecosystem role",
+      "Burrowing activity"
+    ],
+    "economy": [
+      "Natural pest control",
+      "Ecological importance",
+      "Educational value"
+    ]
+  },
+
+  "python": {
+    "id": 47,
+    "slug": "python",
+    "name": "Python",
+    "scientificName": "Python",
+    "description": "Python is a large non-venomous snake. Kills prey by constriction. One of the longest snakes.",
+    "image": "media/image15.png",
+    "3d": "",
+    "introduction": [
+      "Python inhabits forests and grasslands.",
+      "Carnivorous and nocturnal.",
+      "Common in tropical regions."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Very long muscular body",
+      "Large head",
+      "Smooth scales",
+      "Brown patterned skin"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Squamata",
+      "Family: Pythonidae",
+      "Genus: Python"
+    ],
+    "ecology": [
+      "Controls rodent population",
+      "Top predator",
+      "Maintains food chain balance"
+    ],
+    "economy": [
+      "Wildlife tourism",
+      "Leather industry",
+      "Ecological significance"
+    ]
+  },
+
+  "crocodylus": {
+    "id": 48,
+    "slug": "crocodylus",
+    "name": "Crocodylus",
+    "scientificName": "Crocodile",
+    "description": "Crocodylus is a large semi-aquatic reptile. It is carnivorous and aggressive. Found in tropical rivers and estuaries.",
+    "image": "media/image16.png",
+    "3d": "",
+    "introduction": [
+      "Crocodylus inhabits freshwater and brackish water.",
+      "It is a powerful predator.",
+      "Important member of aquatic ecosystems."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton (bony)",
+      "Nervous system: Well developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, euryhaline"
+    ],
+    "sizeStructure": [
+      "Long streamlined body",
+      "V-shaped snout",
+      "Thick scaly skin",
+      "Powerful tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Crocodilia",
+      "Family: Crocodylidae",
+      "Genus: Crocodylus"
+    ],
+    "ecology": [
+      "Apex predator",
+      "Controls fish and animal populations",
+      "Maintains wetland balance"
+    ],
+    "economy": [
+      "Leather industry",
+      "Ecotourism",
+      "Ecological importance"
+    ]
+  },
+
+  "gavialis_gangeticus": {
+    "id": 49,
+    "slug": "gavialis_gangeticus",
+    "name": "Gavialis gangeticus",
+    "scientificName": "Gharial",
+    "description": "Gavialis gangeticus is a fish-eating crocodilian. It has a long narrow snout. Endemic to Indian rivers.",
+    "image": "media/image17.png",
+    "3d": "",
+    "introduction": [
+      "Gavialis gangeticus lives in freshwater rivers.",
+      "It is shy and non-aggressive.",
+      "Critically endangered reptile."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Very long slender snout",
+      "Bulbous ghara in males",
+      "Laterally compressed tail",
+      "Olive green colour"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Crocodilia",
+      "Family: Gavialidae",
+      "Genus: Gavialis",
+      "Species: Gavialis gangeticus"
+    ],
+    "ecology": [
+      "Fish population control",
+      "River ecosystem health indicator",
+      "Top aquatic predator"
+    ],
+    "economy": [
+      "Conservation flagship species",
+      "Ecotourism",
+      "Ecological research"
+    ]
+  },
+
+  "alligator": {
+    "id": 50,
+    "slug": "alligator",
+    "name": "Alligator",
+    "scientificName": "Alligator",
+    "description": "Alligator is a large freshwater reptile. Less aggressive than crocodiles. Found mainly in North America.",
+    "image": "media/image18.png",
+    "3d": "",
+    "introduction": [
+      "Alligator inhabits swamps and rivers.",
+      "It is carnivorous and semi-aquatic.",
+      "Plays key ecological role."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Broad U-shaped snout",
+      "Dark rough skin",
+      "Strong limbs",
+      "Muscular tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Crocodilia",
+      "Family: Alligatoridae",
+      "Genus: Alligator"
+    ],
+    "ecology": [
+      "Maintains wetland habitats",
+      "Predator of fishes and mammals",
+      "Ecosystem engineer"
+    ],
+    "economy": [
+      "Leather industry",
+      "Ecotourism",
+      "Conservation importance"
+    ]
+  },
+
+  "ichthyosaurus_communis": {
+    "id": 51,
+    "slug": "ichthyosaurus_communis",
+    "name": "Ichthyosaurus communis",
+    "scientificName": "Ichthyosaur",
+    "description": "Ichthyosaurus communis was a marine reptile. Body resembled modern dolphins. Lived during Mesozoic era.",
+    "image": "media/image19.png",
+    "3d": "",
+    "introduction": [
+      "Ichthyosaurus lived in ancient seas.",
+      "It was fully aquatic and carnivorous.",
+      "Extinct marine reptile."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Viviparous",
+      "Body temperature: Poikilothermic, stenohaline"
+    ],
+    "sizeStructure": [
+      "Fish-like streamlined body",
+      "Dorsal fin present",
+      "Paddle-shaped limbs",
+      "Large eyes"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Ichthyosauria",
+      "Family: Ichthyosauridae",
+      "Genus: Ichthyosaurus",
+      "Species: Ichthyosaurus communis"
+    ],
+    "ecology": [
+      "Marine predator",
+      "Controlled fish populations",
+      "Mesozoic marine food web"
+    ],
+    "economy": [
+      "Paleontological importance",
+      "Evolutionary studies",
+      "Museum specimens"
+    ]
+  },
+
+  "triceratops_horridus": {
+    "id": 52,
+    "slug": "triceratops_horridus",
+    "name": "Triceratops horridus",
+    "scientificName": "Triceratops",
+    "description": "Triceratops horridus was a herbivorous dinosaur. Had three facial horns. Lived in late Cretaceous.",
+    "image": "media/image20.png",
+    "3d": "",
+    "introduction": [
+      "Triceratops lived on land.",
+      "Quadrupedal and herbivorous.",
+      "One of the largest horned dinosaurs."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton (bony)",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Oviparous",
+      "Body temperature: Poikilothermic"
+    ],
+    "sizeStructure": [
+      "Large skull with frill",
+      "Three horns",
+      "Massive body",
+      "Beak-like mouth"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Ornithischia",
+      "Family: Ceratopsidae",
+      "Genus: Triceratops",
+      "Species: Triceratops horridus"
+    ],
+    "ecology": [
+      "Large herbivore",
+      "Vegetation control",
+      "Prey for large carnivores"
+    ],
+    "economy": [
+      "Dinosaur research",
+      "Museum attraction",
+      "Evolutionary studies"
+    ]
+  },
+
+  "stegosaurus_stenops": {
+    "id": 53,
+    "slug": "stegosaurus_stenops",
+    "name": "Stegosaurus stenops",
+    "scientificName": "Stegosaurus",
+    "description": "Stegosaurus stenops was a herbivorous dinosaur. Had bony plates on back. Lived in Jurassic period.",
+    "image": "media/image21.png",
+    "3d": "",
+    "introduction": [
+      "Stegosaurus lived on land.",
+      "Quadrupedal herbivore.",
+      "Known for tail spikes."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Small brain",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Oviparous",
+      "Body temperature: Poikilothermic"
+    ],
+    "sizeStructure": [
+      "Double row of plates",
+      "Spiked tail",
+      "Small head",
+      "Heavy body"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Ornithischia",
+      "Family: Stegosauridae",
+      "Genus: Stegosaurus",
+      "Species: Stegosaurus stenops"
+    ],
+    "ecology": [
+      "Herbivore",
+      "Vegetation control",
+      "Prey species"
+    ],
+    "economy": [
+      "Paleontology studies",
+      "Museum exhibits",
+      "Evolution research"
+    ]
+  },
+
+  "brachiosaurus_altithorax": {
+    "id": 54,
+    "slug": "brachiosaurus_altithorax",
+    "name": "Brachiosaurus altithorax",
+    "scientificName": "Brachiosaurus",
+    "description": "Brachiosaurus altithorax was a gigantic dinosaur. Had long neck and forelimbs. Herbivorous sauropod.",
+    "image": "media/image22.png",
+    "3d": "",
+    "introduction": [
+      "Brachiosaurus lived in terrestrial habitats.",
+      "Fed on tall trees.",
+      "One of the tallest dinosaurs."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Moderately developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Oviparous",
+      "Body temperature: Poikilothermic"
+    ],
+    "sizeStructure": [
+      "Very long neck",
+      "Tall forelimbs",
+      "Massive body",
+      "Small head"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Saurischia",
+      "Family: Brachiosauridae",
+      "Genus: Brachiosaurus",
+      "Species: Brachiosaurus altithorax"
+    ],
+    "ecology": [
+      "Tall vegetation feeder",
+      "Forest structure modifier",
+      "Prey for large carnivores"
+    ],
+    "economy": [
+      "Dinosaur evolution studies",
+      "Museum display",
+      "Educational value"
+    ]
+  },
+
+  "tyrannosaurus_rex": {
+    "id": 55,
+    "slug": "tyrannosaurus_rex",
+    "name": "Tyrannosaurus rex",
+    "scientificName": "Tyrannosaurus",
+    "description": "Tyrannosaurus rex was a top carnivore. Powerful jaws and teeth. One of the most famous dinosaurs.",
+    "image": "media/image23.png",
+    "3d": "",
+    "introduction": [
+      "Tyrannosaurus lived on land.",
+      "Bipedal and carnivorous.",
+      "Apex predator of Cretaceous."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Highly developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Oviparous",
+      "Body temperature: Poikilothermic"
+    ],
+    "sizeStructure": [
+      "Massive skull",
+      "Sharp serrated teeth",
+      "Short forelimbs",
+      "Long tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Saurischia",
+      "Family: Tyrannosauridae",
+      "Genus: Tyrannosaurus",
+      "Species: Tyrannosaurus rex"
+    ],
+    "ecology": [
+      "Apex predator",
+      "Controls herbivore populations",
+      "Maintains ecosystem balance"
+    ],
+    "economy": [
+      "Paleontology icon",
+      "Museum attraction",
+      "Scientific research"
+    ]
+  },
+
+  "pteranodon_longiceps": {
+    "id": 56,
+    "slug": "pteranodon_longiceps",
+    "name": "Pteranodon longiceps",
+    "scientificName": "Pteranodon",
+    "description": "Pteranodon longiceps was a flying reptile. Had large wing span. Fed mainly on fish.",
+    "image": "media/image24.png",
+    "3d": "",
+    "introduction": [
+      "Pteranodon lived near ancient seas.",
+      "Capable of powered flight.",
+      "Extinct aerial reptile."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: Coelomate",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton (light hollow bones)",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Oviparous",
+      "Body temperature: Poikilothermic"
+    ],
+    "sizeStructure": [
+      "Large wings",
+      "Toothless beak",
+      "Cranial crest",
+      "Light skeleton"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Subphylum: Vertebrata",
+      "Class: Reptilia",
+      "Order: Pterosauria",
+      "Family: Pteranodontidae",
+      "Genus: Pteranodon",
+      "Species: Pteranodon longiceps"
+    ],
+    "ecology": [
+      "Aerial fish predator",
+      "Marine food web role",
+      "Coastal ecosystem balance"
+    ],
+    "economy": [
+      "Evolution of flight studies",
+      "Museum specimens",
+      "Educational importance"
+    ]
+  },
+  "corvus": {
+    "id": 57,
+    "slug": "corvus",
+    "name": "Corvus",
+    "scientificName": "Crow",
+    "description": "Corvus is a highly intelligent bird. It adapts easily to human environments. Omnivorous and alert.",
+    "image": "media/image1.png",
+    "3d": "",
+    "introduction": [
+      "Found in cities, villages, and forests.",
+      "Feeds on insects, grains, and waste.",
+      "Acts as an efficient scavenger."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Medium-sized black body",
+      "Strong curved beak",
+      "Broad wings",
+      "Strong claws"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Passeriformes",
+      "Family: Corvidae",
+      "Genus: Corvus"
+    ],
+    "ecology": [
+      "Scavenger",
+      "Insect control",
+      "Nutrient recycling"
+    ],
+    "economy": [
+      "Environmental indicator",
+      "Behavioural studies",
+      "Waste management"
+    ]
+  },
+
+  "columba": {
+    "id": 58,
+    "slug": "columba",
+    "name": "Columba",
+    "scientificName": "Pigeon",
+    "description": "Columba is a seed-eating bird. Strong flyer with good navigation. Common near humans.",
+    "image": "media/image2.png",
+    "3d": "",
+    "introduction": [
+      "Lives in cities and rocky regions.",
+      "Feeds on grains and seeds.",
+      "Domesticated since ancient times."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Plump body",
+      "Grey feathers",
+      "Short beak",
+      "Strong wings"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Columbiformes",
+      "Family: Columbidae",
+      "Genus: Columba"
+    ],
+    "ecology": [
+      "Seed dispersal",
+      "Urban food web",
+      "Prey species"
+    ],
+    "economy": [
+      "Messenger bird (history)",
+      "Laboratory research",
+      "Cultural value"
+    ]
+  },
+
+  "psittacula": {
+    "id": 59,
+    "slug": "psittacula",
+    "name": "Psittacula",
+    "scientificName": "Parakeet",
+    "description": "Psittacula is a colourful bird. Curved beak and long tail. Highly vocal.",
+    "image": "media/image3.png",
+    "3d": "",
+    "introduction": [
+      "Lives in forests and towns.",
+      "Feeds on fruits and seeds.",
+      "Popular cage bird."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Highly developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Bright green body",
+      "Curved beak",
+      "Long tail",
+      "Zygodactyl feet"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Psittaciformes",
+      "Family: Psittaculidae",
+      "Genus: Psittacula"
+    ],
+    "ecology": [
+      "Seed dispersal",
+      "Forest regeneration",
+      "Fruit population control"
+    ],
+    "economy": [
+      "Pet trade",
+      "Behavioural studies",
+      "Ecotourism"
+    ]
+  },
+
+  "pavo_cristatus": {
+    "id": 60,
+    "slug": "pavo_cristatus",
+    "name": "Pavo cristatus",
+    "scientificName": "Peacock",
+    "description": "Large ornamental bird. Male has colourful train. National bird of India.",
+    "image": "media/image4.png",
+    "3d": "",
+    "introduction": [
+      "Lives in forests and grasslands.",
+      "Omnivorous in diet.",
+      "Culturally significant."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Large body",
+      "Blue neck",
+      "Long colourful tail",
+      "Crest on head"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Galliformes",
+      "Family: Phasianidae",
+      "Genus: Pavo",
+      "Species: Pavo cristatus"
+    ],
+    "ecology": [
+      "Insect control",
+      "Seed dispersal",
+      "Forest balance"
+    ],
+    "economy": [
+      "National symbol",
+      "Tourism",
+      "Conservation education"
+    ]
+  },
+
+  "aptenodytes_forsteri": {
+    "id": 61,
+    "slug": "aptenodytes_forsteri",
+    "name": "Aptenodytes forsteri",
+    "scientificName": "Emperor penguin",
+    "description": "Largest penguin species. Flightless marine bird. Excellent swimmer.",
+    "image": "media/image5.png",
+    "3d": "",
+    "introduction": [
+      "Lives in Antarctica.",
+      "Feeds on fish and krill.",
+      "Adapted to extreme cold."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Barrel-shaped body",
+      "Black and white plumage",
+      "Flipper-like wings",
+      "Dense feathers"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Sphenisciformes",
+      "Family: Spheniscidae",
+      "Genus: Aptenodytes",
+      "Species: Aptenodytes forsteri"
+    ],
+    "ecology": [
+      "Marine predator",
+      "Polar food web",
+      "Climate indicator"
+    ],
+    "economy": [
+      "Scientific research",
+      "Climate studies",
+      "Ecotourism"
+    ]
+  },
+
+  "struthio_camelus": {
+    "id": 62,
+    "slug": "struthio_camelus",
+    "name": "Struthio camelus",
+    "scientificName": "Ostrich",
+    "description": "Largest living bird. Flightless but fast runner. Two-toed feet.",
+    "image": "media/image6.png",
+    "3d": "",
+    "introduction": [
+      "Lives in African grasslands.",
+      "Feeds on plants and insects.",
+      "Adapted for speed."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Very large body",
+      "Long neck",
+      "Long legs",
+      "Reduced wings"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Struthioniformes",
+      "Family: Struthionidae",
+      "Genus: Struthio",
+      "Species: Struthio camelus"
+    ],
+    "ecology": [
+      "Grazing control",
+      "Seed dispersal",
+      "Grassland balance"
+    ],
+    "economy": [
+      "Meat and leather",
+      "Farming",
+      "Tourism"
+    ]
+  },
+
+  "rhea": {
+    "id": 63,
+    "slug": "rhea",
+    "name": "Rhea",
+    "scientificName": "Rhea",
+    "description": "Large flightless bird. South American species. Fast runner.",
+    "image": "media/image7.png",
+    "3d": "",
+    "introduction": [
+      "Lives in grasslands.",
+      "Feeds on plants and insects.",
+      "Ground-dwelling bird."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Large body",
+      "Long legs",
+      "Soft feathers",
+      "Short wings"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Rheiformes",
+      "Family: Rheidae",
+      "Genus: Rhea"
+    ],
+    "ecology": [
+      "Seed dispersal",
+      "Grassland balance",
+      "Prey species"
+    ],
+    "economy": [
+      "Farming",
+      "Ecotourism",
+      "Research"
+    ]
+  },
+
+  "dromaius_novaehollandiae": {
+    "id": 64,
+    "slug": "dromaius_novaehollandiae",
+    "name": "Dromaius novaehollandiae",
+    "scientificName": "Emu",
+    "description": "Second largest bird. Flightless and fast runner. Australian native.",
+    "image": "media/image8.png",
+    "3d": "",
+    "introduction": [
+      "Lives in open forests.",
+      "Omnivorous.",
+      "Highly adaptable."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Tall body",
+      "Brown shaggy feathers",
+      "Long legs",
+      "Reduced wings"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Casuariformes",
+      "Family: Dromaiidae",
+      "Genus: Dromaius",
+      "Species: Dromaius novaehollandiae"
+    ],
+    "ecology": [
+      "Seed dispersal",
+      "Vegetation control",
+      "Ecosystem balance"
+    ],
+    "economy": [
+      "Farming",
+      "Tourism",
+      "Research"
+    ]
+  },
+
+  "apteryx": {
+    "id": 65,
+    "slug": "apteryx",
+    "name": "Apteryx",
+    "scientificName": "Kiwi",
+    "description": "Small flightless bird. Long beak with nostrils at tip. Nocturnal.",
+    "image": "media/image9.png",
+    "3d": "",
+    "introduction": [
+      "Lives in New Zealand forests.",
+      "Feeds on insects.",
+      "Poor eyesight, strong smell."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Small body",
+      "Hair-like feathers",
+      "Long beak",
+      "Strong legs"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Apterygiformes",
+      "Family: Apterygidae",
+      "Genus: Apteryx"
+    ],
+    "ecology": [
+      "Soil aeration",
+      "Insect control",
+      "Forest ecosystem"
+    ],
+    "economy": [
+      "National symbol",
+      "Conservation",
+      "Tourism"
+    ]
+  },
+
+  "casuarius": {
+    "id": 66,
+    "slug": "casuarius",
+    "name": "Casuarius",
+    "scientificName": "Cassowary",
+    "description": "Large aggressive bird. Flightless rainforest species. Helmet-like casque present.",
+    "image": "media/image10.png",
+    "3d": "",
+    "introduction": [
+      "Lives in tropical forests.",
+      "Feeds on fruits.",
+      "Important seed disperser."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Large body",
+      "Casque on head",
+      "Bright neck colours",
+      "Strong legs"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Casuariformes",
+      "Family: Casuariidae",
+      "Genus: Casuarius"
+    ],
+    "ecology": [
+      "Seed dispersal",
+      "Forest regeneration",
+      "Keystone species"
+    ],
+    "economy": [
+      "Conservation importance",
+      "Ecotourism",
+      "Research"
+    ]
+  },
+
+  "neophron": {
+    "id": 67,
+    "slug": "neophron",
+    "name": "Neophron",
+    "scientificName": "Egyptian vulture",
+    "description": "Neophron is a medium-sized scavenging bird. It feeds mainly on carrion. One of the smallest vultures.",
+    "image": "media/image11.png",
+    "3d": "",
+    "introduction": [
+      "Neophron inhabits open country and rocky regions.",
+      "It is a diurnal scavenger.",
+      "Helps in cleaning the environment."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Medium-sized body",
+      "White plumage with black wings",
+      "Yellow bare face",
+      "Strong hooked beak"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Accipitriformes",
+      "Family: Accipitridae",
+      "Genus: Neophron"
+    ],
+    "ecology": [
+      "Scavenger of dead animals",
+      "Prevents spread of disease",
+      "Maintains ecosystem hygiene"
+    ],
+    "economy": [
+      "Environmental health indicator",
+      "Wildlife conservation importance",
+      "Ecological studies"
+    ]
+  },
+
+  "passer": {
+    "id": 68,
+    "slug": "passer",
+    "name": "Passer",
+    "scientificName": "Sparrow",
+    "description": "Passer is a small seed-eating bird. Lives close to human habitation. Very social in nature.",
+    "image": "media/image12.png",
+    "3d": "",
+    "introduction": [
+      "Passer inhabits towns, villages, and farmlands.",
+      "It feeds on grains and insects.",
+      "Common urban bird."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Small compact body",
+      "Brown and grey plumage",
+      "Short conical beak",
+      "Short tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Passeriformes",
+      "Family: Passeridae",
+      "Genus: Passer"
+    ],
+    "ecology": [
+      "Seed dispersal",
+      "Insect control",
+      "Urban ecosystem balance"
+    ],
+    "economy": [
+      "Indicator of environmental quality",
+      "Educational importance",
+      "Cultural significance"
+    ]
+  },
+
+  "gallus_gallus": {
+    "id": 69,
+    "slug": "gallus_gallus",
+    "name": "Gallus gallus",
+    "scientificName": "Red jungle fowl",
+    "description": "Gallus gallus is the wild ancestor of domestic fowl. Ground-dwelling bird. Strong and alert.",
+    "image": "media/image13.png",
+    "3d": "",
+    "introduction": [
+      "Gallus gallus lives in forests and scrublands.",
+      "Feeds on grains, seeds, and insects.",
+      "Important in poultry evolution."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Medium-sized body",
+      "Bright comb and wattles",
+      "Strong legs with claws",
+      "Sexual dimorphism present"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Galliformes",
+      "Family: Phasianidae",
+      "Genus: Gallus",
+      "Species: Gallus gallus"
+    ],
+    "ecology": [
+      "Insect control",
+      "Seed dispersal",
+      "Forest floor food web"
+    ],
+    "economy": [
+      "Origin of domestic chicken",
+      "Poultry industry importance",
+      "Genetic research"
+    ]
+  },
+
+  "trochilus_colubris": {
+    "id": 70,
+    "slug": "trochilus_colubris",
+    "name": "Trochilus colubris",
+    "scientificName": "Ruby-throated hummingbird",
+    "description": "Trochilus colubris is a very small bird. Capable of hovering flight. Feeds mainly on nectar.",
+    "image": "media/image14.png",
+    "3d": "",
+    "introduction": [
+      "Trochilus colubris lives in gardens and forests.",
+      "It feeds on flower nectar and insects.",
+      "Important pollinating bird."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Highly developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Very small body",
+      "Long slender beak",
+      "Rapid wing movement",
+      "Iridescent throat"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Apodiformes",
+      "Family: Trochilidae",
+      "Genus: Trochilus",
+      "Species: Trochilus colubris"
+    ],
+    "ecology": [
+      "Pollination of flowers",
+      "Maintains plant diversity",
+      "Insect control"
+    ],
+    "economy": [
+      "Pollination services",
+      "Ecological studies",
+      "Ecotourism value"
+    ]
+  },
+
+  "chalcophaps_indica": {
+    "id": 71,
+    "slug": "chalcophaps_indica",
+    "name": "Chalcophaps indica",
+    "scientificName": "Emerald dove",
+    "description": "Chalcophaps indica is a small forest pigeon. Known for green shiny wings. Ground-feeding bird.",
+    "image": "media/image15.png",
+    "3d": "",
+    "introduction": [
+      "Chalcophaps indica inhabits tropical forests.",
+      "Feeds on fallen fruits and seeds.",
+      "Shy and quiet bird."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Small compact body",
+      "Emerald green wings",
+      "Pinkish breast",
+      "Short beak"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Columbiformes",
+      "Family: Columbidae",
+      "Genus: Chalcophaps",
+      "Species: Chalcophaps indica"
+    ],
+    "ecology": [
+      "Seed dispersal",
+      "Forest regeneration",
+      "Ground food-web role"
+    ],
+    "economy": [
+      "Ecological indicator",
+      "Wildlife education",
+      "Conservation importance"
+    ]
+  },
+
+  "pitohui_dichrous": {
+    "id": 72,
+    "slug": "pitohui_dichrous",
+    "name": "Pitohui dichrous",
+    "scientificName": "Hooded pitohui",
+    "description": "Pitohui dichrous is a poisonous bird. Skin and feathers contain toxins. Bright warning coloration present.",
+    "image": "media/image16.png",
+    "3d": "",
+    "introduction": [
+      "Pitohui dichrous inhabits forests of New Guinea.",
+      "Feeds on insects and fruits.",
+      "Rare example of toxic bird."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Medium-sized body",
+      "Black head and orange body",
+      "Strong beak",
+      "Bright warning colours"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Passeriformes",
+      "Family: Oriolidae",
+      "Genus: Pitohui",
+      "Species: Pitohui dichrous"
+    ],
+    "ecology": [
+      "Insect control",
+      "Forest ecosystem member",
+      "Predator deterrence through toxicity"
+    ],
+    "economy": [
+      "Toxicology research",
+      "Evolutionary studies",
+      "Conservation relevance"
+    ]
+  },
+
+  "geospiza_magnirostris": {
+    "id": 73,
+    "slug": "geospiza_magnirostris",
+    "name": "Geospiza magnirostris",
+    "scientificName": "Large ground finch",
+    "description": "Geospiza magnirostris has a very large beak. It feeds mainly on hard seeds. A classic example of adaptive radiation.",
+    "image": "media/image17.png",
+    "3d": "",
+    "introduction": [
+      "Found on the Galápagos Islands.",
+      "Ground-dwelling and seed-eating bird.",
+      "Shows strong natural selection on beak size."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Robust body",
+      "Very thick conical beak",
+      "Black or brown plumage",
+      "Strong legs"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Passeriformes",
+      "Family: Thraupidae",
+      "Genus: Geospiza",
+      "Species: Geospiza magnirostris"
+    ],
+    "ecology": [
+      "Consumes large hard seeds",
+      "Reduces seed competition",
+      "Ground ecosystem balance"
+    ],
+    "economy": [
+      "Evolutionary biology studies",
+      "Natural selection research",
+      "Educational importance"
+    ]
+  },
+
+  "geospiza_fortis": {
+    "id": 74,
+    "slug": "geospiza_fortis",
+    "name": "Geospiza fortis",
+    "scientificName": "Medium ground finch",
+    "description": "Geospiza fortis has a medium-sized beak. Feeds on seeds of moderate hardness. Highly variable species.",
+    "image": "media/image18.png",
+    "3d": "",
+    "introduction": [
+      "Lives on several Galápagos Islands.",
+      "Ground-feeding bird.",
+      "Famous for rapid evolutionary change."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Medium-sized body",
+      "Moderately thick beak",
+      "Brownish plumage",
+      "Short tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Passeriformes",
+      "Family: Thraupidae",
+      "Genus: Geospiza",
+      "Species: Geospiza fortis"
+    ],
+    "ecology": [
+      "Feeds on medium seeds",
+      "Adjusts diet with climate",
+      "Ground food-web member"
+    ],
+    "economy": [
+      "Natural selection experiments",
+      "Evolution teaching model",
+      "Research importance"
+    ]
+  },
+
+  "geospiza_fuliginosa": {
+    "id": 75,
+    "slug": "geospiza_fuliginosa",
+    "name": "Geospiza fuliginosa",
+    "scientificName": "Small ground finch",
+    "description": "Geospiza fuliginosa is the smallest ground finch. Has a fine pointed beak. Feeds on small seeds.",
+    "image": "media/image19.png",
+    "3d": "",
+    "introduction": [
+      "Common on Galápagos Islands.",
+      "Ground-dwelling and active.",
+      "Shows specialization for small food items."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Small body",
+      "Thin conical beak",
+      "Dark brown colour",
+      "Light build"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Passeriformes",
+      "Family: Thraupidae",
+      "Genus: Geospiza",
+      "Species: Geospiza fuliginosa"
+    ],
+    "ecology": [
+      "Consumes small seeds",
+      "Reduces seed overlap",
+      "Ground niche specialist"
+    ],
+    "economy": [
+      "Adaptive radiation studies",
+      "Evolutionary biology",
+      "Education value"
+    ]
+  },
+
+  "geospiza_difficilis": {
+    "id": 76,
+    "slug": "geospiza_difficilis",
+    "name": "Geospiza difficilis",
+    "scientificName": "Sharp-beaked ground finch",
+    "description": "Geospiza difficilis has a sharp beak. Feeds on insects and seeds. Some populations show unusual feeding habits.",
+    "image": "media/image20.png",
+    "3d": "",
+    "introduction": [
+      "Found on remote Galápagos islands.",
+      "Ground-dwelling bird.",
+      "Shows behavioural flexibility."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Small body",
+      "Sharp pointed beak",
+      "Dark plumage",
+      "Agile movement"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Passeriformes",
+      "Family: Thraupidae",
+      "Genus: Geospiza",
+      "Species: Geospiza difficilis"
+    ],
+    "ecology": [
+      "Insect and seed feeder",
+      "Controls insect population",
+      "Adaptive feeder"
+    ],
+    "economy": [
+      "Behavioural evolution studies",
+      "Natural selection research",
+      "Scientific importance"
+    ]
+  },
+
+  "geospiza_scandens": {
+    "id": 77,
+    "slug": "geospiza_scandens",
+    "name": "Geospiza scandens",
+    "scientificName": "Cactus finch",
+    "description": "Geospiza scandens is adapted to cactus feeding. Beak is long and pointed. Feeds on cactus flowers and fruits.",
+    "image": "media/image21.png",
+    "3d": "",
+    "introduction": [
+      "Lives in arid cactus zones.",
+      "Strongly associated with Opuntia cactus.",
+      "Seasonal feeder."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Medium body",
+      "Long pointed beak",
+      "Brownish colour",
+      "Slender shape"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Passeriformes",
+      "Family: Thraupidae",
+      "Genus: Geospiza",
+      "Species: Geospiza scandens"
+    ],
+    "ecology": [
+      "Pollinates cactus",
+      "Cactus seed dispersal",
+      "Desert ecosystem role"
+    ],
+    "economy": [
+      "Plant--animal interaction studies",
+      "Evolutionary research",
+      "Education importance"
+    ]
+  },
+
+  "camarhynchus_psittacula": {
+    "id": 78,
+    "slug": "camarhynchus_psittacula",
+    "name": "Camarhynchus psittacula",
+    "scientificName": "Large tree finch",
+    "description": "Camarhynchus psittacula has a parrot-like beak. Feeds on insects and fruits. Tree-dwelling finch.",
+    "image": "media/image22.png",
+    "3d": "",
+    "introduction": [
+      "Lives in forests of Galápagos.",
+      "Arboreal feeder.",
+      "Strong beak adaptation."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Medium body",
+      "Thick curved beak",
+      "Olive-brown plumage",
+      "Strong feet"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Passeriformes",
+      "Family: Thraupidae",
+      "Genus: Camarhynchus",
+      "Species: Camarhynchus psittacula"
+    ],
+    "ecology": [
+      "Insect control",
+      "Tree ecosystem balance",
+      "Arboreal niche use"
+    ],
+    "economy": [
+      "Adaptive radiation studies",
+      "Evolution teaching",
+      "Research importance"
+    ]
+  },
+
+  "camarhynchus_parvulus": {
+    "id": 79,
+    "slug": "camarhynchus_parvulus",
+    "name": "Camarhynchus parvulus",
+    "scientificName": "Small tree finch",
+    "description": "Camarhynchus parvulus is a small arboreal finch. Feeds mainly on insects. Active and agile.",
+    "image": "media/image23.png",
+    "3d": "",
+    "introduction": [
+      "Lives in shrubs and trees.",
+      "Insect-eating bird.",
+      "Common tree finch."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Small body",
+      "Thin beak",
+      "Greyish colour",
+      "Light build"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Passeriformes",
+      "Family: Thraupidae",
+      "Genus: Camarhynchus",
+      "Species: Camarhynchus parvulus"
+    ],
+    "ecology": [
+      "Insect population control",
+      "Tree food web",
+      "Arboreal niche"
+    ],
+    "economy": [
+      "Ecological research",
+      "Evolution studies",
+      "Education value"
+    ]
+  },
+
+  "camarhynchus_pallidus": {
+    "id": 80,
+    "slug": "camarhynchus_pallidus",
+    "name": "Camarhynchus pallidus",
+    "scientificName": "Woodpecker finch",
+    "description": "Camarhynchus pallidus uses tools. Feeds on insects in bark. One of the smartest finches.",
+    "image": "media/image24.png",
+    "3d": "",
+    "introduction": [
+      "Lives in forested islands.",
+      "Extracts insects using twigs.",
+      "Unique feeding behaviour."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Medium body",
+      "Straight beak",
+      "Brownish colour",
+      "Strong toes"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Passeriformes",
+      "Family: Thraupidae",
+      "Genus: Camarhynchus",
+      "Species: Camarhynchus pallidus"
+    ],
+    "ecology": [
+      "Controls wood-boring insects",
+      "Forest health",
+      "Niche specialization"
+    ],
+    "economy": [
+      "Tool-use studies",
+      "Behavioural evolution",
+      "Scientific importance"
+    ]
+  },
+
+  "certhidea_olivacea": {
+    "id": 81,
+    "slug": "certhidea_olivacea",
+    "name": "Certhidea olivacea",
+    "scientificName": "Warbler finch",
+    "description": "Certhidea olivacea is a small slender finch. Feeds mainly on insects. Warbler-like behaviour.",
+    "image": "media/image25.png",
+    "3d": "",
+    "introduction": [
+      "Found in bushes and trees.",
+      "Insectivorous bird.",
+      "Light and agile."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Very small body",
+      "Thin pointed beak",
+      "Olive-green colour",
+      "Delicate build"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Passeriformes",
+      "Family: Thraupidae",
+      "Genus: Certhidea",
+      "Species: Certhidea olivacea"
+    ],
+    "ecology": [
+      "Insect control",
+      "Tree canopy role",
+      "Niche specialization"
+    ],
+    "economy": [
+      "Evolution studies",
+      "Biodiversity research",
+      "Educational importance"
+    ]
+  },
+
+  "platyspiza_crassirostris": {
+    "id": 82,
+    "slug": "platyspiza_crassirostris",
+    "name": "Platyspiza crassirostris",
+    "scientificName": "Vegetarian finch",
+    "description": "Platyspiza crassirostris has a strong beak. Feeds mainly on leaves and buds. Largest tree finch.",
+    "image": "media/image26.png",
+    "3d": "",
+    "introduction": [
+      "Lives in forest habitats.",
+      "Herbivorous bird.",
+      "Unique diet among finches."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Large body",
+      "Broad thick beak",
+      "Olive-brown plumage",
+      "Strong jaw muscles"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Passeriformes",
+      "Family: Thraupidae",
+      "Genus: Platyspiza",
+      "Species: Platyspiza crassirostris"
+    ],
+    "ecology": [
+      "Leaf pruning",
+      "Plant population control",
+      "Forest ecosystem role"
+    ],
+    "economy": [
+      "Adaptive radiation example",
+      "Evolution education",
+      "Research importance"
+    ]
+  },
+
+  "archaeopteryx": {
+    "id": 83,
+    "slug": "archaeopteryx",
+    "name": "Archaeopteryx",
+    "scientificName": "Primitive bird",
+    "description": "Archaeopteryx is a fossil bird. Shows reptilian and avian traits. Important evolutionary link.",
+    "image": "media/image27.png",
+    "3d": "",
+    "introduction": [
+      "Lived during Jurassic period.",
+      "Could glide but not true flight.",
+      "Key transitional fossil."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs",
+      "Circulatory type: Closed, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Moderately developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic (probable)"
+    ],
+    "sizeStructure": [
+      "Feathered wings",
+      "Long bony tail",
+      "Teeth in jaws",
+      "Clawed fingers"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Archaeopterygiformes",
+      "Family: Archaeopterygidae",
+      "Genus: Archaeopteryx",
+      "Species: Archaeopteryx lithographica"
+    ],
+    "ecology": [
+      "Transitional evolutionary form",
+      "Early aerial adaptation",
+      "Predator of insects"
+    ],
+    "economy": [
+      "Evolutionary biology",
+      "Fossil studies",
+      "Museum importance"
+    ]
+  },
+  "ornithorhynchus_anatinus": {
+    "id": 84,
+    "slug": "ornithorhynchus_anatinus",
+    "name": "Ornithorhynchus anatinus",
+    "scientificName": "Platypus",
+    "description": "Ornithorhynchus anatinus is an egg-laying mammal. It is semi-aquatic and carnivorous. Shows reptilian and mammalian features together.",
+    "image": "media/image1.png",
+    "3d": "",
+    "introduction": [
+      "It lives in freshwater rivers and streams of Australia.",
+      "It swims well and feeds on aquatic invertebrates.",
+      "Important evolutionary link among mammals."
+    ],
+    "features": [
+      "Level of Organisation: Organ level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral symmetry",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Protostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well-developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct (oviparous)",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Streamlined body",
+      "Duck-like bill",
+      "Dense brown fur",
+      "Webbed feet"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Mammalia",
+      "Subclass: Prototheria",
+      "Order: Monotremata",
+      "Family: Ornithorhynchidae",
+      "Genus: Ornithorhynchus",
+      "Species: Ornithorhynchus anatinus"
+    ],
+    "ecology": [
+      "Predator of aquatic insects",
+      "Maintains river food chains",
+      "Burrowing aerates river banks"
+    ],
+    "economy": [
+      "Evolutionary research",
+      "Tourism value",
+      "Conservation importance"
+    ]
+  },
+
+  "echidna": {
+    "id": 85,
+    "slug": "echidna",
+    "name": "Echidna",
+    "scientificName": "Spiny anteater",
+    "description": "Echidna is an egg-laying mammal. Body covered with spines. Feeds mainly on ants and termites.",
+    "image": "media/image2.png",
+    "3d": "",
+    "introduction": [
+      "It is found in Australia and New Guinea.",
+      "Lives in forests, grasslands, and deserts.",
+      "Important insect-eating mammal."
+    ],
+    "features": [
+      "Level of Organisation: Organ level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral symmetry",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Protostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well-developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct (oviparous)",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Stocky body",
+      "Sharp spines",
+      "Long snout",
+      "Strong claws"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Mammalia",
+      "Subclass: Prototheria",
+      "Order: Monotremata",
+      "Family: Tachyglossidae",
+      "Genus: Echidna"
+    ],
+    "ecology": [
+      "Controls ant and termite population",
+      "Soil aeration",
+      "Maintains ecosystem balance"
+    ],
+    "economy": [
+      "Conservation studies",
+      "Tourism symbol",
+      "Evolution research"
+    ]
+  },
+
+  "antechinus_flavipes": {
+    "id": 86,
+    "slug": "antechinus_flavipes",
+    "name": "Antechinus flavipes",
+    "scientificName": "Yellow-footed antechinus",
+    "description": "Small carnivorous marsupial. Highly active and insect-eating. Native to Australia.",
+    "image": "media/image3.png",
+    "3d": "",
+    "introduction": [
+      "Lives in forests and woodlands.",
+      "Nocturnal and fast-moving.",
+      "Important predator of insects."
+    ],
+    "features": [
+      "Level of Organisation: Organ level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral symmetry",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Protostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well-developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Small slender body",
+      "Grey-brown fur",
+      "Yellowish feet",
+      "Long tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Mammalia",
+      "Order: Dasyuromorphia",
+      "Family: Dasyuridae",
+      "Genus: Antechinus",
+      "Species: Antechinus flavipes"
+    ],
+    "ecology": [
+      "Insect predator",
+      "Controls pests",
+      "Forest ecosystem balance"
+    ],
+    "economy": [
+      "Ecological research",
+      "Wildlife studies",
+      "Indicator of forest health"
+    ]
+  },
+
+  "macropus": {
+    "id": 87,
+    "slug": "macropus",
+    "name": "Macropus",
+    "scientificName": "Kangaroo",
+    "description": "Large herbivorous marsupial. Powerful hind limbs for jumping. Symbol of Australia.",
+    "image": "media/image4.png",
+    "3d": "",
+    "introduction": [
+      "Lives in grasslands and open forests.",
+      "Feeds mainly on grasses.",
+      "Important grazing animal."
+    ],
+    "features": [
+      "Level of Organisation: Organ level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral symmetry",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Protostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well-developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Very large body",
+      "Long muscular tail",
+      "Strong hind legs",
+      "Pouch present"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Mammalia",
+      "Order: Diprotodontia",
+      "Family: Macropodidae",
+      "Genus: Macropus"
+    ],
+    "ecology": [
+      "Grazing vegetation",
+      "Seed dispersal",
+      "Maintains grasslands"
+    ],
+    "economy": [
+      "Tourism symbol",
+      "Cultural importance",
+      "Research and conservation"
+    ]
+  },
+
+  "phascolarctos_cinereus": {
+    "id": 88,
+    "slug": "phascolarctos_cinereus",
+    "name": "Phascolarctos cinereus",
+    "scientificName": "Koala",
+    "description": "Tree-dwelling herbivorous marsupial. Feeds only on eucalyptus leaves. Slow-moving animal.",
+    "image": "media/image5.png",
+    "3d": "",
+    "introduction": [
+      "Lives in eucalyptus forests of Australia.",
+      "Arboreal and nocturnal.",
+      "Important forest species."
+    ],
+    "features": [
+      "Level of Organisation: Organ level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral symmetry",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Protostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well-developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Compact body",
+      "Grey fur",
+      "Large ears",
+      "Strong claws"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Mammalia",
+      "Order: Diprotodontia",
+      "Family: Phascolarctidae",
+      "Genus: Phascolarctos",
+      "Species: Phascolarctos cinereus"
+    ],
+    "ecology": [
+      "Controls eucalyptus growth",
+      "Forest food web",
+      "Habitat indicator"
+    ],
+    "economy": [
+      "Tourism attraction",
+      "Conservation symbol",
+      "Research model"
+    ]
+  },
+
+  "vombatus": {
+    "id": 89,
+    "slug": "vombatus",
+    "name": "Vombatus",
+    "scientificName": "Wombat",
+    "description": "Burrowing herbivorous marsupial. Short legs and strong claws. Ground-dwelling animal.",
+    "image": "media/image6.png",
+    "3d": "",
+    "introduction": [
+      "Lives in grasslands and forests.",
+      "Nocturnal burrower.",
+      "Improves soil structure."
+    ],
+    "features": [
+      "Level of Organisation: Organ level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral symmetry",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Protostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well-developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Stocky body",
+      "Short tail",
+      "Strong claws",
+      "Brown-grey fur"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Mammalia",
+      "Order: Diprotodontia",
+      "Family: Vombatidae",
+      "Genus: Vombatus"
+    ],
+    "ecology": [
+      "Soil aeration",
+      "Vegetation control",
+      "Ecosystem engineer"
+    ],
+    "economy": [
+      "Ecotourism",
+      "Research species",
+      "Conservation value"
+    ]
+  },
+
+  "perameles": {
+    "id": 90,
+    "slug": "perameles",
+    "name": "Perameles",
+    "scientificName": "Bandicoot",
+    "description": "Small ground-dwelling marsupial. Fast-moving omnivore. Strong digging ability.",
+    "image": "media/image7.png",
+    "3d": "",
+    "introduction": [
+      "Found in forests and grasslands.",
+      "Nocturnal and insect-eating.",
+      "Improves soil health."
+    ],
+    "features": [
+      "Level of Organisation: Organ level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral symmetry",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Protostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ureotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well-developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Slender body",
+      "Long pointed snout",
+      "Short tail",
+      "Digging claws"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Mammalia",
+      "Order: Peramelemorphia",
+      "Family: Peramelidae",
+      "Genus: Perameles"
+    ],
+    "ecology": [
+      "Insect control",
+      "Soil mixing",
+      "Food chain role"
+    ],
+    "economy": [
+      "Ecological research",
+      "Soil improvement",
+      "Conservation importance"
+    ]
+  },
+
+  "petaurus_breviceps": {
+    "id": 91,
+    "slug": "petaurus_breviceps",
+    "name": "Petaurus breviceps",
+    "scientificName": "Sugar glider",
+    "description": "Small arboreal marsupial. Glides between trees. Nocturnal and social.",
+    "image": "media/image8.png",
+    "3d": "",
+    "introduction": [
+      "Lives in forests of Australia and New Guinea.",
+      "Feeds on nectar, fruits, and insects.",
+      "Important forest species."
+    ],
+    "features": [
+      "Level of Organisation: Organ level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral symmetry",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Protostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well-developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Slender body",
+      "Patagium for gliding",
+      "Long tail",
+      "Grey fur"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Mammalia",
+      "Order: Diprotodontia",
+      "Family: Petauridae",
+      "Genus: Petaurus",
+      "Species: Petaurus breviceps"
+    ],
+    "ecology": [
+      "Pollination",
+      "Seed dispersal",
+      "Insect control"
+    ],
+    "economy": [
+      "Ecotourism",
+      "Research value",
+      "Conservation breeding"
+    ]
+  },
+
+  "notoryctes": {
+    "id": 92,
+    "slug": "notoryctes",
+    "name": "Notoryctes",
+    "scientificName": "Marsupial mole",
+    "description": "Blind burrowing marsupial. Lives underground in deserts. Highly specialized animal.",
+    "image": "media/image9.png",
+    "3d": "",
+    "introduction": [
+      "Found in central Australian deserts.",
+      "Fossorial and nocturnal.",
+      "Feeds on insects."
+    ],
+    "features": [
+      "Level of Organisation: Organ level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral symmetry",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Protostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well-developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Cylindrical body",
+      "No visible eyes",
+      "Spade-like claws",
+      "Pale fur"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Mammalia",
+      "Order: Notoryctemorphia",
+      "Family: Notoryctidae",
+      "Genus: Notoryctes"
+    ],
+    "ecology": [
+      "Soil aeration",
+      "Insect control",
+      "Desert ecosystem role"
+    ],
+    "economy": [
+      "Rare research species",
+      "Conservation importance",
+      "Indicator of desert health"
+    ]
+  },
+
+  "didelphis_marsupialis": {
+    "id": 93,
+    "slug": "didelphis_marsupialis",
+    "name": "Didelphis marsupialis",
+    "scientificName": "Common opossum",
+    "description": "Omnivorous American marsupial. Highly adaptable animal. Good climber and scavenger.",
+    "image": "media/image10.png",
+    "3d": "",
+    "introduction": [
+      "Lives in forests and urban areas.",
+      "Nocturnal and opportunistic feeder.",
+      "Controls pests."
+    ],
+    "features": [
+      "Level of Organisation: Organ level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral symmetry",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Protostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well-developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Long naked tail",
+      "Grey fur",
+      "Sharp snout",
+      "Climbing limbs"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Mammalia",
+      "Order: Didelphimorphia",
+      "Family: Didelphidae",
+      "Genus: Didelphis",
+      "Species: Didelphis marsupialis"
+    ],
+    "ecology": [
+      "Scavenger",
+      "Pest control",
+      "Seed dispersal"
+    ],
+    "economy": [
+      "Research use",
+      "Urban ecology studies",
+      "Educational importance"
+    ]
+  },
+
+  "myrmecobius_fasciatus": {
+    "id": 94,
+    "slug": "myrmecobius_fasciatus",
+    "name": "Myrmecobius fasciatus",
+    "scientificName": "Numbat",
+    "description": "Small diurnal marsupial. Feeds mainly on termites. Striped body.",
+    "image": "media/image11.png",
+    "3d": "",
+    "introduction": [
+      "Found in open woodlands of Australia.",
+      "Lives in burrows and hollow logs.",
+      "Important termite controller."
+    ],
+    "features": [
+      "Level of Organisation: Organ level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral symmetry",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Protostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well-developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Slender body",
+      "White bands on back",
+      "Long sticky tongue",
+      "Bushy tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Mammalia",
+      "Order: Dasyuromorphia",
+      "Family: Myrmecobiidae",
+      "Genus: Myrmecobius",
+      "Species: Myrmecobius fasciatus"
+    ],
+    "ecology": [
+      "Controls termites",
+      "Maintains woodland balance",
+      "Food web role"
+    ],
+    "economy": [
+      "Conservation flagship",
+      "Research interest",
+      "Tourism value"
+    ]
+  },
+
+  "thylacinus_cynocephalus": {
+    "id": 95,
+    "slug": "thylacinus_cynocephalus",
+    "name": "Thylacinus cynocephalus",
+    "scientificName": "Tasmanian tiger",
+    "description": "Largest carnivorous marsupial (extinct). Dog-like body with stripes. Once top predator.",
+    "image": "media/image12.png",
+    "3d": "",
+    "introduction": [
+      "Formerly lived in Australia and Tasmania.",
+      "Nocturnal carnivore.",
+      "Now extinct."
+    ],
+    "features": [
+      "Level of Organisation: Organ level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral symmetry",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Protostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well-developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Dog-like body",
+      "Strong jaws",
+      "Black stripes on back",
+      "Long tail"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Mammalia",
+      "Order: Dasyuromorphia",
+      "Family: Thylacinidae",
+      "Genus: Thylacinus",
+      "Species: Thylacinus cynocephalus"
+    ],
+    "ecology": [
+      "Apex predator",
+      "Controlled herbivore populations",
+      "Historical ecosystem balance"
+    ],
+    "economy": [
+      "Conservation awareness",
+      "Extinction studies",
+      "Museum importance"
+    ]
+  },
+
+  "spilocuscus_maculatus": {
+    "id": 96,
+    "slug": "spilocuscus_maculatus",
+    "name": "Spilocuscus maculatus",
+    "scientificName": "Spotted cuscus",
+    "description": "Arboreal fruit-eating marsupial. Slow-moving tree dweller. Spotted fur.",
+    "image": "media/image13.png",
+    "3d": "",
+    "introduction": [
+      "Found in rainforests of New Guinea and Australia.",
+      "Lives in tree canopies.",
+      "Important seed disperser."
+    ],
+    "features": [
+      "Level of Organisation: Organ level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral symmetry",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Protostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well-developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Rounded body",
+      "Prehensile tail",
+      "Cream colour with spots",
+      "Large eyes"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Mammalia",
+      "Order: Diprotodontia",
+      "Family: Phalangeridae",
+      "Genus: Spilocuscus",
+      "Species: Spilocuscus maculatus"
+    ],
+    "ecology": [
+      "Seed dispersal",
+      "Forest regeneration",
+      "Canopy ecosystem role"
+    ],
+    "economy": [
+      "Ecotourism",
+      "Conservation studies",
+      "Biodiversity value"
+    ]
+  },
+
+  "dasyurus_maculatus": {
+    "id": 97,
+    "slug": "dasyurus_maculatus",
+    "name": "Dasyurus maculatus",
+    "scientificName": "Spotted-tail quoll",
+    "description": "Carnivorous marsupial predator. Nocturnal hunter. Strong climber.",
+    "image": "media/image14.png",
+    "3d": "",
+    "introduction": [
+      "Lives in forests and rocky areas.",
+      "Feeds on birds, mammals, and insects.",
+      "Important predator species."
+    ],
+    "features": [
+      "Level of Organisation: Organ level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral symmetry",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Protostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Lungs",
+      "Circulatory type: Closed circulation, double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well-developed brain and spinal cord",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Slender body",
+      "White spots on tail",
+      "Sharp claws",
+      "Long snout"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Mammalia",
+      "Order: Dasyuromorphia",
+      "Family: Dasyuridae",
+      "Genus: Dasyurus",
+      "Species: Dasyurus maculatus"
+    ],
+    "ecology": [
+      "Controls prey populations",
+      "Scavenger role",
+      "Maintains food chain"
+    ],
+    "economy": [
+      "Wildlife research",
+      "Conservation programs",
+      "Ecosystem indicator"
+    ]
+  }
+}

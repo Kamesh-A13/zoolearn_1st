@@ -1,0 +1,198 @@
+/* =====================================================
+   TAXONOMY SESSION – CLEAN, GREEN, PROFESSIONAL
+===================================================== */
+
+.taxonomy-session {
+  padding: 36px 24px;
+  margin: 48px auto;
+  max-width: 1200px;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f2f8f4 100%
+  );
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* ---------- TITLE ---------- */
+
+.taxonomy-session-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.taxonomy-session-title span {
+  color: #2f7d46; /* ZooLearn Green */
+  font-weight: 600;
+}
+
+/* ---------- DESCRIPTION ---------- */
+
+.taxonomy-session-desc {
+  font-size: 1.05rem;
+  color: #334155;
+  margin-bottom: 24px;
+  max-width: 820px;
+  line-height: 1.7;
+}
+
+/* ---------- TREE CONTAINER (EMBEDDED) ---------- */
+
+.taxonomy-tree-box {
+  width: 100%;
+  height: 420px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative; 
+  background: radial-gradient(
+    circle at top,
+    rgba(47, 125, 70, 0.12),
+    #0f0f0f 70%
+  );
+  border: 1px solid rgba(47, 125, 70, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+/* WRAPPER: Kills interaction on the tree itself 
+   (Makes it feel like a static image)
+*/
+.taxonomy-static-wrapper {
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Disables zoom/pan/click */
+  user-select: none;    /* Prevents highlighting text */
+}
+
+/* NEW: Hides the internal buttons (Reset, Lock, etc.) 
+   This ensures only the "Open" button is visible.
+*/
+.taxonomy-static-wrapper button, 
+.taxonomy-static-wrapper .react-flow__panel,
+.taxonomy-static-wrapper .controls {
+  display: none !important;
+}
+
+/* ---------- CONTROLS OVERLAY (OPEN BUTTON) ---------- */
+
+.taxonomy-overlay-controls {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+  pointer-events: none; /* Container passes clicks through... */
+}
+
+.taxonomy-open-btn {
+  pointer-events: auto; /* ...but the button catches them */
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #2f7d46;
+  border: 1px solid rgba(47, 125, 70, 0.3);
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.taxonomy-open-btn:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.taxonomy-open-btn span {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* ---------- FULL SCREEN OVERLAY ("NEW PAGE") ---------- */
+
+.taxonomy-fullscreen-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0f0f0f;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+
+.taxonomy-fullscreen-header {
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  border-bottom: 1px solid #e2e8f0;
+  justify-content: space-between;
+}
+
+.taxonomy-back-btn {
+  background: transparent;
+  border: 2px solid #e2e8f0;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #334155;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.taxonomy-back-btn:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+
+.taxonomy-fullscreen-title {
+  font-weight: 700;
+  color: #2f7d46;
+  font-size: 1.1rem;
+}
+
+.taxonomy-fullscreen-content {
+  flex: 1;
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🖥️ Desktop – larger view */
+@media (min-width: 1024px) {
+  .taxonomy-tree-box {
+    height: 520px;
+  }
+}
+
+/* 📱 Mobile – balanced */
+@media (max-width: 640px) {
+  .taxonomy-session {
+    padding: 28px 18px;
+  }
+  .taxonomy-session-title {
+    font-size: 1.55rem;
+  }
+  .taxonomy-session-desc {
+    font-size: 0.98rem;
+  }
+  .taxonomy-tree-box {
+    height: 360px;
+  }
+  .taxonomy-fullscreen-header {
+    padding: 0 16px;
+  }
+  .taxonomy-fullscreen-title {
+    display: none;
+  }
+}

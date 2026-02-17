@@ -1,0 +1,54 @@
+/* =========================================
+   EVOLUTIONARY NOTE – SIMPLE & ACADEMIC
+========================================= */
+
+.development-note {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px 28px;
+  background: #ffffff;
+  border-left: 4px solid #16a34a; /* subtle biology green */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Heading */
+.development-note h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 14px;
+}
+
+/* Paragraph text */
+.development-note p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 12px;
+}
+
+/* Highlight key biology terms */
+.development-note strong {
+  color: #166534;
+  font-weight: 600;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+  .development-note {
+    margin: 28px 16px;
+    padding: 20px;
+  }
+
+  .development-note h2 {
+    font-size: 1.35rem;
+  }
+
+  .development-note p {
+    font-size: 0.95rem;
+  }
+}

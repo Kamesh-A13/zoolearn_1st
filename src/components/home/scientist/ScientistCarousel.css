@@ -1,0 +1,598 @@
+/* ================================
+   SECTION
+================================ */
+.sci-scientist-section {
+  width: 100%;
+  max-width: 100%;
+  padding: 64px 24px;
+  background-color: #f5faf7;
+}
+
+.sci-scientist-section>* {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ================================
+   SECTION HEADER
+================================ */
+.sci-section-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 16px;
+}
+
+.sci-section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+}
+
+.sci-section-header p {
+  font-size: 16px;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Mobile adjustments for header */
+@media (max-width: 768px) {
+  .sci-section-header {
+    margin-bottom: 24px;
+  }
+
+  .sci-section-header h2 {
+    font-size: 24px;
+    word-wrap: break-word;
+    padding: 0 10px;
+  }
+
+  .sci-section-header p {
+    font-size: 14px;
+  }
+}
+
+/* ================================
+   SORT BAR
+================================ */
+.sci-sort-bar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto 32px auto;
+  gap: 8px;
+  position: relative;
+  padding: 0 10px;
+}
+
+.sci-sort-scroll {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding: 6px 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.sci-sort-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.sci-sort-btn {
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1px solid #cfe6d8;
+  color: #2f7d46;
+  background: #ffffff;
+  font-size: 14px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.sci-sort-btn:hover {
+  background: #e9f3ee;
+}
+
+.sci-sort-btn.sci-active {
+  background: #2f7d46;
+  color: white;
+}
+
+/* Sort Bar Nav Buttons */
+.sci-sort-nav-btn {
+  background: white;
+  border: 1px solid #cfe6d8;
+  color: #2f7d46;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  z-index: 2;
+  padding-bottom: 4px;
+}
+
+.sci-sort-nav-btn:hover {
+  background: #2f7d46;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(47, 125, 70, 0.15);
+}
+
+/* ================================
+   CAROUSEL WRAPPER
+================================ */
+.sci-carousel-shell {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================================
+   NAV BUTTONS (MAIN)
+================================ */
+.sci-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(47, 125, 70, 0.12);
+  border: none;
+  cursor: pointer;
+  color: #2f7d46;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: transform 0.2s ease;
+  padding-bottom: 4px;
+}
+
+.sci-nav-btn:hover {
+  transform: translateY(-50%) scale(1.05);
+  background: rgba(47, 125, 70, 0.2);
+}
+
+.sci-nav-btn:first-of-type {
+  left: 0;
+}
+
+.sci-nav-btn:last-of-type {
+  right: 0;
+}
+
+/* ================================
+   SNAP CAROUSEL
+================================ */
+.sci-snap-carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  padding: 1rem 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.sci-snap-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.sci-snap-card {
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  width: 360px;
+  /* Desktop Width */
+  transform: scale(0.95);
+  opacity: 0.7;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  margin: 0;
+}
+
+.sci-snap-card.sci-active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* ================================
+   FLIP CARD
+================================ */
+.sci-flip-card {
+  width: 100%;
+  height: 440px;
+  perspective: 1200px;
+  cursor: pointer;
+}
+
+.sci-flip-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media (hover: hover) {
+  .sci-snap-card:hover .sci-flip-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+.sci-flip-card.sci-is-flipped .sci-flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* ================================
+   CARD SIDES
+================================ */
+.sci-flip-front,
+.sci-flip-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 18px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+/* FRONT */
+.sci-image-box {
+  height: 240px;
+  flex-shrink: 0;
+  /* ✅ ADDED: Background color so empty space looks nice */
+  background: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sci-image-box img {
+  width: 100%;
+  height: 100%;
+  /* ✅ CHANGED: 'contain' ensures the whole photo fits inside */
+  object-fit: contain;
+}
+
+.sci-card-info {
+  padding: 16px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 0;
+}
+
+.sci-card-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 4px;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.sci-period {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.sci-badge {
+  display: inline-block;
+  font-size: 12px;
+  background: #2f7d46;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-top: 4px;
+  align-self: center;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* BACK */
+.sci-flip-back {
+  transform: rotateY(180deg);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sci-flip-back h3 {
+  color: #2f7d46;
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+}
+
+.sci-details {
+  overflow-y: auto;
+  width: 100%;
+  padding-right: 4px;
+  max-height: 280px;
+}
+
+.sci-details::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sci-details::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.sci-details::-webkit-scrollbar-thumb {
+  background: #cfe6d8;
+  border-radius: 4px;
+}
+
+.sci-details p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #334155;
+  margin: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* ================================
+   MOBILE
+================================ */
+@media (max-width: 768px) {
+  .sci-scientist-section {
+    padding: 24px 0;
+    /* Remove side padding to let cards go edge-to-edge */
+  }
+
+  .sci-sort-nav-btn {
+    display: none;
+  }
+
+  .sci-sort-bar-wrapper {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  .sci-snap-carousel {
+    gap: 12px;
+    margin: 0;
+    padding: 0 16px;
+    /* Add internal padding for scroll start */
+  }
+
+  .sci-snap-card {
+    width: calc(100vw - 40px);
+    max-width: 300px;
+    margin: 0 auto;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .sci-flip-card {
+    height: 420px;
+  }
+
+  .sci-card-info h3 {
+    font-size: 16px;
+    -webkit-line-clamp: 2;
+  }
+
+  .sci-period {
+    font-size: 13px;
+  }
+
+  .sci-flip-back {
+    padding: 16px;
+  }
+
+  .sci-flip-back h3 {
+    font-size: 16px;
+    -webkit-line-clamp: 2;
+  }
+
+  .sci-details {
+    max-height: 260px;
+  }
+
+  .sci-details p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .sci-badge {
+    font-size: 11px;
+    padding: 3px 10px;
+    max-width: 85%;
+  }
+
+  .sci-nav-btn {
+    font-size: 26px;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+/* ================================
+   SMALL MOBILE
+================================ */
+@media (max-width: 480px) {
+  .sci-scientist-section {
+    padding: 20px 6px;
+  }
+
+  .sci-sort-scroll {
+    gap: 10px;
+    padding: 4px 6px;
+  }
+
+  .sci-sort-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .sci-snap-carousel {
+    gap: 12px;
+  }
+
+  .sci-snap-card {
+    width: 280px;
+  }
+
+  .sci-flip-card {
+    height: 440px;
+  }
+
+  .sci-image-box {
+    height: 220px;
+  }
+
+  .sci-card-info {
+    padding: 14px 12px;
+  }
+
+  .sci-card-info h3 {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  .sci-period {
+    font-size: 12px;
+  }
+
+  .sci-badge {
+    font-size: 10px;
+    padding: 2px 8px;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    max-height: 2.4em;
+  }
+
+  .sci-flip-back {
+    padding: 14px 12px;
+  }
+
+  .sci-flip-back h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .sci-details {
+    max-height: 280px;
+  }
+
+  .sci-details p {
+    font-size: 13.5px;
+    line-height: 1.4;
+  }
+
+  .sci-nav-btn {
+    font-size: 22px;
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/* ================================
+   VERY SMALL MOBILE
+================================ */
+@media (max-width: 360px) {
+  .sci-snap-card {
+    width: 250px;
+  }
+
+  .sci-flip-card {
+    height: 460px;
+  }
+
+  .sci-card-info h3 {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
+
+  .sci-badge {
+    white-space: normal;
+    line-height: 1.2;
+    padding: 4px 8px;
+  }
+}
+
+/* ================================
+   LARGE SCREENS
+================================ */
+@media (min-width: 1400px) {
+  .sci-scientist-section {
+    max-width: 100%;
+    padding: 80px 40px;
+  }
+}
+
+/* ================================
+   DESKTOP HOVER EFFECTS
+================================ */
+/* We use min-width to ensure this only happens on desktop/tablets, not mobile */
+@media (min-width: 769px) {
+
+  /* 1. Lift the active card when hovering */
+  .sci-snap-card.sci-active:hover {
+    /* Scale up slightly and move up (lift) */
+    transform: scale(1.03) translateY(-10px);
+    z-index: 10;
+    /* Bring to front */
+    cursor: pointer;
+  }
+
+  /* 2. Make the shadow stronger when hovering (Glow effect) */
+  .sci-snap-card.sci-active:hover .sci-flip-front,
+  .sci-snap-card.sci-active:hover .sci-flip-back {
+    box-shadow: 0 20px 40px -5px rgba(15, 23, 42, 0.3);
+    border: 1px solid rgba(47, 125, 70, 0.3);
+    /* Subtle green border glow */
+  }
+
+  /* 3. Optional: Slight zoom on the image before/during flip */
+  .sci-snap-card.sci-active:hover .sci-image-box img {
+    transform: scale(1.1);
+    transition: transform 0.8s ease;
+  }
+}
+
+/* Ensure the transition handles the new transform properties smoothly */
+.sci-snap-card {
+  /* existing styles... */
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.4s ease;
+}

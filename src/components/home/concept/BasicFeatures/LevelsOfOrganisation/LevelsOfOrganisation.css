@@ -1,0 +1,218 @@
+/* ===============================
+   SECTION & LAYOUT
+================================ */
+.loo-section {
+  padding: 40px 0;
+  background: #ffffff;
+}
+
+.loo-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.loo-heading {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+
+/* Row for 4 cards */
+.loo-diagram-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: nowrap;
+}
+
+/* ===============================
+   HOVER CARD CONTAINER
+================================ */
+.loo-hover-card {
+  width: 260px;
+  height: 440px; /* Increased slightly to ensure everything fits */
+  perspective: 1200px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* The flipper */
+.loo-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+/* INTERACTION RULES:
+   1. Desktop: Hover flips it.
+   2. Mobile/Click: The .is-flipped class flips it.
+*/
+@media (hover: hover) {
+  .loo-hover-card:hover .loo-card-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+/* This class is added by React when you click */
+.loo-hover-card.is-flipped .loo-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* ===============================
+   FRONT & BACK FACES
+================================ */
+.loo-card-front,
+.loo-card-back {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #000;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* ===============================
+   FRONT SIDE (IMAGE)
+================================ */
+.loo-visual-header {
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  background: #fdfdfd;
+  flex-shrink: 0;
+}
+
+/* FIXED PHOTO SIZE SETTINGS */
+.loo-visual-figure {
+  height: 220px;       /* 1. FIXED HEIGHT for image area */
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-shrink: 0;      /* 2. Prevent shrinking */
+  background: #fff;
+}
+
+.loo-visual-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 3. Ensures whole image is seen without stretching */
+}
+
+.loo-visual-footer {
+  padding: 12px;
+  background: #dbeaf7;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  border-top: 2px solid #000;
+  margin-top: auto;    /* Pushes footer to the bottom */
+}
+
+/* ===============================
+   BACK SIDE (TEXT)
+================================ */
+.loo-card-back {
+  transform: rotateY(180deg);
+  padding: 24px;
+  background: #f5f9ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.loo-card-back h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #000;
+}
+
+.loo-card-back p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.loo-card-back span {
+  font-size: 13px;
+  color: #555;
+  background: #eef4fb;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* ===============================
+   ARROW
+================================ */
+.loo-arrow {
+  height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.loo-arrow svg {
+  width: 40px;
+  height: 40px;
+  color: #666;
+}
+
+/* ===============================
+   RESPONSIVE & MOBILE
+================================ */
+@media (max-width: 1100px) {
+  .loo-diagram-row {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .loo-arrow {
+    display: none;
+  }
+}
+
+/* MOBILE SCROLL CONFIGURATION */
+@media (max-width: 768px) {
+  .loo-diagram-row {
+    display: flex;
+    flex-wrap: nowrap;
+    
+    /* ALIGNMENT FIX */
+    justify-content: flex-start; 
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    
+    gap: 16px;
+    padding: 0 20px 30px; 
+  }
+
+  .loo-hover-card {
+    /* FIXED WIDTH FIX */
+    flex: 0 0 260px; 
+    scroll-snap-align: center;
+  }
+
+  .loo-diagram-row::-webkit-scrollbar {
+    display: none;
+  }
+}

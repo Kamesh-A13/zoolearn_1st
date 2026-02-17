@@ -1,0 +1,272 @@
+/* =========================================
+   ZOOLEARN FOOTER STYLES
+   Uses design tokens from design-tokens.css
+========================================= */
+
+/* ROOT STYLES */
+.foo-zl-footer {
+  font-family: var(--font-sans, 'Inter', system-ui, sans-serif);
+  /* UPDATED BACKGROUND:
+     Reduced opacity from 0.95 to 0.75/0.85 so the image shows through.
+  */
+  background:
+    linear-gradient(to right bottom, rgba(5, 20, 10, 0.75), rgba(8, 28, 36, 0.85)),
+    url("https://res.cloudinary.com/duibfmcw1/image/upload/v1766503448/footer_back_fmy0nc.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #e2e8f0;
+  overflow: hidden;
+  position: relative;
+  border-top: 4px solid #2F7433;
+}
+
+/* LAYOUT CONTAINER */
+.foo-zl-footer-inner {
+  max-width: 1280px;
+  margin: auto;
+  padding: 40px 24px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 48px;
+  /* Entrance Animation */
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* BRAND SECTION */
+.foo-zl-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.foo-zl-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.foo-zl-logo img {
+  width: 64px;
+  height: 64px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  /* Floating Animation */
+  animation: float 6s ease-in-out infinite;
+}
+
+.foo-zl-logo h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, #4ade80, #38bdf8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.foo-zl-tagline {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  /* Made slightly lighter for better contrast against lighter bg */
+  max-width: 480px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  /* Added text shadow for readability */
+}
+
+/* LINKS GRID */
+.foo-zl-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* Column Animations */
+.foo-zl-col {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.foo-zl-col:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.foo-zl-col:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.foo-zl-col:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.foo-zl-col h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin-bottom: 24px;
+  opacity: 0.9;
+  position: relative;
+  display: inline-block;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Growth Underline Animation */
+.foo-zl-col h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #4ade80;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: growLine 0.8s ease forwards;
+  animation-delay: 1s;
+}
+
+.foo-zl-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.foo-zl-col li a {
+  text-decoration: none;
+  color: #e2e8f0;
+  /* Brighter text to fight background image noise */
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.foo-zl-col li a:hover {
+  color: #4ade80;
+  transform: translateX(8px);
+}
+
+/* COPYRIGHT */
+.foo-zl-copyright {
+  background: rgba(0, 0, 0, 0.4);
+  /* Slightly darker for separation */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  text-align: center;
+}
+
+.foo-zl-copyright-content {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* KEYFRAMES */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes growLine {
+  to {
+    transform: scaleX(0.4);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .foo-zl-footer-inner {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .foo-zl-footer-inner {
+    padding: 60px 24px;
+  }
+
+  .foo-zl-links {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .foo-zl-logo h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .foo-zl-footer-inner {
+    padding: 40px 16px;
+    gap: 36px;
+  }
+
+  .foo-zl-logo h1 {
+    font-size: 1.75rem;
+  }
+
+  .foo-zl-logo p {
+    font-size: 0.85rem;
+  }
+
+  .foo-zl-links {
+    gap: 28px;
+  }
+
+  .foo-zl-col h4 {
+    font-size: 0.95rem;
+  }
+
+  .foo-zl-col li a {
+    font-size: 0.85rem;
+  }
+
+  .foo-zl-copyright-content {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .foo-zl-footer-inner {
+    padding: 30px 12px;
+  }
+
+  .foo-zl-logo h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

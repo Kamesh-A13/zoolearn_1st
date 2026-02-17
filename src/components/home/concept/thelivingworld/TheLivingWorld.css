@@ -1,0 +1,55 @@
+/* =========================================
+   THE LIVING WORLD PAGE STYLES
+   Uses design tokens from design-tokens.css
+========================================= */
+
+.living-world-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-bg-secondary, #f9fbfd);
+  font-family: var(--font-sans, 'Inter', system-ui, sans-serif);
+  padding-bottom: var(--space-10, 4rem);
+}
+
+/* --- THE BANNER FIX --- */
+.banner-wrapper {
+  margin-top: 0;
+  /* Header is sticky, no margin needed */
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+
+/* Central Content Container (For the cards below) */
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  /* Add a little top margin so the first card isn't stuck to the banner */
+  margin-top: 3rem;
+}
+
+.section-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  transition: transform 0.2s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    padding: 0 15px;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}

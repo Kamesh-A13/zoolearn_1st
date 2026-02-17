@@ -1,0 +1,78 @@
+[
+  {
+    "id": "nematoda",
+    "className": "Nematoda",
+    "species": [
+      {
+        "id": 1,
+        "slug": "ascaris",
+        "name": "Ascaris lumbricoides",
+        "scientificName": "Roundworm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982056/Ascaris_lumbricoides_izwqjh.png",
+        "path": "/zoohub/aschelminthes/ascaris"
+      },
+      {
+        "id": 2,
+        "slug": "wuchereria",
+        "name": "Wuchereria bancrofti",
+        "scientificName": "Filarial worm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982084/Wuchereria_bancrofti_azjsvd.png",
+        "path": "/zoohub/aschelminthes/wuchereria"
+      },
+      {
+        "id": 3,
+        "slug": "ancylostoma",
+        "name": "Ancylostoma duodenale",
+        "scientificName": "Hookworm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982052/Ancylostoma_duodenale_c7jhbf.png",
+        "path": "/zoohub/aschelminthes/ancylostoma"
+      },
+      {
+        "id": 4,
+        "slug": "enterobius",
+        "name": "Enterobius vermicularis",
+        "scientificName": "Pinworm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982065/Enterobius_vermicularis_htjsjz.png",
+        "path": "/zoohub/aschelminthes/enterobius"
+      },
+      {
+        "id": 5,
+        "slug": "loa-loa",
+        "name": "Loa loa",
+        "scientificName": "Eye worm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982069/Loa_loa_maj2rm.png",
+        "path": "/zoohub/aschelminthes/loa-loa"
+      }
+    ]
+  },
+  {
+    "id": "enoplea",
+    "className": "Enoplea",
+    "species": [
+      {
+        "id": 6,
+        "slug": "trichuris",
+        "name": "Trichuris trichiura",
+        "scientificName": "Whipworm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982078/Trichuris_trichiura_erm3qa.png",
+        "path": "/zoohub/aschelminthes/trichuris"
+      },
+      {
+        "id": 7,
+        "slug": "trichinella",
+        "name": "Trichinella spiralis",
+        "scientificName": "Trichina worm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982073/Trichinella_spiralis_tjazqd.png",
+        "path": "/zoohub/aschelminthes/trichinella"
+      },
+      {
+        "id": 8,
+        "slug": "dracunculus",
+        "name": "Dracunculus medinensis",
+        "scientificName": "Guinea worm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982060/Dracunculus_medinensis_eibpmm.png",
+        "path": "/zoohub/aschelminthes/dracunculus"
+      }
+    ]
+  }
+]
