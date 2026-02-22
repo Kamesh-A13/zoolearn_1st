@@ -102,22 +102,22 @@ const Phylum11 = () => {
           <div className="phyl-tree">
             <ul>
               <li>
-                <a data-level="Kingdom">{classificationMap["Kingdom"]}</a>
+                <span data-level="Kingdom">{classificationMap["Kingdom"]}</span>
                 <ul>
                   <li>
-                    <a data-level="Phylum">{classificationMap["Phylum"]}</a>
+                    <span data-level="Phylum">{classificationMap["Phylum"]}</span>
                     <ul>
                       <li>
-                        <a data-level="Class">{classificationMap["Class"]}</a>
+                        <span data-level="Class">{classificationMap["Class"]}</span>
                         <ul>
                           <li>
-                            <a data-level="Order">{classificationMap["Order"]}</a>
+                            <span data-level="Order">{classificationMap["Order"]}</span>
                             <ul>
                               <li>
-                                <a data-level="Family">{classificationMap["Family"]}</a>
+                                <span data-level="Family">{classificationMap["Family"]}</span>
                                 <ul>
                                   <li>
-                                    <a data-level="Genus">{classificationMap["Genus"]}</a>
+                                    <span data-level="Genus">{classificationMap["Genus"]}</span>
                                   </li>
                                 </ul>
                               </li>
@@ -155,12 +155,9 @@ const Phylum11 = () => {
 
       </div>
 
-    
+
     </div>
   );
 };
 
 export default Phylum11;
-
-
-

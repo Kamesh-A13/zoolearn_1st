@@ -63,7 +63,8 @@ export default function Header() {
       <header className="hea-header">
         <div className="hea-header-container">
 
-          {/* --- LOGO SECTION --- */}
+          {/* --- LEFT: LOGO + SEARCH --- */}
+          <div className="hea-left-section">
           <NavLink
             to="/"
             className="hea-logo-section"
@@ -79,13 +80,22 @@ export default function Header() {
                 className="hea-logo"
               />
             </div>
-            <div className="hea-brand-container">
-              <span className="hea-brand">ZooLearn</span>
-              <span className="hea-brand-tagline">Explore Zoology</span>
-            </div>
           </NavLink>
 
-          {/* Mobile Menu Toggle */}
+          {/* --- SEARCH BUTTON --- */}
+          <button
+            className="hea-search-btn"
+            onClick={() => setSearchOpen(true)}
+            aria-label="Search"
+            title="Search (Ctrl+K)"
+          >
+            <Search size={18} />
+            <span className="hea-search-text">Search</span>
+            <kbd className="hea-search-kbd">⌘K</kbd>
+          </button>
+          </div>
+
+          {/* --- Mobile Menu Toggle --- */}
           <button
             className={`hea-menu-toggle ${menuOpen ? "hea-active" : ""}`}
             onClick={toggleMenu}
@@ -96,7 +106,7 @@ export default function Header() {
             <span className="hea-bar hea-bar-3"></span>
           </button>
 
-          {/* Navigation */}
+          {/* --- Navigation --- */}
           <nav className={`hea-nav-links ${menuOpen ? "hea-active" : ""}`}>
             {navItems.map((item) => (
               <NavLink
@@ -121,7 +131,7 @@ export default function Header() {
                     💛 Support Us
                   </button>
 
-                  <div className={`hea-support-dropdown ${supportOpen ? 'active' : ''}`}>
+                  <div className={`hea-support-dropdown ${supportOpen ? "active" : ""}`}>
                     <div className="hea-qr-container">
                       <img
                         src="https://res.cloudinary.com/dmdo1gixv/image/upload/v1769677280/WhatsApp_Image_2026-01-29_at_14.13.13_qq2t9c.jpg"
@@ -159,7 +169,7 @@ export default function Header() {
                 💛 Support Us
               </button>
 
-              <div className={`hea-support-dropdown ${supportOpen ? 'active' : ''}`}>
+              <div className={`hea-support-dropdown ${supportOpen ? "active" : ""}`}>
                 <div className="hea-qr-container">
                   <img
                     src="https://res.cloudinary.com/dmdo1gixv/image/upload/v1769677280/WhatsApp_Image_2026-01-29_at_14.13.13_qq2t9c.jpg"
@@ -185,17 +195,6 @@ export default function Header() {
             </div>
           </div>
 
-          {/* --- SEARCH BUTTON --- */}
-          <button
-            className="hea-search-btn"
-            onClick={() => setSearchOpen(true)}
-            aria-label="Search"
-            title="Search (Ctrl+K)"
-          >
-            <Search size={18} />
-            <span className="hea-search-text">Search</span>
-            <kbd className="hea-search-kbd">⌘K</kbd>
-          </button>
         </div>
 
         {(menuOpen || supportOpen) && (

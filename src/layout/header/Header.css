@@ -72,6 +72,13 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  position: relative;
+}
+
+.hea-left-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* Body margins are now handled globally in App.css via .main-content padding */
@@ -95,8 +102,8 @@
 }
 
 .hea-logo-wrapper {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,6 +146,9 @@
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .hea-nav-links a {
@@ -319,17 +329,18 @@
 .hea-search-btn {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 14px;
-  background: white;
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  font-size: 0.9rem;
+  gap: 10px;
+  padding: 10px 20px;
+  min-width: 400px;
+  background: #f1f5f9;
+  border: 1.5px solid rgba(42, 107, 110, 0.2);
+  border-radius: 12px;
+  font-size: 1rem;
   font-weight: 500;
   color: #64748b;
   cursor: pointer;
   transition: all 0.2s ease;
-  margin-left: 12px;
+  margin-left: 0;
 }
 
 .hea-search-btn:hover {
@@ -481,6 +492,8 @@
     position: fixed;
     top: 0;
     right: -100%;
+    left: auto;
+    transform: none;
     width: 280px;
     height: 100vh;
     background: var(--hea-bg);

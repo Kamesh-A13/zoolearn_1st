@@ -57,11 +57,11 @@
     "species": [
       {
         "id": 6,
-        "slug": "branchiostoma",
+        "slug": "branchiostoma_lanceolatum",
         "name": "Branchiostoma lanceolatum",
         "scientificName": "Lancelet / Amphioxus",
         "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767895339/Branchiostoma_lanceolatum_lnmage.png",
-        "path": "/zoohub/chordata/branchiostoma"
+        "path": "/zoohub/chordata/branchiostoma_lanceolatum"
       }
     ]
   },

@@ -21,6 +21,7 @@ const ZoologyImmersive = lazy(() => import('./components/showcase/ZoologyImmersi
 const Leech = lazy(() => import('./components/home/Organisms/leech/LeechLayout'));
 const Rabbit = lazy(() => import('./components/home/Organisms/rabbit/Rabbit'));
 const HoneyBee = lazy(() => import('./components/home/Organisms/honeybee/HoneyBee'));
+const Cockroach = lazy(() => import('./components/home/Organisms/cockroach/Cockroachcontent'));
 const CareerPath = lazy(() => import('./components/career path/CareerPath'));
 const CareerCategory = lazy(() => import('./components/career path/CareerCategory'));
 
@@ -69,6 +70,7 @@ function App() {
               <Route path="/leech" element={<Leech />} />
               <Route path="/rabbit" element={<Rabbit />} />
               <Route path="/honeybee" element={<HoneyBee />} />
+              <Route path="/cockroach" element={<Cockroach />} />
               <Route path="/career-path" element={<CareerPath />} />
               <Route path="/career-path/:categoryId" element={<CareerCategory />} />
 

@@ -8,7 +8,7 @@ const Chordata = () => {
     <div className="chor-container">
       <header>
         <h1>Phylum Chordata</h1>
-        <p className="chor-subtitle">Exploring the Ancient Sponges</p>
+        <p className="chor-subtitle">Exploring Animals with a Backbone</p>
       </header>
 
       {ChordataData.map((category) => (

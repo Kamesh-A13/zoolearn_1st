@@ -14,6 +14,7 @@ import Arthropoda from "./arthropoda/Arthropoda";
 import Mollusca from "./mollusca/Mollusca";
 import Echinodermata from "./echinodermata/Echinodermata";
 import Hemichordata from "./hemichordata/Hemichordata";
+import Chordata from "./chordata/Chordata";
 
 // Shared components
 import { ScrollReveal } from "../shared/ScrollReveal";
@@ -401,6 +402,12 @@ function ZooHub() {
       <ScrollReveal animation="fade-up" duration={600}>
         <section ref={refs.hemichordata}>
           <Hemichordata />
+        </section>
+      </ScrollReveal>
+
+      <ScrollReveal animation="fade-up" duration={600}>
+        <section ref={refs.chordata}>
+          <Chordata />
         </section>
       </ScrollReveal>
 

@@ -1,5 +1,6 @@
 /* GenusSycon.phyl-css - Enhanced with proper alignment & classification */
 
+/* ============ SCOPED VARIABLES ============ */
 .phyl-genus-sycon-container {
   --phyl-green: #0a8f4d;
   --phyl-card: #ffffff;
@@ -50,13 +51,14 @@
 .phyl-hero-text h1 i {
   font-style: italic;
   color: var(--phyl-accent-yellow);
-  font-size:2rem;
+  font-size: 2rem;
 }
 
 .phyl-hero-text p {
   font-size: 1.1rem;
   line-height: 1.7;
   max-width: 600px;
+  color: var(--accent-yellow);
 }
 
 .phyl-hero-text b {
@@ -67,7 +69,7 @@
 .phyl-hero-image {
   flex: 1;
   min-width: 300px;
-  height:250px;
+  height: 250px;
   display: flex;
   justify-content: center;
 }
@@ -76,7 +78,8 @@
   width: 100%;
   max-width: 380px;
   border-radius: 20px;
-  object-fit: cover;
+
+  object-fit: contain;
 }
 
 /* ============ CONTENT SECTION ============ */
@@ -139,7 +142,6 @@
   height: 400px;
   border-radius: 16px;
   overflow: hidden;
-  
 }
 
 .phyl-sketchfab-embed-wrapper iframe {
@@ -180,7 +182,8 @@
   display: inline-block;
 }
 
-.phyl-tree li::before, .phyl-tree li::after {
+.phyl-tree li::before,
+.phyl-tree li::after {
   content: '';
   position: absolute;
   top: 0;
@@ -196,7 +199,8 @@
   border-left: 2px solid var(--phyl-green);
 }
 
-.phyl-tree li:only-child::after, .phyl-tree li:only-child::before {
+.phyl-tree li:only-child::after,
+.phyl-tree li:only-child::before {
   display: none;
 }
 
@@ -204,7 +208,8 @@
   padding-top: 0;
 }
 
-.phyl-tree li:first-child::before, .phyl-tree li:last-child::after {
+.phyl-tree li:first-child::before,
+.phyl-tree li:last-child::after {
   border: 0 none;
 }
 
@@ -227,7 +232,7 @@
   height: 20px;
 }
 
-.phyl-tree a {
+.phyl-tree span {
   border: 2px solid var(--phyl-green);
   padding: 10px 20px;
   text-decoration: none;
@@ -243,22 +248,22 @@
   box-shadow: 0 4px 6px rgba(10, 143, 77, 0.1);
 }
 
-.phyl-tree a:hover {
+.phyl-tree span:hover {
   background: var(--phyl-green);
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(10, 143, 77, 0.2);
 }
 
-.phyl-tree li a:hover + ul li a,
-.phyl-tree li a:hover + ul li::after,
-.phyl-tree li a:hover + ul li::before,
-.phyl-tree li a:hover + ul::before {
+.phyl-tree li span:hover+ul li span,
+.phyl-tree li span:hover+ul li::after,
+.phyl-tree li span:hover+ul li::before,
+.phyl-tree li span:hover+ul::before {
   border-color: var(--phyl-green);
 }
 
 /* Tree level indicators */
-.phyl-tree a::after {
+.phyl-tree span::after {
   content: attr(data-level);
   display: block;
   font-size: 11px;
@@ -269,7 +274,7 @@
 
 /* ============ FOOTER ============ */
 /* footer {
-  background: var(--phyl-dark-green);
+  background: var(--dark-green);
   color: #c9f5df;
   text-align: center;
   padding: 20px;
@@ -283,13 +288,14 @@
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  
+
   .phyl-sketchfab-embed-wrapper {
     height: 350px;
     order: 2;
   }
-  
-  .phyl-hero-content, .phyl-content-section {
+
+  .phyl-hero-content,
+  .phyl-content-section {
     padding: 40px 5%;
   }
 }
@@ -299,47 +305,47 @@
     padding: 30px 5%;
     border-radius: 0 0 20px 20px;
   }
-  
+
   .phyl-hero-content {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .phyl-hero-text {
     text-align: center;
   }
-  
+
   .phyl-hero-text h1 {
     font-size: 2.2rem;
   }
-  
+
   .phyl-hero-image img {
     max-width: 100%;
   }
-  
+
   .phyl-card {
     padding: 20px;
     margin-bottom: 25px;
   }
-  
+
   .phyl-card h2 {
     font-size: 1.5rem;
   }
-  
+
   .phyl-tree {
     padding: 15px;
   }
-  
-  .phyl-tree a {
+
+  .phyl-tree span {
     padding: 8px 15px;
     min-width: 100px;
     font-size: 13px;
   }
-  
+
   .phyl-tree ul {
     padding-left: 10px;
   }
-  
+
   .phyl-tree li {
     padding: 15px 10px 0 10px;
   }
@@ -349,16 +355,16 @@
   .phyl-hero-text h1 {
     font-size: 1.8rem;
   }
-  
+
   .phyl-content-section {
     padding: 30px 20px;
   }
-  
+
   .phyl-tree-container {
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
   }
-  
+
   .phyl-tree ul {
     min-width: 500px;
   }
@@ -368,20 +374,20 @@
   .phyl-hero {
     padding: 25px 15px;
   }
-  
+
   .phyl-hero-text h1 {
     font-size: 1.6rem;
   }
-  
+
   .phyl-hero-text p {
     font-size: 1rem;
   }
-  
+
   .phyl-card h2 {
     font-size: 1.3rem;
   }
-  
-  .phyl-tree a {
+
+  .phyl-tree span {
     padding: 6px 10px;
     min-width: 80px;
     font-size: 12px;

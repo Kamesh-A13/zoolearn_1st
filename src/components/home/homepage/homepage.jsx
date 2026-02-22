@@ -13,6 +13,8 @@ const Homepage = () => {
       navigate("/rabbit");
     } else if (org.id === "honeybee") {
       navigate("/honeybee");
+    } else if (org.id === "cockroach") {
+      navigate("/cockroach");
     } else {
       // Dummy command/location for all other organisms
       console.log(`Navigating to dummy location for ${org.name}`);
