@@ -110,12 +110,9 @@
 
 .chor-species-card {
   border-radius: var(--chor-radius-md);
-  overflow: hidden;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  background: var(--chor-card-bg);
-  border: 1px solid var(--chor-border);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -129,8 +126,6 @@
   height: 180px;
   object-fit: contain;
   display: block;
-  padding: 8px;
-  box-sizing: border-box;
   transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
   user-select: none;
   -webkit-user-drag: none;
@@ -144,7 +139,7 @@
 }
 
 .chor-species-info {
-  padding: var(--chor-space-sm) var(--chor-space-md);
+  padding: var(--chor-space-md);
   text-align: center;
   flex-grow: 1;
   display: flex;
@@ -152,8 +147,6 @@
   justify-content: center;
   user-select: text;
   cursor: text;
-  border-top: 1px solid var(--chor-border);
-  background: linear-gradient(to bottom, #fafafa, #fff);
 }
 
 .chor-species-name {
