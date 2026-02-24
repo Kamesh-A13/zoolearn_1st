@@ -6,8 +6,8 @@ function ChordataHub() {
   return (
     <Router>
       <Routes>
-        <Route path="/zoohub/Chordata" element={<Chordata />} />
-        <Route path="/zoohub/Chordata/:slug" element={<Phylum11 />} />
+        <Route path="/zoohub/chordata" element={<Chordata />} />
+        <Route path="/zoohub/chordata/:slug" element={<Phylum11 />} />
       </Routes>
     </Router>
   );

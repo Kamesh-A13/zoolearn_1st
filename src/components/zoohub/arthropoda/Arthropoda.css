@@ -148,12 +148,13 @@
   color: var(--color-text-primary);
   word-break: break-word;
   user-select: text;
+  font-style: italic;
 }
 
 .arth-species-name-scientific {
   font-size: 13px;
   color: var(--color-text-secondary);
-  font-style: italic;
+  font-style: normal;
   margin-top: 4px;
   user-select: text;
 }

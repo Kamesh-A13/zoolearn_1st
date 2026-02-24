@@ -39,6 +39,7 @@ const AnnelidaPhylum6 = lazy(() => import('./components/zoohub/annelida/Phylum6'
 const ArthropodaPhylum7 = lazy(() => import('./components/zoohub/arthropoda/Phylum7'));
 const EchinodermataPhylum9 = lazy(() => import('./components/zoohub/echinodermata/Phylum9'));
 const HemichordataPhylum10 = lazy(() => import('./components/zoohub/hemichordata/Phylum10'));
+const ChordataPhylum11 = lazy(() => import('./components/zoohub/chordata/Phylum11'));
 const Mollusca = lazy(() => import('./components/zoohub/mollusca/Mollusca'));
 const Chordata = lazy(() => import('./components/zoohub/chordata/Chordata'));
 
@@ -104,7 +105,7 @@ function App() {
               <Route path="/zoohub/mollusca/:slug" element={<Mollusca />} />
               <Route path="/zoohub/echinodermata/:slug" element={<EchinodermataPhylum9 />} />
               <Route path="/zoohub/hemichordata/:slug" element={<HemichordataPhylum10 />} />
-              <Route path="/zoohub/chordata/:slug" element={<Chordata />} />
+              <Route path="/zoohub/chordata/:slug" element={<ChordataPhylum11 />} />
 
               {/* ============ FALLBACK ============ */}
               <Route path="*" element={<UnderDevelopment />} />

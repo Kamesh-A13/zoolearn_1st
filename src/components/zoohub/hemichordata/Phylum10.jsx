@@ -26,8 +26,9 @@ const Phylum10 = () => {
         <div className="phyl-hero-content">
           <div className="phyl-hero-text">
             <h1>
-              {species.name} <br />
-              <i>{species.scientificName}</i>
+              <span className="phyl-scientific-name">{species.scientificName}</span>
+              <br />
+              <span className="phyl-common-name">{species.name}</span>
             </h1>
             <p>{species.description}</p>
           </div>

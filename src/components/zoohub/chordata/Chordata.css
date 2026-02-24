@@ -1,19 +1,19 @@
 :root {
-  --chor-bg-primary: #f8f7f4;
-  --chor-text-primary: #1a1a1a;
-  --chor-text-secondary: #666666;
-  --chor-border: #e0dcd8;
-  --chor-card-bg: #ffffff;
-  --chor-accent: #2d8b8f;
-  --chor-accent-light: #e8f4f5;
-  --chor-space-sm: 12px;
-  --chor-space-md: 16px;
-  --chor-space-lg: 24px;
-  --chor-space-xl: 32px;
-  --chor-radius-sm: 8px;
-  --chor-radius-md: 12px;
-  --chor-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-  --chor-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --color-bg-primary: #f8f7f4;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-border: #e0dcd8;
+  --color-card-bg: #ffffff;
+  --color-accent: #2d8b8f;
+  --color-accent-light: #e8f4f5;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* ════════════════════════════════════════════════════════════
@@ -22,38 +22,38 @@
 .chor-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--chor-space-lg);
+  padding: var(--space-lg);
   box-sizing: border-box;
   width: 100%;
 }
 
 .chor-container header {
   text-align: center;
-  margin-bottom: var(--chor-space-xl);
-  padding-bottom: var(--chor-space-lg);
-  border-bottom: 2px solid var(--chor-border);
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: 2px solid var(--color-border);
 }
 
 .chor-container header h1 {
   color: rgb(6, 123, 6);
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 700;
   letter-spacing: -0.5px;
-  margin-bottom: var(--chor-space-md);
+  margin-bottom: var(--space-md);
 }
 
 .chor-logo {
   font-size: 14px;
   font-weight: 600;
-  color: var(--chor-accent);
+  color: var(--color-accent);
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-bottom: var(--chor-space-md);
+  margin-bottom: var(--space-md);
 }
 
 .chor-subtitle {
   font-size: 16px;
-  color: var(--chor-text-secondary);
+  color: var(--color-text-secondary);
   font-style: italic;
 }
 
@@ -61,28 +61,28 @@
    CLASS SECTIONS
    ════════════════════════════════════════════════════════════ */
 .chor-class-section {
-  margin-bottom: var(--chor-space-xl);
+  margin-bottom: var(--space-xl);
 }
 
 .chor-class-heading {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
-  color: var(--chor-text-primary);
-  margin-bottom: var(--chor-space-lg);
-  padding-bottom: var(--chor-space-md);
-  border-bottom: 1px solid var(--chor-border);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
   display: flex;
   align-items: center;
-  gap: var(--chor-space-md);
+  gap: var(--space-md);
   flex-wrap: wrap;
 }
 
 .chor-class-badge {
   display: inline-block;
-  background-color: var(--chor-accent-light);
-  color: var(--chor-accent);
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
   padding: 4px 12px;
-  border-radius: var(--chor-radius-sm);
+  border-radius: var(--radius-sm);
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -93,8 +93,8 @@
 .chor-bord {
   width: 10px;
   height: 20px;
-  background-color: var(--chor-accent);
-  border-radius: var(--chor-radius-sm);
+  background-color: var(--color-accent);
+  border-radius: var(--radius-sm);
   flex-shrink: 0;
 }
 
@@ -103,27 +103,21 @@
    ════════════════════════════════════════════════════════════ */
 .chor-species-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: var(--chor-space-lg);
-  margin-bottom: var(--chor-space-xl);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
 }
 
 .chor-species-card {
-  border-radius: var(--chor-radius-md);
+  border-radius: var(--radius-md);
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.chor-species-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--chor-shadow-md);
 }
 
 .chor-species-image {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: contain;
   display: block;
   transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
@@ -134,12 +128,12 @@
 }
 
 .chor-species-card:hover .chor-species-image {
-  transform: scale(1.1);
-  filter: drop-shadow(0 8px 12px rgba(45, 139, 143, 0.25));
+  transform: scale(1.15);
+  filter: drop-shadow(0 10px 15px rgba(45, 139, 143, 0.3));
 }
 
 .chor-species-info {
-  padding: var(--chor-space-md);
+  padding: var(--space-md);
   text-align: center;
   flex-grow: 1;
   display: flex;
@@ -150,18 +144,19 @@
 }
 
 .chor-species-name {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
-  color: var(--chor-text-primary);
+  color: var(--color-text-primary);
   word-break: break-word;
   user-select: text;
   line-height: 1.3;
+  font-style: italic;
 }
 
 .chor-species-name-scientific {
-  font-size: 12px;
-  color: var(--chor-text-secondary);
-  font-style: italic;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  font-style: normal;
   margin-top: 4px;
   user-select: text;
 }
@@ -171,25 +166,24 @@
    ════════════════════════════════════════════════════════════ */
 @media (max-width: 768px) {
   .chor-container {
-    padding: var(--chor-space-md);
+    padding: var(--space-md);
   }
 
   .chor-container header h1 {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .chor-class-heading {
-    font-size: 18px;
+    font-size: 20px;
     gap: 8px;
   }
 
   .chor-species-grid {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: var(--chor-space-md);
+    gap: var(--space-md);
   }
 
   .chor-species-image {
-    height: 150px;
+    height: 180px;
   }
 }
 
@@ -202,49 +196,49 @@
   }
 
   .chor-container header {
-    margin-bottom: var(--chor-space-md);
-    padding-bottom: var(--chor-space-md);
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-md);
   }
 
   .chor-container header h1 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .chor-subtitle {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .chor-class-heading {
-    font-size: 16px;
-    margin-bottom: var(--chor-space-sm);
+    font-size: 18px;
+    margin-bottom: var(--space-md);
     gap: 6px;
   }
 
   .chor-class-badge {
-    font-size: 10px;
+    font-size: 12px;
     padding: 3px 8px;
   }
 
   .chor-species-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: var(--space-sm);
   }
 
   .chor-species-image {
-    height: 110px;
+    height: 140px;
     padding: 6px;
   }
 
   .chor-species-info {
-    padding: 8px 6px;
+    padding: var(--space-sm);
   }
 
   .chor-species-name {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .chor-species-name-scientific {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .chor-species-card:hover {
@@ -262,23 +256,18 @@
    ════════════════════════════════════════════════════════════ */
 @media (max-width: 360px) {
   .chor-container header h1 {
-    font-size: 20px;
-  }
-
-  .chor-species-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
+    font-size: 24px;
   }
 
   .chor-species-image {
-    height: 90px;
+    height: 120px;
   }
 
   .chor-species-name {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .chor-species-name-scientific {
-    font-size: 9px;
+    font-size: 10px;
   }
 }

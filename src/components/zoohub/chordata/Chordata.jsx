@@ -32,8 +32,6 @@ const Chordata = () => {
                   src={animal.image}
                   alt={animal.name}
                   className="chor-species-image"
-                  loading="lazy"
-                  onError={(e) => { e.target.style.display = 'none'; }}
                 />
 
                 <div className="chor-species-info">
