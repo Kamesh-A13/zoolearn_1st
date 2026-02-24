@@ -94,7 +94,7 @@ function FlowContent() {
 
     node.children.forEach((child, index) => {
       const offset =
-        (index - (node.children.length - 1) / 2) * spacingX;
+        (index - (node.children!.length - 1) / 2) * spacingX;
 
       buildTree(child, x + offset, y + spacingY, node.id);
     });
@@ -121,11 +121,15 @@ function FlowContent() {
         nodes={nodes}
         edges={edges}
         nodeTypes={nodeTypes}
+        defaultEdgeOptions={{
+          style: { stroke: "#90caf9", strokeWidth: 2 },
+          animated: true,
+        }}
         fitView
         minZoom={0.3}
-        proOptions={{ hideAttribution: true }} // Removes the "React Flow" watermark
+        proOptions={{ hideAttribution: true }}
       >
-        <Background />
+        <Background color="#333" />
 
         {/* Control Buttons Panel */}
         <Panel

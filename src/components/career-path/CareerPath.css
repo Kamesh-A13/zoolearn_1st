@@ -433,30 +433,8 @@
     }
 }
 
-@media (max-width: 1024px) {
-    .modal-content.shifted {
-        transform: none;
-    }
 
-    .course-panel {
-        width: 100%;
-        max-width: 400px;
-    }
-}
-
-@media (max-width: 768px) {
-    .career-path-header h1 {
-        font-size: 2rem;
-    }
-
-    .modal-content {
-        padding: 25px;
-    }
-
-    .category-grid {
-        grid-template-columns: 1fr;
-    }
-}
+/* Duplicate @media blocks removed — rules merged into blocks above */
 
 /* =========================================
    SMALL MOBILE BREAKPOINT (480px)

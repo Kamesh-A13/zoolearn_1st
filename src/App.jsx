@@ -71,6 +71,7 @@ function App() {
               <Route path="/rabbit" element={<Rabbit />} />
               <Route path="/honeybee" element={<HoneyBee />} />
               <Route path="/cockroach" element={<Cockroach />} />
+              <Route path="/evolution" element={<UnderDevelopment />} />
               <Route path="/career-path" element={<CareerPath />} />
               <Route path="/career-path/:categoryId" element={<CareerCategory />} />
 

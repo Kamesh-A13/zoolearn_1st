@@ -4,7 +4,6 @@ import ReactFlow, { Background, Controls } from 'reactflow';
 import 'reactflow/dist/style.css';
 
 const CareerModal = ({ career, category, onClose, onCourseClick, isPanelActive }) => {
-    if (!career) return null;
 
     // Generate nodes and edges for ReactFlow
     const { nodes, edges } = useMemo(() => {
@@ -19,10 +18,8 @@ const CareerModal = ({ career, category, onClose, onCourseClick, isPanelActive }
                 const id = `${type}-${index}`;
                 nodes.push({
                     id,
-                    data: { label: course },
                     position: { x: (index - (levelCourses.length - 1) / 2) * xOffset + 400, y: startY },
                     className: `course-node ${type}`,
-                    // Add data for click handler
                     data: { label: course, onClick: () => onCourseClick(course) }
                 });
             });
@@ -47,7 +44,10 @@ const CareerModal = ({ career, category, onClose, onCourseClick, isPanelActive }
         });
 
         return { nodes, edges };
-    }, [career]);
+    }, [career, onCourseClick]);
+
+    // Early return AFTER hooks to satisfy Rules of Hooks
+    if (!career) return null;
 
     const onNodeClick = (event, node) => {
         if (node.data && node.data.onClick) {

@@ -5,20 +5,9 @@ import "./homepage.css";
 const Homepage = () => {
   const navigate = useNavigate();
 
-  // Navigation Logic
   const handleOrganismClick = (org) => {
-    if (org.id === "leech") {
-      navigate("/leech");
-    } else if (org.id === "rabbit") {
-      navigate("/rabbit");
-    } else if (org.id === "honeybee") {
-      navigate("/honeybee");
-    } else if (org.id === "cockroach") {
-      navigate("/cockroach");
-    } else {
-      // Dummy command/location for all other organisms
-      console.log(`Navigating to dummy location for ${org.name}`);
-      alert(`The ${org.name} module is currently under development.`);
+    if (org.route) {
+      navigate(org.route);
     }
   };
 
@@ -75,6 +64,7 @@ const Homepage = () => {
       classification: "Phylum: Annelida",
       image: "https://res.cloudinary.com/duibfmcw1/image/upload/v1766035779/004-leech-therapy_puotxa.png",
       hours: 9,
+      route: "/leech",
     },
     {
       id: "rabbit",
@@ -83,6 +73,7 @@ const Homepage = () => {
       classification: "Class: Mammalia",
       image: "https://res.cloudinary.com/duibfmcw1/image/upload/v1766035803/006-rabbit_apbtkw.png",
       hours: 15,
+      route: "/rabbit",
     },
     /* {
       id: "earthworm",
@@ -99,6 +90,7 @@ const Homepage = () => {
       classification: "Phylum: Arthropoda",
       image: "https://res.cloudinary.com/duibfmcw1/image/upload/v1766035805/007-cockroach_zzavof.png",
       hours: 10,
+      route: "/cockroach",
     },
     /* {
        id: "frog",
@@ -115,6 +107,7 @@ const Homepage = () => {
       classification: "Class: Insecta",
       image: "https://res.cloudinary.com/duibfmcw1/image/upload/v1767780954/007-holidays_tgjy05.png",
       hours: 9,
+      route: "/honeybee",
     },
     {
       id: "human",
@@ -123,6 +116,7 @@ const Homepage = () => {
       classification: "Class: Mammalia",
       image: "https://res.cloudinary.com/duibfmcw1/image/upload/v1766035808/008-evolution_o5byjy.png",
       hours: 25,
+      route: "/evolution",
     },
     /* {
        id: "horse",

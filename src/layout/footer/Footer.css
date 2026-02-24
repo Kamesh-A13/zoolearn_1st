@@ -265,7 +265,9 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
+
+  .foo-zl-footer,
+  .foo-zl-footer * {
     animation: none !important;
     transition: none !important;
   }

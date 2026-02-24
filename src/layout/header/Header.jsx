@@ -19,6 +19,9 @@ export default function Header() {
       if (menuOpen && !e.target.closest(".hea-nav-links") && !e.target.closest(".hea-menu-toggle")) {
         setMenuOpen(false);
       }
+      if (supportOpen && !e.target.closest(".hea-support-wrapper")) {
+        setSupportOpen(false);
+      }
     };
 
     // Keyboard shortcut: Ctrl+K or Cmd+K to open search
@@ -38,7 +41,7 @@ export default function Header() {
       document.removeEventListener("click", handleClickOutside);
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [menuOpen]);
+  }, [menuOpen, supportOpen]);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -65,34 +68,34 @@ export default function Header() {
 
           {/* --- LEFT: LOGO + SEARCH --- */}
           <div className="hea-left-section">
-          <NavLink
-            to="/"
-            className="hea-logo-section"
-            onClick={() => {
-              closeMenu();
-              window.scrollTo(0, 0);
-            }}
-          >
-            <div className="hea-logo-wrapper">
-              <img
-                src="https://res.cloudinary.com/duibfmcw1/image/upload/v1765947727/logopng_2_webaac.png"
-                alt="ZooLearn Logo"
-                className="hea-logo"
-              />
-            </div>
-          </NavLink>
+            <NavLink
+              to="/"
+              className="hea-logo-section"
+              onClick={() => {
+                closeMenu();
+                window.scrollTo(0, 0);
+              }}
+            >
+              <div className="hea-logo-wrapper">
+                <img
+                  src="https://res.cloudinary.com/duibfmcw1/image/upload/v1765947727/logopng_2_webaac.png"
+                  alt="ZooLearn Logo"
+                  className="hea-logo"
+                />
+              </div>
+            </NavLink>
 
-          {/* --- SEARCH BUTTON --- */}
-          <button
-            className="hea-search-btn"
-            onClick={() => setSearchOpen(true)}
-            aria-label="Search"
-            title="Search (Ctrl+K)"
-          >
-            <Search size={18} />
-            <span className="hea-search-text">Search</span>
-            <kbd className="hea-search-kbd">⌘K</kbd>
-          </button>
+            {/* --- SEARCH BUTTON --- */}
+            <button
+              className="hea-search-btn"
+              onClick={() => setSearchOpen(true)}
+              aria-label="Search"
+              title="Search (Ctrl+K)"
+            >
+              <Search size={18} />
+              <span className="hea-search-text">Search</span>
+              <kbd className="hea-search-kbd">⌘K</kbd>
+            </button>
           </div>
 
           {/* --- Mobile Menu Toggle --- */}

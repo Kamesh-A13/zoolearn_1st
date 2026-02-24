@@ -9,3 +9,4 @@ export { default as Breadcrumbs } from './Breadcrumbs';
 export { default as OptimizedImage } from './OptimizedImage';
 export { default as UnderDevelopment } from './UnderDevelopment';
 export { default as ScrollToTop } from './ScrollToTop';
+export { default as CountUp } from './CountUp';
