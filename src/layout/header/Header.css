@@ -28,8 +28,8 @@
 
   /* Fixed positioning */
   position: fixed;
-  /* top: 0;
-  left: 0; */
+  top: 0;
+  left: 0;
 
   /* ANIMATION & TRANSITION */
   transition: transform 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
@@ -38,8 +38,12 @@
 /* =========================================
    SCROLL BEHAVIORS
 ========================================= */
-.hea-header.hea-hidden {
-  transform: translateY(-100%);
+
+/* Mobile ONLY scroll hide behavior */
+@media (max-width: 768px) {
+  .hea-header.hea-hidden-mobile {
+    transform: translateY(-100%);
+  }
 }
 
 .hea-header.hea-scrolled {
@@ -188,9 +192,6 @@
   border-radius: 2px;
 }
 
-/* =========================================
-   LOGIN BUTTON - TEAL OUTLINE
-========================================= */
 /* =========================================
    SUPPORT DROPDOWN - TEAL THEME
 ========================================= */
@@ -469,8 +470,6 @@
 }
 
 @media (max-width: 992px) {
-  /* .hea-header height handled by var */
-
   .hea-brand {
     font-size: 1.35rem;
   }
@@ -487,8 +486,6 @@
 }
 
 @media (max-width: 768px) {
-  /* .hea-header height handled by var */
-
   .hea-header-container {
     padding: 0 1rem;
   }
@@ -596,8 +593,6 @@
 }
 
 @media (max-width: 576px) {
-  /* .hea-header height handled by var */
-
   .hea-nav-links {
     width: 100%;
     padding: 4rem 1rem 1rem;
@@ -615,10 +610,6 @@
   .hea-brand {
     font-size: 1.15rem;
   }
-  /* .hea-header{
-    position: relative;
-    
-  } */
 }
 
 @media (max-width: 480px) {
@@ -649,5 +640,20 @@
   .hea-nav-links {
     top: var(--header-height);
     height: calc(100vh - var(--header-height));
+  }
+  
+  /* NEW: Adjust menu position when header is scrolled/shrunk */
+  .hea-header.hea-scrolled .hea-nav-links {
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
+}
+/* Fix green underline alignment in mobile sidebar navigation */
+@media (max-width: 768px) {
+  .hea-nav-links a.hea-active::after {
+    bottom: 8px; /* Move underline inside mobile menu item */
+    left: 1.25rem;
+    transform: none;
+    width: 28px;
   }
 }
