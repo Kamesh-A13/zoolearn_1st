@@ -54,7 +54,7 @@ const Phylum1 = () => {
           </ul>
         </div>
 
-        {/* General Features (LABEL BEFORE : IN BOLD) */}
+        {/* General Features */}
         <div className="phyl-card">
           <h2>General Features</h2>
           <ul>
@@ -71,7 +71,7 @@ const Phylum1 = () => {
           </ul>
         </div>
 
-        {/* Size & Structure (WITH 3D MODEL INSIDE) */}
+        {/* Size & Structure */}
         <div className="phyl-card">
           <h2>Size & Structure</h2>
 
@@ -96,41 +96,16 @@ const Phylum1 = () => {
           </div>
         </div>
 
-        {/* Classification */}
+        {/* ✅ NEW CLEAN CLASSIFICATION STRUCTURE */}
         <div className="phyl-card phyl-tree-container">
           <h2>Classification</h2>
 
           <div className="phyl-tree">
-            <ul>
-              <li>
-                <span data-level="Kingdom">{classificationMap["Kingdom"]}</span>
-                <ul>
-                  <li>
-                    <span data-level="Phylum">{classificationMap["Phylum"]}</span>
-                    <ul>
-                      <li>
-                        <span data-level="Class">{classificationMap["Class"]}</span>
-                        <ul>
-                          <li>
-                            <span data-level="Order">{classificationMap["Order"]}</span>
-                            <ul>
-                              <li>
-                                <span data-level="Family">{classificationMap["Family"]}</span>
-                                <ul>
-                                  <li>
-                                    <span data-level="Genus">{classificationMap["Genus"]}</span>
-                                  </li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            {Object.entries(classificationMap).map(([level, value], index) => (
+              <div key={index} className="phyl-tree-item">
+                <span data-level={level}>{value}</span>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -155,8 +130,6 @@ const Phylum1 = () => {
         </div>
 
       </div>
-
-
     </div>
   );
 };

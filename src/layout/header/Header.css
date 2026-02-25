@@ -28,8 +28,8 @@
 
   /* Fixed positioning */
   position: fixed;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
 
   /* ANIMATION & TRANSITION */
   transition: transform 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
@@ -615,6 +615,10 @@
   .hea-brand {
     font-size: 1.15rem;
   }
+  /* .hea-header{
+    position: relative;
+    
+  } */
 }
 
 @media (max-width: 480px) {

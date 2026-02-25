@@ -82,6 +82,7 @@ export default function Header() {
                   alt="ZooLearn Logo"
                   className="hea-logo"
                 />
+                
               </div>
             </NavLink>
 
