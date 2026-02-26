@@ -4,7 +4,6 @@ function Tree() {
 
   return (
     <>
-
       <AnimaliaFlow />
     </>
   )
