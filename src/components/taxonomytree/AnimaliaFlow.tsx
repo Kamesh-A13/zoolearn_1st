@@ -1,23 +1,20 @@
-import { useState, useCallback } from "react";
-import {
-  ReactFlow,
+import { useState, useCallback, useMemo, useEffect } from "react";
+import ReactFlow, {
   Background,
   Node,
   Edge,
   ReactFlowProvider,
   useReactFlow,
   Panel,
-} from "@xyflow/react";
-import "@xyflow/react/dist/style.css";
+} from "reactflow";
+import "reactflow/dist/style.css";
 import { useNavigate } from "react-router-dom";
 
 import CustomNode from "./CustomNode";
 import { animaliaTree } from "./data/animaliaData";
 
 /**
- * IMPORTANT:
- * nodeTypes MUST be outside the component
- * to avoid React Flow warning #002
+ * nodeTypes MUST be outside to avoid re-renders
  */
 const nodeTypes = {
   custom: CustomNode,
@@ -29,7 +26,6 @@ type TreeNode = {
   children?: TreeNode[];
 };
 
-// Internal component to access React Flow instance
 function FlowContent() {
   const navigate = useNavigate();
   const { fitView } = useReactFlow();
@@ -37,16 +33,12 @@ function FlowContent() {
   const [openNodes, setOpenNodes] = useState<Record<string, string>>({});
   const [activeNode, setActiveNode] = useState<string | null>(null);
 
-  const nodes: Node[] = [];
-  const edges: Edge[] = [];
-
   const spacingX = window.innerWidth < 768 ? 160 : 240;
   const spacingY = 120;
 
   const handleNodeClick = (parentId: string, node: TreeNode) => {
     setActiveNode(node.id);
 
-    // ✅ LEAF NODE → SPA NAVIGATION
     if (!node.children || node.children.length === 0) {
       navigate(`/animal/${node.id}`);
       return;
@@ -58,162 +50,106 @@ function FlowContent() {
     }));
   };
 
-  const buildTree = (
-    node: TreeNode,
-    x: number,
-    y: number,
-    parent?: string
-  ) => {
-    const isLeaf = !node.children || node.children.length === 0;
+  // Generate stable nodes and edges arrays
+  const { nodes, edges } = useMemo(() => {
+    const nodesList: Node[] = [];
+    const edgesList: Edge[] = [];
 
-    nodes.push({
-      id: node.id,
-      type: "custom",
-      position: { x, y },
-      data: {
-        label: node.label,
-        isLeaf,
-        isActive: activeNode === node.id,
-        onClick: () => handleNodeClick(parent ?? "root", node),
-      },
-    });
+    const buildTreeRecursive = (
+      node: TreeNode,
+      x: number,
+      y: number,
+      parent?: string
+    ) => {
+      const isLeaf = !node.children || node.children.length === 0;
 
-    if (parent) {
-      edges.push({
-        id: `${parent}-${node.id}`,
-        source: parent,
-        target: node.id,
-        animated: true,
+      nodesList.push({
+        id: node.id,
+        type: "custom",
+        position: { x, y },
+        data: {
+          label: node.label,
+          isLeaf,
+          isActive: activeNode === node.id,
+          onClick: () => handleNodeClick(parent ?? "root", node),
+        },
       });
-    }
 
-    if (!node.children) return;
+      if (parent) {
+        edgesList.push({
+          id: `edge-${parent}-${node.id}`,
+          source: parent,
+          target: node.id,
+          type: 'default',
+          style: {
+            stroke: "#ffffff",
+            strokeWidth: 2,
+            strokeDasharray: '5,5',
+            opacity: 1
+          },
+        });
+      }
 
-    const openChild = openNodes[parent ?? "root"];
-    if (parent && openChild !== node.id) return;
+      if (!node.children) return;
 
-    node.children.forEach((child, index) => {
-      const offset =
-        (index - (node.children!.length - 1) / 2) * spacingX;
+      const openChild = openNodes[parent ?? "root"];
+      if (parent && openChild !== node.id) return;
 
-      buildTree(child, x + offset, y + spacingY, node.id);
-    });
-  };
+      node.children.forEach((child, index) => {
+        const offset = (index - (node.children!.length - 1) / 2) * spacingX;
+        buildTreeRecursive(child, x + offset, y + spacingY, node.id);
+      });
+    };
 
-  // Build tree from root
-  buildTree(animaliaTree, 0, 0);
+    buildTreeRecursive(animaliaTree, 0, 0);
+    return { nodes: nodesList, edges: edgesList };
+  }, [openNodes, activeNode, spacingX]);
 
-  const onResetView = useCallback(() => {
-    fitView({ duration: 800, padding: 0.2 });
-  }, [fitView]);
-
-  const onResetTree = useCallback(() => {
-    setOpenNodes({});
-    setActiveNode(null);
-    setTimeout(() => {
-      fitView({ duration: 800, padding: 0.2 });
+  // Ensure view fits on initial load and when tree expands
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      fitView({ padding: 0.2, duration: 800 });
     }, 100);
-  }, [fitView]);
+    return () => clearTimeout(timer);
+  }, [nodes, fitView]);
 
   return (
-    <div style={{ height: "100vh", background: "#121212" }}>
+    <div style={{ height: "100vh", width: "100%", background: "#121212" }}>
       <ReactFlow
         nodes={nodes}
         edges={edges}
         nodeTypes={nodeTypes}
-        defaultEdgeOptions={{
-          style: { stroke: "#90caf9", strokeWidth: 2 },
-          animated: true,
-        }}
         fitView
-        minZoom={0.3}
+        minZoom={0.1}
         proOptions={{ hideAttribution: true }}
       >
-        <Background color="#333" />
+        <Background color="#333" gap={20} />
 
-        {/* Control Buttons Panel */}
-        <Panel
-          position="top-right"
-          style={{
-            marginTop: "90px", /* Offset for Header */
-            marginRight: "30px",
-            display: "flex",
-            gap: "12px",
-            padding: "8px",
-            background: "rgba(30, 41, 59, 0.7)",
-            backdropFilter: "blur(10px)",
-            borderRadius: "12px",
-            border: "1px solid rgba(255, 255, 255, 0.1)",
-            boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
-          }}
-        >
-          <button
-            onClick={onResetTree}
-            title="Collapse all nodes"
-            style={{
-              background: "linear-gradient(135deg, #2f7d46, #1e5231)",
-              color: "white",
-              border: "1px solid rgba(255, 255, 255, 0.1)",
-              padding: "10px 16px",
-              borderRadius: "8px",
-              cursor: "pointer",
-              fontWeight: "600",
-              fontSize: "13px",
-              display: "flex",
-              alignItems: "center",
-              gap: "8px",
-              transition: "all 0.2s ease",
-              boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
-            }}
-            onMouseOver={(e) => {
-              e.currentTarget.style.transform = "translateY(-1px)";
-              e.currentTarget.style.boxShadow = "0 4px 8px rgba(47, 125, 70, 0.4)";
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.2)";
-            }}
-          >
-            <span style={{ fontSize: "16px" }}>🔄</span> Reset Tree
-          </button>
-
-          <div style={{ width: "1px", background: "rgba(255,255,255,0.1)", margin: "0 4px" }} />
-
-          <button
-            onClick={onResetView}
-            title="Center view"
-            style={{
-              background: "rgba(255, 255, 255, 0.1)",
-              color: "#e2e8f0",
-              border: "1px solid rgba(255, 255, 255, 0.05)",
-              padding: "10px 16px",
-              borderRadius: "8px",
-              cursor: "pointer",
-              fontWeight: "600",
-              fontSize: "13px",
-              display: "flex",
-              alignItems: "center",
-              gap: "8px",
-              transition: "all 0.2s ease",
-            }}
-            onMouseOver={(e) => {
-              e.currentTarget.style.background = "rgba(255, 255, 255, 0.2)";
-              e.currentTarget.style.color = "white";
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)";
-              e.currentTarget.style.color = "#e2e8f0";
-            }}
-          >
-            <span style={{ fontSize: "16px" }}>🎯</span> Reset View
-          </button>
+        <Panel position="top-right" style={{ marginTop: "100px", marginRight: "20px" }}>
+          <div style={{ display: 'flex', gap: '10px' }}>
+            <button
+              onClick={() => { setOpenNodes({}); setActiveNode(null); }}
+              style={{
+                background: "#222", color: "white", padding: "8px 12px", borderRadius: "6px", border: "1px solid #444", cursor: "pointer"
+              }}
+            >
+              Reset Tree
+            </button>
+            <button
+              onClick={() => fitView({ duration: 800, padding: 0.2 })}
+              style={{
+                background: "#222", color: "white", padding: "8px 12px", borderRadius: "6px", border: "1px solid #444", cursor: "pointer"
+              }}
+            >
+              Reset View
+            </button>
+          </div>
         </Panel>
       </ReactFlow>
     </div>
   );
 }
 
-// Wrap with Provider to use hooks
 export default function AnimaliaFlow() {
   return (
     <ReactFlowProvider>
