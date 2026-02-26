@@ -1,14 +1,9 @@
 /* =========================================
    ZOOLEARN FOOTER STYLES
-   Uses design tokens from design-tokens.css
 ========================================= */
 
-/* ROOT STYLES */
 .foo-zl-footer {
   font-family: var(--font-sans, 'Inter', system-ui, sans-serif);
-  /* UPDATED BACKGROUND:
-     Reduced opacity from 0.95 to 0.75/0.85 so the image shows through.
-  */
   background:
     linear-gradient(to right bottom, rgba(5, 20, 10, 0.75), rgba(8, 28, 36, 0.85)),
     url("https://res.cloudinary.com/duibfmcw1/image/upload/v1766503448/footer_back_fmy0nc.jpg");
@@ -21,7 +16,6 @@
   border-top: 4px solid #2F7433;
 }
 
-/* LAYOUT CONTAINER */
 .foo-zl-footer-inner {
   max-width: 1280px;
   margin: auto;
@@ -29,7 +23,6 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 48px;
-  /* Entrance Animation */
   opacity: 0;
   animation: fadeInUp 1s ease-out forwards;
 }
@@ -51,7 +44,6 @@
   width: 64px;
   height: 64px;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
-  /* Floating Animation */
   animation: float 6s ease-in-out infinite;
 }
 
@@ -70,10 +62,8 @@
   font-size: 0.95rem;
   line-height: 1.7;
   color: #cbd5e1;
-  /* Made slightly lighter for better contrast against lighter bg */
   max-width: 480px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  /* Added text shadow for readability */
 }
 
 /* LINKS GRID */
@@ -83,24 +73,15 @@
   gap: 40px;
 }
 
-/* Column Animations */
 .foo-zl-col {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.8s ease forwards;
 }
 
-.foo-zl-col:nth-child(1) {
-  animation-delay: 0.2s;
-}
-
-.foo-zl-col:nth-child(2) {
-  animation-delay: 0.4s;
-}
-
-.foo-zl-col:nth-child(3) {
-  animation-delay: 0.6s;
-}
+.foo-zl-col:nth-child(1) { animation-delay: 0.2s; }
+.foo-zl-col:nth-child(2) { animation-delay: 0.4s; }
+.foo-zl-col:nth-child(3) { animation-delay: 0.6s; }
 
 .foo-zl-col h3 {
   font-size: 1rem;
@@ -115,7 +96,6 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Growth Underline Animation */
 .foo-zl-col h3::after {
   content: "";
   position: absolute;
@@ -142,7 +122,6 @@
 .foo-zl-col li a {
   text-decoration: none;
   color: #e2e8f0;
-  /* Brighter text to fight background image noise */
   font-size: 0.95rem;
   transition: all 0.3s ease;
   display: inline-block;
@@ -158,7 +137,6 @@
 /* COPYRIGHT */
 .foo-zl-copyright {
   background: rgba(0, 0, 0, 0.4);
-  /* Slightly darker for separation */
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 16px;
   text-align: center;
@@ -171,36 +149,22 @@
 
 /* KEYFRAMES */
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-8px);
-  }
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
 @keyframes growLine {
-  to {
-    transform: scaleX(0.4);
-  }
+  to { transform: scaleX(0.4); }
 }
 
-/* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
 @media (max-width: 1024px) {
   .foo-zl-footer-inner {
     grid-template-columns: 1fr;
@@ -208,13 +172,14 @@
   }
 }
 
+/* Mobile - MAKE LINKS 2 PER ROW */
 @media (max-width: 768px) {
   .foo-zl-footer-inner {
     padding: 60px 24px;
   }
 
   .foo-zl-links {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* 🔥 CHANGED HERE */
     gap: 40px;
   }
 
@@ -223,22 +188,20 @@
   }
 }
 
+/* Small Mobile */
 @media (max-width: 480px) {
   .foo-zl-footer-inner {
     padding: 40px 16px;
     gap: 36px;
   }
 
+  .foo-zl-links {
+    grid-template-columns: repeat(2, 1fr); /* Keep 2 columns */
+    gap: 28px;
+  }
+
   .foo-zl-logo h1 {
     font-size: 1.75rem;
-  }
-
-  .foo-zl-logo p {
-    font-size: 0.85rem;
-  }
-
-  .foo-zl-links {
-    gap: 28px;
   }
 
   .foo-zl-col h3 {
@@ -254,6 +217,7 @@
   }
 }
 
+/* Extra Small */
 @media (max-width: 359px) {
   .foo-zl-footer-inner {
     padding: 30px 12px;
@@ -262,10 +226,14 @@
   .foo-zl-logo h1 {
     font-size: 1.5rem;
   }
+
+  /* If too small, stack again */
+  .foo-zl-links {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   .foo-zl-footer,
   .foo-zl-footer * {
     animation: none !important;

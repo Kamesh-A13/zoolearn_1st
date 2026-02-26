@@ -8,6 +8,11 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [supportOpen, setSupportOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  
+  // New state variables for scroll behavior
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
@@ -15,6 +20,7 @@ export default function Header() {
         setMenuOpen(false);
       }
     };
+    
     const handleClickOutside = (e) => {
       if (menuOpen && !e.target.closest(".hea-nav-links") && !e.target.closest(".hea-menu-toggle")) {
         setMenuOpen(false);
@@ -24,7 +30,6 @@ export default function Header() {
       }
     };
 
-    // Keyboard shortcut: Ctrl+K or Cmd+K to open search
     const handleKeyDown = (e) => {
       if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
         e.preventDefault();
@@ -32,16 +37,35 @@ export default function Header() {
       }
     };
 
+    // Scroll handler for hiding/showing header
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Add shadow/resize when scrolled down a bit
+      setIsScrolled(currentScrollY > 50);
+
+      // Hide on scroll down, show on scroll up (only active past 100px)
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsHidden(true); // Scrolling down
+      } else {
+        setIsHidden(false); // Scrolling up
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
     window.addEventListener("resize", handleResize);
     document.addEventListener("click", handleClickOutside);
     document.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
       window.removeEventListener("resize", handleResize);
       document.removeEventListener("click", handleClickOutside);
       document.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [menuOpen, supportOpen]);
+  }, [menuOpen, supportOpen, lastScrollY]);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -57,13 +81,13 @@ export default function Header() {
     { name: "Home", path: "/" },
     { name: "Taxonomy Tree", path: "/taxonomy-tree" },
     { name: "ZooHub", path: "/zoohub" },
-
     { name: "About", path: "/about" },
   ];
 
   return (
     <>
-      <header className="hea-header">
+      {/* Dynamic classes applied here */}
+      <header className={`hea-header ${isScrolled ? "hea-scrolled" : ""} ${isHidden ? "hea-hidden-mobile" : ""}`}>
         <div className="hea-header-container">
 
           {/* --- LEFT: LOGO + SEARCH --- */}
@@ -192,7 +216,7 @@ export default function Header() {
                   href="mailto:academy.zoolearn@gmail.com"
                   className="hea-support-link"
                 >
-                  ✉️ Contact Support
+                 Contact Support
                 </a>
               </div>
             </div>
