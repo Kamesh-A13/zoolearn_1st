@@ -1,19 +1,20 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Banner.css";
 import CountUp from "../../shared/CountUp";
 
 // Static data moved outside component to prevent re-creation on every render
 const images = [
-  "https://images.unsplash.com/photo-1546182990-dffeafbe841d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80", // Lion
-  "https://images.unsplash.com/photo-1550358864-518f202c02ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80", // Elephant
-  "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80", // Wolf
-  "https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80", // Bird
-  "https://images.unsplash.com/photo-1546182990-dffeafbe841d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"  // Gorilla
+  "https://images.unsplash.com/photo-1456926631375-92c8ce872def?q=80&w=1200&auto=format&fit=crop", // Snow Leopard
+  "https://images.unsplash.com/photo-1616128417859-3a984dd35f02?q=80&w=1200&auto=format&fit=crop", // Shoebill Stork
+  "https://images.unsplash.com/photo-1504173010664-32509aeebb62?q=80&w=1200&auto=format&fit=crop", // Mandrill
+  "https://images.unsplash.com/photo-1527118732049-c88155f2107c?q=80&w=1200&auto=format&fit=crop", // Red Panda
+  "https://images.unsplash.com/photo-1560275619-4662e36fa65c?q=80&w=1200&auto=format&fit=crop", // Whale Shark
+  "https://images.unsplash.com/photo-1454991727061-be514eae86f7?q=80&w=1200&auto=format&fit=crop", // Blue Whale
 ];
 
-const animalNames = ["African Lion", "African Elephant", "Gray Wolf", "Macaw Parrot", "Mountain Gorilla"];
-
 export default function ZoologyHero() {
+  const navigate = useNavigate();
 
   const [index, setIndex] = useState(0);
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -68,6 +69,15 @@ export default function ZoologyHero() {
             classification, anatomy, and ecology with interactive lessons.
           </p>
 
+          <div className="banner-ctas">
+            <button className="banner-btn-primary" onClick={() => navigate('/zoohub')}>
+              Explore Species
+            </button>
+            <button className="banner-btn-secondary" onClick={() => navigate('/anatomy')}>
+              View Patterns
+            </button>
+          </div>
+
           {/* STATS SECTION WITH ANIMATION */}
           <div className="banner-stats">
             <div className="banner-stat-item">
@@ -95,7 +105,7 @@ export default function ZoologyHero() {
               <img
                 key={index}
                 src={images[index]}
-                alt={`${animalNames[index]} - Animal classification and anatomy`}
+                alt="Rare species showcase"
                 className={`banner-image ${imageLoaded ? 'loaded' : 'loading'}`}
                 onLoad={() => setImageLoaded(true)}
                 onError={() => {
@@ -103,23 +113,6 @@ export default function ZoologyHero() {
                   setImageLoaded(true);
                 }}
               />
-
-              <div className="banner-image-caption" style={{
-                position: 'absolute',
-                bottom: '20px',
-                left: '20px',
-                right: '20px',
-                backgroundColor: 'rgba(0, 0, 0, 0.7)',
-                color: 'white',
-                padding: '10px 15px',
-                borderRadius: '10px',
-                fontSize: '0.9rem',
-                fontWeight: '500',
-                textAlign: 'center',
-                backdropFilter: 'blur(4px)'
-              }}>
-                {animalNames[index]} - Study anatomy, behavior, and habitat
-              </div>
             </div>
 
             {/* SLIDER NAVIGATION */}

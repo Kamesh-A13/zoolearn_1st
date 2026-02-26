@@ -86,6 +86,48 @@
   max-width: 540px;
 }
 
+/* CTA Buttons Styling */
+.banner-ctas {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.banner-btn-primary {
+  background: var(--banner-green);
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 12px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(46, 125, 50, 0.3);
+}
+
+.banner-btn-primary:hover {
+  background: var(--banner-green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4);
+}
+
+.banner-btn-secondary {
+  background: white;
+  color: var(--banner-blue-dark);
+  padding: 0.8rem 1.8rem;
+  border-radius: 12px;
+  font-weight: 700;
+  border: 1.5px solid rgba(27, 95, 120, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.banner-btn-secondary:hover {
+  background: #f8fafb;
+  border-color: var(--banner-blue-dark);
+  transform: translateY(-2px);
+}
+
 /* =====================================================
    NEW: STATS SECTION (Replaces Buttons)
 ===================================================== */
