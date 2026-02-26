@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Platyhelminthes.css";
-import PlatyhelminthesData from "./PlatyhelminthesData.json";
+import PlatyhelminthesData from "./Platyhelminthesdata.json";
 
 const Platyhelminthes = () => {
   return (

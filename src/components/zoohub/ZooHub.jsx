@@ -346,7 +346,7 @@ function ZooHub() {
         {/* Class Navigation */}
         <div className="class-navbar">
           <div className="class-scroll">
-            {Object.keys(refs).map((key) => (
+            {Object.keys(phylumIcons).map((key) => (
               <span key={key} onClick={() => scrollToClass(key)}>
                 {phylumIcons[key]} {key}
               </span>

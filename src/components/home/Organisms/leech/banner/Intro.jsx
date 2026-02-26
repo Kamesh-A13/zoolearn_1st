@@ -1,4 +1,4 @@
-import "./intro.css"; 
+import "./Intro.css";
 
 const LeechIntro = () => {
   return (
@@ -30,7 +30,7 @@ const LeechIntro = () => {
           </p>
 
           <p className="intro-hero-text">
-            It sucks blood from fishes, frogs, cattle, and sometimes humans, and therefore it is described as 
+            It sucks blood from fishes, frogs, cattle, and sometimes humans, and therefore it is described as
             <strong> sanguivorous</strong> (blood-feeding).
           </p>
 

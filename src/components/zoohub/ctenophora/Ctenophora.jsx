@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Ctenophora.css";
-import CtenophoraData from "./CtenophoraData.json";
+import CtenophoraData from "./ctenophoradata.json";
 
 const Ctenophora = () => {
   return (

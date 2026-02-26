@@ -1,4 +1,4 @@
-import "./Legal.css";
+import "./legal.css";
 
 const Legal = () => {
   return (
@@ -14,8 +14,8 @@ const Legal = () => {
 
       {/* ================= PRIVACY POLICY ================= */}
       {/* ================= PRIVACY POLICY ================= */}
-<section className="legal-section" id="privacy-policy">
-  <h2>Privacy Policy</h2>
+      <section className="legal-section" id="privacy-policy">
+        <h2>Privacy Policy</h2>
 
         <h3>1. Introduction</h3>
         <p>
@@ -71,13 +71,13 @@ const Legal = () => {
         </p>
       </section>
 
-      
+
       <div className="legal-divider" />
 
 
-     {/* ================= TERMS OF SERVICES ================= */}
-<section className="legal-section" id="terms-of-services">
-  <h2>Terms of Services</h2>
+      {/* ================= TERMS OF SERVICES ================= */}
+      <section className="legal-section" id="terms-of-services">
+        <h2>Terms of Services</h2>
 
 
         <h3>1. Acceptance of Terms</h3>

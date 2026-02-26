@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Nutrition.css";
-import NutritionImage from "./nutrition.png"; // Ensure this path matches your folder
+import NutritionImage from "./Nutrition.png"; // Ensure this path matches your folder
 
 const Nutrition = () => {
   const [open, setOpen] = useState(false);

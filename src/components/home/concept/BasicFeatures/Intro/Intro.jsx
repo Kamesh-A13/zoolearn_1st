@@ -1,8 +1,8 @@
 import React from "react";
-import "./intro.css";
+import "./Intro.css";
 
 const BasicFeaturesIndex = () => {
-  
+
   // Function to handle Smooth Scrolling
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -49,36 +49,36 @@ const BasicFeaturesIndex = () => {
 
             {/* Navigation Buttons */}
             <div className="intro-hero-sub-actions intro-secondary-row">
-              
-              <button 
+
+              <button
                 className="intro-btn-secondary"
                 onClick={() => scrollToSection("levels-section")}
               >
                 Level of Organization
               </button>
 
-              <button 
+              <button
                 className="intro-btn-secondary"
                 onClick={() => scrollToSection("symmetry-section")}
               >
                 Body Symmetry
               </button>
 
-              <button 
+              <button
                 className="intro-btn-secondary"
                 onClick={() => scrollToSection("germ-section")}
               >
                 Germ Layer
               </button>
 
-              <button 
+              <button
                 className="intro-btn-secondary"
                 onClick={() => scrollToSection("coelom-section")}
               >
                 Coelom
               </button>
 
-              <button 
+              <button
                 className="intro-btn-secondary"
                 onClick={() => scrollToSection("taxonomy-section")}
               >
