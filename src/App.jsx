@@ -37,11 +37,10 @@ const PlatyhelminthesPhylum4 = lazy(() => import('./components/zoohub/platyhelmi
 const AschelminthesPhylum5 = lazy(() => import('./components/zoohub/aschelminthes/Phylum5'));
 const AnnelidaPhylum6 = lazy(() => import('./components/zoohub/annelida/Phylum6'));
 const ArthropodaPhylum7 = lazy(() => import('./components/zoohub/arthropoda/Phylum7'));
+const MolluscaPhylum8 = lazy(() => import('./components/zoohub/mollusca/Phylum8'));
 const EchinodermataPhylum9 = lazy(() => import('./components/zoohub/echinodermata/Phylum9'));
 const HemichordataPhylum10 = lazy(() => import('./components/zoohub/hemichordata/Phylum10'));
 const ChordataPhylum11 = lazy(() => import('./components/zoohub/chordata/Phylum11'));
-const Mollusca = lazy(() => import('./components/zoohub/mollusca/Mollusca'));
-const Chordata = lazy(() => import('./components/zoohub/chordata/Chordata'));
 
 function App() {
   const location = useLocation();
@@ -102,7 +101,7 @@ function App() {
               <Route path="/zoohub/aschelminthes/:slug" element={<AschelminthesPhylum5 />} />
               <Route path="/zoohub/annelida/:slug" element={<AnnelidaPhylum6 />} />
               <Route path="/zoohub/arthropoda/:slug" element={<ArthropodaPhylum7 />} />
-              <Route path="/zoohub/mollusca/:slug" element={<Mollusca />} />
+              <Route path="/zoohub/mollusca/:slug" element={<MolluscaPhylum8 />} />
               <Route path="/zoohub/echinodermata/:slug" element={<EchinodermataPhylum9 />} />
               <Route path="/zoohub/hemichordata/:slug" element={<HemichordataPhylum10 />} />
               <Route path="/zoohub/chordata/:slug" element={<ChordataPhylum11 />} />

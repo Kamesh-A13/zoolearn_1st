@@ -1,0 +1,227 @@
+[
+  {
+    "phylum": "porifera",
+    "className": "Calcarea",
+    "speciesCount": 3
+  },
+  {
+    "phylum": "porifera",
+    "className": "Hexactinellida",
+    "speciesCount": 2
+  },
+  {
+    "phylum": "porifera",
+    "className": "Demospongiae",
+    "speciesCount": 5
+  },
+  {
+    "phylum": "coelenterata",
+    "className": "Hydrozoa",
+    "speciesCount": 3
+  },
+  {
+    "phylum": "coelenterata",
+    "className": "Scyphozoa",
+    "speciesCount": 1
+  },
+  {
+    "phylum": "coelenterata",
+    "className": "Anthozoa",
+    "speciesCount": 7
+  },
+  {
+    "phylum": "ctenophora",
+    "className": "Tentaculata",
+    "speciesCount": 4
+  },
+  {
+    "phylum": "ctenophora",
+    "className": "Nuda",
+    "speciesCount": 1
+  },
+  {
+    "phylum": "platyhelminthes",
+    "className": "Turbellaria",
+    "speciesCount": 1
+  },
+  {
+    "phylum": "platyhelminthes",
+    "className": "Trematoda",
+    "speciesCount": 2
+  },
+  {
+    "phylum": "platyhelminthes",
+    "className": "Cestoda",
+    "speciesCount": 3
+  },
+  {
+    "phylum": "aschelminthes",
+    "className": "Nematoda",
+    "speciesCount": 5
+  },
+  {
+    "phylum": "aschelminthes",
+    "className": "Enoplea",
+    "speciesCount": 3
+  },
+  {
+    "phylum": "annelida",
+    "className": "Polychaeta",
+    "speciesCount": 4
+  },
+  {
+    "phylum": "annelida",
+    "className": "Oligochaeta",
+    "speciesCount": 5
+  },
+  {
+    "phylum": "annelida",
+    "className": "Hirudinea",
+    "speciesCount": 2
+  },
+  {
+    "phylum": "arthropoda",
+    "className": "Onychophora",
+    "speciesCount": 1
+  },
+  {
+    "phylum": "arthropoda",
+    "className": "Crustacea",
+    "speciesCount": 9
+  },
+  {
+    "phylum": "arthropoda",
+    "className": "Insecta",
+    "speciesCount": 18
+  },
+  {
+    "phylum": "arthropoda",
+    "className": "Arachnida",
+    "speciesCount": 3
+  },
+  {
+    "phylum": "arthropoda",
+    "className": "Chilopoda",
+    "speciesCount": 1
+  },
+  {
+    "phylum": "arthropoda",
+    "className": "Diplopoda",
+    "speciesCount": 1
+  },
+  {
+    "phylum": "arthropoda",
+    "className": "Merostomata",
+    "speciesCount": 1
+  },
+  {
+    "phylum": "mollusca",
+    "className": "Polyplacophora",
+    "speciesCount": 2
+  },
+  {
+    "phylum": "mollusca",
+    "className": "Scaphopoda",
+    "speciesCount": 1
+  },
+  {
+    "phylum": "mollusca",
+    "className": "Gastropoda",
+    "speciesCount": 3
+  },
+  {
+    "phylum": "mollusca",
+    "className": "Bivalvia",
+    "speciesCount": 6
+  },
+  {
+    "phylum": "mollusca",
+    "className": "Cephalopoda",
+    "speciesCount": 5
+  },
+  {
+    "phylum": "mollusca",
+    "className": "Monoplacophora",
+    "speciesCount": 1
+  },
+  {
+    "phylum": "echinodermata",
+    "className": "Asteroidea",
+    "speciesCount": 3
+  },
+  {
+    "phylum": "echinodermata",
+    "className": "Ophiuroidea",
+    "speciesCount": 2
+  },
+  {
+    "phylum": "echinodermata",
+    "className": "Echinoidea",
+    "speciesCount": 2
+  },
+  {
+    "phylum": "echinodermata",
+    "className": "Holothuroidea",
+    "speciesCount": 2
+  },
+  {
+    "phylum": "echinodermata",
+    "className": "Crinoidea",
+    "speciesCount": 1
+  },
+  {
+    "phylum": "hemichordata",
+    "className": "Enteropneusta",
+    "speciesCount": 3
+  },
+  {
+    "phylum": "chordata",
+    "className": "Ascidiacea",
+    "speciesCount": 2
+  },
+  {
+    "phylum": "chordata",
+    "className": "Thaliacea",
+    "speciesCount": 3
+  },
+  {
+    "phylum": "chordata",
+    "className": "Leptocardii",
+    "speciesCount": 1
+  },
+  {
+    "phylum": "chordata",
+    "className": "Cyclostomata",
+    "speciesCount": 2
+  },
+  {
+    "phylum": "chordata",
+    "className": "Chondrichthyes",
+    "speciesCount": 5
+  },
+  {
+    "phylum": "chordata",
+    "className": "Osteichthyes",
+    "speciesCount": 10
+  },
+  {
+    "phylum": "chordata",
+    "className": "Amphibia",
+    "speciesCount": 9
+  },
+  {
+    "phylum": "chordata",
+    "className": "Reptilia",
+    "speciesCount": 24
+  },
+  {
+    "phylum": "chordata",
+    "className": "Aves",
+    "speciesCount": 27
+  },
+  {
+    "phylum": "chordata",
+    "className": "Mammalia",
+    "speciesCount": 66
+  }
+]

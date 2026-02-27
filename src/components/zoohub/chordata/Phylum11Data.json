@@ -121,7 +121,7 @@
     "id": 3,
     "slug": "salpa",
     "name": "Salpa",
-    "scientificName": "Salp",
+    "scientificName": "Salpa",
     "description": "Salpa is a free-swimming pelagic urochordate. Body is transparent and barrel-shaped. Shows alternation of generations.",
     "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767895302/Salpa_v6xxui.png",
     "3d": "https://sketchfab.com/3d-models/salpa-4185e2ff86c7499db78d057fc3c512c2/embed",
@@ -294,7 +294,7 @@
       "Oceanographic studies"
     ]
   },
-  "branchiostoma": {
+  "branchiostoma_lanceolatum": {
     "id": 6,
     "slug": "branchiostoma_lanceolatum",
     "name": "Branchiostoma Lanceolatum",
@@ -2971,9 +2971,9 @@
       "Conservation importance"
     ]
   },
-  "ichthyosaurus_communis": {
+  "ichthyosaurus": {
     "id": 51,
-    "slug": "ichthyosaurus_communis",
+    "slug": "ichthyosaurus",
     "name": "Ichthyosaurus communis",
     "scientificName": "Ichthyosaur",
     "description": "Ichthyosaurus communis was a marine reptile. Body resembled modern dolphins. Lived during Mesozoic era.",
@@ -3031,9 +3031,9 @@
       "Museum specimens"
     ]
   },
-  "triceratops_horridus": {
+  "triceratops": {
     "id": 52,
-    "slug": "triceratops_horridus",
+    "slug": "triceratops",
     "name": "Triceratops horridus",
     "scientificName": "Triceratops",
     "description": "Triceratops horridus was a herbivorous dinosaur. Had three facial horns. Lived in late Cretaceous.",
@@ -3091,9 +3091,9 @@
       "Evolutionary studies"
     ]
   },
-  "stegosaurus_stenops": {
+  "stegosaurus": {
     "id": 53,
-    "slug": "stegosaurus_stenops",
+    "slug": "stegosaurus",
     "name": "Stegosaurus stenops",
     "scientificName": "Stegosaurus",
     "description": "Stegosaurus stenops was a herbivorous dinosaur. Had bony plates on back. Lived in Jurassic period.",
@@ -3151,9 +3151,9 @@
       "Evolution research"
     ]
   },
-  "brachiosaurus_altithorax": {
+  "brachiosaurus": {
     "id": 54,
-    "slug": "brachiosaurus_altithorax",
+    "slug": "brachiosaurus",
     "name": "Brachiosaurus altithorax",
     "scientificName": "Brachiosaurus",
     "description": "Brachiosaurus altithorax was a gigantic dinosaur. Had long neck and forelimbs. Herbivorous sauropod.",
@@ -3211,9 +3211,9 @@
       "Educational value"
     ]
   },
-  "tyrannosaurus_rex": {
+  "tyrannosaurus": {
     "id": 55,
-    "slug": "tyrannosaurus_rex",
+    "slug": "tyrannosaurus",
     "name": "Tyrannosaurus rex",
     "scientificName": "Tyrannosaurus",
     "description": "Tyrannosaurus rex was a top carnivore. Powerful jaws and teeth. One of the most famous dinosaurs.",
@@ -3271,9 +3271,9 @@
       "Scientific research"
     ]
   },
-  "pteranodon_longiceps": {
+  "pteranodon": {
     "id": 56,
-    "slug": "pteranodon_longiceps",
+    "slug": "pteranodon",
     "name": "Pteranodon longiceps",
     "scientificName": "Pteranodon",
     "description": "Pteranodon longiceps was a flying reptile. Had large wing span. Fed mainly on fish.",
