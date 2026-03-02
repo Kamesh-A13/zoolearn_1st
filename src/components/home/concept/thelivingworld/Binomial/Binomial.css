@@ -1,12 +1,12 @@
 /* Binomial.css */
 
 :root {
-  --primary: #0f766e;       /* Teal 700 */
-  --primary-light: #14b8a6; /* Teal 500 */
-  --accent: #f59e0b;        /* Amber 500 */
-  --text-dark: #1e293b;     /* Slate 800 */
-  --text-gray: #334155;     /* Slate 700 - slightly darker for readability */
-  --bg-page: #ffffff;       /* Pure White Background (No gray) */
+  --primary: #0f766e;
+  --primary-light: #14b8a6;
+  --accent: #f59e0b;
+  --text-dark: #1e293b;
+  --text-gray: #334155;
+  --bg-page: #ffffff;
   --bg-soft-green: #f0fdf4;
   --bg-soft-blue: #ecfeff;
   --bg-soft-indigo: #eef2ff;
@@ -17,8 +17,7 @@
   font-family: "Inter", system-ui, -apple-system, sans-serif;
   background-color: var(--bg-page);
   color: var(--text-dark);
-  /* Minimal spacing from edges, but full width feel */
-  padding: 40px 5%; 
+  padding: 40px 5%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,8 +27,8 @@
 /* Structure Wrapper */
 .binomial-wrapper {
   width: 100%;
-  max-width: 1200px; /* Limits width on huge screens only */
-  margin-bottom: 60px; /* Space between the two sections */
+  max-width: 1200px;
+  margin-bottom: 60px;
 }
 
 /* Headings */
@@ -39,7 +38,7 @@
   color: var(--primary);
   margin-bottom: 1.5rem;
   font-weight: 700;
-  border-bottom: 3px solid var(--primary-light); /* Underline style */
+  border-bottom: 3px solid var(--primary-light);
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -61,7 +60,7 @@
   margin-bottom: 35px;
 }
 
-/* Typography Helpers */
+/* Typography */
 p {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -70,7 +69,7 @@ p {
 }
 
 strong {
-  color: #0f172a; /* Darker black for contrast */
+  color: #0f172a;
   font-weight: 700;
 }
 
@@ -81,7 +80,7 @@ em {
   font-weight: 500;
 }
 
-/* Lists styling */
+/* Lists */
 ul, ol {
   margin: 0 0 30px 0;
   padding-left: 10px;
@@ -95,7 +94,6 @@ li {
   line-height: 1.6;
 }
 
-/* Custom bullet for un-ordered lists */
 .binomial-custom-list li {
   display: flex;
   gap: 15px;
@@ -110,11 +108,11 @@ li {
   line-height: 1.2rem;
 }
 
-/* Colored Content Boxes */
+/* Content Boxes */
 .binomial-example-box {
   background: var(--bg-soft-green);
   padding: 30px;
-  border-radius: 8px; /* Softer radius */
+  border-radius: 8px;
   border: 1px solid #bbf7d0;
   margin-bottom: 30px;
 }
@@ -135,89 +133,33 @@ li {
   letter-spacing: 0.5px;
 }
 
-/* Numbered Rules List */
-.binomial-rules-list {
-  counter-reset: rules;
-  padding-left: 0;
-}
-
-.binomial-rules-list li {
-  position: relative;
-  padding-left: 50px; 
-  margin-bottom: 20px;
-}
-
-.binomial-rules-list li::before {
-  counter-increment: rules;
-  content: counter(rules);
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 32px;
-  height: 32px;
-  background: var(--primary);
-  color: white;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 32px;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-/* Footer Items */
+/* Honor Text */
 .binomial-honor-text {
   font-size: 1.3rem;
   color: var(--primary);
   font-weight: 600;
   margin-top: 40px;
   padding: 20px;
-  background: #f8fafc; /* Very subtle grey bg for emphasis */
+  background: #f8fafc;
   border-left: 4px solid var(--accent);
 }
 
-.binomial-analogy-footer {
-  background: linear-gradient(to right, var(--primary), var(--primary-light));
-  color: white;
-  padding: 30px;
-  border-radius: 8px;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-top: 20px;
-}
-
-.binomial-analogy-footer strong {
-  color: #fff;
-  text-decoration: underline;
-  text-decoration-color: var(--accent);
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .binomial-section {
-    padding: 20px 15px; /* Minimal side padding on mobile */
-  }
-  
-  .binomial-main-heading {
-    font-size: 2rem;
-  }
-  
-  .binomial-section-heading {
-    font-size: 1.6rem;
-  }
-}
+/* ===== RESPONSIVE IMAGE FIX ===== */
 
 /* Thumbnail Image */
 .binomial-modal-img {
   display: block;
   margin: 20px auto;
-  max-width: 560px;
+  width: 100%;          /* Responsive */
+  max-width: 560px;     /* Desktop limit */
+  height: auto;         /* Maintain ratio */
+  border-radius: 10px;
   cursor: zoom-in;
   transition: transform 0.3s ease;
 }
 
 .binomial-modal-img:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 /* Modal Overlay */
@@ -240,9 +182,11 @@ li {
 
 /* Full Image */
 .binomial-modal-full-img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   max-height: 90vh;
   border-radius: 10px;
+  object-fit: contain;
 }
 
 /* Close Button */
@@ -259,4 +203,23 @@ li {
   cursor: pointer;
   background: white;
   box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .binomial-section {
+    padding: 20px 15px;
+  }
+
+  .binomial-main-heading {
+    font-size: 2rem;
+  }
+
+  .binomial-section-heading {
+    font-size: 1.6rem;
+  }
+
+  .binomial-modal-img {
+    max-width: 100%;
+  }
 }

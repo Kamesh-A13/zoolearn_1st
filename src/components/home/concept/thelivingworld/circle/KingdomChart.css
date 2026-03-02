@@ -8,7 +8,6 @@
   gap: 2rem;
   padding: 2rem 1.5rem;
   min-height: 100vh;
-  /* Clean, professional soft gradient background */
   background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   color: #334155;
@@ -18,22 +17,20 @@
   .kc-kingdom-container {
     flex-direction: row;
     justify-content: center;
-    gap: 5rem; /* Space between Chart and Card */
+    gap: 5rem;
     padding: 0 4rem;
-    height: 100vh; /* Lock to viewport height for dashboard feel */
+    height: 100vh;
     overflow: hidden;
   }
 }
 
-/* ---------- Chart Section (Left) ---------- */
+/* ---------- Chart Section ---------- */
 .kc-chart-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
   width: 100%;
-  display: flex;
-  justify-content: flex-end; /* Push towards center on desktop */
 }
 
 .kc-chart-responsive {
@@ -42,27 +39,24 @@
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* Mobile Size */
+/* Mobile Chart Size */
 @media (max-width: 1023px) {
   .kc-chart-responsive {
-    max-width: 360px;
-  }
-  .kc-chart-wrapper {
-    justify-content: center;
+    max-width: 280px; /* 🔥 Smaller for mobile screen fit */
   }
 }
 
-/* Desktop Size - BALANCED with Card */
+/* Desktop Chart Size */
 @media (min-width: 1024px) {
   .kc-chart-responsive {
-    max-width: 550px; /* Matches the card height visually */
+    max-width: 550px;
   }
 }
 
 .kc-chart-svg {
   width: 100%;
   height: 100%;
-  overflow: visible; /* Allows drop shadows to breathe */
+  overflow: visible;
 }
 
 /* ---------- Slices ---------- */
@@ -87,7 +81,6 @@
   filter: grayscale(0.6);
 }
 
-/* Slice Path Styling */
 .kc-slice-path {
   transition: filter 0.3s ease;
 }
@@ -96,7 +89,6 @@
   filter: drop-shadow(0 15px 25px rgba(0,0,0,0.15));
 }
 
-/* Typography on Chart */
 .kc-slice-label {
   font-size: 14px;
   font-weight: 800;
@@ -104,12 +96,6 @@
   letter-spacing: 1.5px;
   pointer-events: none;
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
-}
-
-.kc-slice-icon {
-  font-size: 36px;
-  pointer-events: none;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
 /* ---------- Center Hub ---------- */
@@ -134,20 +120,19 @@
   text-transform: uppercase;
 }
 
-/* ---------- Info Card (Right) ---------- */
+/* ---------- Info Card ---------- */
 .kc-card-wrapper {
   flex: 1;
   width: 100%;
   display: flex;
-  justify-content: flex-start; /* Push towards center on desktop */
+  justify-content: center;
 }
 
-/* Card Size - Matches Chart Diameter */
 .kc-glass-card {
   width: 100%;
-  max-width: 450px; /* Slightly narrower than circle for elegance */
-  height: 550px;    /* Matches Chart Max-Width */
-  
+  max-width: 450px;
+  height: 550px;
+
   display: flex;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.9);
@@ -162,14 +147,40 @@
   transition: transform 0.3s ease;
 }
 
-@media (max-width: 1023px) {
+/* 🔥 MOBILE CARD FIT FIX */
+@media (max-width: 768px) {
+
+  .kc-kingdom-container {
+    padding: 1rem;
+    gap: 1rem;
+    min-height: auto;
+  }
+
   .kc-glass-card {
+    max-width: 320px;
     height: auto;
-    min-height: 400px;
+    min-height: auto;
+    border-radius: 20px;
+  }
+
+  .kc-card-header {
+    padding: 1.2rem;
+  }
+
+  .kc-card-body {
+    padding: 0 1.2rem 1.2rem 1.2rem;
+  }
+
+  .kc-title {
+    font-size: 1.5rem;
+  }
+
+  .kc-subtitle {
+    font-size: 0.9rem;
   }
 }
 
-/* Card Header */
+/* ---------- Card Header ---------- */
 .kc-card-header {
   padding: 2rem;
   position: relative;
@@ -202,7 +213,6 @@
 .kc-title {
   font-size: 2rem;
   font-weight: 800;
-  color: #0f172a;
   margin: 0;
   line-height: 1.1;
 }
@@ -215,17 +225,12 @@
   line-height: 1.4;
 }
 
-/* Card Body */
+/* ---------- Card Body ---------- */
 .kc-card-body {
   padding: 0 2rem 2rem 2rem;
   overflow-y: auto;
   flex: 1;
 }
-
-/* Custom Scrollbar */
-.kc-card-body::-webkit-scrollbar { width: 5px; }
-.kc-card-body::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
-.kc-card-body::-webkit-scrollbar-track { background: transparent; }
 
 .kc-section-head {
   font-size: 11px;
@@ -238,19 +243,12 @@
   padding-bottom: 5px;
 }
 
-.kc-char-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .kc-char-item {
   display: flex;
   align-items: flex-start;
   gap: 12px;
   margin-bottom: 12px;
   font-size: 15px;
-  color: #334155;
   line-height: 1.5;
 }
 
@@ -278,7 +276,7 @@
   font-weight: 600;
 }
 
-/* Empty State */
+/* ---------- Empty State ---------- */
 .kc-empty-box {
   height: 100%;
   display: flex;
@@ -294,4 +292,51 @@
   font-size: 2.5rem;
   margin-bottom: 1rem;
   opacity: 0.6;
+}
+/* 🔥 EXTRA SMALL MOBILE CARD */
+@media (max-width: 768px) {
+
+  .kc-glass-card {
+    width: 80vw;
+    max-width: 260px;   /* much smaller */
+    border-radius: 16px;
+  }
+
+  .kc-card-header {
+    padding: 0.8rem;
+  }
+
+  .kc-card-body {
+    padding: 0 0.8rem 0.8rem 0.8rem;
+  }
+
+  .kc-badge {
+    font-size: 8px;
+    padding: 4px 8px;
+  }
+
+  .kc-title {
+    font-size: 1.1rem;
+  }
+
+  .kc-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .kc-section-head {
+    font-size: 9px;
+    margin: 1rem 0 0.6rem 0;
+  }
+
+  .kc-char-item {
+    font-size: 12px;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .kc-tag {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
 }
