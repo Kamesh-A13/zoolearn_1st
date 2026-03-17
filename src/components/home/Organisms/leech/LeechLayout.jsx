@@ -4,7 +4,7 @@ import {
   Tag, Bug, Search, Ruler, Layers, Footprints,
   Droplets, Wind, HeartPulse, Brain, Trash2, Dna, Syringe
 } from 'lucide-react';
-import "./Leech.css";
+import "./leech.css";
 import "./sections/sections-responsive.css";
 
 // Import Sections
@@ -149,20 +149,7 @@ export default function LeechLayout() {
             </p>
 
             {/* Quick Stats */}
-            <div className="leech-hero-stats">
-              <div className="leech-hero-stat">
-                <span className="leech-hero-stat-icon">📐</span>
-                <span><strong>33</strong> Segments</span>
-              </div>
-              <div className="leech-hero-stat">
-                <span className="leech-hero-stat-icon">👁️</span>
-                <span><strong>5</strong> Eye Pairs</span>
-              </div>
-              <div className="leech-hero-stat">
-                <span className="leech-hero-stat-icon">📏</span>
-                <span>Up to <strong>35 cm</strong></span>
-              </div>
-            </div>
+             
           </div>
 
           {/* RIGHT: Hero Image */}

@@ -1,120 +1,163 @@
+import React, { useState } from "react";
 import "./parasiticAdaptations.css";
 
 const ParasiticAdaptations = () => {
-  const adaptations = [
+  // State for the slider
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  // Array of images to swipe through
+  const slides = [
     {
-      icon: '🦷',
-      title: 'Jaws with Teeth',
-      desc: 'Three muscular jaws, each bearing 60–100 minute teeth arranged in a semicircle. These create a clean, Y-shaped incision on the host\'s skin for efficient blood extraction.',
-      category: 'Feeding'
+      id: 1,
+      src: "https://res.cloudinary.com/duibfmcw1/image/upload/v1767810858/parasitic_cdkchf.png",
+      alt: "Parasitic Adaptations",
+      caption: "Parasitic Mode"
     },
     {
-      icon: '💧',
-      title: 'Hirudin Secretion',
-      desc: 'Salivary glands secrete hirudin — a powerful anticoagulant that prevents blood clotting at the wound site. It also contains a vasodilator to increase blood flow and an anaesthetic for painless biting.',
-      category: 'Chemical'
-    },
-    {
-      icon: '🔗',
-      title: 'Powerful Suckers',
-      desc: 'Two muscular suckers (anterior + posterior) provide extremely firm attachment to the host, even in flowing water. The posterior sucker can support the entire body weight.',
-      category: 'Attachment'
-    },
-    {
-      icon: '😴',
-      title: 'Painless Bite',
-      desc: 'The anaesthetic substance in saliva ensures the host feels no pain during attachment and feeding — allowing the leech to feed undetected for extended periods.',
-      category: 'Stealth'
-    },
-    {
-      icon: '📦',
-      title: 'Enormous Blood Storage',
-      desc: 'The 10-chambered crop with lateral caeca can store blood weighing up to 5 times the leech\'s body weight. A single meal sustains the leech for 6–18 months.',
-      category: 'Storage'
-    },
-    {
-      icon: '🐛',
-      title: 'Streamlined Body',
-      desc: 'Complete absence of setae, parapodia, or any external projections. The smooth, slimy body ensures seamless attachment without snagging on host tissue.',
-      category: 'Structure'
-    },
-    {
-      icon: '👁️',
-      title: 'Keen Sensory Organs',
-      desc: '5 pairs of eyes detect light/shadow changes. Annular and segmental receptors sense vibrations and chemical cues from potential hosts in water.',
-      category: 'Detection'
-    },
-    {
-      icon: '🧬',
-      title: 'Hermaphroditism',
-      desc: 'Being hermaphroditic increases reproductive success — any two individuals of the species can mate, doubling the chances of finding a partner in aquatic habitats.',
-      category: 'Reproduction'
+      id: 2,
+      src: "https://res.cloudinary.com/duibfmcw1/image/upload/v1767810737/digestivesystem_osipqw.png",
+      alt: "Digestive System of Leech",
+      caption: "Digestive System"
     }
   ];
 
+  const handleNext = () => {
+    setActiveSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  };
+
+  const handlePrev = () => {
+    setActiveSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
+
   return (
-    <section className="para-section">
-      <div className="para-container">
-        
-        <div className="para-header">
-          <h2 className="para-title">Parasitic Adaptations</h2>
-          <p className="para-intro">
-            <em>Hirudinaria granulosa</em> is an <strong>obligate ectoparasite</strong> — its anatomy, physiology,
-            and behaviour are extensively modified for a blood-feeding lifestyle. Here are the key adaptations:
-          </p>
+    <section className="parasitic-section">
+      <div className="parasitic-container">
+
+        {/* HEADER */}
+        <div className="parasitic-header">
+          <h2 className="section-title">Parasitic Adaptations Of Leech</h2>
+          <div className="title-underline"></div>
         </div>
 
-        {/* ADAPTATION GRID */}
-        <div className="para-grid">
-          {adaptations.map((item, idx) => (
-            <div
-              key={idx}
-              className="para-card"
-              style={{ animationDelay: `${idx * 0.06}s` }}
-            >
-              <div className="para-card-top">
-                <span className="para-card-icon">{item.icon}</span>
-                <span className="para-card-badge">{item.category}</span>
+        <div className="parasitic-grid">
+
+          {/* LEFT: TEXT & CARDS */}
+          <div className="parasitic-content">
+
+            {/* INTRO TEXT */}
+            <div className="intro-card">
+              <p className="intro-text">
+                A leech lives as a parasite, feeding on animal blood using special adaptations to attach, suck, store, and digest it slowly.
+              </p>
+            </div>
+
+            {/* ADAPTATIONS GRID */}
+            <div className="adaptations-list">
+
+              {/* CARD 1 */}
+              <div className="adaptation-card" style={{ animationDelay: "0.1s" }}>
+                <div className="icon-box">🩸</div>
+                <div className="card-info">
+                  <h4 className="adaptation-title">Feeding Habit of Leech</h4>
+                  <p>A leech sucks blood using three tiny-toothed jaws that make a Y-shaped cut. Its muscular pharynx pumps the blood while saliva is released into the wound.</p>
+                </div>
               </div>
-              <strong className="para-card-title">{item.title}</strong>
-              <p className="para-card-desc">{item.desc}</p>
-            </div>
-          ))}
-        </div>
 
-        {/* MEDICAL */}
-        <div className="para-medical-card">
-          <div className="para-medical-accent"></div>
-          <h3 className="para-medical-title">🏥 Hirudotherapy — Leech Therapy in Modern Medicine</h3>
-          <p className="para-medical-text">
-            The very adaptations that make leeches effective parasites also make them invaluable in medicine:
-          </p>
-          <div className="para-medical-grid">
-            <div className="para-medical-item">
-              <strong>Microsurgery</strong>
-              <p>Applied after reattachment surgery to relieve venous congestion by draining excess blood from reattached tissues.</p>
+              {/* CARD 2 */}
+              <div className="adaptation-card" style={{ animationDelay: "0.2s" }}>
+                <div className="icon-box">🧲</div>
+                <div className="card-info">
+                  <h4 className="adaptation-title">Prevention of Pain and Blood Clotting</h4>
+                  <p>Leech saliva contains hirudin, which stops blood from clotting and keeps it flowing. It also releases an anaesthetic, so the host usually feels no pain.</p>
+                </div>
+              </div>
+
+              {/* CARD 3 */}
+              <div className="adaptation-card" style={{ animationDelay: "0.3s" }}>
+                <div className="icon-box">🦷</div>
+                <div className="card-info">
+                  <h4 className="adaptation-title">Food Storage and Digestion
+                  </h4>
+                  <p>The blood a leech sucks is stored in large chambers and digested very slowly. Because of this, it can survive for months without feeding and does not need complex digestive enzymes.</p>
+                </div>
+              </div>
+
+              {/* CARD 4 */}
+              <div className="adaptation-card" style={{ animationDelay: "0.4s" }}>
+                <div className="icon-box">🧪</div>
+                <div className="card-info">
+                  <h4 className="adaptation-title">Adaptations for Firm Attachment</h4>
+                  <p>A leech stays attached to its host using two suckers at the front and back, which help it cling firmly while feeding.</p>
+                </div>
+              </div>
+
+              {/* CARD 5 */}
+              <div className="adaptation-card" style={{ animationDelay: "0.5s" }}>
+                <div className="icon-box">🚫</div>
+                <div className="card-info">
+                  <h4 className="adaptation-title">Other Parasitic Adaptations</h4>
+                  <p>Leeches lack setae and parapodia since they aren’t needed for a parasitic life. Their soft, flexible body helps them attach and move on the host.</p>
+                </div>
+              </div>
+
+              {/* CARD 6 */}
+              <div className="adaptation-card" style={{ animationDelay: "0.6s" }}>
+                <div className="icon-box">📦</div>
+                <div className="card-info">
+                  <h4 className="adaptation-title">Food Storage;</h4>
+                  <p>Blood is stored in the crop, allowing the leech to survive for many months without a new meal.</p>
+                </div>
+              </div>
+
+              {/* CARD 7 */}
+              <div className="adaptation-card full-width-card" style={{ animationDelay: "0.7s" }}>
+                <div className="icon-box">🥣</div>
+                <div className="card-info">
+                  <h4 className="adaptation-title">Easy understanding line</h4>
+                  <p>Every part of a leech, from its jaws and suckers to its saliva, is specially adapted for its blood-sucking parasitic life.</p>
+                </div>
+              </div>
+
             </div>
-            <div className="para-medical-item">
-              <strong>Anti-inflammatory</strong>
-              <p>Hirudin and other salivary compounds reduce inflammation, making leeches useful in treating arthritis and joint pain.</p>
-            </div>
-            <div className="para-medical-item">
-              <strong>Blood Thinning</strong>
-              <p>Hirudin is used pharmaceutically as a model for synthetic anticoagulant drugs used in treating cardiovascular conditions.</p>
+
+          </div>
+
+
+          {/* RIGHT: IMAGE SLIDER */}
+          <div className="parasitic-image-col">
+            <div className="image-frame">
+
+              <div className="slider-wrapper">
+                {/* Navigation Buttons */}
+                <button className="slider-btn prev-btn" onClick={handlePrev}>❮</button>
+                <button className="slider-btn next-btn" onClick={handleNext}>❯</button>
+
+                {/* Active Image */}
+                <img
+                  src={slides[activeSlide].src}
+                  alt={slides[activeSlide].alt}
+                  className="parasitic-img"
+                />
+              </div>
+
+              {/* Caption */}
+              <span className="img-caption">{slides[activeSlide].caption}</span>
+
+              {/* Dots Indicator */}
+              <div className="slider-dots">
+                {slides.map((_, index) => (
+                  <span
+                    key={index}
+                    className={`slider-dot ${index === activeSlide ? 'active' : ''}`}
+                    onClick={() => setActiveSlide(index)}
+                  ></span>
+                ))}
+              </div>
+
             </div>
           </div>
-        </div>
 
-        {/* QUICK REVISION */}
-        <div className="para-revision-card">
-          <h4 className="para-revision-title">📋 Quick Revision — 8 Key Adaptations</h4>
-          <ol className="para-revision-list">
-            {adaptations.map((item, i) => (
-              <li key={i}><strong>{item.title}</strong> — {item.category.toLowerCase()} adaptation</li>
-            ))}
-          </ol>
         </div>
-
       </div>
     </section>
   );

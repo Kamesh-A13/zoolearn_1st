@@ -1,103 +1,92 @@
+import React, { useState } from "react";
 import "./locomotion.css";
 
 const Locomotion = () => {
-  return (
-    <section className="loco-section">
-      <div className="loco-container">
+  // 1. Setup state to track active video. Default is 'none' to show the image first.
+  const [activeMedia, setActiveMedia] = useState("image");
 
-        {/* HEADER */}
-        <div className="loco-header">
-          <h2 className="loco-title">Locomotion</h2>
-          <p className="loco-intro">
-            Despite lacking legs, setae, or parapodia, leeches are surprisingly mobile.
-            They move using <strong>two distinct mechanisms</strong>, powered by the coordinated
-            contraction and relaxation of <strong>circular and longitudinal muscles</strong>.
-          </p>
+  const mediaSources = {
+    looping: "https://res.cloudinary.com/duibfmcw1/video/upload/v1768903630/WhatsApp_Video_2026-01-19_at_14.26.01_jhzt2o.mp4",
+    swimming: "https://res.cloudinary.com/duibfmcw1/video/upload/v1768986635/Video_Project_1_rcyiik.mp4",
+    defaultImage: "https://res.cloudinary.com/duibfmcw1/image/upload/v1767810794/leech_imk2bj.jpg"
+  };
+
+  return (
+    <section className="locomotion-section" id="locomotion">
+      <div className="locomotion-container">
+        <div className="locomotion-header">
+          <h2 className="locomotion-title">Locomotion</h2>
+          <div className="locomotion-underline"></div>
         </div>
 
-        <div className="loco-grid">
+        <div className="locomotion-grid">
+          <div className="locomotion-text-col">
+            <p className="locomotion-intro">Leeches move in two ways:</p>
 
-          {/* LEFT: TEXT CONTENT */}
-          <div className="loco-text-col">
+            <div className="movement-cards">
+              {/* LOOPING CARD */}
+              <div
+                className={`movement-card clickable ${activeMedia === 'looping' ? 'active-card' : ''}`}
+                style={{ animationDelay: "0.2s" }}
+                onClick={() => setActiveMedia("looping")}
+              >
+                <div className="icon-box">🪱</div>
+                <div className="movement-info">
+                  <h3 className="movement-name">Looping / crawling</h3>
+                  <div className="arrow-separator">→</div>
+                  <p className="movement-desc">by alternate attachment of anterior and posterior suckers</p>
+                </div>
+              </div>
 
-            {/* Movement 1: LOOPING */}
-            <div className="loco-movement-card">
-              <div className="loco-card-number">01</div>
-              <div className="loco-card-body">
-                <h3 className="loco-movement-name">Looping / Crawling</h3>
-                <p className="loco-movement-desc">
-                  The primary mode of terrestrial movement. The leech moves by <strong>alternately attaching
-                    and detaching</strong> its anterior and posterior suckers:
-                </p>
-                <div className="loco-steps">
-                  <div className="loco-step">
-                    <span className="loco-step-num">1</span>
-                    <span>Posterior sucker attaches firmly to the surface</span>
-                  </div>
-                  <div className="loco-step">
-                    <span className="loco-step-num">2</span>
-                    <span>Circular muscles contract → body elongates forward</span>
-                  </div>
-                  <div className="loco-step">
-                    <span className="loco-step-num">3</span>
-                    <span>Anterior sucker attaches to a new position</span>
-                  </div>
-                  <div className="loco-step">
-                    <span className="loco-step-num">4</span>
-                    <span>Longitudinal muscles contract → body pulls up in a loop</span>
-                  </div>
+              {/* SWIMMING CARD */}
+              <div 
+                className={`movement-card clickable ${activeMedia === 'swimming' ? 'active-card' : ''}`}
+                style={{ animationDelay: "0.4s" }}
+                onClick={() => setActiveMedia("swimming")}
+              >
+                <div className="icon-box">🌊</div>
+                <div className="movement-info">
+                  <h3 className="movement-name">Swimming</h3>
+                  <div className="arrow-separator">→</div>
+                  <p className="movement-desc">by wave-like (undulating) movements of the body in water</p>
                 </div>
               </div>
             </div>
 
-            {/* Movement 2: SWIMMING */}
-            <div className="loco-movement-card">
-              <div className="loco-card-number">02</div>
-              <div className="loco-card-body">
-                <h3 className="loco-movement-name">Swimming</h3>
-                <p className="loco-movement-desc">
-                  In water, the leech swims by producing <strong>wave-like undulations</strong>
-                  of the flattened body. The body flattens dorso-ventrally and creates rhythmic
-                  sinusoidal waves that propel it through the water.
-                </p>
-                <div className="loco-detail-row">
-                  <span className="loco-detail-icon">💡</span>
-                  <span className="loco-detail-text">
-                    Both suckers are <strong>detached</strong> during swimming — the posterior sucker
-                    acts as a rudder for steering direction.
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Muscle Info */}
-            <div className="leech-callout leech-callout-info">
-              <strong>🔬 Muscle Mechanics</strong>
-              The body wall contains three muscle layers: an outer circular layer, a middle oblique layer,
-              and an inner longitudinal layer. When circular muscles contract, the body elongates; when
-              longitudinal muscles contract, it shortens — together creating the looping motion.
-            </div>
-
-          </div>
-
-          {/* RIGHT: IMAGE */}
-          <div className="loco-image-col">
-            <div className="loco-image-frame">
-              <img
-                src="https://res.cloudinary.com/duibfmcw1/image/upload/v1767810794/leech_imk2bj.jpg"
-                alt="Leech Locomotion"
-                className="loco-img"
-              />
-              <span className="loco-img-label">Figure: Leech in locomotion</span>
-            </div>
-
-            <div className="leech-callout leech-callout-fact" style={{ marginTop: '1rem' }}>
-              <strong>🐛 Fun Fact</strong>
-              A leech can cover approximately 10–15 cm per second while swimming — that's nearly half its body
-              length each second!
+            <div className="locomotion-footer">
+              <p className="footer-note">Movement is controlled by muscle contraction and relaxation.</p>
             </div>
           </div>
 
+          {/* RIGHT SIDE: Dynamic Media Box */}
+          <div className="locomotion-image-col">
+            <div className="image-frame video-frame">
+              {activeMedia === "image" ? (
+                <img src={mediaSources.defaultImage} alt="Leech" className="locomotion-img" />
+              ) : (
+                <video
+                  key={activeMedia} // Key ensures React reloads the video when source changes
+                  className="locomotion-video"
+                  src={mediaSources[activeMedia]}
+                  title="Leech Movement Video"
+                  autoPlay
+                  loop      // <--- This ensures the video plays again and again
+                  muted     // <--- Required for autoPlay to work in most browsers
+                  playsInline
+                  controls={false} // Set to true if you want user controls (play/pause)
+                  style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "12px" }}
+                />
+              )}
+              
+              <span className="img-label">
+                {activeMedia === "image" ? "Leech Movement" : `Video: ${activeMedia} Mode`}
+              </span>
+              
+              {activeMedia !== "image" && (
+                <button className="reset-btn" onClick={() => setActiveMedia("image")}>Reset to Image</button>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </section>

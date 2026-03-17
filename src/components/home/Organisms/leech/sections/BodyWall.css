@@ -295,3 +295,93 @@
   font-weight: 800;
   color: #000000;
 }
+
+/* =====================================================
+   MOBILE FIXES
+   - Bigger cross-section
+   - Card full width
+===================================================== */
+
+.bw-svg-container {
+  width: 100%;
+}
+
+.bw-svg-container svg {
+  width: 100%;
+  height: auto;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 768px) {
+
+  /* Remove side spacing */
+  .bw-app-container {
+    padding: 0;
+  }
+
+  .bw-container {
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  /* Make diagram bigger */
+  .bw-svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bw-svg-container svg {
+    width: 140%;
+    max-width: none;
+    transform: scale(1.2);
+    transform-origin: left center;
+  }
+
+}
+
+/* REMOVE OUTER SIDE GAP */
+.leech-section-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* FULL WIDTH FIX */
+.bw-app-container {
+  padding: 0 !important;
+}
+
+/* CLEAN MOBILE SPACING */
+@media (max-width: 768px) {
+  .bw-main-content {
+    padding: 1.2rem !important;
+  }
+}
+
+/* OPTIONAL: EDGE TO EDGE LOOK */
+.bw-container {
+  border-radius: 0;
+  max-width: 100%;
+}
+
+
+/* =========================================
+   REMOVE FLOATING GREEN BUTTON (FAB)
+========================================= */
+
+/* Most common floating button classes */
+button[style*="position: fixed"],
+div[style*="position: fixed"] {
+  display: none !important;
+}
+
+/* If it's using z-index floating */
+[style*="z-index: 999"],
+[style*="z-index:999"] {
+  display: none !important;
+}
+
+/* Extra safe: bottom-right floating elements */
+*[style*="bottom"][style*="right"] {
+  display: none !important;
+}

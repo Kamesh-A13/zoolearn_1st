@@ -1,257 +1,246 @@
-/* Nervous System - Premium Styling */
-
-.nerv-section {
-  padding: 0;
+/* SECTION WRAPPER */
+.nerv-nervous-section {
+  padding: 80px 5%;
+  background: linear-gradient(to bottom, #f0fdfa, #ffffff);
+  font-family: "Inter", system-ui, sans-serif;
+  overflow-x: hidden;
 }
 
-.nerv-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.nerv-nervous-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.nerv-header {
-  margin-bottom: 0.5rem;
-}
-
-.nerv-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: var(--leech-primary-dark, #14280a);
-  margin: 0;
-}
-
-.nerv-grid {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 2rem;
-  align-items: start;
-}
-
-/* Cards */
-.nerv-card {
-  background: white;
-  border-radius: 16px;
-  padding: 1.5rem;
-  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
-  box-shadow: var(--leech-shadow-soft);
-  margin-bottom: 1rem;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.nerv-card:hover {
-  box-shadow: var(--leech-shadow-medium);
-  transform: translateY(-2px);
-}
-
-.nerv-card-accent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #8b5cf6, var(--leech-primary, #3d6b0a));
-}
-
-.nerv-card-heading {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--leech-primary-dark, #14280a);
-  margin: 0 0 0.5rem;
-}
-
-.nerv-card-text {
-  font-size: 0.88rem;
-  line-height: 1.65;
-  color: var(--leech-text-secondary, #2d3b29);
-  margin: 0 0 0.75rem;
-}
-
-/* Component List */
-.nerv-component-list {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-.nerv-component {
-  display: flex;
-  gap: 12px;
-  padding: 1rem;
-  background: var(--leech-bg-app, #f6faf4);
-  border-radius: 12px;
-  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
-  transition: all 0.3s ease;
-}
-
-.nerv-component:hover {
-  transform: translateX(4px);
-  box-shadow: var(--leech-shadow-soft);
-}
-
-.nerv-comp-icon {
-  font-size: 1.3rem;
-  width: 40px;
-  height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-}
-
-.nerv-comp-connector {
+/* HEADER */
+.nerv-nervous-header {
   text-align: center;
-  font-size: 1.2rem;
-  color: var(--leech-primary, #3d6b0a);
-  line-height: 1.2;
-  padding: 2px 0;
-  opacity: 0.4;
+  margin-bottom: 50px;
+  animation: nerv-fadeInDown 0.8s ease-out;
 }
 
-.nerv-comp-name {
-  font-size: 0.88rem;
-  color: var(--leech-primary-dark, #14280a);
-  display: block;
-  margin-bottom: 3px;
+.nerv-section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #064e3b;
+  margin-bottom: 12px;
 }
 
-.nerv-comp-desc {
-  font-size: 0.82rem;
-  line-height: 1.55;
-  color: var(--leech-text-secondary, #2d3b29);
-  margin: 0;
+.nerv-title-underline {
+  width: 100px;
+  height: 5px;
+  background: #10b981;
+  margin: 0 auto;
+  border-radius: 4px;
 }
 
-/* Senses Grid */
-.nerv-senses-grid {
+/* GRID LAYOUT */
+.nerv-nervous-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* CONTENT COLUMN */
+.nerv-nervous-content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
-.nerv-sense-item {
+.nerv-nervous-intro {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #065f46;
+  margin-bottom: 30px;
+  animation: nerv-fadeIn 1s ease-out;
+}
+
+/* NERVE LIST STRUCTURE */
+.nerv-nerve-list {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* CARD ITEM */
+.nerv-nerve-card {
+  background: white;
+  padding: 18px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  border: 1px solid #d1fae5;
+  display: flex;
   align-items: center;
-  padding: 0.75rem 1rem;
-  background: var(--leech-bg-app, #f6faf4);
-  border-radius: 10px;
-  transition: all 0.3s ease;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+  animation: nerv-slideInLeft 0.8s ease-out forwards;
 }
 
-.nerv-sense-item:hover {
-  transform: translateX(4px);
-  background: var(--leech-primary-light, #f0fdf4);
+.nerv-nerve-card:hover {
+  transform: translateX(10px);
+  border-color: #34d399;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.15);
 }
 
-.nerv-sense-icon {
-  font-size: 1.1rem;
+/* Node Point (The Dot) */
+.nerv-node-point {
+  width: 16px;
+  height: 16px;
+  background: #10b981;
+  border-radius: 50%;
+  border: 3px solid #ecfdf5;
+  box-shadow: 0 0 0 2px #10b981;
   flex-shrink: 0;
 }
 
-.nerv-sense-item strong {
-  font-size: 0.82rem;
-  color: var(--leech-primary-dark, #14280a);
-  display: block;
+/* Visual Connector Line between cards */
+.nerv-connector-line {
+  width: 2px;
+  height: 25px;
+  background: #cbd5e1;
+  margin-left: 33px; /* Aligns with the node point center */
+  position: relative;
+  z-index: 1;
 }
 
-.nerv-sense-item p {
-  font-size: 0.78rem;
-  color: var(--leech-text-secondary, #2d3b29);
-  margin: 0;
-  line-height: 1.4;
+/* TEXT STYLES */
+.nerv-nerve-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #065f46;
+  margin-bottom: 4px;
 }
 
-/* Image */
-.nerv-image-col {
-  position: sticky;
-  top: 100px;
+.nerv-nerve-desc {
+  font-size: 1rem;
+  color: #475569;
+  font-style: italic;
+}
+
+/* FOOTER */
+.nerv-nervous-footer {
+  background: #064e3b;
+  color: white;
+  padding: 20px;
+  border-radius: 16px;
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 30px rgba(6, 78, 59, 0.2);
+  animation: nerv-fadeUp 1s ease-out forwards;
+}
+
+.nerv-pulse-icon {
+  font-size: 1.5rem;
+  animation: nerv-pulse 2s infinite;
+}
+
+.nerv-nervous-footer p {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0;
+  color: white;
+}
+
+/* IMAGE COLUMN */
+.nerv-nervous-image-col {
+  display: flex;
+  justify-content: center;
+  animation: nerv-zoomIn 1s ease-out;
 }
 
 .nerv-image-frame {
-  background: var(--leech-primary-light, #f0fdf4);
-  border-radius: 16px;
-  padding: 1rem;
-  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  background: white;
+  padding: 20px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+  border: 4px solid #ecfdf5;
   text-align: center;
 }
 
-.nerv-img {
+.nerv-nervous-img {
   width: 100%;
+  max-width: 450px;
   height: auto;
-  border-radius: 12px;
-  box-shadow: var(--leech-shadow-soft);
+  border-radius: 16px;
   transition: transform 0.4s ease;
 }
 
-.nerv-image-frame:hover .nerv-img {
-  transform: scale(1.02);
+.nerv-image-frame:hover .nerv-nervous-img {
+  transform: scale(1.03);
 }
 
 .nerv-img-caption {
   display: block;
-  margin-top: 0.75rem;
-  font-size: 0.78rem;
-  font-style: italic;
-  color: var(--leech-text-muted, #5c6e56);
-}
-
-/* Summary Card */
-.nerv-summary-card {
-  background: white;
-  border-radius: 14px;
-  padding: 1.25rem;
-  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
-  box-shadow: var(--leech-shadow-soft);
-}
-
-.nerv-summary-title {
-  font-size: 0.75rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--leech-primary, #3d6b0a);
-  margin: 0 0 0.75rem;
-}
-
-.nerv-summary-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 6px 0;
-  border-bottom: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
-  font-size: 0.8rem;
-}
-
-.nerv-summary-row:last-child {
-  border-bottom: none;
-}
-
-.nerv-summary-label {
-  color: var(--leech-text-muted, #5c6e56);
-  font-weight: 600;
-}
-
-.nerv-summary-value {
-  color: var(--leech-text-main, #0c1a0a);
+  margin-top: 15px;
+  font-size: 0.9rem;
   font-weight: 700;
-  text-align: right;
+  color: #10b981;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-@media (max-width: 768px) {
-  .nerv-grid {
-    grid-template-columns: 1fr;
+/* ANIMATIONS */
+@keyframes nerv-fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes nerv-slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes nerv-fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes nerv-zoomIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes nerv-pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* =========================================
+   LAPTOP VIEW (1024px - 1366px)
+   ========================================= */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .nerv-nervous-section { padding: 60px 5%; }
+  .nerv-section-title { font-size: 2rem; }
+  .nerv-nervous-grid { gap: 30px; }
+  
+  .nerv-nerve-card { padding: 15px 20px; }
+  .nerv-connector-line { height: 20px; }
+  .nerv-nerve-name { font-size: 1.05rem; }
+}
+
+/* =========================================
+   MOBILE / TABLET VIEW
+   ========================================= */
+@media (max-width: 900px) {
+  .nerv-nervous-grid {
+    grid-template-columns: 1fr; /* Stack vertically */
   }
 
-  .nerv-image-col {
-    position: static;
+  .nerv-nervous-image-col {
+    order: -1; /* Image first on mobile */
+    margin-bottom: 20px;
   }
+}
+
+@media (max-width: 600px) {
+  .nerv-section-title { font-size: 1.8rem; }
+  .nerv-nerve-card { padding: 15px; }
+  .nerv-node-point { width: 12px; height: 12px; }
+  .nerv-connector-line { margin-left: 31px; }
 }

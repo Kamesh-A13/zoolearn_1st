@@ -53,3 +53,25 @@
     margin-top: 1.5rem;
   }
 }
+
+
+/* =========================================
+   PYRAMID SIZE FIX (SAFE SCALE)
+========================================= */
+
+#pyramid-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================================
+   FIX WHITE SPACE CAUSED BY SCALE
+========================================= */
+
+@media (max-width: 768px) {
+  #pyramid-section > * {
+    transform: scale(0.85);
+    margin-bottom: -100px;
+  }
+}

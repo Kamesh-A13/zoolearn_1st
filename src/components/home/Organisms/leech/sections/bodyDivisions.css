@@ -1,261 +1,216 @@
-/* Body Divisions - Premium Timeline Styling */
-
+/* SECTION BACKGROUND */
 .bd-divisions-section {
-  padding: 0;
+  padding: 80px 5%;
+  background: linear-gradient(to bottom, #ffffff, #f0fdfa);
+  font-family: "Inter", system-ui, sans-serif;
+  overflow-x: hidden;
 }
 
 .bd-divisions-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
+/* HEADER */
 .bd-divisions-header {
-  margin-bottom: 0.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  animation: bd-fadeInDown 0.8s ease-out;
 }
 
 .bd-divisions-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  color: var(--leech-primary-dark, #14280a);
-  margin: 0 0 0.75rem;
+  color: #064e3b;
+  margin-bottom: 12px;
 }
 
+.bd-divisions-underline {
+  width: 80px;
+  height: 5px;
+  background: #10b981;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+/* INTRO TEXT */
 .bd-divisions-intro {
-  font-size: 0.92rem;
-  line-height: 1.7;
-  color: var(--leech-text-secondary, #2d3b29);
-  max-width: 700px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #334155;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+  animation: bd-fadeIn 1s ease-out;
 }
 
-/* Segment Summary Bar */
-.bd-segment-bar {
-  display: flex;
-  border-radius: 10px;
-  overflow: hidden;
-  height: 32px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
+/* GRID LAYOUT */
+.bd-divisions-grid {
+  display: grid;
+  /* Creates 3 columns automatically */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px;
+  margin-bottom: 50px;
 }
 
-.bd-segment-block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  cursor: default;
-  position: relative;
-  min-width: 30px;
-}
-
-.bd-segment-block:hover {
-  filter: brightness(1.1);
-  transform: scaleY(1.15);
-}
-
-.bd-segment-block-label {
-  font-size: 0.62rem;
-  font-weight: 800;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  white-space: nowrap;
-}
-
-/* Timeline Layout */
-.bd-divisions-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  position: relative;
-  padding-left: 28px;
-}
-
-.bd-divisions-timeline::before {
-  content: '';
-  position: absolute;
-  left: 11px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(180deg,
-      #e11d48 0%,
-      #f59e0b 20%,
-      #ea580c 35%,
-      #16a34a 55%,
-      #0d9488 75%,
-      #4f46e5 100%);
-  border-radius: 2px;
-}
-
-.bd-timeline-card {
-  position: relative;
-  padding: 1rem 0 1rem 1.5rem;
-  animation: leechCardEnter 0.4s ease-out forwards;
-  opacity: 0;
-}
-
-.bd-timeline-marker {
-  position: absolute;
-  left: -22px;
-  top: 1.3rem;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-  z-index: 2;
-}
-
-.bd-timeline-content {
+/* CARD STYLES */
+.bd-division-card {
   background: white;
-  border-radius: 14px;
-  padding: 1.25rem 1.5rem;
-  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
-  box-shadow: var(--leech-shadow-soft, 0 1px 3px rgba(0, 0, 0, 0.04));
-  transition: all 0.3s ease;
+  padding: 30px 25px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  /* Animation setup */
+  opacity: 0; 
+  animation: bd-slideUpCard 0.6s ease-out forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.bd-timeline-content:hover {
-  box-shadow: var(--leech-shadow-medium, 0 4px 14px rgba(0, 0, 0, 0.06));
-  transform: translateX(4px);
+.bd-division-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15);
+  border-color: #34d399;
 }
 
-.bd-card-top-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 0.5rem;
-  flex-wrap: wrap;
+/* Decorative top bar on card hover */
+.bd-division-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #10b981;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
 }
 
+.bd-division-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* BADGE */
 .bd-segment-badge {
-  font-size: 0.68rem;
+  display: inline-block;
+  background: #ecfdf5;
+  color: #059669;
   font-weight: 700;
-  padding: 3px 10px;
-  border-radius: 6px;
-  border: 1px solid;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  font-size: 0.9rem;
+  padding: 6px 16px;
+  border-radius: 50px;
+  border: 1px solid #a7f3d0;
+  margin-bottom: 15px;
 }
 
-.bd-organs-tag {
-  font-size: 0.68rem;
-  font-weight: 600;
-  color: var(--leech-text-muted, #5c6e56);
-  background: var(--leech-bg-app, #f6faf4);
-  padding: 3px 10px;
-  border-radius: 6px;
-}
-
+/* TEXT STYLES */
 .bd-region-name {
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: var(--leech-text-main, #0c1a0a);
-  margin: 0 0 0.4rem;
+  color: #065f46;
+  margin-bottom: 10px;
+}
+
+.bd-arrow-divider {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  margin: 5px 0 10px 0;
+  font-weight: bold;
 }
 
 .bd-region-desc {
-  font-size: 0.85rem;
-  line-height: 1.65;
-  color: var(--leech-text-secondary, #2d3b29);
-  margin: 0;
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-/* Footer */
+/* FOOTER BOX */
 .bd-divisions-footer-box {
-  background: var(--leech-primary-light, #f0fdf4);
-  border-radius: 14px;
-  padding: 1.25rem 1.5rem;
-  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+  background: #064e3b; /* Dark Green block */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(6, 78, 59, 0.2);
+  animation: bd-fadeIn 1.2s ease-out;
 }
 
 .bd-footer-text {
-  font-size: 0.88rem;
-  line-height: 1.65;
-  color: var(--leech-text-secondary, #2d3b29);
-  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
 }
 
-@media (max-width: 768px) {
-  .bd-divisions-timeline {
-    padding-left: 24px;
-  }
-
-  .bd-timeline-marker {
-    left: -18px;
-    width: 12px;
-    height: 12px;
-  }
-
-  .bd-segment-bar {
-    height: 24px;
-  }
-
-  .bd-segment-block-label {
-    font-size: 0.55rem;
-  }
+/* ANIMATIONS */
+@keyframes bd-fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-@media (max-width: 480px) {
+@keyframes bd-slideUpCard {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bd-fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* =========================================
+   LAPTOP VIEW ADJUSTMENTS (1024px - 1366px)
+   ========================================= */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .bd-divisions-section {
+    padding: 60px 5%; /* Less padding */
+  }
+
   .bd-divisions-title {
-    font-size: 1.3rem;
+    font-size: 2rem; /* Smaller Title */
   }
 
-  .bd-divisions-intro {
-    font-size: 0.85rem;
+  .bd-divisions-grid {
+    gap: 20px; /* Tighter grid */
   }
 
-  .bd-timeline-content {
-    padding: 1rem 1.15rem;
-    border-radius: 10px;
+  .bd-division-card {
+    padding: 20px 15px; /* Compact cards */
   }
 
   .bd-region-name {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
 
   .bd-region-desc {
-    font-size: 0.8rem;
-  }
-
-  .bd-divisions-footer-box {
-    padding: 1rem 1.15rem;
-    border-radius: 10px;
-  }
-
-  .bd-footer-text {
-    font-size: 0.82rem;
-  }
-
-  .bd-segment-bar {
-    height: 20px;
-  }
-
-  .bd-segment-block-label {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
   }
 }
 
-@media (max-width: 359px) {
+/* =========================================
+   MOBILE RESPONSIVENESS
+   ========================================= */
+@media (max-width: 900px) {
+  .bd-divisions-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  .bd-divisions-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+  
   .bd-divisions-title {
-    font-size: 1.15rem;
+    font-size: 1.8rem;
   }
-
-  .bd-divisions-timeline {
-    padding-left: 20px;
-  }
-
-  .bd-timeline-marker {
-    left: -15px;
-    width: 10px;
-    height: 10px;
-  }
-
-  .bd-timeline-content {
-    padding: 0.75rem;
-  }
-
-  .bd-segment-bar {
-    height: 16px;
+  
+  .bd-divisions-intro {
+    font-size: 1rem;
   }
 }

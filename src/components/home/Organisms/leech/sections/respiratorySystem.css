@@ -1,214 +1,253 @@
-/* Respiratory System - Premium Styling */
-
-.resp-section {
-  padding: 0;
+/* SECTION WRAPPER */
+.rs-respiratory-section {
+  padding: 80px 5%;
+  background: linear-gradient(to bottom, #ecfdf5, #ffffff);
+  font-family: "Inter", system-ui, sans-serif;
+  overflow-x: hidden;
 }
 
-.resp-container {
+.rs-respiratory-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.rs-underline {
+  width: 80px;
+  height: 5px;
+  background: #10b981; /* Emerald Green */
+  margin: 0 auto;
+  border-radius: 4px;
+}
+/* HEADER */
+.rs-respiratory-header {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.rs-section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #064e3b;
+  margin-bottom: 12px;
+}
+
+.rs-title-underline {
+  width: 100px;
+  height: 5px;
+  background: #10b981;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+/* GRID LAYOUT */
+.rs-respiratory-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* CONTENT COLUMN */
+.rs-respiratory-content {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 20px;
 }
 
-.resp-header {
-  margin-bottom: 0.5rem;
-}
-
-.resp-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: var(--leech-primary-dark, #14280a);
-  margin: 0;
-}
-
-.resp-grid {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 2rem;
-  align-items: start;
-}
-
-/* Cards */
-.resp-card {
+/* CARD COMMON STYLES */
+.rs-respiratory-card {
   background: white;
-  border-radius: 16px;
-  padding: 1.5rem;
-  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
-  box-shadow: var(--leech-shadow-soft);
-  margin-bottom: 1rem;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  border: 1px solid #d1fae5;
   transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
+  opacity: 0;
+  animation: slideInLeft 0.8s ease-out forwards;
 }
 
-.resp-card:hover {
-  box-shadow: var(--leech-shadow-medium);
-  transform: translateY(-2px);
+#rs-intro{
+  display:contents;
 }
 
-.resp-card-accent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--leech-primary, #3d6b0a), var(--leech-primary-vivid, #65a30d));
+.rs-respiratory-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(16, 185, 129, 0.15);
+  border-color: #34d399;
 }
 
-.resp-icon-wrapper {
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
-  width: 48px;
-  height: 48px;
+/* SPECIFIC CARD STYLING */
+.rs-intro-card {
+  border-left: 5px solid #10b981;
+  animation-delay: 0.1s;
+}
+
+.rs-mechanism-card {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  animation-delay: 0.3s;
+}
+
+/* Pulse animation for mechanism to simulate breathing */
+.rs-mechanism-card:hover .icon-wrapper {
+  animation: pulse 2s infinite;
+}
+
+.rs-transport-card {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  animation-delay: 0.5s;
+}
+
+/* TEXT STYLES */
+.rs-card-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #065f46;
+  margin-bottom: 5px;
+}
+
+.rs-scientific-name {
+  font-style: italic;
+  color: #059669;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.rs-divider-line {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 10px 0;
+}
+
+.rs-card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #334155;
+  margin-bottom: 12px;
+}
+
+.rs-highlight-badge {
+  display: inline-block;
+  background: #ecfdf5;
+  color: #047857;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 1px dashed #10b981;
+}
+
+/* ICONS */
+.rs-icon-wrapper {
+  background: #f0fdfa;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--leech-primary-light, #f0fdf4);
-  border-radius: 14px;
-}
-
-.resp-info-col {
-  flex: 1;
-}
-
-.resp-card-heading {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--leech-primary-dark, #14280a);
-  margin: 0 0 0.5rem;
-}
-
-.resp-card-text {
-  font-size: 0.88rem;
-  line-height: 1.65;
-  color: var(--leech-text-secondary, #2d3b29);
-  margin: 0 0 0.75rem;
-}
-
-.resp-keyword {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 0.6rem 0.8rem;
-  background: var(--leech-primary-light, #f0fdf4);
-  border-radius: 10px;
-  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
-}
-
-.resp-keyword-tag {
-  font-size: 0.62rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: white;
-  background: var(--leech-primary, #3d6b0a);
-  padding: 2px 8px;
-  border-radius: 6px;
+  font-size: 1.6rem;
   flex-shrink: 0;
+  color: #10b981;
 }
 
-.resp-keyword-text {
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--leech-primary-dark, #14280a);
-}
-
-.resp-highlight-badge {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--leech-emerald, #059669);
-  background: var(--leech-emerald-light, rgba(5, 150, 105, 0.08));
-  padding: 6px 14px;
-  border-radius: 8px;
-  border: 1px solid rgba(5, 150, 105, 0.15);
-}
-
-/* Image */
-.resp-image-col {
-  position: sticky;
-  top: 100px;
+/* IMAGE COLUMN */
+.rs-respiratory-image-col {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  justify-content: center;
+  animation: zoomIn 1s ease-out;
 }
 
-.resp-image-frame {
-  background: var(--leech-primary-light, #f0fdf4);
-  border-radius: 16px;
-  padding: 1rem;
-  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
+.rs-image-frame {
+  background: white;
+  padding: 20px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+  border: 4px solid #f0fdfa;
   text-align: center;
+  position: relative;
 }
 
-.resp-img {
+.rs-respiratory-img {
   width: 100%;
+  max-width: 350px;
   height: auto;
-  border-radius: 12px;
-  box-shadow: var(--leech-shadow-soft);
+  border-radius: 16px;
   transition: transform 0.4s ease;
 }
 
-.resp-image-frame:hover .resp-img {
-  transform: scale(1.02);
+.rs-image-frame:hover .respiratory-img {
+  transform: scale(1.03);
 }
 
-.resp-img-caption {
+.rs-img-caption {
   display: block;
-  margin-top: 0.75rem;
-  font-size: 0.78rem;
-  font-style: italic;
-  color: var(--leech-text-muted, #5c6e56);
-}
-
-/* Summary Card */
-.resp-summary-card {
-  background: white;
-  border-radius: 14px;
-  padding: 1.25rem;
-  border: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
-  box-shadow: var(--leech-shadow-soft);
-}
-
-.resp-summary-title {
-  font-size: 0.75rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--leech-primary, #3d6b0a);
-  margin: 0 0 0.75rem;
-}
-
-.resp-summary-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 6px 0;
-  border-bottom: 1px solid var(--leech-border, rgba(61, 107, 10, 0.1));
-  font-size: 0.8rem;
-}
-
-.resp-summary-row:last-child {
-  border-bottom: none;
-}
-
-.resp-summary-label {
-  color: var(--leech-text-muted, #5c6e56);
-  font-weight: 600;
-}
-
-.resp-summary-value {
-  color: var(--leech-text-main, #0c1a0a);
+  margin-top: 15px;
+  font-size: 0.9rem;
   font-weight: 700;
-  text-align: right;
+  color: #10b981;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-@media (max-width: 768px) {
-  .resp-grid {
-    grid-template-columns: 1fr;
+/* ANIMATIONS */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+  70% { transform: scale(1.1); box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+/* =========================================
+   LAPTOP VIEW (1024px - 1366px)
+   ========================================= */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .rs-respiratory-section { padding: 60px 5%; }
+  .rs-section-title { font-size: 2rem; }
+  .rs-respiratory-grid { gap: 30px; }
+  
+  .rs-respiratory-card { padding: 18px; }
+  .rs-icon-wrapper { width: 40px; height: 40px; font-size: 1.3rem; }
+  .rs-card-heading { font-size: 1.1rem; }
+  .rs-card-text { font-size: 0.95rem; }
+}
+
+/* =========================================
+   MOBILE / TABLET VIEW
+   ========================================= */
+@media (max-width: 900px) {
+  .rs-respiratory-grid {
+    grid-template-columns: 1fr; /* Stack vertically */
   }
 
-  .resp-image-col {
-    position: static;
+  .rs-respiratory-image-col {
+    order: -1; /* Image first on mobile */
+    margin-bottom: 20px;
   }
+}
+
+@media (max-width: 600px) {
+  .rs-section-title { font-size: 1.8rem; }
+  .rs-mechanism-card, .transport-card { flex-direction: column; }
+  .rs-icon-wrapper { margin-bottom: 10px; }
 }

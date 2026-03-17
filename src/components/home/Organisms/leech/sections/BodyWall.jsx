@@ -47,15 +47,14 @@ const BodyWall = () => {
         <div style={{ display: 'flex', flexDirection: isDesktop ? 'row' : 'column', minHeight: '600px' }}>
 
           {/* --- MAIN DIAGRAM AREA --- */}
-          <div style={{ flex: 1, padding: '2rem', display: 'flex', flexDirection: 'column', borderRight: isDesktop ? '1px solid var(--leech-border)' : 'none' }}>
-            <div style={{ marginBottom: '1.5rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-                <div style={{ width: '8px', height: '8px', background: 'var(--leech-primary)', borderRadius: '50%' }}></div>
-                <span style={{ fontSize: '0.75rem', fontWeight: '800', textTransform: 'uppercase', color: 'var(--leech-text-muted)' }}>Microscopic Analysis</span>
-              </div>
-              <h2 className="leech-section-title" style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>Integumentary System</h2>
-              <p className="leech-section-text" style={{ fontSize: '0.9rem' }}>Interactive histological cross-section showing the protective body wall layers.</p>
+          <div style={{ flex: 1, padding: isDesktop ? '2rem' : '0', display: 'flex', flexDirection: 'column', borderRight: isDesktop ? '1px solid var(--leech-border)' : 'none' }}>            <div style={{ marginBottom: '1.5rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+              <div style={{ width: '8px', height: '8px', background: 'var(--leech-primary)', borderRadius: '50%' }}></div>
+              <span style={{ fontSize: '0.75rem', fontWeight: '800', textTransform: 'uppercase', color: 'var(--leech-text-muted)' }}>Microscopic Analysis</span>
             </div>
+            <h2 className="leech-section-title" style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>Integumentary System</h2>
+            <p className="leech-section-text" style={{ fontSize: '0.9rem' }}>Interactive histological cross-section showing the protective body wall layers.</p>
+          </div>
 
             <div style={{ background: 'var(--leech-bg-app)', border: '1px solid var(--leech-border)', borderRadius: '1rem', padding: '1rem', flex: 1, position: 'relative' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
@@ -69,7 +68,7 @@ const BodyWall = () => {
               </div>
 
               <div className="bw-svg-container">
-                <svg viewBox="0 0 480 280">
+                <svg viewBox="0 0 480 280" style={{ width: isDesktop ? '100%' : '170%' }}>
                   <defs>
                     <marker id="bw-arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
                       <polygon points="0 0, 10 3.5, 0 7" fill="#000000" />

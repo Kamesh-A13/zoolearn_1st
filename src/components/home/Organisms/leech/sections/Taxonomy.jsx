@@ -1,5 +1,4 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { createPortal } from 'react-dom';
 import ReactFlow, {
   useNodesState,
   useEdgesState,
@@ -56,7 +55,7 @@ const dagreGraph = new dagre.graphlib.Graph();
 dagreGraph.setDefaultEdgeLabel(() => ({}));
 
 const getLayoutedElements = (nodes, edges) => {
-  dagreGraph.setGraph({ rankdir: 'TB' });
+  dagreGraph.setGraph({ rankdir: 'TB' }); 
   nodes.forEach((node) => {
     dagreGraph.setNode(node.id, { width: 200, height: 70 });
   });
@@ -95,18 +94,18 @@ const nodeTypes = { taxon: TaxonNode };
 // --- RECURSIVE FLATTENER ---
 const flattenTree = (node, parentId = null, nodes = [], edges = [], expandedIds = []) => {
   const isExpanded = expandedIds.includes(node.id);
-
+  
   nodes.push({
     id: node.id,
     type: 'taxon',
-    data: {
-      name: node.name,
-      rank: node.rank,
-      hasChildren: !!node.children,
+    data: { 
+      name: node.name, 
+      rank: node.rank, 
+      hasChildren: !!node.children, 
       expanded: isExpanded,
     },
     position: { x: 0, y: 0 },
-    draggable: false,
+    draggable: false, 
   });
 
   if (parentId) {
@@ -114,7 +113,7 @@ const flattenTree = (node, parentId = null, nodes = [], edges = [], expandedIds 
       id: `${parentId}-${node.id}`,
       source: parentId,
       target: node.id,
-      animated: true,
+      animated: true, 
       type: 'default',
       style: { stroke: '#555', strokeWidth: 2, strokeDasharray: '5,5' },
     });
@@ -127,29 +126,30 @@ const flattenTree = (node, parentId = null, nodes = [], edges = [], expandedIds 
 };
 
 // --- PATH GENERATOR HELPER ---
+// Generates a breadcrumb string based on the deepest open node in the Hirudinea branch
 const getPathString = (expandedIds) => {
-  let path = ["Annelida"];
-  if (expandedIds.includes("root")) {
-    if (expandedIds.includes("c3")) path.push("Hirudinea");
-    if (expandedIds.includes("o2")) path.push("Arhynchobdellida");
-    if (expandedIds.includes("f1")) path.push("Hirudinidae");
-    if (expandedIds.includes("g2")) path.push("Hirudinaria");
-  }
-  return path.join("  ›  ");
+    // Simple logic: Display static path or construct it. 
+    // For this specific Leech context, we can hardcode the relevant logic or check IDs.
+    let path = ["Annelida"];
+    if (expandedIds.includes("root")) {
+        if (expandedIds.includes("c3")) path.push("Hirudinea");
+        if (expandedIds.includes("o2")) path.push("Arhynchobdellida");
+        if (expandedIds.includes("f1")) path.push("Hirudinidae");
+        if (expandedIds.includes("g2")) path.push("Hirudinaria");
+    }
+    return path.join("  ›  ");
 };
 
 // --- CHART COMPONENT ---
-const AnimaliaChart = ({ interactive = true, onPathChange, isFullScreen = false, isMini = false }) => {
+const AnimaliaChart = ({ interactive = true, onPathChange }) => {
   const { fitView } = useReactFlow();
   const [isLocked, setIsLocked] = useState(!interactive);
-
-  // Default State logic:
-  // - Interactive (Desktop/Fullscreen): Initialize with 'root' expanded.
-  // - Static (Mobile Preview): Initialize with a deeper branch if isMini.
-  const [expandedIds, setExpandedIds] = useState(() => {
-    if (isMini) return ['root', 'c3', 'o2']; // Show a deeper teaser
-    return interactive ? ['root'] : ['root', 'c3'];
-  });
+  
+  // Default State: Root expanded. 
+  // If NOT interactive (embedded), we expand Hirudinea (c3) too so the preview looks good.
+  const [expandedIds, setExpandedIds] = useState(
+      interactive ? ['root'] : ['root']
+  );
 
   const { nodes: initialNodes, edges: initialEdges } = flattenTree(treeData, null, [], [], expandedIds);
   const layouted = getLayoutedElements(initialNodes, initialEdges);
@@ -162,23 +162,18 @@ const AnimaliaChart = ({ interactive = true, onPathChange, isFullScreen = false,
     const { nodes: lN, edges: lE } = getLayoutedElements(fN, fE);
     setNodes([...lN]);
     setEdges([...lE]);
-
-    if (onPathChange) onPathChange(getPathString(expandedIds));
+    
+    // Update parent component with the current path
+    if(onPathChange) onPathChange(getPathString(expandedIds));
 
   }, [expandedIds, setNodes, setEdges, onPathChange]);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      fitView({
-        duration: 400,
-        padding: isMini ? 0.05 : 0.2 // Tighter padding for mini preview
-      });
-    }, 100);
-    return () => clearTimeout(timer);
-  }, [fitView, interactive, expandedIds.length, isMini]);
+     setTimeout(() => fitView({ duration: 400, padding: 0.2 }), 100);
+  }, [fitView, interactive, expandedIds]);
 
   const onNodeClick = useCallback((event, node) => {
-    if (!interactive) return;
+    if (!interactive) return; // Double check to prevent clicks in embedded mode
     if (!node.data.hasChildren) return;
     setExpandedIds((prev) =>
       prev.includes(node.id) ? prev.filter(id => id !== node.id) : [...prev, node.id]
@@ -191,7 +186,7 @@ const AnimaliaChart = ({ interactive = true, onPathChange, isFullScreen = false,
   };
 
   return (
-    <div className={`animalia-flow-container ${!isFullScreen ? 'embedded' : ''} ${!interactive ? 'static-mode' : ''}`}>
+    <div className={`animalia-flow-container ${!interactive ? 'static-mode' : ''}`}>
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -201,38 +196,41 @@ const AnimaliaChart = ({ interactive = true, onPathChange, isFullScreen = false,
         nodeTypes={nodeTypes}
         fitView
         minZoom={0.1}
-        nodesDraggable={false}
+        
+        // --- LOCKING CONFIGURATION ---
+        nodesDraggable={false} 
         nodesConnectable={false}
         nodesFocusable={interactive}
         elementsSelectable={interactive}
         panOnDrag={interactive && !isLocked}
-        zoomOnScroll={interactive && !isLocked && isFullScreen}
         panOnScroll={interactive && !isLocked}
+        zoomOnScroll={interactive && !isLocked}
         zoomOnPinch={interactive && !isLocked}
         zoomOnDoubleClick={interactive && !isLocked}
-        preventScrolling={false}
+        preventScrolling={false} // CRITICAL: Allows page to scroll when mouse is over graph
         proOptions={{ hideAttribution: true }}
       >
-        <Background color="#cbd5e1" gap={24} size={1} />
+        <Background color="#555" gap={24} size={1} />
       </ReactFlow>
 
+      {/* Controls - Only show in Interactive Fullscreen Mode */}
       {interactive && (
         <div className="taxonomy-controls">
-          <button className="control-btn" onClick={resetTree}>
+            <button className="control-btn" onClick={resetTree}>
             <RefreshIcon /> <span>Reset</span>
-          </button>
-          <div className="control-separator" />
-          <button className="control-btn" onClick={() => fitView({ duration: 800 })}>
+            </button>
+            <div className="control-separator" />
+            <button className="control-btn" onClick={() => fitView({ duration: 800 })}>
             <FitIcon /> <span>Fit</span>
-          </button>
-          <div className="control-separator" />
-          <button
+            </button>
+            <div className="control-separator" />
+            <button
             className={`control-btn toggle ${!isLocked ? 'unlocked' : ''}`}
             onClick={() => setIsLocked(!isLocked)}
-          >
+            >
             {isLocked ? <LockIcon /> : <UnlockIcon />}
             <span>{isLocked ? 'Locked' : 'Free'}</span>
-          </button>
+            </button>
         </div>
       )}
     </div>
@@ -243,15 +241,6 @@ const AnimaliaChart = ({ interactive = true, onPathChange, isFullScreen = false,
 const AnimaliaFlow = () => {
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [currentPath, setCurrentPath] = useState("Annelida");
-
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1024);
-
-  useEffect(() => {
-    const handleResize = () => setIsDesktop(window.innerWidth > 1024);
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   useEffect(() => {
     document.body.style.overflow = isFullScreen ? "hidden" : "auto";
@@ -271,71 +260,54 @@ const AnimaliaFlow = () => {
           </p>
         </div>
 
-        {/* --- DESKTOP VIEW: INTERACTIVE INLINE --- */}
-        {isDesktop ? (
-          <div className="taxonomy-card desk-interactive">
-            <div className="taxonomy-path-header">
-              <span className="path-label">Taxonomy:</span>
-              <span className="path-value">{currentPath || "Annelida › Hirudinea"}</span>
-            </div>
+        {/* EMBEDDED CARD */}
+        <div className="taxonomy-card">
+          
+          {/* NEW: Taxonomical Path Header */}
+          <div className="taxonomy-path-header">
+             <span className="path-label">Taxonomy:</span> 
+             <span className="path-value">Annelida › Hirudinea</span>
+          </div>
 
-            <div className="taxonomy-static-wrapper">
-              <ReactFlowProvider>
-                <AnimaliaChart
-                  interactive={true}
-                  onPathChange={setCurrentPath}
-                  isFullScreen={false}
-                />
-              </ReactFlowProvider>
-            </div>
+          {/* Wrapper with POINTER EVENTS NONE to fix scroll */}
+          <div className="taxonomy-static-wrapper">
+             <ReactFlowProvider>
+               <AnimaliaChart interactive={false} />
+             </ReactFlowProvider>
           </div>
-        ) : (
-          /* --- MOBILE VIEW: PORTAL CARD (ENTRY) --- */
-          <div className="taxonomy-card mobile-entry-card">
-            <div className="mobile-preview-wrapper">
-              <ReactFlowProvider>
-                {/* MINI PREVIEW: Expanded branch, no interaction */}
-                <AnimaliaChart interactive={false} isMini={true} isFullScreen={false} />
-              </ReactFlowProvider>
-              <div className="preview-overlay" />
-            </div>
-            <div className="mobile-entry-content">
-              <div className="mobile-entry-visual">
-                <div className="visual-circle">🏷️</div>
-              </div>
-              <h3>Interactive Classification</h3>
-              <p>Explore the detailed evolutionary hierarchy of the Indian Cattle Leech.</p>
-              <button
-                className="taxonomy-open-btn full-width"
-                onClick={() => setIsFullScreen(true)}
-              >
-                🚀 Open Interactive View
-              </button>
-            </div>
+
+          {/* Button moved to Bottom Center */}
+          <div className="taxonomy-overlay-bottom">
+            <button 
+              className="taxonomy-open-btn" 
+              onClick={() => setIsFullScreen(true)}
+            >
+              <span>⤢</span> Open Interactive View
+            </button>
           </div>
-        )}
+        </div>
       </section>
 
-      {/* FULL SCREEN MODAL - Renders at the end of body to avoid layout/stacking context issues */}
-      {isFullScreen && createPortal(
-        <div className="taxonomy-fullscreen-wrapper mobile-only-page">
-          <header className="taxonomy-fullscreen-header page-header">
-            <button className="taxonomy-back-btn icon-btn" onClick={() => setIsFullScreen(false)}>
-              ✕
+      {/* FULL SCREEN MODAL */}
+      {isFullScreen && (
+        <div className="taxonomy-fullscreen-wrapper">
+          <header className="taxonomy-fullscreen-header">
+            <button className="taxonomy-back-btn" onClick={() => setIsFullScreen(false)}>
+              ← Back
             </button>
-            <div className="header-titles">
-              <span className="page-label">Leech Taxonomy</span>
-              <div className="fullscreen-path">{currentPath}</div>
+            
+            {/* Dynamic Path in Fullscreen */}
+            <div className="fullscreen-path">
+                {currentPath}
             </div>
           </header>
-
+          
           <div className="taxonomy-fullscreen-content">
             <ReactFlowProvider>
-              <AnimaliaChart interactive={true} onPathChange={setCurrentPath} isFullScreen={true} />
+              <AnimaliaChart interactive={true} onPathChange={setCurrentPath} />
             </ReactFlowProvider>
           </div>
-        </div>,
-        document.body
+        </div>
       )}
     </>
   );
