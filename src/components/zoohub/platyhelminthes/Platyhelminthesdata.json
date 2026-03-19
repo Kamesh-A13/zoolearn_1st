@@ -41,19 +41,19 @@
     "species": [
       {
         "id": 4,
-        "slug": "taenia-solium",
-        "name": "Taenia solium",
-        "scientificName": "Pork tapeworm",
-        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767595750/Taenia_solium_oew5qm.png",
-        "path": "/zoohub/platyhelminthes/taenia-solium"
-      },
-      {
-        "id": 5,
         "slug": "taenia-saginata",
         "name": "Taenia saginata",
         "scientificName": "Beef tapeworm",
         "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767595743/Taenia_saginata_xaxmpq.png",
         "path": "/zoohub/platyhelminthes/taenia-saginata"
+      },
+      {
+        "id": 5,
+        "slug": "taenia-solium",
+        "name": "Taenia solium",
+        "scientificName": "Pork tapeworm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767595750/Taenia_solium_oew5qm.png",
+        "path": "/zoohub/platyhelminthes/taenia-solium"
       },
       {
         "id": 6,

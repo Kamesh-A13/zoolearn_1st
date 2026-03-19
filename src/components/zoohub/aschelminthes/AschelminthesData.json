@@ -13,11 +13,11 @@
       },
       {
         "id": 2,
-        "slug": "wuchereria",
-        "name": "Wuchereria bancrofti",
-        "scientificName": "Filarial worm",
-        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982084/Wuchereria_bancrofti_azjsvd.png",
-        "path": "/zoohub/aschelminthes/wuchereria"
+        "slug": "enterobius",
+        "name": "Enterobius vermicularis",
+        "scientificName": "Pinworm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982065/Enterobius_vermicularis_htjsjz.png",
+        "path": "/zoohub/aschelminthes/enterobius"
       },
       {
         "id": 3,
@@ -29,11 +29,11 @@
       },
       {
         "id": 4,
-        "slug": "enterobius",
-        "name": "Enterobius vermicularis",
-        "scientificName": "Pinworm",
-        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982065/Enterobius_vermicularis_htjsjz.png",
-        "path": "/zoohub/aschelminthes/enterobius"
+        "slug": "wuchereria",
+        "name": "Wuchereria bancrofti",
+        "scientificName": "Filarial worm",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1768982084/Wuchereria_bancrofti_azjsvd.png",
+        "path": "/zoohub/aschelminthes/wuchereria"
       },
       {
         "id": 5,

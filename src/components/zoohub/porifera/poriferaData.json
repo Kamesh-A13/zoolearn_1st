@@ -5,19 +5,19 @@
     "species": [
       {
         "id": 1,
-        "slug": "sycon",
-        "name": "Sycon",
-        "scientificName": "Scypha sponge",
-        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671742/sycon_kzvnrx.png",
-        "path": "/zoohub/porifera/sycon"
-      },
-      {
-        "id": 2,
         "slug": "leucosolenia",
         "name": "Leucosolenia",
         "scientificName": "White tubular sponge",
         "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671721/Leucosolenia_lyznns.png",
         "path": "/zoohub/porifera/leucosolenia"
+      },
+      {
+        "id": 2,
+        "slug": "sycon",
+        "name": "Sycon",
+        "scientificName": "Scypha sponge",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671742/sycon_kzvnrx.png",
+        "path": "/zoohub/porifera/sycon"
       },
       {
         "id": 3,
@@ -35,19 +35,19 @@
     "species": [
       {
         "id": 4,
-        "slug": "euplectella",
-        "name": "Euplectella",
-        "scientificName": "Venus Flower Basket",
-        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671687/Euplectella_zkbhq3.png",
-        "path": "/zoohub/porifera/euplectella"
-      },
-      {
-        "id": 5,
         "slug": "hyalonema",
         "name": "Hyalonema",
         "scientificName": "Glass Rope Sponge",
         "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671709/Hyalonema_d6gda7.png",
         "path": "/zoohub/porifera/hyalonema"
+      },
+      {
+        "id": 5,
+        "slug": "euplectella",
+        "name": "Euplectella",
+        "scientificName": "Venus Flower Basket",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671687/Euplectella_zkbhq3.png",
+        "path": "/zoohub/porifera/euplectella"
       }
     ]
   },
@@ -65,6 +65,14 @@
       },
       {
         "id": 7,
+        "slug": "chalina",
+        "name": "Chalina",
+        "scientificName": "Finger Sponge",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671657/Chalina_ip1gvg.png",
+        "path": "/zoohub/porifera/chalina"
+      },
+      {
+        "id": 8,
         "slug": "euspongia",
         "name": "Euspongia",
         "scientificName": "Bath Sponge",
@@ -72,7 +80,7 @@
         "path": "/zoohub/porifera/euspongia"
       },
       {
-        "id": 8,
+        "id": 9,
         "slug": "cliona",
         "name": "Cliona",
         "scientificName": "Boring Sponge",
@@ -80,20 +88,12 @@
         "path": "/zoohub/porifera/cliona"
       },
       {
-        "id": 9,
+        "id": 10,
         "slug": "xestospongia",
         "name": "Xestospongia",
         "scientificName": "Giant Barrel Sponge",
         "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671751/Xestospongia_pxgw30.png",
         "path": "/zoohub/porifera/xestospongia"
-      },
-      {
-        "id": 10,
-        "slug": "chalina",
-        "name": "Chalina",
-        "scientificName": "Finger Sponge",
-        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767671657/Chalina_ip1gvg.png",
-        "path": "/zoohub/porifera/chalina"
       }
     ]
   }

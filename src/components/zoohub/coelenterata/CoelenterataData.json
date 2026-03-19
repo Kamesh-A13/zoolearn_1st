@@ -57,6 +57,14 @@
       },
       {
         "id": 6,
+        "slug": "metridium",
+        "name": "Metridium",
+        "scientificName": "Plumose anemone",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892113/Metridium_czmjde.png",
+        "path": "/zoohub/coelenterata/metridium"
+      },
+      {
+        "id": 7,
         "slug": "pennatula",
         "name": "Pennatula",
         "scientificName": "Sea pen",
@@ -64,7 +72,7 @@
         "path": "/zoohub/coelenterata/pennatula"
       },
       {
-        "id": 7,
+        "id": 8,
         "slug": "gorgonia",
         "name": "Gorgonia",
         "scientificName": "Sea fan",
@@ -72,20 +80,12 @@
         "path": "/zoohub/coelenterata/gorgonia"
       },
       {
-        "id": 8,
-        "slug": "meandrina",
-        "name": "Meandrina",
-        "scientificName": "Brain coral",
-        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767891973/Meandrina_pqw88x.png",
-        "path": "/zoohub/coelenterata/meandrina"
-      },
-      {
         "id": 9,
-        "slug": "metridium",
-        "name": "Metridium",
-        "scientificName": "Plumose anemone",
-        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892113/Metridium_czmjde.png",
-        "path": "/zoohub/coelenterata/metridium"
+        "slug": "antipatharia",
+        "name": "Antipatharia",
+        "scientificName": "Black corals",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892029/Antipatharia_txlpbb.png",
+        "path": "/zoohub/coelenterata/antipatharia"
       },
       {
         "id": 10,
@@ -97,11 +97,11 @@
       },
       {
         "id": 11,
-        "slug": "antipatharia",
-        "name": "Antipatharia",
-        "scientificName": "Black corals",
-        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767892029/Antipatharia_txlpbb.png",
-        "path": "/zoohub/coelenterata/antipatharia"
+        "slug": "meandrina",
+        "name": "Meandrina",
+        "scientificName": "Brain coral",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767891973/Meandrina_pqw88x.png",
+        "path": "/zoohub/coelenterata/meandrina"
       }
     ]
   }
