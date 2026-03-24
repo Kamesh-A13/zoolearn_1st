@@ -66,6 +66,20 @@
     ]
   },
   {
+    "id": "ostracodermi",
+    "className": "Ostracodermi",
+    "species": [
+      {
+        "id": 1001,
+        "slug": "cephalaspis",
+        "name": "Cephalaspis ✝︎",
+        "scientificName": "Armored jawless fish",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1774335859/Cephalaspis_%EF%B8%8E_sfnhaw.png",
+        "path": "/zoohub/chordata/cephalaspis"
+      }
+    ]
+  },
+  {
     "id": "cyclostomata",
     "className": "Cyclostomata",
     "species": [
@@ -84,6 +98,20 @@
         "scientificName": "Sea lamprey",
         "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1767895415/Petromyzon_marinus_smue6p.png",
         "path": "/zoohub/chordata/petromyzon"
+      }
+    ]
+  },
+  {
+    "id": "placodermi",
+    "className": "Placodermi",
+    "species": [
+      {
+        "id": 1002,
+        "slug": "climatius",
+        "name": "Climatius ✝︎",
+        "scientificName": "Spiny shark",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1774335906/Climatius_%EF%B8%8E_agt7va.png",
+        "path": "/zoohub/chordata/climatius"
       }
     ]
   },
@@ -301,6 +329,14 @@
     "id": "reptilia",
     "className": "Reptilia",
     "species": [
+      {
+        "id": 1003,
+        "slug": "hylonomus",
+        "name": "Hylonomus ✝︎",
+        "scientificName": "Early reptile",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1774335990/Hylonomus_%EF%B8%8E_i3i0si.png",
+        "path": "/zoohub/chordata/hylonomus"
+      },
       {
         "id": 33,
         "slug": "sphenodon_punctatum",
@@ -580,6 +616,14 @@
         "path": "/zoohub/chordata/neophron"
       },
       {
+        "id": 1004,
+        "slug": "diomedea",
+        "name": "Diomedea",
+        "scientificName": "Albatross",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1774335954/Diomedea_xet6zx.png",
+        "path": "/zoohub/chordata/diomedea"
+      },
+      {
         "id": 67,
         "slug": "chalcophaps_indica",
         "name": "Chalcophaps indica",
@@ -594,6 +638,14 @@
         "scientificName": "Pigeon",
         "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1771060907/Columba_kuhius.png",
         "path": "/zoohub/chordata/columba"
+      },
+      {
+        "id": 1005,
+        "slug": "raphus_cucullatus",
+        "name": "Raphus cucullatus ✝︎",
+        "scientificName": "Dodo",
+        "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1774336205/Raphus_cucullatus_%EF%B8%8E_zgotgb.png",
+        "path": "/zoohub/chordata/raphus_cucullatus"
       },
       {
         "id": 69,

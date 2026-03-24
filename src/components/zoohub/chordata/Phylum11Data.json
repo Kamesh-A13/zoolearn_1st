@@ -8754,5 +8754,300 @@
       "Agriculture and industry",
       "Scientific advancement"
     ]
+  },
+  "cephalaspis": {
+    "id": 1001,
+    "slug": "cephalaspis",
+    "name": "Cephalaspis ✝︎",
+    "scientificName": "Armored jawless fish",
+    "description": "Cephalaspis was a jawless armored fish. Belonged to Ostracodermi. Had bony head shield.",
+    "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1774335859/Cephalaspis_%EF%B8%8E_sfnhaw.png",
+    "3d": "https://sketchfab.com/3d-models/cephalaspis-lyelli-0e30e18f99794c0dbbf000372ebb7d7b/embed",
+    "introduction": [
+      "Lived during the Devonian period.",
+      "Fossils found in Europe and North America.",
+      "Represents early vertebrate evolution."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration",
+      "Circulatory type: Closed, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Bony exoskeletal plates",
+      "Nervous system: Primitive vertebrate type",
+      "Metamerism: Present",
+      "Fertilization: External",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic"
+    ],
+    "sizeStructure": [
+      "Broad armored head",
+      "Jawless mouth",
+      "Flattened body",
+      "Tail fin present"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Ostracodermi",
+      "Order: Cephalaspidiformes",
+      "Family: Cephalaspididae",
+      "Genus: Cephalaspis",
+      "Species: —"
+    ],
+    "ecology": [
+      "Bottom feeder",
+      "Early vertebrate lineage",
+      "Freshwater inhabitant"
+    ],
+    "economy": [
+      "Important fossil fish",
+      "Evidence for vertebrate evolution",
+      "Paleo-studies"
+    ]
+  },
+  "climatius": {
+    "id": 1002,
+    "slug": "climatius",
+    "name": "Climatius ✝︎",
+    "scientificName": "Spiny shark",
+    "description": "Climatius was an early jawed fish. Belonged to Acanthodii group. Had multiple fin spines.",
+    "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1774335906/Climatius_%EF%B8%8E_agt7va.png",
+    "3d": "https://sketchfab.com/3d-models/acanthodien-571b0c57ff3d49abb19f3cdfe8785fce/embed",
+    "introduction": [
+      "Lived during the Devonian period.",
+      "Fossils found in Europe.",
+      "Represents early jawed vertebrates."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Branchial respiration",
+      "Circulatory type: Closed, single",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Ammonotelism",
+      "Skeleton structure: Cartilaginous endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Present",
+      "Fertilization: External",
+      "Development type: Indirect",
+      "Body temperature: Poikilothermic"
+    ],
+    "sizeStructure": [
+      "Streamlined body",
+      "Multiple fin spines",
+      "Small size",
+      "Shark-like appearance"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Acanthodii",
+      "Order: Climatiiformes",
+      "Family: Climatiidae",
+      "Genus: Climatius",
+      "Species: —"
+    ],
+    "ecology": [
+      "Small aquatic predator",
+      "Early jawed fish radiation",
+      "Freshwater ecosystem member"
+    ],
+    "economy": [
+      "Fossil evidence of fish evolution",
+      "Study of jaw development",
+      "Paleontological importance"
+    ]
+  },
+  "hylonomus": {
+    "id": 1003,
+    "slug": "hylonomus",
+    "name": "Hylonomus ✝︎",
+    "scientificName": "Early reptile",
+    "description": "Hylonomus is one of the earliest known reptiles. It lived during the Carboniferous period. Shows early adaptation to terrestrial life.",
+    "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1774335990/Hylonomus_%EF%B8%8E_i3i0si.png",
+    "3d": "",
+    "introduction": [
+      "Hylonomus lived about 315 million years ago.",
+      "Fossils were found in North America.",
+      "It represents early amniote evolution."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration",
+      "Circulatory type: Closed, double, incomplete double",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Moderately developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct (oviparous)",
+      "Body temperature: Poikilothermic"
+    ],
+    "sizeStructure": [
+      "Small lizard-like body",
+      "Slender limbs",
+      "Long tail",
+      "Sharp teeth"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Reptilia",
+      "Order: Captorhinida",
+      "Family: Captorhinidae",
+      "Genus: Hylonomus",
+      "Species: —"
+    ],
+    "ecology": [
+      "Insect predator",
+      "Early terrestrial vertebrate",
+      "Forest floor inhabitant"
+    ],
+    "economy": [
+      "Important fossil in reptile evolution",
+      "Helps trace origin of amniotes",
+      "Paleontological significance"
+    ]
+  },
+  "diomedea": {
+    "id": 1004,
+    "slug": "diomedea",
+    "name": "Diomedea",
+    "scientificName": "Albatross",
+    "description": "Albatross is a large seabird. Has very long wings. Excellent glider.",
+    "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1774335954/Diomedea_xet6zx.png",
+    "3d": "https://sketchfab.com/3d-models/wandering-albatross-courtship-display-c61df1c5cc184c0f947540675a110a10/embed",
+    "introduction": [
+      "Found in southern oceans.",
+      "Feeds on fish and squid.",
+      "Known for long-distance flight."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct (oviparous)",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Very large wingspan",
+      "White and black plumage",
+      "Hooked beak",
+      "Webbed feet"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Procellariiformes",
+      "Family: Diomedeidae",
+      "Genus: Diomedea",
+      "Species: —"
+    ],
+    "ecology": [
+      "Marine predator",
+      "Ocean ecosystem balance",
+      "Long-distance migratory bird"
+    ],
+    "economy": [
+      "Ecotourism",
+      "Marine studies",
+      "Conservation programs"
+    ]
+  },
+  "raphus_cucullatus": {
+    "id": 1005,
+    "slug": "raphus_cucullatus",
+    "name": "Raphus cucullatus ✝︎",
+    "scientificName": "Dodo",
+    "description": "Raphus cucullatus was a flightless bird. Endemic to Mauritius. Extinct due to human activity.",
+    "image": "https://res.cloudinary.com/duibfmcw1/image/upload/v1774336205/Raphus_cucullatus_%EF%B8%8E_zgotgb.png",
+    "3d": "https://sketchfab.com/3d-models/dodo-extinct-bird-68f873e9f9144fc4b99a8f7475bf336d/embed",
+    "introduction": [
+      "Lived until the 17th century.",
+      "Inhabited island forests.",
+      "Example of human-caused extinction."
+    ],
+    "features": [
+      "Level of Organisation: Organ system level",
+      "Germ layer: Triploblastic",
+      "Body symmetry: Bilateral",
+      "Coelom: True coelom",
+      "Body plan: Tube within a tube body plan (Deuterostomous)",
+      "Digestion type: Complete",
+      "Respiratory type: Pulmonary respiration with air sacs",
+      "Circulatory type: Closed, double, complete",
+      "Circulation system: Closed",
+      "Regulation of Osmosis: Osmoregulator",
+      "Excretory organ: Kidneys",
+      "Mode of excretion: Uricotelism",
+      "Skeleton structure: Endoskeleton",
+      "Nervous system: Well developed",
+      "Metamerism: Absent",
+      "Fertilization: Internal",
+      "Development type: Direct (oviparous)",
+      "Body temperature: Homeothermic"
+    ],
+    "sizeStructure": [
+      "Large round body",
+      "Small wings",
+      "Strong legs",
+      "Curved beak"
+    ],
+    "classification": [
+      "Kingdom: Animalia",
+      "Phylum: Chordata",
+      "Class: Aves",
+      "Order: Columbiformes",
+      "Family: Columbidae",
+      "Genus: Raphus",
+      "Species: Raphus cucullatus"
+    ],
+    "ecology": [
+      "Island seed disperser",
+      "Ground-dwelling bird",
+      "Example of island evolution"
+    ],
+    "economy": [
+      "Symbol of extinction",
+      "Conservation awareness",
+      "Evolutionary research"
+    ]
   }
 }
